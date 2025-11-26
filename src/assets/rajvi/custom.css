@@ -136,6 +136,7 @@
 .footer-call-sec{ padding-bottom: 14px;}
 .footer-mail-sec span, .footer-call-sec span{ font-size: 20px; }
 .footer-call-sec, .footer-mail-sec{ display: flex; align-items: center; gap: 12px;  }
+.footer-call-sec a:hover, .footer-mail-sec a:hover{ color: var(--secondary); }
 .footer-links{ color: var(--white); }
 .footer-links a:hover{ color: var(--secondary); }
 .footer-links-section{ display: flex; align-items: flex-start; gap: 90px; }

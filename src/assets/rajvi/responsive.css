@@ -185,6 +185,7 @@
 
 @media screen and (max-width: 400px) {
 /* footer */
+    .footer-lets-connect{ font-size: 78px; line-height: 88px; }
     .footer-links-section{ flex-direction: column; }
     .news-letter-tab-btn{ width: 100%; flex-direction: column; gap: 10px; align-items: flex-start; }
     .news-letter-button input{ width: 320px; }
@@ -198,5 +199,5 @@
 
 @media screen and (max-width: 359px) {
 /* footer */
-    .footer-lets-connect{ font-size: 74px; line-height: 84px; }
+    /* .footer-lets-connect{ font-size: 74px; line-height: 84px; } */
 }
