@@ -20,7 +20,7 @@ const Footer = () => {
 
                 <div className="footer-bottom">
                     <div className="footer-logo-section">
-                        <Image className='footer-logo' src='/images/logo/DhatuPay.png' alt='pay-logo' width={176} height={34} priority={false}></Image>
+                        <Image className='footer-logo' src='/images/logo/paylogo.svg' alt='pay-logo' width={176} height={34} priority={false}></Image>
 
                         <p className='text-md text-16 text-grey footer-logo-para'>Secure Payments. Global Compliance. Trusted by Businesses. Delivering seamless transactions with advanced security.</p>
 
