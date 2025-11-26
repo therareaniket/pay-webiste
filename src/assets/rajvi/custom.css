@@ -127,10 +127,11 @@
 .footer-cta-left{ width: 846px; }
 .footer-cta-left h2{ color: var(--secondary-orange); }
 .footer-cta-left p{ padding-top: 20px; color: var(--white); }
-.footer-cta-btn{ border: 1px solid var(--white); padding: 13px 51px; border-radius: 50px; color: var(--white); }
+.footer-cta-btn{ border: 1px solid var(--white); padding: 13px 51px; border-radius: 50px; color: var(--white); z-index: 3; }
+.footer-cta-btn:hover{ background-color: var(--secondary-orange); color: var(--black); border: 1px solid var(--secondary-orange); }
 
 .footer-bottom{ display: flex; align-items: flex-start; justify-content: space-between; }
-.footer-logo-para{ padding: 14px 0; }
+.footer-logo-para{ padding: 20px 0; }
 .footer-logo-section{ width: 317px; }
 .footer-call-sec{ padding-bottom: 14px;}
 .footer-mail-sec span, .footer-call-sec span{ font-size: 20px; }

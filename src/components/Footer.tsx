@@ -1,3 +1,5 @@
+"use client"
+
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -9,7 +11,7 @@ const Footer = () => {
                 <h1 className='text-md footer-lets-connect'>Let’s Connect</h1>
                 <div className="glass-footer-cta">
                     <div className="footer-cta-left">
-                        <h2 className='h6 text-sb'>Take Your Business Global with Dhatupay</h2>
+                        <h2 className='h3 text-sb'>Take Your Business Global with Dhatupay</h2>
 
                         <p className='h6 text-rg'>Expand your reach with multi-currency support and international payment solutions.</p>
                     </div>
@@ -18,9 +20,9 @@ const Footer = () => {
 
                 <div className="footer-bottom">
                     <div className="footer-logo-section">
-                        <Image src='/images/logo/DhatuPay.png' alt='pay-logo' width={176} height={34} priority={false}></Image>
+                        <Image className='footer-logo' src='/images/logo/DhatuPay.png' alt='pay-logo' width={176} height={34} priority={false}></Image>
 
-                        <p className='text-md text-grey footer-logo-para'>Secure Payments. Global Compliance. Trusted by Businesses. Delivering seamless transactions with advanced security.</p>
+                        <p className='text-md text-16 text-grey footer-logo-para'>Secure Payments. Global Compliance. Trusted by Businesses. Delivering seamless transactions with advanced security.</p>
 
                         <p className='text-16 text-rg text-grey footer-call-sec'><span className='icon-footerCall'></span> <Link href="tel:+1 (212) 123-4567">+1 (212) 123-4567</Link></p>
 
@@ -29,8 +31,8 @@ const Footer = () => {
 
                     <div className="footer-links-section">
                         <div className="footer-links quick-links">
+                            <p className='text-18 text-md quick-link-heading'>Quick Links</p>
                             <ul>
-                                <p className='text-18 text-md quick-link-heading'>Quick Links</p>
 
                                 <li className='text-rg text-16 text-grey'>
                                     <Link href="/">About Product</Link>
@@ -51,8 +53,8 @@ const Footer = () => {
                         </div>
 
                         <div className="footer-links further-info-links">
+                            <p className='text-18 text-md quick-link-heading'>Further Information</p>
                             <ul>
-                                <p className='text-18 text-md quick-link-heading'>Further Information</p>
 
                                 <li>
                                     <Link href="/" className='text-rg text-16 text-grey'>Terms of Use</Link>
@@ -70,7 +72,7 @@ const Footer = () => {
                                 <div className="news-letter-tab-btn">
                                     <input className='newsletter-input text-16 text-rg btn-padding' type="email" name="" id="" placeholder='Enter your mail' />
 
-                                    <button type="submit" className='foot-news-ltr site-radius-100 btn-padding'>Join Now</button>
+                                    <button type="submit" className='text-rg text-16 foot-news-ltr site-radius-100 btn-padding'>Join Now</button>
                                 </div>
 
                                 <div className="footer-social-icons">

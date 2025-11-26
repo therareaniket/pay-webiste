@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import "@/assets/rajvi/custom.css"
-import "@/assets/rajvi/responsive.css"
+import "@/assets/rajvi/custom.css";
+import "@/assets/rajvi/responsive.css";
 import Footer from "../components/Footer";
-
 
 
 export const viewport = {
@@ -21,8 +20,6 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
 
     <html lang="en" >
         <body>
-       
-
             {children}
 
             <Footer/>
