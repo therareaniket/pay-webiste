@@ -11,7 +11,7 @@ const Footer = () => {
                 <h1 className='text-md footer-lets-connect'>Let’s Connect</h1>
                 <div className="glass-footer-cta">
                     <div className="footer-cta-left">
-                        <h2 className='h3 text-sb'>Take Your Business Global with Dhatupay</h2>
+                        <h2 className='h3 text-sb'>Take Your Business Global with DhatuPay</h2>
 
                         <p className='h6 text-rg'>Expand your reach with multi-currency support and international payment solutions.</p>
                     </div>
@@ -93,7 +93,7 @@ const Footer = () => {
                     <div className="copy-right-wrapper">
                         <p className='text-14 text-rg text-grey'>Powered by DFOLDS</p>
 
-                        <p className='text-14 text-rg text-grey'>DhatuVault 2025.1.1</p>
+                        <p className='text-14 text-rg text-grey'>DhatuPay 2025.1.1</p>
 
                         <p className='text-14 text-rg text-grey'>Copyright ©2025, all rights reserved. </p>
                     </div>

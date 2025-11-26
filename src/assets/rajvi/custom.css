@@ -1,16 +1,11 @@
-*,*::before,*::after{
+*, *::before, *::after{
     box-sizing: border-box;
 }
 
 @property --angle {
-  syntax: "<angle>";
-  inherits: false;
-  initial-value: -45deg;
-}
-
-:root {
-  --anim-time: 500ms;
-  --anim-ease: cubic-bezier(0.25, 1, 0.5, 1);
+  	syntax: "<angle>";
+  	inherits: false;
+ 	initial-value: -45deg;
 }
 
 :root{
@@ -38,6 +33,9 @@
     --off-whitee: #FAFAFA;
     --off-white: #FFFCE8;
     --black: #000000;
+
+    --anim-time: 500ms;
+    --anim-ease: cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 
@@ -63,61 +61,61 @@
 
 /* ========== GLASS BACKGROUND BOX ========== */
 .glass-footer-cta {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 40px 0 70px 0;
-  padding: 40px 80px;
-  border-radius: 24px;
-  background: rgba(255, 255, 255, 0.07); /* Glass */
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  overflow: hidden;
-  z-index: 0;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 40px 0 70px 0;
+	padding: 40px 80px;
+	border-radius: 24px;
+	background: rgba(255, 255, 255, 0.07); /* Glass */
+	border: 1px solid rgba(255, 255, 255, 0.09);
+	backdrop-filter: blur(14px);
+	-webkit-backdrop-filter: blur(14px);
+	overflow: hidden;
+	z-index: 0;
 }
 
 /* ========== ANIMATED BORDER ========== */
 .glass-footer-cta::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  padding: 1.5px; 
-  background: conic-gradient(
-    from var(--angle),
-    rgba(255,255,255,0.32),
-    rgba(255,255,255,0.15) 10%,
-    rgba(255,255,255,0.08) 40%,
-    rgba(255,255,255,0.03) 60%,
-    rgba(255,255,255,0.4) 90%,
-    rgba(255,255,255,0.32)
-  );
-  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-  mask-composite: exclude;
-  pointer-events: none;
-  transition: --angle var(--anim-time) var(--anim-ease);
-  z-index: 1;
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: inherit;
+	padding: 1.5px; 
+	background: conic-gradient(
+		from var(--angle),
+	  rgba(255,255,255,0.32),
+	  rgba(255,255,255,0.15) 10%,
+	  rgba(255,255,255,0.08) 40%,
+	  rgba(255,255,255,0.03) 60%,
+	  rgba(255,255,255,0.4) 90%,
+	  rgba(255,255,255,0.32)
+	);
+	mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+	mask-composite: exclude;
+	pointer-events: none;
+	transition: --angle var(--anim-time) var(--anim-ease);
+	z-index: 1;
 }
 
 /* ========== MOVING SHINE LAYER ========== */
 .glass-footer-cta::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 30%,
-    rgba(255, 255, 255, 0.25) 55%,
-    rgba(255, 255, 255, 0) 70%
-  );
-  mix-blend-mode: screen;
-  opacity: 0.15;
-  transform: translateX(-25%);
-  transition: all var(--anim-time) var(--anim-ease);
-  z-index: 2;
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: inherit;
+	background: linear-gradient(
+	  120deg,
+	  rgba(255, 255, 255, 0) 30%,
+	  rgba(255, 255, 255, 0.25) 55%,
+	  rgba(255, 255, 255, 0) 70%
+	);
+	mix-blend-mode: screen;
+	opacity: 0.15;
+	transform: translateX(-25%);
+	transition: all var(--anim-time) var(--anim-ease);
+	z-index: 2;
 }
 
 /* ========== Hover Animations (optional) ========== */
