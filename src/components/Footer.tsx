@@ -4,25 +4,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-                            const Footer = () => {
-
-
-
-
-
+    const Footer = () => {
     return (
-
-
-
-
-
-
-
-
-
-
-        
-        <section className='footer-section-main'>
+        <footer className='footer-section-main'>
             <div className="container">
                 <h1 className='text-md footer-lets-connect'>Let’s Connect</h1>
                 <div className="glass-footer-cta">
@@ -36,11 +20,11 @@ import React from 'react'
 
                 <div className="footer-bottom">
                     <div className="footer-logo-section">
-                        <Image className='footer-logo' src='/images/logo/paylogo.svg' alt='pay-logo' width={176} height={34} priority={false}></Image>
+                      <Link href="/"><Image className='footer-logo' src='/images/logo/paylogo.svg' alt='pay-logo' width={176} height={34} priority={false}></Image></Link>  
 
                         <p className='text-md text-16 text-grey footer-logo-para'>Secure Payments. Global Compliance. Trusted by Businesses. Delivering seamless transactions with advanced security.</p>
 
-                        <p className='text-16 text-rg text-grey footer-call-sec'><span className='icon-footerCall'></span> <Link href="tel:+1 (212) 123-4567">+1 (212) 123-4567</Link></p>
+                        <p className='text-16 text-rg text-grey footer-call-sec'><span className='icon-footerCall'></span> <Link href="tel:+1 512 843 2002">+1 512 843 2002</Link></p>
 
                         <p className='text-16 text-rg text-grey footer-mail-sec'><span className='icon-footerMail'></span> <Link href="mailto:enquire@dhatupay.com">enquire@dhatupay.com</Link></p>
                     </div>
@@ -115,7 +99,7 @@ import React from 'react'
                     </div>
                 </div>
             </div>
-        </section>
+        </footer>
 
     )
 }
