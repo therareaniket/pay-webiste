@@ -1,10 +1,12 @@
-import HomeHero from "@/components/Home/homeHero";
+import HeroHome from "@/components/Homepage/HeroHome";
 
 
-export default function Home() {
-  return (
-  <>
-    <HomeHero />
-  </>
-  );
+export default function HomePage() {
+	return (
+		<>
+			<main>
+				<HeroHome />
+			</main>
+		</>
+	);
 }

@@ -1,0 +1,34 @@
+@keyframes blob-rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+:root { 
+    --transition: 0.5s ease-in-out
+}
+
+.link-padding { padding: 12px 30px; }
+.link-radius { border-radius: 30px; }
+
+.btn-white { background-color: var(--white); color: var(--black); border: 1px solid var(--white); }
+.btn-blue { background-color: var(--secondary-purple-bluish); color: var(--white); border: 1px solid var(--secondary-purple-bluish); }
+.btn-tranpearent { background-color: transparent; color: var(--black); border: 1px solid var(--black); }
+.btn-white:hover, .btn-blue:hover, .btn-tranpearent:hover { background: linear-gradient(100deg, #00092E 0%, #011e80 100%); border: linear-gradient(100deg, #00092E 0%, #011e80 100%); color: var(--white); }
+
+
+.hero-home { width: 100%; height: 1000px; }
+.site-hero { position: relative;  }
+.light-orange-box { 
+    width: 470px; 
+    height: 100%; 
+    display: block; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    background-color: var(--orange-light); 
+}
+
+.site-hero-blob { position: absolute; left: 50%; animation: blob-rotate 10s linear infinite; }
+.home-hero-details { max-width: 850px; float: right; position: relative; padding-top: 100px; }
+.home-hero-cta { margin-top: 60px; }
+.home-hero-cta a:first-child { display: inline-block; margin-right: 20px; }
