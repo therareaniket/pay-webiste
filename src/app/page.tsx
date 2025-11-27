@@ -1,4 +1,5 @@
 import HeroHome from "@/components/Homepage/HeroHome";
+import HomePayIntro from "@/components/Homepage/HomePayIntro";
 
 
 export default function HomePage() {
@@ -6,6 +7,8 @@ export default function HomePage() {
 		<>
 			<main>
 				<HeroHome />
+
+				<HomePayIntro />
 			</main>
 		</>
 	);

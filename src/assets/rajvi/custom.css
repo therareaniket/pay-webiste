@@ -46,6 +46,7 @@
 .li-padding-top{ padding-top: 10px; }
 .site-radius-5 { border-radius: 5px; }
 .site-radius-10 { border-radius: 10px; }
+.site-radius-20 { border-radius: 20px; }
 .site-radius-50 { border-radius: 50px; }
 .site-radius-100 { border-radius: 100px; }
 .site-radius-106 { border-radius: 106px; }
@@ -192,17 +193,9 @@
     width: 95%;
     padding: 15px 50px;
 
-  /* Dark glass effect */
-background: rgba(255, 255, 255, 0.90);
-/* border-radius: 16px; */
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(19.3px);
--webkit-backdrop-filter: blur(19.3px);
-border: 1px solid rgba(255, 255, 255, 0.3);
 
-background: rgba(255, 255, 255, 0.90); /* semi-transparent white */
-  backdrop-filter: blur(50px);          /* frosted blur */
-  -webkit-backdrop-filter: blur(50px);  /* Safari support */
+    background: rgba(255, 255, 255, 0.60); /* semi-transparent white */
+  backdrop-filter: blur(20px);       /* Safari support */
   /* border-radius: 16px;                   rounded edges */
   border: 1px solid rgba(255, 255, 255, 0.15); /* subtle edge */
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);  /* soft depth */

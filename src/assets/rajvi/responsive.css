@@ -269,7 +269,4 @@
 
 }
 
-@media screen and (max-width: 359px) {
-/* footer */
-    /* .footer-lets-connect{ font-size: 74px; line-height: 84px; } */
-}
+@media screen and (max-width: 359px) {}

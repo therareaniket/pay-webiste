@@ -17,7 +17,7 @@
 
     .link-padding { padding: 10px 20px; }
     .text-20 { font-size: 18px; line-height: 28px; }
-    .site-hero-blob { width: 500px; left: 40%; }
+    .site-hero-blob { width: 600px; left: 40%; }
 }
 
 @media screen and (max-width: 1359px) {
@@ -49,14 +49,14 @@
 }
 
 @media screen and (max-width: 839px) {
-    .site-hero-blob { width: 400px; top: 20%; }
+    .site-hero-blob { width: 500px; top: 10%; }
     .home-hero-details { padding-top: 120px; }
 }
 
 @media screen and (max-width: 767px) {
     .hero-home { height: 700px; }
     .light-orange-box { display: none; }
-    .site-hero-blob { left: 20%; }
+    .site-hero-blob { left: 20%;  }
     .home-hero-details { padding-top: 100px; }
 
 }
@@ -77,6 +77,7 @@
     .site-hero-blob { left: 0; }
     .home-hero-details { padding-top: 50px; }
     .hero-home { height: 630px; }
+    .stripe-slogan .h5 { font-size: 18px; line-height: 28px; }
 }
 
 @media screen and (max-width: 374px) {}

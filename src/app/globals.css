@@ -263,7 +263,7 @@
 .text-sb { font-family: 'poppins-sb' !important; }
 .text-bd { font-family: 'poppins-bd' !important; }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { font-family: 'poppins-md'; font-weight: normal; font-style: normal; }
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { font-family: 'poppins-sb'; font-weight: normal; font-style: normal; }
 
 h1, .h1 { font-size: 72px; line-height: 86px; margin-bottom: 20px; }
 h2, .h2 { font-size: 56px; line-height: 68px; margin-bottom: 20px; }
