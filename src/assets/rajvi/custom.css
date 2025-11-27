@@ -184,7 +184,7 @@
   transition: all 0.35s ease;
   position: relative;
   z-index: 10002; /* higher than mobile menu */
-  transition: 0.3s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .header-wrapper.shrink {
