@@ -19,6 +19,9 @@
 
 /* footer */
     .footer-lets-connect{ font-size: 204px; }
+
+/* header */
+
 }
 
 @media screen and (max-width: 1599px) {
@@ -30,6 +33,9 @@
 
 /* footer */
     .footer-links-section{ gap: 60px; }
+
+/* header */
+    .headerLogo{ width: 150px; }
 }
 
 @media screen and (max-width: 1439px) {
@@ -59,6 +65,9 @@
     .footer-cta-left{ width: 400px; }
     .footer-logo-section{ width: 400px; }
     .footer-bottom{ flex-direction: column; gap: 50px; }
+
+/* header */
+    .link-padding{ padding: 10px 25px; }
 }
 
 @media screen and (max-width: 1199px) {
@@ -73,6 +82,9 @@
     .footer-mail-sec span, .footer-call-sec span{ font-size: 16px; }
     .footer-social-icons span{ font-size: 24px; }
     .footer-copyright-main{ margin-top: 70px; }
+
+/* header */
+    .headerLogo{ width: 150px; height: auto; }
 }
 
 @media screen and (max-width: 1023px) {
@@ -103,6 +115,58 @@
 /* footer */
     .footer-lets-connect { font-size: 118px; line-height: 128px; }  
     .footer-links-section, .footer-bottom{ gap: 40px; }
+
+/* header */
+ .hamburger {
+    display: flex;
+  }
+
+  .header-nav-links,
+  .contact-link {
+    display: none !important;
+  }
+
+  .mobile-menu {
+    position: fixed; /* full screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background: rgb(240, 240, 240);
+    transition: height 0.35s ease;
+    z-index: 10000; /* lower than header */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding-left: 70px;
+  }
+
+  .mobile-menu.open {
+    height: 100vh;
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: left;
+    font-size: 24px;padding-top: 100px;
+  }
+
+  .mobile-menu ul li a {
+    font-size: 30px;
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 500;
+  }
+/* .mobile-menu ul li a :hover{ color: ; } */
+
+.mobile-menu ul li a:hover{ color: var(--secondary); }
+  /* .header-wrapper.shrink{ background: none; } */
+
+  .mobile-menu.open .header-wrapper.shrink{ background-color: transparent; }
+
 }
 
 @media screen and (max-width: 839px) { 
@@ -117,6 +181,9 @@
     .news-letter-button input{ width: 232px; }
     .news-letter-tab-btn .btn-padding{ padding: 10px 20px; }
     .footer-lets-connect{ font-size: 108px; line-height: 118px; }
+
+/* header */
+
 }
 
 @media screen and (max-width: 767px) {
@@ -172,6 +239,11 @@
 /* footer */
     .footer-lets-connect{ font-size: 86px; line-height: 96px; -webkit-text-stroke: 1px var(--secondary-orange); }
     .glass-footer-cta{ padding: 30px; }
+
+/* header */
+    .mobile-menu ul li a{ font-size: 24px; }
+    .headerLogo{ width: 120px; }
+    .bar{ width: 24px; }
 }
 
 @media screen and (max-width: 459px) {

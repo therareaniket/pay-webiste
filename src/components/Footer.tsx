@@ -26,7 +26,7 @@ import React from 'react'
 
                         <p className='text-16 text-rg text-grey footer-call-sec'><span className='icon-footerCall'></span> <Link href="tel:+1 512 843 2002">+1 512 843 2002</Link></p>
 
-                        <p className='text-16 text-rg text-grey footer-mail-sec'><span className='icon-footerMail'></span> <Link href="mailto:enquire@dhatupay.com">enquire@dhatupay.com</Link></p>
+                        <p className='text-16 text-rg text-grey footer-mail-sec'><span className='icon-footerMail'></span> <Link href="mailto:enquiry@dhatupay.com">enquiry@dhatupay.com</Link></p>
                     </div>
 
                     <div className="footer-links-section">
