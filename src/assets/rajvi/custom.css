@@ -183,13 +183,14 @@
   transition: all 0.35s ease;
   position: relative;
   z-index: 10002; /* higher than mobile menu */
+  transition: 0.3s ease-in-out;
 }
 
 .header-wrapper.shrink {
-border-radius: 50px; 
-  margin: 50px auto 10px auto;
-  width: 95%;
-  padding: 15px 50px;
+    border-radius: 50px; 
+    margin: 20px auto 10px auto;
+    width: 95%;
+    padding: 15px 50px;
 
   /* Dark glass effect */
 background: rgba(255, 255, 255, 0.90);
@@ -245,6 +246,8 @@ background: rgba(255, 255, 255, 0.90); /* semi-transparent white */
 .hamburger.active .bar:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .hamburger.active .bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 .mobile-menu{ display: none; }
+
+
 
 /* solution page */
 

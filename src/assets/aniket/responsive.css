@@ -6,33 +6,65 @@
 
 @media screen and (max-width: 1599px) {
     .section { padding: 100px 0; }
-    h1, .h1 { font-size: 60px; line-height: 70px; }
+    /* h1, .h1 { font-size: 60px; line-height: 70px; } */
 
     .home-hero-details { max-width: 700px; }
 }
 
 @media screen and (max-width: 1439px) {
     .hero-home { height: 850px; }
-    .home-hero-details { max-width: 630px; padding-top: 60px; }
+    .home-hero-details { max-width: 630px; padding-top: 70px; }
 
     .link-padding { padding: 10px 20px; }
     .text-20 { font-size: 18px; line-height: 28px; }
     .site-hero-blob { width: 500px; left: 40%; }
 }
 
-@media screen and (max-width: 1359px) {}
+@media screen and (max-width: 1359px) {
+    .light-orange-box { width: 300px; }
+    .hero-home { height: 800px; }
+    .home-hero-hand { width: 550px; }
+    .home-hero-cta { margin-top: 40px; }
+    .stripe-slogan .h5 { font-size: 20px; line-height: 30px; }
 
-@media screen and (max-width: 1199px) {}
+}
+
+@media screen and (max-width: 1199px) {
+    .section { padding: 70px 0; }
+    .home-hero-hand { transform: translateX(-15%); }
+    .home-hero-details { max-width: 540px; padding-top: 90px; }
+    .home-stripe { bottom: 140px }
+    .text-20 { font-size: 16px; line-height: 26px; }
+
+}
 
 @media screen and (max-width: 1023px) {}
 
-@media screen and (max-width: 991px) {}
+@media screen and (max-width: 991px) {
+    .home-hero-hand { display: none; }
+    .home-hero-details { max-width: 100%; padding-top: 150px; }
+    .hero-details-wrapper { display: block; }
+    .hero-home { height: 750px; }
 
-@media screen and (max-width: 839px) {}
+}
 
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 839px) {
+    .site-hero-blob { width: 400px; top: 20%; }
+    .home-hero-details { padding-top: 120px; }
+}
 
-@media screen and (max-width: 639px) {}
+@media screen and (max-width: 767px) {
+    .hero-home { height: 700px; }
+    .light-orange-box { display: none; }
+    .site-hero-blob { left: 20%; }
+    .home-hero-details { padding-top: 100px; }
+
+}
+
+@media screen and (max-width: 639px) {
+    .header-wrapper { padding-left: 0; padding-right: 0; }
+    .header-wrapper.shrink { padding: 15px 30px; }
+}
 
 @media screen and (max-width: 575px) {}
 
@@ -40,7 +72,12 @@
 
 @media screen and (max-width: 459px) {}
 
-@media screen and (max-width: 400px) {}
+@media screen and (max-width: 400px) {
+    .home-stripe { height: 45px; }
+    .site-hero-blob { left: 0; }
+    .home-hero-details { padding-top: 50px; }
+    .hero-home { height: 630px; }
+}
 
 @media screen and (max-width: 374px) {}
 
