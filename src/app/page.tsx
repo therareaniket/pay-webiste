@@ -8,7 +8,7 @@ export default function HomePage() {
 			<main>
 				<HeroHome />
 
-				<HomePayIntro />
+				{/* <HomePayIntro /> */}
 			</main>
 		</>
 	);
