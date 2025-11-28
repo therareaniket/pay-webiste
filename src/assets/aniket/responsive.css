@@ -126,6 +126,8 @@
     .home-hero-cta { margin-top: 30px; }
     .stripe-slogan .h5 { font-size: 18px; line-height: 28px; }
     .home-hero-cta a:first-child { margin-right: 10px; margin-bottom: 15px; }
+    .home-hero-cta a { font-size: 14px; }
+    .home-hero-cta .link-padding { padding: 8px 15px; }
 }
 
 @media screen and (max-width: 359px) {

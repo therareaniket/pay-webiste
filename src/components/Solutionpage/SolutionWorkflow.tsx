@@ -6,7 +6,6 @@ export default function SolutionWorkflow() {
             <section className="section soln-workflow" >
                 <div className="container">
                     <div className="sol-workflow-main">
-
                         <div className="soln-workflow-text" >
                             <h2 className="h3 text-md"> Solutions That Fit Every Workflow </h2>
 

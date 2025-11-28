@@ -15,6 +15,22 @@ export default function HomeDhatuPayWorks() {
         autoplaySpeed: 2000,
         beforeChange: (current: any, next: SetStateAction<number>) => setActiveSlide(next),
         cssEase: "ease-in-out",
+        responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            },
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            },
+        },
+        ],
     };
 
     const slides = [
