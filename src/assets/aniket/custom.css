@@ -46,3 +46,4 @@ body { background-color: #FAFAFA; }
 .reduction-spike-right { position: absolute; top: 25%; left: 100%; }
 .faster-cycle, .payout-success { display: flex; align-items: center; gap: 40px; padding: 20px; position: absolute; top: 40px; left: -50%; background-color: rgba(237, 204, 253, 0.4); backdrop-filter: blur(20px); }
 .payout-success { top: auto; bottom: 10%; left: auto; right: -50%; background-color: rgba(209, 234, 211, 0.4); backdrop-filter: blur(20px);  }
+.redefine-payment { overflow: hidden; }

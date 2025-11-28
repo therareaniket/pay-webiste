@@ -2,13 +2,22 @@
     .hero-home { height: 900px; }
     .home-hero-hand { width: 700px; }
     .home-hero-details { max-width: 800px; }
+
+    .redefine-pymt-details { width: 620px; }
+    .center-pie { width: 350px; }
+    .redefine-payment-wrapper { gap: 20px; }
+
 }
 
 @media screen and (max-width: 1599px) {
     .section { padding: 100px 0; }
-    /* h1, .h1 { font-size: 60px; line-height: 70px; } */
 
     .home-hero-details { max-width: 700px; }
+    .center-pie { width: 325px; }
+    .faster-cycle, .payout-success { gap: 30px; padding: 15px; }
+    .reduction-spike-left { width: 180px; left: -178px; }
+    .reduction-spike-right { width: 120px; }
+    .faster-cycle { top: 20px; }
 }
 
 @media screen and (max-width: 1439px) {
@@ -18,6 +27,11 @@
     .link-padding { padding: 10px 20px; }
     .text-20 { font-size: 18px; line-height: 28px; }
     .site-hero-blob { width: 600px; left: 40%; }
+
+    .redefine-pymt-details { width: 685px; }
+    .center-pie { width: 290px; }
+    .faster-cycle, .payout-success { padding: 10px 15px; }
+    .redefine-pymt-growth .site-radius-20 { border-radius: 10px; }
 }
 
 @media screen and (max-width: 1359px) {
@@ -26,6 +40,16 @@
     .home-hero-hand { width: 550px; }
     .home-hero-cta { margin-top: 40px; }
     .stripe-slogan .h5 { font-size: 20px; line-height: 30px; }
+    .redefine-pymt-growth { min-height: 350px; }
+    .redefine-payment-wrapper { align-items: center; justify-content: center; }
+    .redefine-pymt-details { width: 750px; }
+    .err-redc-center { transform: translateX(70%); }
+    .center-pie { width: 270px; }
+    .reduction-spike-left { width: 150px; left: -148px; }
+    .reduction-spike-right { width: 100px; }
+    .faster-cycle { left: -65%; }
+    .payout-success { right: -45%; }
+
 
 }
 
@@ -36,6 +60,10 @@
     .home-stripe { bottom: 140px }
     .text-20 { font-size: 16px; line-height: 26px; }
 
+    .err-redc-center { transform: translateX(0%); }
+    .redefine-payment-wrapper { flex-direction: column; align-items: start; gap: 40px; }
+    .redefine-pymt-details { width: 100%;  }
+    .redefine-pymt-growth { width: 100%; min-height: max-content; align-items: start; justify-content: center;  }
 }
 
 @media screen and (max-width: 1023px) {}
@@ -51,6 +79,9 @@
 @media screen and (max-width: 839px) {
     .site-hero-blob { width: 500px; top: 10%; }
     .home-hero-details { padding-top: 120px; }
+    .faster-cycle, .payout-success { gap: 20px; }
+    .payout-success { right: -65%; }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -58,28 +89,48 @@
     .light-orange-box { display: none; }
     .site-hero-blob { left: 20%;  }
     .home-hero-details { padding-top: 100px; }
+    .faster-cycle { left: -60%; }
+    .payout-success { right: -60%; }
 
 }
 
 @media screen and (max-width: 639px) {
     .header-wrapper { padding-left: 0; padding-right: 0; }
     .header-wrapper.shrink { padding: 15px 30px; }
+
+    .reduction-spike-left, .reduction-spike-right { display: none; }
+    .faster-cycle { width: max-content; top: 10%; left: -40%; }
+    .payout-success { bottom: 0%; right: -40%; }
 }
 
-@media screen and (max-width: 575px) {}
+@media screen and (max-width: 575px) {
+    .faster-cycle { top: -5%; left: -30%; }
+    .payout-success { bottom: -5%; right: -30%; }
+}
 
 @media screen and (max-width: 480px) {}
 
-@media screen and (max-width: 459px) {}
+@media screen and (max-width: 459px) {
+    .faster-cycle { left: -30px; top: -20px; }
+    .payout-success { right: -30px; bottom: -20px; }
+}
 
 @media screen and (max-width: 400px) {
     .home-stripe { height: 45px; }
     .site-hero-blob { left: 0; }
     .home-hero-details { padding-top: 50px; }
-    .hero-home { height: 630px; }
-    .stripe-slogan .h5 { font-size: 18px; line-height: 28px; }
+    .hero-home { height: 660px; }
 }
 
-@media screen and (max-width: 374px) {}
+@media screen and (max-width: 374px) {
+    .home-hero-cta { margin-top: 30px; }
+    .stripe-slogan .h5 { font-size: 18px; line-height: 28px; }
+    .home-hero-cta a:first-child { margin-right: 10px; margin-bottom: 15px; }
+}
 
-@media screen and (max-width: 359px) {}
+@media screen and (max-width: 359px) {
+    .faster-cycle { left: 0px; }
+    .payout-success { right: 0px; }
+    .err-redc-center .h5 { font-size: 20px; line-height: 30px; }
+    .err-redc-center p { font-size: 16px; line-height: 26px; }
+}

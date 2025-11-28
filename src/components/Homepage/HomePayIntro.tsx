@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function HomePayIntro() {
     return (
         <>
-            <section className="section">
+            <section className="section redefine-payment">
                 <div className="container">
                     <div className="redefine-payment-wrapper">
                         <div className="redefine-pymt-details">
