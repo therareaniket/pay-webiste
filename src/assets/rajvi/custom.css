@@ -288,3 +288,6 @@
 .stakeholders-cards .icon-sites-cros-payments, .icon-triggers-accruals, .icon-vendor-regualatory-payments, .icon-analytics-optimisation, .icon-participant-payments{ font-size: 30px; margin-bottom: 10px; }
 
 
+/* bloglisting */
+.blog-hero-wrapper{ display: flex; margin-top: 80px; gap: 60px; overflow: hidden; }
+ 
