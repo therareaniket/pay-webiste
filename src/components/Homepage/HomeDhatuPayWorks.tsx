@@ -1,38 +1,12 @@
 "use client"
-import Slider from "react-slick";
-import { SetStateAction, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import { useState } from "react";
 
-export default function HomeDhatuPayWorks() {
+export default function DhatuPayWorksSlider() {
     const [activeSlide, setActiveSlide] = useState(0);
-
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        mobileFirst: true, 
-        beforeChange: (current: any, next: SetStateAction<number>) => setActiveSlide(next),
-        cssEase: "ease-in-out",
-        responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-            },
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            },
-        },
-        ],
-    };
 
     const slides = [
         {
@@ -54,39 +28,49 @@ export default function HomeDhatuPayWorks() {
             icon: "icon-disburse",
             title: "Disburse & Reconcile",
             desc: "Instant global payments with accurate reconciliation and full transparency."
-        },
+        }
     ];
 
     return (
-        <>
-            <section className="section dhatupay-works" style={{ paddingTop: 0 }}>
-                <div className="container">
-                    <div className="works-headings">
-                        <h2>How DhatuPay Works</h2>
-
-                        <p className="h6 text-rg">Streamlined clinical trial payments from onboarding to global payouts.</p>
-                    </div>
-
-                    <div className="dp-work-slider">
-                        <Slider {...settings}>
-                            {slides.map((slide, index) => (
-                            <div key={index} className={`dp-work-slide-item ${activeSlide === index ? "active-slide" : ""}`} >
-                                <div className="slide-item-icon site-radius-10">
-                                    <span className={slide.icon}></span>
-                                </div>
-
-                                <div className="slide-item-details">
-                                    <h3 className="h5">{slide.title}</h3>
-                                    <p className="text-18">{slide.desc}</p>
-                                </div>
-
-                                <span className="slider-bottom-line"></span>
-                            </div>
-                            ))}
-                        </Slider>
-                    </div>
+        <section className="section dhatupay-works" style={{ paddingTop: 0 }}>
+            <div className="container">
+                <div className="works-headings">
+                    <h2>How DhatuPay Works</h2>
+                    <p className="h6 text-rg">
+                        Streamlined clinical trial payments from onboarding to global payouts.
+                    </p>
                 </div>
-            </section>
-        </>
+
+                <Swiper
+                    modules={[Autoplay, Pagination]}
+                    spaceBetween={10}
+                    slidesPerView={1}
+                    breakpoints={{
+                        639: { slidesPerView: 1 },
+                        600: { slidesPerView: 2 },
+                        1200: { slidesPerView: 3 }
+                    }}
+                    autoplay={{ delay: 3000, disableOnInteraction: false }}
+                    pagination={{ clickable: true }}
+                    loop={true}
+                    onSlideChange={(swiper) => setActiveSlide(swiper.realIndex)}
+                    className="dp-work-slider">
+                    {slides.map((slide, index) => (
+                        <SwiperSlide key={index} className={`dp-work-slide-item ${activeSlide === index ? "active-slide" : ""}`}>
+                            <div className="slide-item-icon site-radius-10">
+                                <span className={slide.icon}></span>
+                            </div>
+
+                            <div className="slide-item-details">
+                                <h3 className="h5">{slide.title}</h3>
+                                <p className="text-18">{slide.desc}</p>
+                            </div>
+
+                            <span className="slider-bottom-line"></span>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </div>
+        </section>
     );
 }

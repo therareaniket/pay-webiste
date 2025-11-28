@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import "./globals.css";
 import "@/assets/rajvi/custom.css";
 import "@/assets/rajvi/responsive.css";
