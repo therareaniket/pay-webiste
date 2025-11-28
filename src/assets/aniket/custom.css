@@ -47,3 +47,13 @@ body { background-color: #FAFAFA; }
 .faster-cycle, .payout-success { display: flex; align-items: center; gap: 40px; padding: 20px; position: absolute; top: 40px; left: -50%; background-color: rgba(237, 204, 253, 0.4); backdrop-filter: blur(20px); }
 .payout-success { top: auto; bottom: 10%; left: auto; right: -50%; background-color: rgba(209, 234, 211, 0.4); backdrop-filter: blur(20px);  }
 .redefine-payment { overflow: hidden; }
+
+.works-headings { text-align: center; }
+.dp-work-slider { margin-top: 60px; }
+.dp-work-slide-item { width: 420px; padding-right: 60px; padding-bottom: 60px; }
+.slide-item-icon { width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; background-color: var(--light-grey); margin-bottom: 30px; }
+.slide-item-icon span { font-size: 30px; }
+.slick-list { height: 260px; }
+
+.dp-work-slide-item.active-slide { border-bottom: 2px solid var(--secondary-purple-bluish); }
+.dp-work-slide-item.active-slide .slide-item-icon { background: linear-gradient(135deg, #557CFF 0%, #693399 100%); color: var(--white); }

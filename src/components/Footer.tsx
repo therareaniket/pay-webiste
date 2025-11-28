@@ -38,7 +38,7 @@ import React from 'react'
                                     <Link href="/">About Product</Link>
                                 </li>
                                 <li className='text-rg text-16 text-grey'>
-                                    <Link href="/">Solutions</Link>
+                                    <Link href="/Solutions">Solutions</Link>
                                 </li>
                                 <li className='text-rg text-16 text-grey'>
                                     <Link href="/">Security & Compliance </Link>
