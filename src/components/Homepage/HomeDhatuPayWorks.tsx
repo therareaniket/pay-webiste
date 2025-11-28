@@ -12,7 +12,8 @@ export default function HomeDhatuPayWorks() {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
+        mobileFirst: true, 
         beforeChange: (current: any, next: SetStateAction<number>) => setActiveSlide(next),
         cssEase: "ease-in-out",
         responsive: [
@@ -78,6 +79,8 @@ export default function HomeDhatuPayWorks() {
                                     <h3 className="h5">{slide.title}</h3>
                                     <p className="text-18">{slide.desc}</p>
                                 </div>
+
+                                <span className="slider-bottom-line"></span>
                             </div>
                             ))}
                         </Slider>
