@@ -17,11 +17,10 @@
     h1, .h1{ font-size: 68px; line-height: 80px; }
     h4, .h4{ font-size: 30px; line-height: 38px; }
 
-/* footer */
+    /* footer */
     .footer-lets-connect{ font-size: 204px; }
 
-/* soln page */
-    /* .sol-hero-detail{ width: 750px; } */
+    /* soln page */
     .sol-hero-text-wrapper{ gap: 170px; }
     .solution-stats-text p{ width: 620px; }
     .soln-stats-img{ width: 680px; }
@@ -34,59 +33,60 @@
 }
 
 @media screen and (max-width: 1599px) {
-/* font-size */
+    /* font-size */
     h1, .h1{ font-size: 66px; line-height: 76px;  }
     h2, .h2{ font-size: 52px; line-height: 62px; }
     h3, .h3{ font-size: 38px; line-height: 48px; }
     h4, .h4{ font-size: 28px; line-height: 38px; }
 
-/* footer */
+    /* footer */
     .footer-links-section{ gap: 60px; }
 
-/* header */
+    /* header */
     .headerLogo{ width: 150px; }
 }
 
 @media screen and (max-width: 1439px) {
     .container { max-width: calc(1364px + 36px); }
 
-/* font-size */
+    /* font-size */
     h1, .h1{ font-size: 62px; line-height: 72px; }
     h2, .h2{ font-size: 48px; line-height: 58px; }
     .text-18{ font-size: 16px; line-height: 26px; }
 
-/* footer */
+    /* footer */
     .footer-lets-connect{ font-size: 194px; }
     .footer-copyright-main{ padding-top: 0; }
 
-/* soln page */
-.stats-cards-5{ width: 450px; }
-.soln-stats-cards{ width: 397px; }
-.solution-stats-text p, .sol-stats-list-desc{ width: 578px; }
-.stakeholders-cards{ width: 428px; }
-.soln-workflow-card-1 img{ width: 876px; }
+    /* soln page */
+    .stats-cards-5{ width: 450px; }
+    .soln-stats-cards{ width: 397px; }
+    .solution-stats-text p, .sol-stats-list-desc{ width: 578px; }
+    .stakeholders-cards{ width: 428px; }
+    .soln-workflow-card-1 img{ width: 876px; }
+    .sol-hero-detail{ width: 712px }
 }
 
 @media screen and (max-width: 1359px) {
     .container { max-width: calc(1150px  + 36px); }
 
-/* font-size */
+    /* font-size */
     h1, .h1{ font-size: 54px; line-height: 64px; }
     h2, .h2{ font-size: 46px; line-height: 56px; }
     h3, .h3{ font-size: 36px; line-height: 46px; }
     h6, .h6{ font-size: 18px; line-height: 28px; }
 
-/* footer */
+    /* footer */
     .footer-lets-connect{ font-size: 168px; line-height: 178px; }
     .footer-cta-left{ width: 750px; }
     .footer-logo-section{ width: 400px; }
     .footer-bottom{ flex-direction: column; gap: 50px; }
 
-/* header */
+    /* header */
     .link-padding{ padding: 10px 25px; }
 
-/* soln page */
-.sol-hero-text-wrapper{ justify-content: space-between; gap: 150px; margin: 0 auto; }
+    /* soln page */
+    .sol-hero-text-wrapper{ justify-content: space-between; gap: 150px; margin: 0 auto; }
     .sol-hero-detail{ width: 870px; }
     .stats-cards-5{ width: 390px; padding: 50px 40px; }
     .soln-stats-cards{ width: 340px; }
@@ -131,6 +131,8 @@
     .soln-workflow-card-1 img{ width: 100%; height: 400px; object-fit: cover; border-radius: 20px; }
     .site-cro-card, .parti-payments-card{ width: 480px; height: 250px; }
     .sol-stats-card-1, .sol-stats-card-2{ gap: 20px; }
+    .sol-hero-text{ gap: 90px; }
+    .sol-hero-text-wrapper img{ width: 430px; }
 }
 
 @media screen and (max-width: 1023px) {
@@ -228,7 +230,7 @@
     .solution-hero.light-orange-box, .solution-hero.hero-home{ height: 800px; }
     .soln-stats-img{ width: 430px; }
     .sol-stats-list-desc{ width: 350px; }
-
+  .sol-hero-text{ flex-direction: column-reverse; justify-content: center; align-items: center;  }
 } 
 
 @media screen and (max-width: 839px) { 
@@ -255,6 +257,8 @@
     .soln-stats-img{ width: 100%; }
     .soln-stats-cards{ width: 210px; }
     .stats-cards-5{ width: 270px; padding: 20px; }
+    .sol-hero-detail{ width: 100%; }
+    .sol-hero-text{ width: 100%; }
 }
 
 @media screen and (max-width: 767px) {
@@ -278,10 +282,11 @@
     .soln-worflow-card, .soln-workflow-card-2{ flex-direction: column; }
     .stakeholders-cards{ width: 100%; height: 200px; }
     .soln-workflow-card-1 img{ height: 260px; }
-    .sol-hero-text-wrapper img{ width: 400px; }
+    /* .sol-hero-text-wrapper img{ display: none; } */
     .solution-hero.hero-home{ height: 700px; }
-    .sol-hero-text-wrapper{ padding: 50px 0; }
+    /* .sol-hero-text-wrapper{ padding: 50px 0; } */
     .solution-stats-text, .soln-workflow-text{ text-align: left; }
+    .sol-hero-text{ padding-top: 100px; }
 }
 
 @media screen and (max-width: 639px) {

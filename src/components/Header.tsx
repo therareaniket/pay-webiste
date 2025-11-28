@@ -7,11 +7,19 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 30);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+useEffect(() => {
+  const checkScroll = () => {
+    setScrolled(window.scrollY > 50);
+  };
+
+  // Check immediately on load
+  checkScroll();
+
+  // Listen for scroll events
+  window.addEventListener("scroll", checkScroll);
+
+  return () => window.removeEventListener("scroll", checkScroll);
+}, []);
 
   return (
     <header className={`header-main ${scrolled ? "scrolled" : ""}`}>
@@ -34,7 +42,7 @@ const Header = () => {
               <li><Link href="/">About</Link></li>
               <li><Link href="/Solutions">Solutions</Link></li>
               <li><Link href="/SecurityCompliance">Security & Compliance</Link></li>
-              <li><Link href="/">Resources</Link></li>
+              <li><Link href="/BlogListing">Resources</Link></li>
             </ul>
           </div>
 
@@ -60,12 +68,12 @@ const Header = () => {
       {/* Fullscreen Mobile Menu */}
       <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
         <ul>
-          <li><Link href="/">Home</Link></li>
-          <li><Link href="/">About</Link></li>
-          <li><Link href="/">Solutions</Link></li>
-          <li><Link href="/">Security & Compliance</Link></li>
-          <li><Link href="/">Resources</Link></li>
-          <li><Link href="/">Contact</Link></li>
+          <li><Link href="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
+          <li><Link href="/" onClick={() => setMenuOpen(false)}>About</Link></li>
+          <li><Link href="/Solutions" onClick={() => setMenuOpen(false)}>Solutions</Link></li>
+          <li><Link href="/SecurityCompliance" onClick={() => setMenuOpen(false)}>Security & Compliance</Link></li>
+          <li><Link href="/BlogListing" onClick={() => setMenuOpen(false)}>Resources</Link></li>
+          <li><Link href="/" onClick={() => setMenuOpen(false)}>Contact</Link></li>
         </ul>
       </div>
     </header>

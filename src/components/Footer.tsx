@@ -44,7 +44,7 @@ import React from 'react'
                                     <Link href="/">Security & Compliance </Link>
                                 </li>
                                 <li className='text-rg text-16 text-grey'>
-                                    <Link href="/">Resources</Link>
+                                    <Link href="/BlogListing">Resources</Link>
                                 </li>
                                 <li className='text-rg text-16 text-grey'>
                                     <Link href="/">Contact</Link>

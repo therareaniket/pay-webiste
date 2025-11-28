@@ -247,10 +247,11 @@
 .solution-hero.hero-home{ height: 700px ; }
 
 
-.sol-hero-detail{ width: 1000px;  }
+.sol-hero-detail{ width: 820px;  }
 .sol-hero-detail p{ padding-top: 20px; }
-.sol-hero-text-wrapper{ position: absolute; display: flex; align-items: center; justify-content: space-between; gap: 220PX; left: 50%; top: 50%; transform: translate(-50%,-50%); }
-.sol-hero-text-wrapper img{ width: 600px; }
+.sol-hero-text-wrapper{ position: absolute; display: flex; align-items: center; justify-content: space-between; gap: 220PX;  top: 50%; transform: translateY(-50%); }
+/* .sol-hero-text-wrapper img{ width: 600px; } */
+.sol-hero-text{ display: flex; align-items: center; justify-content: center; gap: 200px; }
 
 .solution-stats-main{ background-color: var(--off-whitee); }
 .solution-stats-text{ display: flex; align-items: flex-start; justify-content: space-between; }

@@ -1,4 +1,4 @@
-import SecurityHero from "@/components/Securitycompliancepage.tsx/SecurityHero";
+import SecurityHero from "@/components/Securitycompliancepage/SecurityHero";
 
 export default function SecurityCompliance (){
     return (
