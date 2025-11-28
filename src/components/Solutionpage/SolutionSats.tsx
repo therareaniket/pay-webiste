@@ -57,6 +57,57 @@ export default function SolutionStats() {
                             </div>
                         </div>
 
+                        <div className="sol-stats-scroll-wrapper">
+                            <div className="scroll-track">
+                                <div className="stats-cards-1 soln-stats-cards">
+                                    <h4 className="h2 text-sb">30–50%</h4>
+                                    <p className="text-grey h6 text-md">Faster cycle times</p>
+                                </div>
+
+                                <div className="stats-cards-2 soln-stats-cards">
+                                    <h4 className="h2 text-sb">60s</h4>
+                                    <p className="h6 text-md">Total Payout Initiation</p>
+                                </div>
+
+                                <div className="stats-cards-4 soln-stats-cards">
+                                    <h4 className="h2 text-sb">180+</h4>
+                                    <p className="text-grey h6 text-md">Integration with CTMS</p>
+                                </div>
+
+                                <div className="stats-cards-3 soln-stats-cards">
+                                    <h4 className="h2 text-sb"> 99%+</h4>
+                                    <p className="h6 text-md">Payout Success</p>
+                                </div>
+
+
+                            </div>
+
+                            <div className="scroll-track">
+                                <div className="stats-cards-1 soln-stats-cards">
+                                    <h4 className="h2 text-sb">30–50%</h4>
+                                    <p className="text-grey h6 text-md">Faster cycle times</p>
+                                </div>
+
+                                <div className="stats-cards-2 soln-stats-cards">
+                                    <h4 className="h2 text-sb">60s</h4>
+                                    <p className="h6 text-md">Total Payout Initiation</p>
+                                </div>
+
+                                <div className="stats-cards-4 soln-stats-cards">
+                                    <h4 className="h2 text-sb">180+</h4>
+                                    <p className="text-grey h6 text-md">Integration with CTMS</p>
+                                </div>
+
+                                <div className="stats-cards-3 soln-stats-cards">
+                                    <h4 className="h2 text-sb"> 99%+</h4>
+                                    <p className="h6 text-md">Payout Success</p>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
                         <div className="sol-stats-card-3">
                             <div className="stats-cards-5">
                                 <div className="soln-stats-text-wrap" style={{ textAlign: 'center' }}>
@@ -68,7 +119,7 @@ export default function SolutionStats() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section >
         </>
     );
 }

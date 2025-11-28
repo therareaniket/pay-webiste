@@ -251,6 +251,7 @@
 .sol-hero-detail p{ padding-top: 20px; }
 .sol-hero-text-wrapper{ position: absolute; display: flex; align-items: center; justify-content: space-between; gap: 220PX; left: 50%; top: 50%; transform: translate(-50%,-50%); }
 .sol-hero-text-wrapper img{ width: 600px; }
+
 .solution-stats-main{ background-color: var(--off-whitee); }
 .solution-stats-text{ display: flex; align-items: flex-start; justify-content: space-between; }
 .solution-stats-text h2{ width: 667px; }
@@ -265,6 +266,7 @@
 .stats-cards-5{ padding: 60px 49px;  width: 518px; height: 477px; background-color: #481AD1; border-radius: 20px; color: var(--white); display: flex; flex-direction: column; align-items: center; justify-content: space-between; }
 .sol-stats-card-1 ,.sol-stats-card-2{ display: flex; flex-direction: column; gap: 40px; }
 .sol-tick-desc{ display: flex; align-items: center; gap: 20px; }
+.sol-stats-scroll-wrapper{ display: none; }
 
 
 .soln-workflow{ background-color: var(--orange-light); }
@@ -281,6 +283,7 @@
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
+.soln-workflow-text{ text-align: center; }
 .stakeholders-cards .icon-sites-cros-payments, .icon-triggers-accruals, .icon-vendor-regualatory-payments, .icon-analytics-optimisation, .icon-participant-payments{ font-size: 30px; margin-bottom: 10px; }
 
 
