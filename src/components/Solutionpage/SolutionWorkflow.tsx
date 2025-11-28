@@ -15,7 +15,7 @@ export default function SolutionWorkflow() {
 
                         <div className="soln-workflow-cards">
                             <div className="soln-workflow-card-1">
-                                <Image src="/images/Solutionpage/soln-workflow-img.webp" alt="soln-workflow-img" width={1060} height={524} priority={false}></Image>
+                                <Image src="/images/solutionpage/soln-workflow-img.webp" alt="soln-workflow-img" width={1060} height={524} priority={false}></Image>
 
                                 <div className="soln-worflow-card">
                                     <div className="site-cro-card stakeholders-cards site-radius-20">
