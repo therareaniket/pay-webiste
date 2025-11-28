@@ -46,8 +46,8 @@ export default function DhatuPayWorksSlider() {
                     spaceBetween={10}
                     slidesPerView={1}
                     breakpoints={{
-                        639: { slidesPerView: 1 },
-                        600: { slidesPerView: 2 },
+                        600: { slidesPerView: 1 },
+                        800: { slidesPerView: 2 },
                         1200: { slidesPerView: 3 }
                     }}
                     autoplay={{ delay: 3000, disableOnInteraction: false }}
