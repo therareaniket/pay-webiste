@@ -20,8 +20,17 @@
 /* footer */
     .footer-lets-connect{ font-size: 204px; }
 
-/* header */
-
+/* soln page */
+    /* .sol-hero-detail{ width: 750px; } */
+    .sol-hero-text-wrapper{ gap: 170px; }
+    .solution-stats-text p{ width: 620px; }
+    .soln-stats-img{ width: 680px; }
+    .sol-stats-list-desc{ width: 620px; }
+    .sol-tick-desc{ align-items: flex-start; }
+    .sol-tick-desc img{ padding-top: 10px; }
+    .soln-stats-cards{ width: 400px; }
+    .soln-workflow-card-1 img{ width: 1000px; }
+    .stakeholders-cards{ width: 454px; }
 }
 
 @media screen and (max-width: 1599px) {
@@ -49,6 +58,13 @@
 /* footer */
     .footer-lets-connect{ font-size: 194px; }
     .footer-copyright-main{ padding-top: 0; }
+
+/* soln page */
+.stats-cards-5{ width: 450px; }
+.soln-stats-cards{ width: 397px; }
+.solution-stats-text p, .sol-stats-list-desc{ width: 578px; }
+.stakeholders-cards{ width: 428px; }
+.soln-workflow-card-1 img{ width: 876px; }
 }
 
 @media screen and (max-width: 1359px) {
@@ -62,12 +78,26 @@
 
 /* footer */
     .footer-lets-connect{ font-size: 168px; line-height: 178px; }
-    .footer-cta-left{ width: 400px; }
+    .footer-cta-left{ width: 750px; }
     .footer-logo-section{ width: 400px; }
     .footer-bottom{ flex-direction: column; gap: 50px; }
 
 /* header */
     .link-padding{ padding: 10px 25px; }
+
+/* soln page */
+.sol-hero-text-wrapper{ justify-content: space-between; gap: 150px; margin: 0 auto; }
+    .sol-hero-detail{ width: 700px; }
+    .stats-cards-5{ width: 390px; padding: 50px 40px; }
+    .soln-stats-cards{ width: 340px; }
+    .sol-stats-list{ margin-top: 50px; }
+    .solution-stats-text{ flex-direction: column; text-align: center; justify-content: center; align-items: center; }
+    .solution-stats-text h2, .solution-stats-text p{ width: 900px; }
+    .sol-stats-list-desc{ width: 480px; }
+    .soln-stats-img{ width: 600px; }
+    .stakeholders-cards{ width: 370px; }
+    .soln-workflow-card-1 img{ width: 760px;  }
+    .sol-hero-text-wrapper img{ width: 514px; }
 }
 
 @media screen and (max-width: 1199px) {
@@ -82,9 +112,25 @@
     .footer-mail-sec span, .footer-call-sec span{ font-size: 16px; }
     .footer-social-icons span{ font-size: 24px; }
     .footer-copyright-main{ margin-top: 70px; }
+    .footer-cta-left{ width: 600px; }
 
 /* header */
     .headerLogo{ width: 150px; height: auto; }
+
+/* soln page */
+    .sol-stats-cards{ gap: 20px; }
+    .sol-hero-text-wrapper{ gap: 50px;  }
+    .sol-hero-detail{ width: 800px; }
+    .soln-stats-cards{ width: 275px; height: 200px; }
+    .stats-cards-5{ height: 423px; }
+    .soln-stats-img{ width: 535px; }
+    .sol-stats-list-desc{ width: 400px; }
+    .stakeholders-cards{ width: 314px; height: 330px; }
+    .soln-workflow-card-1{ flex-direction: column-reverse; }
+    .soln-worflow-card{ flex-direction: row; }
+    .soln-workflow-card-1 img{ width: 100%; height: 400px; object-fit: cover; border-radius: 20px; }
+    .site-cro-card, .parti-payments-card{ width: 480px; height: 250px; }
+    .sol-stats-card-1, .sol-stats-card-2{ gap: 20px; }
 }
 
 @media screen and (max-width: 1023px) {
@@ -98,6 +144,10 @@
 /* footer */
     .footer-lets-connect{ font-size: 140px; }
     .glass-footer-cta{ padding: 35px 60px; }
+
+/* soln page */
+    .sol-hero-detail{ width: 500px; }
+    .stats-cards-5{ width: 365px; }
 }
 
 @media screen and (max-width: 991px) {
@@ -115,6 +165,7 @@
 /* footer */
     .footer-lets-connect { font-size: 118px; line-height: 128px; }  
     .footer-links-section, .footer-bottom{ gap: 40px; }
+    .footer-cta-left{ width: 450px; }
 
 /* header */
  .hamburger {
@@ -167,7 +218,18 @@
 
   .mobile-menu.open .header-wrapper.shrink{ background-color: transparent; }
 
-}
+/* soln page */
+    .sol-hero-text-wrapper{ flex-direction: column-reverse; align-items: center;  }
+    .solution-stats-text h2, .solution-stats-text p{ width: 100%; }
+    .stats-cards-5{ width: 300px; }
+    .soln-stats-cards{ width: 230px; }
+    .stakeholders-cards{ width: 254px; }
+    .site-cro-card, .parti-payments-card{ width: 390px; }
+    .solution-hero.light-orange-box, .solution-hero.hero-home{ height: 800px; }
+    .soln-stats-img{ width: 430px; }
+    .sol-stats-list-desc{ width: 350px; }
+
+} 
 
 @media screen and (max-width: 839px) { 
     .container { max-width: calc(750px + 36px); }
@@ -181,9 +243,16 @@
     .news-letter-button input{ width: 232px; }
     .news-letter-tab-btn .btn-padding{ padding: 10px 20px; }
     .footer-lets-connect{ font-size: 108px; line-height: 118px; }
+    .footer-cta-left{ width: 100%; text-align: center; }
+    .glass-footer-cta{ flex-direction: column; gap: 30px; }
+    /* .footer-cta-left p{ padding-top: 0; } */
+    .glass-footer-cta{ gap: 20px; }
 
-/* header */
-
+/* soln page */
+    .site-cro-card, .parti-payments-card{ width: 350px; }
+    .sol-stats-list{ flex-direction: column; gap: 20px; }
+    .sol-stats-list-desc{ width: 100%; }
+    .soln-stats-img{ width: 100%; }
 }
 
 @media screen and (max-width: 767px) {
@@ -195,9 +264,21 @@
 
 /* footer */
     .footer-lets-connect{ font-size: 88px; line-height: 98px; }
-    .footer-cta-left{ width: 100%; text-align: center; }
-    .glass-footer-cta{ flex-direction: column; gap: 30px; }
+
     .footer-links-section{ flex-wrap: wrap; }
+
+/* soln page */
+    .sol-stats-cards{ flex-direction: column; }
+    .sol-stats-card-1, .sol-stats-card-2{ flex-direction: row; }
+    .soln-stats-cards{ width: 290px; }
+    .stats-cards-5{ width: 600px; height: 280px; padding: 20px; }
+    .soln-workflow-card-1{ flex-direction: column; }
+    .soln-worflow-card, .soln-workflow-card-2{ flex-direction: column; }
+    .stakeholders-cards{ width: 100%; height: 200px; }
+    .soln-workflow-card-1 img{ height: 260px; }
+    .sol-hero-text-wrapper img{ width: 400px; }
+    .solution-hero.hero-home{ height: 700px; }
+    .sol-hero-text-wrapper{ padding: 50px 0; }
 }
 
 @media screen and (max-width: 639px) {
@@ -215,6 +296,11 @@
     .glass-footer-cta{ padding: 35px 50px; }
     .copy-right-wrapper{ flex-wrap: wrap; }
     .footer-lets-connect{ font-size: 72px; line-height: 60px; }
+
+/* soln responsive */
+    .stats-cards-5{ width: 100%; } 
+    .soln-stats-cards{ width: 240px; }
+    .sol-stats-cards{ margin-top: 20px; }
 }
 
 @media screen and (max-width: 575px) {
@@ -229,6 +315,13 @@
     .glass-footer-cta{ gap: 20px; }
     .glass-footer-cta{ padding: 30px 40px; }
     .footer-logo-section{ width: 100%; }
+
+/* soln page */
+.solution-hero.hero-home{ height: 400px; }
+.sol-hero-text-wrapper img{ display: none; }
+.sol-hero-detail{ width: 100%; }
+    .stats-cards-5{ height: 245px; }
+    .soln-stats-cards{ width: 210px; height: 180px; }
 }
 
 @media screen and (max-width: 480px) {
@@ -269,4 +362,9 @@
 
 }
 
-@media screen and (max-width: 359px) {}
+@media screen and (max-width: 359px) {
+
+    /* footer */
+    .footer-lets-connect{ font-size: 66px; line-height: 76px; }
+    .news-letter-button input{ width: 280px; }
+}

@@ -13,7 +13,7 @@ import React from 'react'
                     <div className="footer-cta-left">
                         <h2 className='h3 text-sb'>Take Your Business Global with DhatuPay</h2>
 
-                        <p className='h6 text-rg'>Expand your reach with multi-currency support and international payment solutions.</p>
+                        <p className='h6 text-rg'>Expand worldwide with multi-currency support and secure international payment solutions.</p>
                     </div>
                     <button type="button" className='footer-cta-btn'>Get Started</button>
                 </div>
