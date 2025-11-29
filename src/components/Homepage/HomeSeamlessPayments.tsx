@@ -13,6 +13,8 @@ export default function SeamlessPayments() {
                         <p className="h6 text-rg">Four core capabilities powering secure, compliant clinical trial payments.</p>
                     </div>
 
+                    <Image src="/images/homepage/seamless-payment.webp" alt="seamless-payment" width={870} height={551}></Image>
+
                     <div className="smls-pymt-details">
                         <div className="smls-pymt-box-wrapper">
                             <div className="pymt-box">
@@ -43,8 +45,6 @@ export default function SeamlessPayments() {
                         </div>
                     </div>
                 </div>
-
-                <Image src="/images/homepage/seamless-payment.webp" alt="seamless-payment" width={870} height={551}></Image>
             </section>
         </>
     );

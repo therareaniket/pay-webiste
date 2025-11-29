@@ -53,7 +53,8 @@ export default function DhatuPayWorksSlider() {
                     autoplay={{ delay: 3000, disableOnInteraction: false }}
                     pagination={{ clickable: true }}
                     loop={true}
-                    onSlideChange={(swiper) => setActiveSlide(swiper.realIndex)}
+                    // onSlideChange={(swiper) => setActiveSlide(swiper.realIndex)}
+                    onSlideChange={(swiper) => { const real = swiper.realIndex; const middleIndex = (real + 1) % slides.length;  setActiveSlide(middleIndex); }}
                     className="dp-work-slider">
                     {slides.map((slide, index) => (
                         <SwiperSlide key={index} className={`dp-work-slide-item ${activeSlide === index ? "active-slide" : ""}`}>
