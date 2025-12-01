@@ -14,6 +14,8 @@ body { background-color: #FAFAFA; }
     --transition: 0.5s ease-in-out
 }
 
+::selection { background-color: var(--secondary-purple-bluish); color: var(--white); }
+
 .link-padding { padding: 12px 30px; }
 .link-radius { border-radius: 30px; }
 
@@ -84,8 +86,19 @@ body { background-color: #FAFAFA; }
 
 .pricing { background-color: var(--white); }
 .pricing-left-pillar { width: 480px; height: 870px; display: flex; flex-direction: column; justify-content: space-between; background-color: #8C67FB; color: var(--white); padding: 20px; }
-.pricing-wrapper { display: flex; justify-content: space-between; }
+.pricing-wrapper { display: flex; justify-content: center; gap: 60px; }
 .pillar-details { padding:  calc(30px - 20px) calc(60px - 20px); }
 .pillar-details p + p { margin-top: 20px; }
-.pricing-plan-details { width: 1056px; }
+.pricing-plan-details { width: 1056px; display: flex; flex-direction: column; justify-content: space-between; }
 .pricing-headings { width: 750px;  }
+.plan-descrptn { display: flex; justify-content: center; gap: 60px; }
+.plan-item { width: 498px; height: 563px; padding: 30px; }
+.plan-price { display: flex; justify-content: space-between; border-bottom: 1px solid #B8B8B8; }
+.plan-price p + p { text-align: right; margin-bottom: 20px; }
+.plan-price span { display: block; }
+.plan-includes { margin-top: 20px; margin-bottom: 40px; padding: 20px 0; }
+.plan-includes ul { margin-top: 20px; }
+.plan-includes li { display: flex; align-items: center; gap: 20px; margin-bottom: 12px; }
+.plans-link { width: 360px; display: block; background-color: var(--secondary-purple-bluish); color: var(--white); padding: 14px 0; margin: 0 auto; text-align: center; }
+.plans-link.white-bg { background-color: var(--white); color: var(--black); }
+.plans-link:hover { background: linear-gradient(100deg, #00092E 0%, #011e80 100%); border: linear-gradient(100deg, #00092E 0%, #011e80 100%); color: var(--white); }

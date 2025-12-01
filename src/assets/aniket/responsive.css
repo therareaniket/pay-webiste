@@ -12,6 +12,9 @@
     .capablty-lists-wrapper { width: 770px; }
     .capablty-list { width: 360px; justify-content: start; gap: 30px; }
     .capablty-divider { margin: 25px 0; }
+    .pricing-wrapper, .plan-descrptn { gap: 50px; }
+    .pillar-details { padding: 10px 30px; }
+    .plan-item { width: 440px; }
 
 }
 
@@ -42,6 +45,7 @@
     .swiper-slide { height: 320px !important; }
     .seamless-payment img { width: 700px; }
     .core-capablty-headings { width: 500px; }
+    .plan-item { width: 410px; }
 }
 
 @media screen and (max-width: 1359px) {
@@ -67,6 +71,14 @@
     .capabiblity-wrapper { flex-direction: column; }
     .core-capablty-headings { width: 100%; text-align: center; }
 
+    .pricing-left-pillar { height: 780px; }
+    .pillar-details { padding: 10px; }
+    .pricing-wrapper, .plan-descrptn { gap: 30px; }
+    .plan-item { width: 380px; height: 530px; }
+    .plan-includes { margin-bottom: 20px; }
+    .plans-link { width: 90%; }
+
+
 }
 
 @media screen and (max-width: 1199px) {
@@ -82,7 +94,15 @@
     .redefine-pymt-growth { width: 100%; min-height: max-content; align-items: start; justify-content: center;  }
     .seamless-payment img { width: 500px; }
     .capablty-lists-wrapper {width: 85%; }
-
+    .pricing-wrapper { flex-direction: column-reverse; }
+    .pricing-headings { width: 100%; text-align: center; margin-bottom: 40px; }
+    .pricing-plan-details { width: 100%; }
+    .pricing-plan-details .plan-descrptn { justify-content: start; }
+    .plan-item { width: calc(50% - 20px); }
+    .pricing-wrapper, .plan-descrptn { gap: 40px; }
+    .pricing-left-pillar { width: 100%; height: max-content; flex-direction: row; justify-content: center; gap: 40px; }
+    .pillar-details { width: calc(50% - 20px); }
+    .pricing-left-pillar img { width: calc(50% - 20px); height: auto; }
 }
 
 @media screen and (max-width: 1023px) {}
@@ -107,6 +127,9 @@
 
     .capablty-lists-wrapper { width: 100%; justify-content: center; gap: 30px; }
     .capablty-list { width: 350px; }
+
+    .pillar-details { width: calc(70% - 20px); }
+    .pricing-left-pillar img { object-fit: contain; }
 }
 
 @media screen and (max-width: 839px) {
@@ -118,6 +141,7 @@
     .capablty-lists-divider { display: none; }
     .capablty-lists:first-child { justify-content: start; }
     .capablty-lists:last-child { display: flex; flex-direction: column; justify-content: end; }
+    /* .pillar-details { width: 80%; } */
 }
 
 /* THIS IS FOR HOMEPAGE SLIDER ONLY */
@@ -144,6 +168,11 @@
     .capablty-list { width: 80%; height: 130px; height: max-content; margin: 0 auto; }
     .list-details { width: calc(100% - 80px); }
     .capablty-lists-divider { display: block; width: 100%; height: 1px; }
+    .pricing-headings { text-align: left; }
+    .plan-descrptn { flex-direction: column; }
+    .plan-item { width: 100%; }
+    .pricing-left-pillar { flex-direction: column-reverse; align-items: center; }
+    .pillar-details { width: 100%; }
 }
 
 @media screen and (max-width: 639px) {
@@ -169,10 +198,9 @@
     .works-headings { padding-top: 40px; }
     .smls-pymt-details { flex-direction: column; gap: 20px; }
     .pymt-box { width: 100%; height: 100px; }
-    
     .smls-pymt-box-wrapper { gap: 20px; }
     .capablty-list { width: 100%; gap: 20px; }
-} 
+}
 
 @media screen and (max-width: 480px) {}
 
@@ -181,6 +209,8 @@
     .payout-success { right: -30px; bottom: -20px; }
     .swiper-slide { height: 300px !important; }
     .slide-item-details .h5 { width: 70%; }
+    .pricing-left-pillar img { width: 100%; }
+    .plan-item { height: max-content; }
 }
 
 @media screen and (max-width: 400px) {

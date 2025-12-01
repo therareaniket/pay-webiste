@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Pricing(){
     return (
@@ -24,7 +25,101 @@ export default function Pricing(){
                             <div className="pricing-headings">
                                 <h2>Flexible Pricing for Every Clinical Operation</h2>
 
-                                <p className="h6 text-rg">Choose from Standard or Enterprise plans designed for your clinical trial operations. Scale seamlessly with Dhatu Pay's two-tier pricing that fits every business need.</p>
+                                <p className="h6 text-rg">Choose from Standard or Enterprise plans designed for your clinical trial operations. Scale seamlessly with DhatuPay's two-tier pricing that fits every business need.</p>
+                            </div>
+
+                            <div className="plan-descrptn">
+                                <div className="plan-item standard-plan site-radius-20 bg-red-500" style={{ backgroundColor: "var(--light-grey)" }}>
+                                    <div className="plan-price">
+                                        <p className="h4 text-bd">Standard</p>
+
+                                        <p className="h4 text-bd">$49<span className="text-18 text-rg">per user/month</span></p>
+                                    </div>
+
+                                    <div className="plan-includes">
+                                        <p className="h5 text-rg">Includes</p>
+
+                                        <ul>
+                                            <li>
+                                                <Image src="/images/homepage/pricing-includes-check.svg" alt="pricing-includes-check" width={15} height={11}></Image>
+
+                                                <span className="text-18">FX & Tax Settings</span>
+                                            </li>
+
+                                            <li>
+                                                <Image src="/images/homepage/pricing-includes-check.svg" alt="pricing-includes-check" width={15} height={11}></Image>
+
+                                                <span className="text-18">Basic Integrations</span>
+                                            </li>
+
+                                            <li>
+                                                <Image src="/images/homepage/pricing-includes-check.svg" alt="pricing-includes-check" width={15} height={11}></Image>
+
+                                                <span className="text-18">Budget Designer</span>
+                                            </li>
+
+                                            <li>
+                                                <Image src="/images/homepage/pricing-includes-check.svg" alt="pricing-includes-check" width={15} height={11}></Image>
+
+                                                <span className="text-18">Invoice Management</span>
+                                            </li>
+
+                                            <li>
+                                                <Image src="/images/homepage/pricing-includes-check.svg" alt="pricing-includes-check" width={15} height={11}></Image>
+
+                                                <span className="text-18">Basic Analytics Dashboard</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <Link href="/ComingSoon" title="Start with Standard" className="plans-link text-18 text-md site-radius-50">Start Now</Link>
+                                </div>
+
+                                <div className="plan-item enterprise-plan site-radius-20 bg-red-500" style={{ backgroundColor: "var(--hero-bg)", color: "var(--white)" }}>
+                                    <div className="plan-price">
+                                        <p className="h4 text-bd">Enterprise</p>
+
+                                        <p className="h4 text-bd">$299<span className="text-18 text-rg">per user/month</span></p>
+                                    </div>
+
+                                    <div className="plan-includes">
+                                        <p className="h5 text-rg">Includes</p>
+
+                                        <ul>
+                                            <li>
+                                                <Image src="/images/homepage/pricing-includes-check-white.svg" alt="pricing-includes-check" width={15} height={11}></Image>
+
+                                                <span className="text-18">Everything in Standard,</span>
+                                            </li>
+
+                                            <li>
+                                                <Image src="/images/homepage/pricing-includes-check-white.svg" alt="pricing-includes-check" width={15} height={11}></Image>
+
+                                                <span className="text-18">Advanced Integrations (ERP, EDC)</span>
+                                            </li>
+
+                                            <li>
+                                                <Image src="/images/homepage/pricing-includes-check-white.svg" alt="pricing-includes-check" width={15} height={11}></Image>
+
+                                                <span className="text-18">Participant Payouts</span>
+                                            </li>
+
+                                            <li>
+                                                <Image src="/images/homepage/pricing-includes-check-white.svg" alt="pricing-includes-check" width={15} height={11}></Image>
+
+                                                <span className="text-18">Jurisdiction Packs (US/EU/IN)</span>
+                                            </li>
+
+                                            <li>
+                                                <Image src="/images/homepage/pricing-includes-check-white.svg" alt="pricing-includes-check" width={15} height={11}></Image>
+
+                                                <span className="text-18">Advanced Analytics & Reporting</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <Link href="/ComingSoon" title="Start with Enterprise" className="plans-link white-bg text-18 text-md site-radius-50">Start Now</Link>
+                                </div>
                             </div>
                         </div>
                     </div>

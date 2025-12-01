@@ -20,7 +20,7 @@ export default function HomePage() {
 
 				<CoreCapabilities />
 
-				{/* <Pricing /> */}
+				<Pricing />
 			</main>
 		</>
 	);
