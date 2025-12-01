@@ -11,12 +11,12 @@ export default function DhatuPayWorksSlider() {
     const slides = [
         {
             icon: "icon-hm-onboard",
-            title: "Onboard Entities & Sites",
+            title: "Onboard Entities and Sites",
             desc: "Securely register Sponsors, CROs, Sites, and stakeholders with automated verification.​"
         },
         {
             icon: "icon-hm-config-contract",
-            title: "Configure Budgets & Contracts",
+            title: "Configure Budgets and Contracts",
             desc: "Centralize budgets, agreements, and compliance rules for seamless setup."
         },
         {
@@ -26,7 +26,7 @@ export default function DhatuPayWorksSlider() {
         },
         {
             icon: "icon-disburse",
-            title: "Disburse & Reconcile",
+            title: "Disburse and Reconcile",
             desc: "Instant global payments with accurate reconciliation and full transparency."
         }
     ];

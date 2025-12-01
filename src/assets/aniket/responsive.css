@@ -8,6 +8,11 @@
     .redefine-payment-wrapper { gap: 20px; }
 
     .seamless-payment img { width: 800px; }
+    .core-capablty-headings { width: 570px; }
+    .capablty-lists-wrapper { width: 770px; }
+    .capablty-list { width: 360px; justify-content: start; gap: 30px; }
+    .capablty-divider { margin: 25px 0; }
+
 }
 
 @media screen and (max-width: 1599px) {
@@ -36,7 +41,7 @@
     .dp-work-slide-item { padding-right: 40px; }
     .swiper-slide { height: 320px !important; }
     .seamless-payment img { width: 700px; }
-
+    .core-capablty-headings { width: 500px; }
 }
 
 @media screen and (max-width: 1359px) {
@@ -58,6 +63,10 @@
     .seamless-payment img { width: 650px; }
     .pymt-box { width: 250px; }
 
+    .capablty-lists-wrapper { width: 75%; height: 570px; margin: 0 auto; padding-top: 60px; }
+    .capabiblity-wrapper { flex-direction: column; }
+    .core-capablty-headings { width: 100%; text-align: center; }
+
 }
 
 @media screen and (max-width: 1199px) {
@@ -72,6 +81,8 @@
     .redefine-pymt-details { width: 100%;  }
     .redefine-pymt-growth { width: 100%; min-height: max-content; align-items: start; justify-content: center;  }
     .seamless-payment img { width: 500px; }
+    .capablty-lists-wrapper {width: 85%; }
+
 }
 
 @media screen and (max-width: 1023px) {}
@@ -156,6 +167,7 @@
     .faster-cycle { left: -30px; top: -20px; }
     .payout-success { right: -30px; bottom: -20px; }
     .swiper-slide { height: 300px !important; }
+    .slide-item-details .h5 { width: 70%; }
 }
 
 @media screen and (max-width: 400px) {

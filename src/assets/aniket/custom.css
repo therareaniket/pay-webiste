@@ -73,7 +73,7 @@ body { background-color: #FAFAFA; }
 .dhatupay-works .swiper-pagination-bullet-active { background: linear-gradient(135deg, #557CFF 0%, #693399 100%); width: 20px; border-radius: 5px; opacity: 1; }
 
 .capabiblity-wrapper { display: flex; justify-content: space-between; }
-.core-capablty-headings { width: 680px; }
+.core-capablty-headings { width: 680px; padding-top: 30px; }
 .capablty-lists-wrapper { width: 810px; height: 520px; padding: 30px 0; display: flex; justify-content: space-between; }
 .capablty-lists:first-child { display: flex; flex-direction: column; justify-content: end; }
 .capablty-list { width: 370px; height: 160px; display: flex; justify-content: space-between; }
@@ -88,4 +88,4 @@ body { background-color: #FAFAFA; }
 .pillar-details { padding:  calc(30px - 20px) calc(60px - 20px); }
 .pillar-details p + p { margin-top: 20px; }
 .pricing-plan-details { width: 1056px; }
-.pricing-headings { width: 750px; }
+.pricing-headings { width: 750px;  }
