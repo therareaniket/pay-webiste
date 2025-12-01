@@ -78,7 +78,8 @@
     .plan-includes { margin-bottom: 20px; }
     .plans-link { width: 90%; }
 
-
+    .trust-info { width: 540px; }
+    .trust-image-scalaton { width: 480px; height: 260px; }
 }
 
 @media screen and (max-width: 1199px) {
@@ -103,6 +104,9 @@
     .pricing-left-pillar { width: 100%; height: max-content; flex-direction: row; justify-content: center; gap: 40px; }
     .pillar-details { width: calc(50% - 20px); }
     .pricing-left-pillar img { width: calc(50% - 20px); height: auto; }
+
+    .trust-info { width: 480px; }
+    .trust-image-scalaton { width: 420px; }
 }
 
 @media screen and (max-width: 1023px) {}
@@ -130,6 +134,9 @@
 
     .pillar-details { width: calc(70% - 20px); }
     .pricing-left-pillar img { object-fit: contain; }
+
+    .trust-tab-content { flex-direction: column; gap: 30px; }
+    .trust-info { width: 90%; text-align: center; }
 }
 
 @media screen and (max-width: 839px) {
@@ -142,6 +149,9 @@
     .capablty-lists:first-child { justify-content: start; }
     .capablty-lists:last-child { display: flex; flex-direction: column; justify-content: end; }
     /* .pillar-details { width: 80%; } */
+    .trust-headings { width: 90%; text-align: center; flex-direction: column; margin: 0 auto; }
+    .trust-headings h2, .trust-headings .h6 { width: 100%; }
+    .trust-info { width: 95%; }
 }
 
 /* THIS IS FOR HOMEPAGE SLIDER ONLY */
@@ -173,6 +183,14 @@
     .plan-item { width: 100%; }
     .pricing-left-pillar { flex-direction: column-reverse; align-items: center; }
     .pillar-details { width: 100%; }
+
+    .trust-headings { width: 100%; text-align: left;  }
+    .trust-tabs { margin-top: 20px; }
+    .tab-line-seprator { margin-top: 10px; }
+    .trust-info { width: 100%; text-align: left; }
+    .trust-tab-content { gap: 40px; }
+
+
 }
 
 @media screen and (max-width: 639px) {
@@ -211,6 +229,12 @@
     .slide-item-details .h5 { width: 70%; }
     .pricing-left-pillar img { width: 100%; }
     .plan-item { height: max-content; }
+    .trust-image-scalaton { width: 100%; }
+    .trust-tabs-list { gap: 6px; margin: 0; width: 100%; }
+    .trust-tab-trigger { padding: 5px 15px; }
+    .trust-tabs { margin-top: 30px; }
+    .trust-image-scalaton { height: 220px; } 
+
 }
 
 @media screen and (max-width: 400px) {
@@ -238,4 +262,5 @@
     .payout-success { right: 0px; }
     .err-redc-center .h5 { font-size: 20px; line-height: 30px; }
     .err-redc-center p { font-size: 16px; line-height: 26px; }
+    .trust-tab-trigger { padding: 5px 10px; }
 }

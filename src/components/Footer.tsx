@@ -11,7 +11,7 @@ import React from 'react'
                 <h1 className='text-md footer-lets-connect'>Let’s Connect</h1>
                 <div className="glass-footer-cta">
                     <div className="footer-cta-left">
-                        <h2 className='h3 text-sb'>Take Your Clinical Trials Global with Dhatu Pay</h2>
+                        <h2 className='h3 text-sb'>Take Your Clinical Trials Global with DhatuPay</h2>
 
                         <p className='h6 text-rg'>Expand worldwide with multi-currency support and secure international payment solutions.</p>
                     </div>

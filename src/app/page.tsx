@@ -4,6 +4,7 @@ import HomeDhatuPayWorks from "@/components/Homepage/HomeDhatuPayWorks";
 import HomePayIntro from "@/components/Homepage/HomePayIntro";
 import Pricing from "@/components/Homepage/HomePricing";
 import SeamlessPayments from "@/components/Homepage/HomeSeamlessPayments";
+import HomeTrust from "@/components/Homepage/HomeTrust";
 
 
 export default function HomePage() {
@@ -21,6 +22,8 @@ export default function HomePage() {
 				<CoreCapabilities />
 
 				<Pricing />
+
+				<HomeTrust />
 			</main>
 		</>
 	);
