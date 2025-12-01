@@ -29,7 +29,7 @@
     .reduction-spike-left { width: 180px; left: -178px; }
     .reduction-spike-right { width: 120px; }
     .faster-cycle { top: 20px; }
-    .slide-item-details { width: 950px; }
+    .testimonials .slide-item-details { width: 950px; }
 }
 
 @media screen and (max-width: 1439px) {
@@ -51,9 +51,9 @@
     .plan-item { width: 410px; }
 
     .blog-full img { width: 670px; height: 350px; object-fit: cover; }
-    .slide-item-details .h5 { margin-top: 50px; }
+    .testimonials .slide-item-details .h5 { margin-top: 50px; }
     .testimonial-slide-item { height: 330px !important; }
-    .slide-item-details { width: 800px; }
+    .testimonials .slide-item-details { width: 800px; }
 
 
 }
@@ -94,7 +94,7 @@
     .blog-full img { width: 580px; height: 400px; }
     .full-blog-info .home-blog-content { width: 490px; }
 
-    .slide-item-details { width: 730px; }
+    .testimonials .slide-item-details { width: 730px; }
 }
 
 @media screen and (max-width: 1199px) {
@@ -129,7 +129,7 @@
     .blog-full img { width: 500px; height: 430px; }
     .full-blog-info .home-blog-content { width: 400px; }
 
-    .slide-item-details { width: 80%; }
+    .testimonials .slide-item-details { width: 80%; }
 }
 
 @media screen and (max-width: 1023px) {}
@@ -261,7 +261,7 @@
     .capablty-list { width: 100%; gap: 20px; }
     .blog-full img { height: 250px; }
     h5, .h5 { font-size: 21px; line-height: 30px; }
-    .slide-item-details { text-align: left; }
+    .testimonials .slide-item-details { text-align: left; }
     .testimonial-slide-item { height: 380px !important; }
     h4, .h4 { font-size: 22px; line-height: 32px; }
 }
@@ -274,7 +274,7 @@
     .faster-cycle { left: -30px; top: -20px; }
     .payout-success { right: -30px; bottom: -20px; }
     .swiper-slide { height: 300px !important; }
-    .slide-item-details .h5 { width: 70%; }
+    .testimonials .slide-item-details .h5 { width: 70%; }
     .pricing-left-pillar img { width: 100%; }
     .plan-item { height: max-content; }
     .trust-image-scalaton { width: 100%; }
@@ -297,7 +297,7 @@
     .blog-full img { height: 220px; }
     .blog-writer { flex-direction: column; gap: 6px; }
     .testimonial-slide-item { height: 420px !important; }
-    .slide-item-details { width: 100%; }
+    .testimonials .slide-item-details { width: 100%; }
 }
 
 @media screen and (max-width: 374px) {
