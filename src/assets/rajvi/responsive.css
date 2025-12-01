@@ -30,6 +30,11 @@
     .soln-stats-cards{ width: 400px; }
     .soln-workflow-card-1 img{ width: 1000px; }
     .stakeholders-cards{ width: 454px; }
+
+    .blog-card-1 img{ object-fit: cover; border-radius: 20px 20px 0 0; }
+    .blog-list-cards{ width: 680px; height: 520px; }
+
+    .container-sm{ max-width: 1300px; } 
 }
 
 @media screen and (max-width: 1599px) {
@@ -44,6 +49,10 @@
 
     /* header */
     .headerLogo{ width: 150px; }
+
+    .container-sm{ max-width: 1100px; } 
+    .blog-detail-heading{ width: 100%; }
+
 }
 
 @media screen and (max-width: 1439px) {
@@ -65,6 +74,9 @@
     .stakeholders-cards{ width: 428px; }
     .soln-workflow-card-1 img{ width: 876px; }
     .sol-hero-detail{ width: 712px }
+
+    .blog-listing-card-wrapper{ margin-top: 40px; }
+    .blog-list-cards{ width: 642px; height: 500px; }
 }
 
 @media screen and (max-width: 1359px) {
@@ -98,6 +110,11 @@
     .stakeholders-cards{ width: 370px; }
     .soln-workflow-card-1 img{ width: 760px;  }
     /* .sol-hero-text-wrapper img{ width: 514px; } */
+
+    .blog-listing-card-detail .h5 { font-size: 20px; margin-bottom: 0; }
+    .blog-list-cards{ width: 555px; height: 440px; }
+
+    .container-sm{ max-width: 900px; } 
 }
 
 @media screen and (max-width: 1199px) {
@@ -134,6 +151,10 @@
     .sol-hero-text{ gap: 90px; }
 
     /* .sol-hero-text-wrapper img{ width: 430px; } */
+
+    .blog-listing-card-detail{ padding: 20px 15px 30px; }
+    .blog-list-cards{ width: 480px; height: 390px; }
+    /* .blog-list-card-rw{ justify-content: space-between; } */
 }
 
 @media screen and (max-width: 1023px) {
@@ -151,6 +172,9 @@
 /* soln page */
     .sol-hero-detail{ width: 500px; }
     .stats-cards-5{ width: 365px; }
+
+    .blog-list-cards{ width: 470px; height: 390px; }
+    .blog-list-card-rw-2{ margin: 40px 0; padding: 0; }
 }
 
 @media screen and (max-width: 991px) {
@@ -171,9 +195,7 @@
     .footer-cta-left{ width: 450px; }
 
 /* header */
- .hamburger {
-    display: flex;
-  }
+ .hamburger { display: flex; }
 
   .header-nav-links,
   .contact-link {
@@ -214,26 +236,33 @@
     text-decoration: none;
     font-weight: 500;
   }
-/* .mobile-menu ul li a :hover{ color: ; } */
+    /* .mobile-menu ul li a :hover{ color: ; } */
 
-.mobile-menu ul li a:hover{ color: var(--secondary); }
+    .mobile-menu ul li a:hover{ color: var(--secondary); }
   /* .header-wrapper.shrink{ background: none; } */
 
   .mobile-menu.open .header-wrapper.shrink{ background-color: transparent; }
 
+
 /* soln page */
-    .sol-hero-text-wrapper{ flex-direction: column-reverse; align-items: center;  }
+    .sol-hero-text-wrapper{ flex-direction: column-reverse; align-items: center; padding-top: 170px;  }
     .solution-stats-text h2, .solution-stats-text p{ width: 100%; }
     .stats-cards-5{ width: 300px; }
     .soln-stats-cards{ width: 230px; }
     .stakeholders-cards{ width: 254px; }
     .site-cro-card, .parti-payments-card{ width: 390px; }
-    .solution-hero.light-orange-box, .solution-hero.hero-home{ height: 800px; }
+    .solution-hero.light-orange-box, .solution-hero.hero-home{ height: 900px; }
     .soln-stats-img{ width: 430px; }
     .sol-stats-list-desc{ width: 350px; }
-    .sol-hero-text{ flex-direction: column-reverse; justify-content: center; align-items: center;  }
+    .sol-hero-text{ flex-direction: column-reverse; justify-content: center; align-items: center; }
     .sol-hero-detail{ width: 100%; }
-    .sol-hero-text{ width: 100%; padding: 20px;}
+    .sol-hero-text{ width: 100%; }
+    /* blog-page */
+    .blog-list-cards{ width: 380px; height: 380px;  }
+    .blog-list-card-rw-2{ margin: 20px 0; }
+    .blog-list-card-rw{ justify-content: space-between; }
+    .blog-listing-card-detail{ height: max-content; }
+
 } 
 
 @media screen and (max-width: 839px) { 
@@ -262,6 +291,17 @@
     .stats-cards-5{ width: 270px; padding: 20px; }
     .sol-hero-detail{ width: 100%; }
     .sol-hero-text{ width: 100%; }
+    .sol-stats-card-1, .sol-stats-card-2, .stats-cards-5{ flex-direction: row; }
+    .stats-cards-5{ width: 100%; height: max-content; }
+    .stats-cards-5 .h6{ width: 50%; text-align: left; }
+    .soln-stats-cards{ width: 355px; height: 120px; }
+    .sol-stats-cards{ flex-direction: column; }
+    .soln-stats-cards .h2{ margin-bottom: 10px; }
+    .solution-hero.hero-home{ height: 940px; }
+
+    /* blog */
+    .blog-list-cards{ width: 346px; height: 361px; }
+    .blog-listing-card-detail .h5{ padding: 10px 0; }
 }
 
 @media screen and (max-width: 767px) {
@@ -280,16 +320,18 @@
     .sol-stats-cards{ flex-direction: column; }
     .sol-stats-card-1, .sol-stats-card-2{ flex-direction: row; }
     .soln-stats-cards{ width: 290px; }
-    .stats-cards-5{ width: 600px; height: 280px; padding: 20px; }
+    .stats-cards-5{ padding: 20px; }
     .soln-workflow-card-1{ flex-direction: column; }
     .soln-worflow-card, .soln-workflow-card-2{ flex-direction: column; }
     .stakeholders-cards{ width: 100%; height: 200px; }
     .soln-workflow-card-1 img{ height: 260px; }
     /* .sol-hero-text-wrapper img{ display: none; } */
-    .solution-hero.hero-home{ height: 700px; }
+    .solution-hero.hero-home{ height: 840px; }
     /* .sol-hero-text-wrapper{ padding: 50px 0; } */
     .solution-stats-text, .soln-workflow-text{ text-align: left; }
-    .sol-hero-text{ padding-top: 100px; }
+
+    .digi-payment-blog{ padding: 5px 10px; }
+    .blog-list-cards{ width: 346px; height: 320px; }
 }
 
 @media screen and (max-width: 639px) {
@@ -312,6 +354,11 @@
     .stats-cards-5{ width: 100%; } 
     .soln-stats-cards{ width: 240px; }
     .sol-stats-cards{ margin-top: 20px; }
+
+    /* blog */
+    .blog-list-card-rw{ flex-direction: column; gap: 20px; }
+    .blog-list-cards{ width: 100%; height: max-content; }
+    .blog-card-1 img{ width: 100%; }
 }
 
 @media screen and (max-width: 575px) {
@@ -328,14 +375,16 @@
     .footer-logo-section{ width: 100%; }
 
     /* soln page */
-    .solution-hero.hero-home{ height: 400px; }
+    .solution-hero.hero-home{ height: 530px; }
     .sol-hero-text-wrapper img{ display: none; }
     .sol-hero-detail{ width: 100%; }
     .stats-cards-5{ height: 245px; }
-    .soln-stats-cards{ width: 210px; height: 180px; }
-    .sol-hero-text-wrapper{  width: 100%; padding: 20px;}
+    .soln-stats-cards{ width: 210px;  }
+    .sol-hero-text-wrapper{  width: 100%;  padding:0 40px 0 10px; padding-top: 100px;}
     .stakeholders-cards{ height: 210px; }
     .sol-hero-detail{ margin: 0 auto; }
+
+    .mobile-menu{ padding-left: 18px; }
 }
 
 @media screen and (max-width: 480px) {
@@ -353,9 +402,10 @@
     .bar{ width: 24px; }
 
     /* soln page */
-    .solution-hero.hero-home{ height: 350px; }
+    .solution-hero.hero-home{ height: 550px; }
     .soln-stats-cards{ width: 200px; height: 130px; }
     .soln-stats-cards h4, .soln-stats-cards p{ margin-bottom: 0; }
+        .sol-hero-text{ padding-top: 0; }
     .stats-cards-5{ padding: 33px 20px; }
     .stats-cards-5 h4{ margin-bottom: 5px; }
     .stakeholders-cards{ height: 236px; }
@@ -382,9 +432,14 @@
     }
 
     .stats-cards-5{ width: 100%; height: max-content; gap: 20px; }
-    .solution-hero.hero-home{ height: 400px; }
-    .sol-hero-text-wrapper{ transform: none; position: relative; z-index: 3; padding: 0; }
-    .sol-hero-text{ padding: 0; padding-top: 100px; }
+    .solution-hero.hero-home{ height: max-content; }
+    .sol-hero-text-wrapper{ transform: none; position: relative; z-index: 3;  }
+
+    .blog-listing-tabs{ flex-direction: column; gap: 20px; }
+    .sol-hero-detail{ padding-bottom: 20px; }
+    /* .sort-dropdown{ justify-content: end; } */
+    .stats-cards-5{ flex-direction: column; padding: 20px; }
+    .stats-cards-5 .h6{ width: 100%; }
 }
 
 @media screen and (max-width: 400px) {
@@ -397,9 +452,12 @@
     .news-letter-tab-btn .btn-padding{ padding: 8px 18px; }
     .stakeholders-cards{ height: 260px; }
     .headerLogo img{ width: 100px; }
+        .sol-hero-text-wrapper{ padding-top: 50px; }
 }
 
 @media screen and (max-width: 374px) {
+    .solution-hero .site-hero-blob{ z-index: -1; }
+    /* .sol-hero-text-wrapper{ position: static; } */
 
 }
 

@@ -6,25 +6,36 @@ import React, { useEffect, useState } from "react";
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
-useEffect(() => {
-  const checkScroll = () => {
-    setScrolled(window.scrollY > 50);
-  };
+  useEffect(() => {
+    // Check screen size
+    const checkMobile = () => setIsMobile(window.innerWidth < 992);
+    checkMobile();
 
-  // Check immediately on load
-  checkScroll();
+    window.addEventListener("resize", checkMobile);
 
-  // Listen for scroll events
-  window.addEventListener("scroll", checkScroll);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
-  return () => window.removeEventListener("scroll", checkScroll);
-}, []);
+  useEffect(() => {
+    const checkScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    // Check immediately on load
+    checkScroll();
+
+    // Listen for scroll events
+    window.addEventListener("scroll", checkScroll);
+
+    return () => window.removeEventListener("scroll", checkScroll);
+  }, []);
 
   return (
     <header className={`header-main ${scrolled ? "scrolled" : ""}`}>
       <div className="container">
-        <div className={`header-wrapper ${scrolled ? "shrink" : ""}`}>
+        <div className={`header-wrapper ${scrolled && !menuOpen ? "shrink" : ""}`}>
           {/* Logo */}
           <Link href="/" className="headerLogo">
             <Image
