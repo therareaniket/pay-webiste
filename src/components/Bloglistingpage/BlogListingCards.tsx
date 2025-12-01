@@ -117,7 +117,7 @@ export default function BlogListingCards() {
         <section className="section blog-listing-main">
             <div className="container">
                 <div className="blog-listing-tabs">
-                    <Tabs defaultValue="dates">
+                    {/* <Tabs defaultValue="dates">
                         <TabsList className="tabs-list">
                             <TabsTrigger value="dates" className="tabs-trigger text-rg h6">
                                 Dates
@@ -126,18 +126,18 @@ export default function BlogListingCards() {
                                 Duration
                             </TabsTrigger>
                         </TabsList>
-                    </Tabs>
+                    </Tabs> */}
 
                     <div className="sort-dropdown">
                         <span className="sort-label text-md h6 text-grey">Sort By</span>
                         <Select defaultValue={activeSort} onValueChange={(val) => setActiveSort(val)}>
-                            <SelectTrigger className="select-trigger text-rg h6">
+                            <SelectTrigger className="select-trigger text-rg text-16">
                                 <SelectValue placeholder="Popularity" />
                             </SelectTrigger>
                             <SelectContent>
-                                <SelectItem className="text-rg h6" value="popularity">Popularity</SelectItem>
-                                <SelectItem className="text-rg h6" value="latest">Latest</SelectItem>
-                                <SelectItem className="text-rg h6" value="oldest">Oldest</SelectItem>
+                                <SelectItem className="text-rg text-16" value="popularity">Popularity</SelectItem>
+                                <SelectItem className="text-rg text-16" value="latest">Latest</SelectItem>
+                                <SelectItem className="text-rg text-16" value="oldest">Oldest</SelectItem>
                             </SelectContent>
                         </Select>
                     </div>

@@ -1,9 +1,39 @@
 import Image from "next/image";
 
+import {
+    Breadcrumb,
+    BreadcrumbList,
+    BreadcrumbItem,
+    BreadcrumbLink,
+    BreadcrumbSeparator,
+    BreadcrumbPage,
+} from "@/components/ui/breadcrumb"
+
 export default function BlogDetailPage() {
     return (
         <>
-            <div className="container-sm">
+            <div className="container container-sm">
+                <div className="blog-detail-breadcrumb">
+                    <Breadcrumb className="mb-6">
+                        <BreadcrumbList>
+                            <BreadcrumbItem>
+                                <BreadcrumbLink href="/">Home</BreadcrumbLink>
+                            </BreadcrumbItem>
+
+                            <BreadcrumbSeparator />
+
+                            <BreadcrumbItem>
+                                <BreadcrumbLink href="/BlogListing">Blogs</BreadcrumbLink>
+                            </BreadcrumbItem>
+
+                            <BreadcrumbSeparator />
+
+                            <BreadcrumbItem>
+                                <BreadcrumbPage>The Future of Digital Payments: Trends Driving Secure, Seamless, and Smarter Solutions</BreadcrumbPage>
+                            </BreadcrumbItem>
+                        </BreadcrumbList>
+                    </Breadcrumb>
+                </div>
                 <div className="blog-detail-heading">
                     <span className="blog-text-heading-tag site-radius-20 link-padding text-14 text-rg">Digital Payments</span>
                     <h1 className="h3 text-md">The Future of Digital Payments: Trends Driving Secure, Seamless, and Smarter Solutions</h1>

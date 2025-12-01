@@ -54,7 +54,7 @@
 .section { padding: 150px 0; }
 .text-grey{ color: var(--grey); }
 .text-light-grey{ color: var(--light-grey); }
-.container-sm{ max-width: 1400px; margin: 0 auto; }
+.container-sm{ max-width: 1400px; margin: 0 auto; padding: 0 20px; }
 
 /* Footer Css */
 
@@ -333,7 +333,8 @@
 .blog-list-card-rw{ display: flex; gap: 40px; align-items: center; }
 .blog-list-card-rw-2{ padding: 40px 0; } 
 
-.blog-detail-heading{ width: 1196px; text-align: center; margin: 0 auto; padding-top: 150px; }
+.blog-detail-breadcrumb{ padding-top: 150px; }
+.blog-detail-heading{ width: 1196px; text-align: center; margin: 0 auto; padding-top: 70px; }
 .blog-text-heading-tag{ background-color: #F5F6F9; color: var(--secondary-purple-bluish); }
 .blog-detail-heading h1{ padding: 10px 0 20px 0; }
 .blog-image-section-icons span{ color: #B8B8B8; font-size: 28px; }
@@ -345,3 +346,16 @@
 .blog-prsn-main p{ color: #B8B8B8; } 
 .blog-detail-qns{ display: flex; flex-direction: column; gap: 30px; }
 .blog-detail-qns p{ padding-top: 10px; }
+
+/* Make slide 70% width so left/right peek by ~15% each */
+.blog-swiper .swiper-slide {
+  width: 70%;
+}
+
+/* Optional: Add subtle peek effect */
+.blog-swiper .swiper-slide-prev,
+.blog-swiper .swiper-slide-next {
+  opacity: 0.85;
+  transform: scale(0.96);
+  transition: 0.3s ease;
+}
