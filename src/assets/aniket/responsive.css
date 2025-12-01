@@ -104,6 +104,9 @@
     .pymt-box { width: 350px; }
     .smls-pymt-box-wrapper:last-child { text-align: right; }
     .pymt-box { height: 100px; }
+
+    .capablty-lists-wrapper { width: 100%; justify-content: center; gap: 30px; }
+    .capablty-list { width: 350px; }
 }
 
 @media screen and (max-width: 839px) {
@@ -112,7 +115,9 @@
     .faster-cycle, .payout-success { gap: 20px; }
     .payout-success { right: -65%; }
     .pymt-box { width: 320px; height: 130px; }
-
+    .capablty-lists-divider { display: none; }
+    .capablty-lists:first-child { justify-content: start; }
+    .capablty-lists:last-child { display: flex; flex-direction: column; justify-content: end; }
 }
 
 /* THIS IS FOR HOMEPAGE SLIDER ONLY */
@@ -133,6 +138,12 @@
     .swiper-slide { height: 320px !important; }
     .pymt-box { width: 280px; }
     .works-headings, .smls-pymt-headings, .smls-pymt-box-wrapper:last-child { text-align: left; }
+
+    .core-capablty-headings { padding-top: 0; text-align: left; }
+    .capablty-lists-wrapper { flex-direction: column; height: max-content; gap: 25px; }
+    .capablty-list { width: 80%; height: 130px; height: max-content; margin: 0 auto; }
+    .list-details { width: calc(100% - 80px); }
+    .capablty-lists-divider { display: block; width: 100%; height: 1px; }
 }
 
 @media screen and (max-width: 639px) {
@@ -147,6 +158,7 @@
     .swiper-slide { height: 270px !important; }
     .pymt-box { width: 230px; height: 150px; }
     .smls-pymt-box-wrapper { gap: 40px; }
+    .capablty-list { width: 85%; }
 
 }
 
@@ -159,6 +171,7 @@
     .pymt-box { width: 100%; height: 100px; }
     
     .smls-pymt-box-wrapper { gap: 20px; }
+    .capablty-list { width: 100%; gap: 20px; }
 } 
 
 @media screen and (max-width: 480px) {}
