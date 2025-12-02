@@ -12,7 +12,7 @@ import {
 export default function BlogDetailPage() {
     return (
         <>
-            <div className="container container-sm">
+            <div className="container-sm">
                 <div className="blog-detail-breadcrumb">
                     <Breadcrumb className="mb-6">
                         <BreadcrumbList>
