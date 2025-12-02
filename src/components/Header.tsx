@@ -50,7 +50,7 @@ const Header = () => {
           {/* Desktop Nav */}
           <div className="header-nav-links">
             <ul>
-              <li><Link href="/">About</Link></li>
+              <li><Link href="/About">About</Link></li>
               <li><Link href="/Solutions">Solutions</Link></li>
               <li><Link href="/SecurityCompliance">Security & Compliance</Link></li>
               <li><Link href="/BlogListing">Resources</Link></li>
@@ -80,7 +80,7 @@ const Header = () => {
       <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
         <ul>
           <li><Link href="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
-          <li><Link href="/" onClick={() => setMenuOpen(false)}>About</Link></li>
+          <li><Link href="/About" onClick={() => setMenuOpen(false)}>About</Link></li>
           <li><Link href="/Solutions" onClick={() => setMenuOpen(false)}>Solutions</Link></li>
           <li><Link href="/SecurityCompliance" onClick={() => setMenuOpen(false)}>Security & Compliance</Link></li>
           <li><Link href="/BlogListing" onClick={() => setMenuOpen(false)}>Resources</Link></li>
