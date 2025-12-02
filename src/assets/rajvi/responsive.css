@@ -21,7 +21,8 @@
     .footer-lets-connect{ font-size: 204px; }
 
     /* soln page */
-    .sol-hero-text-wrapper{ gap: 170px; }
+    .sol-hero-detail{ width: 750px; }
+
     .solution-stats-text p{ width: 620px; }
     .soln-stats-img{ width: 680px; }
     .sol-stats-list-desc{ width: 620px; }
@@ -35,6 +36,8 @@
     .blog-list-cards{ width: 680px; height: 520px; }
 
     .container-sm{ max-width: 1300px; } 
+    .contact-left{ width: 500px; }
+
 }
 
 @media screen and (max-width: 1599px) {
@@ -50,10 +53,14 @@
     /* header */
     .headerLogo{ width: 150px; }
 
+    /* soln */
+    .sol-hero-detail{ width: 670px; }
+    /* blog */
     .container-sm{ max-width: 1100px; } 
     .blog-detail-heading{ width: 100%; }
+    .contact-left{ width: 590px; }
 
-}
+} 
 
 @media screen and (max-width: 1439px) {
     .container { max-width: calc(1364px + 36px); }
@@ -73,11 +80,10 @@
     .solution-stats-text p, .sol-stats-list-desc{ width: 578px; }
     .stakeholders-cards{ width: 428px; }
     .soln-workflow-card-1 img{ width: 876px; }
-    .sol-hero-detail{ width: 712px }
 
     .blog-listing-card-wrapper{ margin-top: 40px; }
     .blog-list-cards{ width: 642px; height: 500px; }
-
+    .contact-form-top{ gap: 170px; }
 }
 
 @media screen and (max-width: 1359px) {
@@ -99,8 +105,8 @@
     .link-padding{ padding: 10px 25px; }
 
     /* soln page */
-    .sol-hero-text-wrapper{ justify-content: space-between; gap: 150px; margin: 0 auto; }
-    .sol-hero-detail{ width: 870px; }
+    .sol-hero-text img{ width: 470px; height: auto; }
+    .sol-hero-detail{ width: 600px; }
     .stats-cards-5{ width: 390px; padding: 50px 40px; }
     .soln-stats-cards{ width: 340px; }
     .sol-stats-list{ margin-top: 50px; }
@@ -115,6 +121,10 @@
     .blog-list-cards{ width: 555px; height: 440px; }
 
     .container-sm{ max-width: 900px; } 
+    .contact-left{ width: 450px; }
+    .contact-form-top{ justify-content: space-between; }
+    .contact-right { width: 500px; }
+    .info-card{ width: 320px; }
 }
 
 @media screen and (max-width: 1199px) {
@@ -135,9 +145,9 @@
     .headerLogo{ width: 150px; height: auto; }
 
     /* soln page */
+    .sol-hero-text img{ width: 300px; }
+    .sol-hero-detail{ width: 550px; }
     .sol-stats-cards{ gap: 20px; }
-    .sol-hero-text-wrapper{ gap: 50px;  }
-    .sol-hero-detail{ width: 800px; }
     .soln-stats-cards{ width: 275px; height: 200px; }
     .stats-cards-5{ height: 423px; }
     .soln-stats-img{ width: 535px; }
@@ -148,12 +158,13 @@
     .soln-workflow-card-1 img{ width: 100%; height: 400px; object-fit: cover; border-radius: 20px; }
     .site-cro-card, .parti-payments-card{ width: 480px; height: 250px; }
     .sol-stats-card-1, .sol-stats-card-2{ gap: 20px; }
-    .sol-hero-text{ gap: 90px; }
 
-    /* .sol-hero-text-wrapper img{ width: 430px; } */
-
+    /* blog */
     .blog-listing-card-detail{ padding: 20px 15px 30px; }
     .blog-list-cards{ width: 480px; height: 390px; }
+
+    /* contact */
+    .row-2 input, .contact-form input{ height: 60px; }
 }
 
 @media screen and (max-width: 1023px) {
@@ -169,14 +180,18 @@
     .glass-footer-cta{ padding: 35px 60px; }
 
     /* soln page */
-    .sol-hero-detail{ width: 500px; }
     .stats-cards-5{ width: 365px; }
+
     /* blog */
     .blog-list-cards{ width: 470px; height: 390px; }
     .blog-list-card-rw-2{ margin: 40px 0; padding: 0; }
 
     .container-sm{ max-width: 880px; } 
 
+    .contact-form-top { gap: 100px; } 
+    .contact-info-wrapper{ padding-top: 65px; }
+    .info-card .h5{ font-size: 20px; }
+    .info-card span{ font-size: 22px; }
 }
 
 @media screen and (max-width: 991px) {
@@ -222,18 +237,20 @@
     .mobile-menu.open .header-wrapper.shrink{ background-color: transparent; }
 
     /* soln page */
-    .sol-hero-text-wrapper{ flex-direction: column-reverse; align-items: center; padding-top: 170px;  }
+    .sol-hero-text{ flex-direction: column-reverse; padding-top: 150px; text-align: center; }
+    .sol-hero-detail{ width: 100%; }
+    .sol-hero-text img{ width: 500px; }
+    .solution-hero { height: max-content; }
+    .solution-hero.hero-home{ height: max-content; }
+
     .solution-stats-text h2, .solution-stats-text p{ width: 100%; }
     .stats-cards-5{ width: 300px; }
     .soln-stats-cards{ width: 230px; }
     .stakeholders-cards{ width: 254px; }
     .site-cro-card, .parti-payments-card{ width: 390px; }
-    .solution-hero.light-orange-box, .solution-hero.hero-home{ height: 900px; }
     .soln-stats-img{ width: 430px; }
     .sol-stats-list-desc{ width: 350px; }
-    .sol-hero-text{ flex-direction: column-reverse; justify-content: center; align-items: center; }
-    .sol-hero-detail{ width: 100%; }
-    .sol-hero-text{ width: 100%; }
+
 
     /* blog-page */
     .blog-list-cards{ width: 380px; height: 380px;  }
@@ -242,6 +259,14 @@
     .blog-listing-card-detail{ height: max-content; }
 
     .container-sm{ max-width: 100%; } 
+    .contact-form-top{ gap: 50px; }
+    .contact-info-wrapper{ gap: 20px; }
+    .info-card{ height: 130px; }
+    /* .contact-form-top { flex-direction: column; gap: 80px; }  
+    .contact-head-main{ width: 500px; }
+    .contact-left{ display: flex; gap: 50px; width: 100%; align-items: flex-start;}
+    .contact-left img{ padding-top: 0; width: 400px; }
+    .contact-right{ width: 600px; } */
 } 
 
 @media screen and (max-width: 839px) { 
@@ -261,25 +286,31 @@
     .glass-footer-cta{ gap: 20px; }
 
     /* soln page */
+    .sol-hero-text{ padding-top: 120px; }
     .site-cro-card, .parti-payments-card{ width: 350px; }
     .sol-stats-list{ flex-direction: column; gap: 20px; }
     .sol-stats-list-desc{ width: 100%; }
     .soln-stats-img{ width: 100%; }
     .soln-stats-cards{ width: 210px; }
     .stats-cards-5{ width: 270px; padding: 20px; }
-    .sol-hero-detail{ width: 100%; }
-    .sol-hero-text{ width: 100%; }
     .sol-stats-card-1, .sol-stats-card-2, .stats-cards-5{ flex-direction: row; }
     .stats-cards-5{ width: 100%; height: max-content; }
     .stats-cards-5 .h6{ width: 50%; text-align: left; }
     .soln-stats-cards{ width: 355px; height: 120px; }
     .sol-stats-cards{ flex-direction: column; }
     .soln-stats-cards .h2{ margin-bottom: 10px; }
-    .solution-hero.hero-home{ height: 940px; }
+
 
     /* blog */
     .blog-list-cards{ width: 346px; height: 361px; }
     .blog-listing-card-detail .h5{ padding: 10px 0; }
+
+    /* contact */
+    .contact-left img{ width: 300px; padding-top: 50px; }
+    .contact-form input, .contact-form textarea{ padding: 10px 20px; }
+    .info-card .h5{ font-size: 18px; line-height: 28px; margin-bottom: 10px; }
+    .contact-form-top{ align-items: end; }
+        /* .contact-form-top{ flex-direction: column; } */
 }
 
 @media screen and (max-width: 767px) {
@@ -295,6 +326,9 @@
     .footer-links-section{ flex-wrap: wrap; }
 
     /* soln page */
+    .sol-hero-text{ text-align: left; padding-top: 100px; }
+    .sol-hero-text img{ display: none;}
+
     .sol-stats-cards{ flex-direction: column; }
     .sol-stats-card-1, .sol-stats-card-2{ flex-direction: row; }
     .soln-stats-cards{ width: 290px; }
@@ -303,14 +337,25 @@
     .soln-worflow-card, .soln-workflow-card-2{ flex-direction: column; }
     .stakeholders-cards{ width: 100%; height: 200px; }
     .soln-workflow-card-1 img{ height: 260px; }
-    .solution-hero.hero-home{ height: 840px; }
     .solution-stats-text, .soln-workflow-text{ text-align: left; }
+    .sol-hero-detail p{ padding-top: 0; }
 
     /* blog */
     .digi-payment-blog{ padding: 5px 10px; }
     .blog-list-cards{ width: 346px; height: 320px; }
     .blog-detail-heading{ text-align: left; padding-top: 130px; }
     .blog-detail-breadcrumb{ display: none; }
+
+    /* contact */
+
+    .contact-form-top{ flex-direction: column; }
+    /* .contact-head-main .h3{ width: 320px; } */
+    .contact-left{ width: 100%;  gap: 50px; }
+    .contact-left img{ margin: 0 auto; }
+    .contact-right{ width: 100%; }
+    .contact-info-wrapper{ flex-wrap: wrap; }
+    .contact-info-wrapper{ padding-top: 30px; }
+    .info-card{ width: 290px; height: max-content; }
 }
 
 @media screen and (max-width: 639px) {
@@ -338,6 +383,9 @@
     .blog-list-card-rw{ flex-direction: column; gap: 20px; }
     .blog-list-cards{ width: 100%; height: max-content; }
     .blog-card-1 img{ width: 100%; }
+
+    .info-card{ width: 240px; padding: 20px 10px; }
+    .info-card-location{ width: 100%; }
 }
 
 @media screen and (max-width: 575px) {
@@ -354,16 +402,13 @@
     .footer-logo-section{ width: 100%; }
 
     /* soln page */
-    .solution-hero.hero-home{ height: 530px; }
-    .sol-hero-text-wrapper img{ display: none; }
-    .sol-hero-detail{ width: 100%; }
     .stats-cards-5{ height: 245px; }
     .soln-stats-cards{ width: 210px;  }
-    .sol-hero-text-wrapper{  width: 100%;  padding:0 40px 0 10px; padding-top: 100px;}
     .stakeholders-cards{ height: 210px; }
     .sol-hero-detail{ margin: 0 auto; }
 
     .mobile-menu{ padding-left: 18px; }
+    .info-card{ padding: 15px; width: 100%;  }
 }
 
 @media screen and (max-width: 480px) {
@@ -381,10 +426,9 @@
     .bar{ width: 24px; }
 
     /* soln page */
-    .solution-hero.hero-home{ height: 550px; }
+
     .soln-stats-cards{ width: 200px; height: 130px; }
     .soln-stats-cards h4, .soln-stats-cards p{ margin-bottom: 0; }
-    .sol-hero-text{ padding-top: 0; }
     .stats-cards-5{ padding: 33px 20px; }
     .stats-cards-5 h4{ margin-bottom: 5px; }
     .stakeholders-cards{ height: 236px; }
@@ -398,8 +442,7 @@
 
     /* footer */
     .glass-footer-cta{ padding: 20px; }
-    .solution-hero.hero-home{ height: 330px;  }
-    .sol-hero-detail p{ padding-top: 0; }
+
 
     /* soln page */
     .sol-stats-card-1, .sol-stats-card-2{ display: none; }
@@ -412,11 +455,9 @@
     }
 
     .stats-cards-5{ width: 100%; height: max-content; gap: 20px; }
-    .solution-hero.hero-home{ height: max-content; }
-    .sol-hero-text-wrapper{ transform: none; position: relative; z-index: 3;  }
+
 
     .blog-listing-tabs{ flex-direction: column; gap: 20px; }
-    .sol-hero-detail{ padding-bottom: 20px; }
     .stats-cards-5{ flex-direction: column; padding: 20px; }
     .stats-cards-5 .h6{ width: 100%; }
 }
@@ -431,11 +472,11 @@
     .news-letter-tab-btn .btn-padding{ padding: 8px 18px; }
     .stakeholders-cards{ height: 260px; }
     .headerLogo img{ width: 100px; }
-    .sol-hero-text-wrapper{ padding-top: 50px; }
+    .sol-hero-text{ padding-top: 50px; }
+
 }
 
 @media screen and (max-width: 374px) {
-    .solution-hero .site-hero-blob{ z-index: -1; }
     .image-tag-wrapper{ flex-direction: column; align-items: flex-end; gap: 20px  ; }
 }
 

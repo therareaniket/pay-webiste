@@ -59,7 +59,7 @@ const Header = () => {
 
           {/* Contact */}
           <div className="contact-link site-radius-50">
-            <Link href="/" className="header-contact-link site-radius-50 link-padding">
+            <Link href="/Contact" className="header-contact-link site-radius-50 link-padding">
               Contact
             </Link>
           </div>
@@ -84,7 +84,7 @@ const Header = () => {
           <li><Link href="/Solutions" onClick={() => setMenuOpen(false)}>Solutions</Link></li>
           <li><Link href="/SecurityCompliance" onClick={() => setMenuOpen(false)}>Security & Compliance</Link></li>
           <li><Link href="/BlogListing" onClick={() => setMenuOpen(false)}>Resources</Link></li>
-          <li><Link href="/" onClick={() => setMenuOpen(false)}>Contact</Link></li>
+          <li><Link href="/Contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
         </ul>
       </div>
     </header>

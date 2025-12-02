@@ -35,7 +35,7 @@ import React from 'react'
                             <ul>
 
                                 <li className='text-rg text-16 text-grey'>
-                                    <Link href="/">About Product</Link>
+                                    <Link href="/">About</Link>
                                 </li>
                                 <li className='text-rg text-16 text-grey'>
                                     <Link href="/Solutions">Solutions</Link>
@@ -47,7 +47,7 @@ import React from 'react'
                                     <Link href="/BlogListing">Resources</Link>
                                 </li>
                                 <li className='text-rg text-16 text-grey'>
-                                    <Link href="/">Contact</Link>
+                                    <Link href="/Contact">Contact</Link>
                                 </li>
                             </ul>
                         </div>

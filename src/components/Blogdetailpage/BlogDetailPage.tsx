@@ -41,7 +41,7 @@ export default function BlogDetailPage() {
                 </div>
 
                 <div className="blog-image-main">
-                    <Image src="/images/bloglisting/blog-detail-image.png" alt="blog-image" width={1400} height={700} priority={false}></Image>
+                    <Image className="blog-detail-img" src="/images/bloglisting/blog-detail-image.png" alt="blog-image" width={1400} height={700} priority={false}></Image>
 
                     <div className="image-tag-wrapper">
                         <div className="blog-prsn-main">
