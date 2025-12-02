@@ -78,8 +78,6 @@ export default function SolutionStats() {
                                     <h4 className="h2 text-sb"> 99%+</h4>
                                     <p className="h6 text-md">Payout Success</p>
                                 </div>
-
-
                             </div>
 
                             <div className="scroll-track">

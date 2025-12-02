@@ -38,6 +38,9 @@
     .container-sm{ max-width: 1300px; } 
     .contact-left{ width: 500px; }
 
+    .sec-gover-cards-wrapper{ gap: 50px; }
+    .advance-security-pro-text-desc{ width: 680px; }
+    .adv-protextion-txt-head{ width: 670px; }
 }
 
 @media screen and (max-width: 1599px) {
@@ -84,6 +87,9 @@
     .blog-listing-card-wrapper{ margin-top: 40px; }
     .blog-list-cards{ width: 642px; height: 500px; }
     .contact-form-top{ gap: 170px; }
+
+    .advance-security-pro-text-desc{ width: 590px; }
+    .adv-protextion-txt-head h2{ padding-bottom: 0; }
 }
 
 @media screen and (max-width: 1359px) {
@@ -125,7 +131,16 @@
     .contact-form-top{ justify-content: space-between; }
     .contact-right { width: 500px; }
     .info-card{ width: 320px; }
-}
+
+    .sec-advance-gover-head{ width: 100%; }
+    .sec-gover-cards-wrapper{ gap: 20px; }
+
+    .adv-protextion-txt-head{ width: 520px; }
+    .adv-protection-cards{ width: 490px; }
+    .advance-security-pro-text-title{ width: 580px; }
+    .advance-security-pro-text-desc{ width: 520px;  }
+    .advance-security-pro-text{ justify-content: space-between; }
+}   
 
 @media screen and (max-width: 1199px) {
     .container { max-width: calc(980px  + 36px); }
@@ -165,6 +180,16 @@
 
     /* contact */
     .row-2 input, .contact-form input{ height: 60px; }
+
+    /* security & compliance */
+    .secur-gover-card{ padding: 10px; }
+
+    .advance-security-pro-text{ flex-direction: column; gap: 30px; width: 800px; margin: 0  auto;  }
+    .advance-security-pro-text-title, .advance-security-pro-text-desc { margin-bottom: 0; width: 100%; text-align: center; }
+    .adv-protection-cards{ width: 430px; }
+    .adv-protection-cards h4{ padding: 12px 0; margin-bottom: 0; }
+    .adv-protextion-txt-head{ width: 490px; }
+    .adv-protection-cards-main{ gap: 20px; }
 }
 
 @media screen and (max-width: 1023px) {
@@ -267,6 +292,23 @@
     .contact-left{ display: flex; gap: 50px; width: 100%; align-items: flex-start;}
     .contact-left img{ padding-top: 0; width: 400px; }
     .contact-right{ width: 600px; } */
+
+    .sec-gover-cards-wrapper{ flex-direction: column; }
+    .secur-gover-card{ flex-direction: row; width: 100%; text-align: left; }
+
+    .adv-protection-wrapper{ flex-direction: column; gap: 50px; overflow: hidden; }
+    .adv-protextion-txt-head{ position: static; width: 100%; }
+    .adv-protection-cards-main{ flex-direction: row; }
+
+
+    .adv-prot-scroll-wrapper { display: flex; overflow: hidden; width: 100%; gap: 20px; position: relative;}
+    .adv-prot-scroll-wrapper .stroll-tracker { display: flex; gap: 20px; flex-shrink: 0; animation: scrolling 12s linear infinite; }
+    .soln-stats-cards { min-width: max-content; height: 150px; flex: 0 0 auto; padding: 10px; }
+    @keyframes scrolling {
+        0%   { transform: translateX(0); }
+        100% { transform: translateX(-100%); }
+    }
+    .sol-hero-text{ padding-top: 0; }
 } 
 
 @media screen and (max-width: 839px) { 
@@ -310,6 +352,7 @@
     .contact-form input, .contact-form textarea{ padding: 10px 20px; }
     .info-card .h5{ font-size: 18px; line-height: 28px; margin-bottom: 10px; }
     .contact-form-top{ align-items: end; }
+    .sec-advance-gover-head{ padding-bottom: 40px; }
         /* .contact-form-top{ flex-direction: column; } */
 }
 
@@ -356,6 +399,9 @@
     .contact-info-wrapper{ flex-wrap: wrap; }
     .contact-info-wrapper{ padding-top: 30px; }
     .info-card{ width: 290px; height: max-content; }
+    .sec-advance-gover-head{ text-align: left; }
+    .sol-hero-text-wrapper{ padding-top: 0; }
+
 }
 
 @media screen and (max-width: 639px) {
@@ -386,6 +432,7 @@
 
     .info-card{ width: 240px; padding: 20px 10px; }
     .info-card-location{ width: 100%; }
+    .secur-gover-card{ flex-direction: column; }
 }
 
 @media screen and (max-width: 575px) {

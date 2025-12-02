@@ -246,7 +246,7 @@
 /* solution page */
 .solution-hero { height: 700px; display: flex; align-items: center;  position: relative; }
 .solution-hero.hero-home{ height: 700px; }
-.sol-hero-text-wrapper { position: relative; z-index: 3; width: 100%; display: flex; justify-content: center; }
+.sol-hero-text-wrapper { position: relative; z-index: 3; width: 100%; display: flex; justify-content: center; padding-top: 150px; }
 .sol-hero-text { display: flex; align-items: center; justify-content: center; gap: 80px; max-width: 1600px; width: 100%; }
 .sol-hero-detail { max-width: 850px; }
 .sol-hero-detail p { padding-top: 20px;}
@@ -388,3 +388,30 @@
 }
 
 .contact-info-wrapper span{ font-size: 24px; padding-top: 5px; }
+
+.advance-security-pro-text-main{ background-color: var(--off-whitee); }
+.sec-advance-gover-head{ text-align: center; padding-bottom: 60px; width: 1243px; margin: 0 auto; }
+.sec-gover-cards-wrapper{ display: flex; gap: 95px; }
+.secur-gover-card{ width: 470px; text-align: center; display: flex; flex-direction: column; gap: 20px; }
+
+.advance-security-pro-text{ display: flex; align-items: flex-start; gap: 88px; }
+.advance-security-pro-text-title{ width: 643px; }
+.advance-security-pro-text-desc{ width: 869px; }
+
+.adv-protextion-txt-head{ width: 720px; position: sticky; top: 150px;   }
+.adv-protextion-txt-head h2{ padding-bottom: 20px; }
+.adv-protextion-txt-head p{ padding-top: 20px; }
+.adv-protection-wrapper{ display: flex; justify-content: space-between; align-items: flex-start; }
+
+.adv-protection-cards{ width: 550px; padding: 20px; }
+.adv-protection-cards h4{ padding-top: 14px; padding-bottom: 20px; }
+.adv-protection-cards span{ font-size: 32px; }
+
+.adv-protection-cards-main{ display: flex; flex-direction: column; gap: 40px; }
+.iso-certified-card{ background-color: var(--purple-light); }
+.aes-encry-card{ background-color: var(--green-light); }
+.mfa-rbac-card{ background-color: var(--blue-light); }
+.data-residency-card{ background-color: var(--orange-light); }
+
+   
+   
