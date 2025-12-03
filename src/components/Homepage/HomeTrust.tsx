@@ -1,6 +1,5 @@
 "use client"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import Image from "next/image";
 
 export default function HomeTrust() {
     return (

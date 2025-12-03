@@ -5,7 +5,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger, } from "@
 export default function AboutNextGenAccords() {
     return (
         <>
-            <section className="section next-gen-accords">
+            <section className="next-gen-accords">
                 <div className="container">
                     <div className="next-gen-headings">
                         <h2>Next-Gen Intelligence & Automation</h2>
