@@ -41,6 +41,9 @@
     .sec-gover-cards-wrapper{ gap: 50px; }
     .advance-security-pro-text-desc{ width: 680px; }
     .adv-protextion-txt-head{ width: 670px; }
+
+    .SecurityRegulatoryImage{ width: 650px; }
+    .sec-regulatory-heading p{ width: 700px; }
 }
 
 @media screen and (max-width: 1599px) {
@@ -49,6 +52,8 @@
     h2, .h2{ font-size: 52px; line-height: 62px; }
     h3, .h3{ font-size: 38px; line-height: 48px; }
     h4, .h4{ font-size: 28px; line-height: 38px; }
+
+    .section-bottom { padding-bottom: 100px; }
 
     /* footer */
     .footer-links-section{ gap: 60px; }
@@ -62,7 +67,7 @@
     .container-sm{ max-width: 1100px; } 
     .blog-detail-heading{ width: 100%; }
     .contact-left{ width: 590px; }
-
+    .SecurityRegulatoryImage{ object-fit: cover; border-radius: 20px; }
 } 
 
 @media screen and (max-width: 1439px) {
@@ -90,6 +95,10 @@
 
     .advance-security-pro-text-desc{ width: 590px; }
     .adv-protextion-txt-head h2{ padding-bottom: 0; }
+
+    .sec-regulatory-heading p{ width: 650px; }
+    .SecurityRegulatoryImage{ width: 500px; }
+
 }
 
 @media screen and (max-width: 1359px) {
@@ -140,6 +149,9 @@
     .advance-security-pro-text-title{ width: 580px; }
     .advance-security-pro-text-desc{ width: 520px;  }
     .advance-security-pro-text{ justify-content: space-between; }
+
+    .sec-regulatory-heading p{ width: 560px; }
+    .sec-regulatory-left{ width: 550px; }
 }   
 
 @media screen and (max-width: 1199px) {
@@ -147,6 +159,7 @@
 
     /* font-size */
     h2, .h2{ font-size: 40px; line-height: 50px; }
+    .section-bottom { padding-bottom: 70px; }
 
     /* footer */
     .footer-lets-connect{ font-size: 144px; line-height: 154px; }
@@ -190,6 +203,11 @@
     .adv-protection-cards h4{ padding: 12px 0; margin-bottom: 0; }
     .adv-protextion-txt-head{ width: 490px; }
     .adv-protection-cards-main{ gap: 20px; }
+
+    .sec-regulatory-heading{ flex-direction: column; justify-content: center; align-items: center; text-align: center; gap: 30px; }
+    .sec-regulatory-heading h2, .sec-regulatory-heading p{ width: 800px; }
+    .sec-regulatory-left{ width: 510px; }
+    .SecurityRegulatoryImage{ width: 420px; }
 }
 
 @media screen and (max-width: 1023px) {
@@ -295,20 +313,62 @@
 
     .sec-gover-cards-wrapper{ flex-direction: column; }
     .secur-gover-card{ flex-direction: row; width: 100%; text-align: left; }
+    .sol-hero-text{ padding-top: 0; }
 
-    .adv-protection-wrapper{ flex-direction: column; gap: 50px; overflow: hidden; }
-    .adv-protextion-txt-head{ position: static; width: 100%; }
-    .adv-protection-cards-main{ flex-direction: row; }
+    
+    .adv-protection-wrapper {
+        display: block;
+    }
 
+    .adv-protextion-txt-head {
+        width: 100%;
+        position: static;
+        margin-bottom: 25px;
+    }
 
-    .adv-prot-scroll-wrapper { display: flex; overflow: hidden; width: 100%; gap: 20px; position: relative;}
-    .adv-prot-scroll-wrapper .stroll-tracker { display: flex; gap: 20px; flex-shrink: 0; animation: scrolling 12s linear infinite; }
-    .soln-stats-cards { min-width: max-content; height: 150px; flex: 0 0 auto; padding: 10px; }
+    /* Hide desktop cards */
+    .adv-protection-cards-main {
+        display: none;
+    }
+
+    /* SCROLL WRAPPER */
+    .adv-protection-scroll-wrapper {
+        display: flex;
+        overflow: hidden;
+        /* width: 300px; */
+        gap: 20px;
+        position: relative;
+    }
+
+    .adv-protection-scroll-wrapper .scroll-track {
+        display: flex;
+        gap: 20px;
+        flex-shrink: 0;
+        animation: scrolling 12s linear infinite;
+    }
+
+    .adv-card span{ font-size: 22px; }
+
+    /* MOBILE CARD STYLE */
+    .adv-card {
+        width: 450px;
+        padding: 20px;
+        border-radius: 20px;
+        flex: 0 0 auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     @keyframes scrolling {
         0%   { transform: translateX(0); }
         100% { transform: translateX(-100%); }
     }
-    .sol-hero-text{ padding-top: 0; }
+
+    .adv-protextion-txt-head p{ padding-top: 0; }
+    .SecurityRegulatoryImage{ width: 345px; } 
+    .sec-regulatory-left{ width: 420px; }
 } 
 
 @media screen and (max-width: 839px) { 
@@ -353,7 +413,13 @@
     .info-card .h5{ font-size: 18px; line-height: 28px; margin-bottom: 10px; }
     .contact-form-top{ align-items: end; }
     .sec-advance-gover-head{ padding-bottom: 40px; }
-        /* .contact-form-top{ flex-direction: column; } */
+    /* .contact-form-top{ flex-direction: column; } */
+    .advance-security-pro-text{ width: 100%; }
+    .adv-card{ width: 350px; }
+    .sec-regulatory-heading h2, .sec-regulatory-heading p, .sec-regulatory-left { width: 100%; }
+    .sec-regulatory-wrapper{ flex-direction: column-reverse; gap: 30px; }
+    .SecurityRegulatoryImage{ width: 100%; height: 300px; }
+    .sec-regulatory-left{ gap: 20px; }
 }
 
 @media screen and (max-width: 767px) {
@@ -401,7 +467,8 @@
     .info-card{ width: 290px; height: max-content; }
     .sec-advance-gover-head{ text-align: left; }
     .sol-hero-text-wrapper{ padding-top: 0; }
-
+    .advance-security-pro-text h2, .advance-security-pro-text p, .sec-regulatory-heading{ text-align: left; }
+    .sec-regulatory-text-wrap{ padding-left: 0; }
 }
 
 @media screen and (max-width: 639px) {
@@ -503,7 +570,6 @@
 
     .stats-cards-5{ width: 100%; height: max-content; gap: 20px; }
 
-
     .blog-listing-tabs{ flex-direction: column; gap: 20px; }
     .stats-cards-5{ flex-direction: column; padding: 20px; }
     .stats-cards-5 .h6{ width: 100%; }
@@ -520,7 +586,7 @@
     .stakeholders-cards{ height: 260px; }
     .headerLogo img{ width: 100px; }
     .sol-hero-text{ padding-top: 50px; }
-
+    .adv-card{ width: 300px; }
 }
 
 @media screen and (max-width: 374px) {
