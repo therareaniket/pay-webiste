@@ -369,6 +369,10 @@
     .adv-protextion-txt-head p{ padding-top: 0; }
     .SecurityRegulatoryImage{ width: 345px; } 
     .sec-regulatory-left{ width: 420px; }
+
+    .contact-hero .hero-details-wrapper img{ transform: none !important; }
+    .solution-hero .hero-details-wrapper img{ transform: none !important; }
+    .security-hero .hero-details-wrapper img{ transform: none !important; }
 } 
 
 @media screen and (max-width: 839px) { 
@@ -469,6 +473,43 @@
     .sol-hero-text-wrapper{ padding-top: 0; }
     .advance-security-pro-text h2, .advance-security-pro-text p, .sec-regulatory-heading{ text-align: left; }
     .sec-regulatory-text-wrap{ padding-left: 0; }
+
+        .plan-descrptn{ display: none !important; }
+    .pricing-wrapper{ flex-direction: column; }
+    .pricing-headings{ margin-bottom: 0 !important; }
+    .plan-descrptn-tabs{ display: flex; justify-content: center; align-items: center; padding-top: 50px; }
+    .plan-item{ width: 100%; }
+
+    .plan-tabs-list{ margin: 0 auto; }
+    .plan-descrptn-tabs { display: flex; flex-direction: column; align-items: center;    justify-content: center; width: 100%; }
+    .plan-item { margin: 0 auto; }
+    .plan-tabs-list { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0; gap: 30px; }
+    .plan-tab-trigger {
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        color: #555;
+        position: relative;
+        padding: 8px 0;
+    }
+
+    .plan-tab-trigger::after {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        width: 0; 
+        height: 3px;
+        border-radius: 50px;
+        background: linear-gradient(100deg, #00092E 0%, #011e80 100%);
+        transition: width 0.35s ease;
+    }
+
+    .plan-tab-trigger:hover::after { width: 100%; }
+    .plan-tab-trigger[data-state="active"]::after { width: 100% !important; }
+
+    .plan-tab-trigger[data-state="active"] { color: #00092E !important; }
+    .pricing-mob-tabs{ width: 100%; }
 }
 
 @media screen and (max-width: 639px) {
@@ -523,6 +564,13 @@
 
     .mobile-menu{ padding-left: 18px; }
     .info-card{ padding: 15px; width: 100%;  }
+    .capablty-lists-wrapper{ display: none !important; }
+    /* .core-capablty-headings{ position: sticky; top: 100px; } */
+    .capablty-lists-responsive-wrapper{ display: block; padding: 60px 0 30px 0; gap: 20px; }
+    .capablty-list, .capablty-divider{ position: sticky; top: 300px; }
+    .capablty-list{ background-color: var(--light-grey); padding: 20px; border-radius: 20px; }
+    .capablty-lists-responsive-wrapper .capablty-lists{  gap: 20px; }
+
 }
 
 @media screen and (max-width: 480px) {

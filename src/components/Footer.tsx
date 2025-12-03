@@ -41,7 +41,7 @@ import React from 'react'
                                     <Link href="/Solutions">Solutions</Link>
                                 </li>
                                 <li className='text-rg text-16 text-grey'>
-                                    <Link href="/">Security & Compliance </Link>
+                                    <Link href="/SecurityCompliance">Security & Compliance </Link>
                                 </li>
                                 <li className='text-rg text-16 text-grey'>
                                     <Link href="/BlogListing">Resources</Link>
@@ -57,10 +57,10 @@ import React from 'react'
                             <ul>
 
                                 <li>
-                                    <Link href="/" className='text-rg text-16 text-grey'>Terms of Use</Link>
+                                    <Link href="/TermsAndCondition" className='text-rg text-16 text-grey'>Terms of Use</Link>
                                 </li>
                                 <li>
-                                    <Link href="/" className='text-rg text-16 text-grey'>Privacy Policy</Link>
+                                    <Link href="/PrivacyPolicy" className='text-rg text-16 text-grey'>Privacy Policy</Link>
                                 </li>
                             </ul>
                         </div>

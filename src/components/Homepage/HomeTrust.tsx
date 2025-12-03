@@ -28,7 +28,7 @@ export default function HomeTrust() {
                                     <div className="trust-info">
                                         <h3 className="h5">Immutable Audit Trails</h3>
 
-                                        <p>Secure tamper-proof records of every clinical trial transaction ensure full transparency and regulatory compliance. DhatuPay's immutable audit trails create verifiable histories that meet healthcare standards effortlessly.</p>
+                                        <p>Secure tamper-proof records of every clinical trial transaction ensure full transparency and regulatory compliance. DhatuPay&apos;s immutable audit trails create verifiable histories that meet healthcare standards effortlessly.</p>
                                     </div>
 
                                     <span className="trust-image-scalaton h4 text-rg site-radius-20"></span>
