@@ -442,3 +442,209 @@
 .contact-hero .hero-details-wrapper img{ transform: translateY(-50px) !important; }
 .solution-hero .hero-details-wrapper img{ transform: translateY(-20px) !important; }
 .security-hero .hero-details-wrapper img{ transform: translateY(-10px) !important; }
+
+
+
+/* for animation */
+
+/* Initial hidden state */
+.animate-on-scroll {
+    opacity: 0;
+    will-change: transform, opacity;
+}
+
+/* H1 slides from TOP */
+@keyframes heroSlideFromTop {
+    0% { opacity: 0; transform: translateY(-60px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+.animate-active.hero-title {
+    animation: heroSlideFromTop 0.9s ease-out forwards;
+    animation-delay: 0s;
+}
+
+/* Paragraph fade + slight up */
+@keyframes heroFadeUp {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+.animate-active.hero-desc {
+    animation: heroFadeUp 1s ease-out forwards;
+    animation-delay: 1s;
+}
+
+/* Buttons slide from LEFT */
+@keyframes heroSlideLeft {
+    0% { opacity: 0; transform: translateX(-60px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+.animate-active.hero-btn-1 {
+    animation: heroSlideLeft 0.9s ease-out forwards;
+    animation-delay: 1.5s;
+}
+.animate-active.hero-btn-2 {
+    animation: heroSlideLeft 0.9s ease-out forwards;
+    animation-delay: 2s;
+}
+
+
+.popout-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Hover effect - pop out */
+.popout-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.popout-card:hover h3{ color: var(--secondary-purple-bluish); }
+
+/* Active click effect */
+.popout-card:active {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+
+
+.faq-item[data-state="open"] {
+  background: linear-gradient(100deg, #00092E 0%, #011e80 100%);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Change trigger text when open */
+.faq-item[data-state="open"] .faq-trigger {
+  color: #fff !important;
+}
+
+/* Change content text when open */
+.faq-item[data-state="open"] .faq-content {
+  color: #fff !important;
+}
+
+ /* .pymt-box:hover{background: rgba(255, 255, 255, 0.05); border: 1px solid blue;}  */
+
+
+ .pymt-box{transition: all 0.8s ease-in-out; cursor: default;} 
+.pymt-box:hover  {
+  background: linear-gradient(100deg, #00092E 0%, #011e80 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: translateY(0px) scale(1.111);
+}
+.inner-circle-text{ display: flex !important; flex-direction: column; align-items: center; justify-content: center; width: 150px !important; gap: 10px; text-align: center; }
+
+.plan-item {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    transform-style: preserve-2d;
+}
+
+/* Hover effect */
+.plan-item:hover {
+    transform: scale(1.05) rotateX(-4deg) rotateY(-4deg) ;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Prevent parent breaking layout */
+.plan-descrptn,
+.plan-descrptn-tabs {
+    perspective: 1000px;
+}
+
+
+.capability-gradient {
+    background: linear-gradient(100deg, #00092E 0%, #011e80 100%);
+}
+
+/* Vertical line */
+.capablty-lists-divider {
+    width: 4px;
+    height: 0;
+    border-radius: 20px;
+    display: block;
+}
+
+/* Horizontal line */
+.capablty-divider {
+    height: 4px;
+    width: 0;
+    border-radius: 20px;
+    display: block;
+}
+
+.capablty-list{
+  opacity: 0;
+  transform: translateX(0);
+}
+
+/* LEFT BLOCK LIST items slide from left */
+.capablty-left-lists .capablty-list:nth-child(1) { transform: translateX(-60px);  }
+.capablty-left-lists .capablty-list:nth-child(3) { transform: translateX(-60px); }
+
+.capablty-right-lists .capablty-list:nth-child(1){ transform: translateX(60px); }
+.capablty-right-lists .capablty-list:nth-child(3) { transform: translateX(60px); }
+.capability-animate {
+  animation: fadeSlideIn 1s ease-out forwards;
+  animation-delay: 2s ;
+}
+
+@keyframes fadeSlideIn { 
+    to {
+       opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.next-gen-item[data-state="open"] {
+  background: linear-gradient(100deg, #00092E 0%, #011e80 100%);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Change trigger text when open */
+.next-gen-item[data-state="open"] .next-gen-trigge {
+  color: #fff !important;
+}
+
+/* Change content text when open */
+.next-gen-item[data-state="open"] .next-gen-content {
+  color: #fff !important;
+}
+
+.wf-list-item {
+  opacity: 0;
+  transform: translateX(0);
+  transition: transform 1s ease-out, opacity 0.8s ease-out;
+}
+
+/* Left cards start off-screen left */
+.wf-list-left .wf-list-item {
+  transform: translateX(-100px);
+}
+
+/* Right cards start off-screen right */
+.wf-list-right .wf-list-item {
+  transform: translateX(100px);
+}
+
+/* When in view, slide to normal position */
+.wf-list-item.slide-in {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+.coming-soon-hero-wrapper{ display: flex !important; justify-content: center !important; align-items: center !important;  gap: 200px;}
+.comin-soon-btn{ position: relative; background-color: var(--hero-bg); color: var(--white); z-index: 9999; }

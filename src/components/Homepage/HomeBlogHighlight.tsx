@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HomeBlogHighlight() {
     return (
@@ -14,7 +15,7 @@ export default function HomeBlogHighlight() {
                     </div>
 
                     <div className="home-blog-listing">
-                        <div className="blog-full site-radius-20 overflow-hidden">
+                        <Link href="/BlogDetail" className="blog-full site-radius-20 overflow-hidden popout-card">
                             <Image src="/images/homepage/blog-future-of-digital-payments-webp.webp" alt="blog-future-of-digital-payments" width={918} height={459}></Image>
 
                             <div className="full-blog-info">
@@ -32,10 +33,10 @@ export default function HomeBlogHighlight() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
 
-                        <div className="blog-half-group">
-                            <div className="blog-half site-radius-20 ">
+                        <div className="blog-half-group ">
+                            <Link href="/BlogDetail" className="blog-half site-radius-20 popout-card">
                                 <Image src="/images/homepage/blog-integrate-portal-in-easy-steps-webp.webp" alt="" width={780} height={390}></Image>
 
                                 <div className="half-blog-info">
@@ -49,9 +50,9 @@ export default function HomeBlogHighlight() {
                                         <span>19 November 2025</span>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
 
-                            <div className="blog-half site-radius-20 ">
+                            <Link href="/BlogDetail" className="blog-half site-radius-20 popout-card">
                                 <Image src="/images/homepage/blog-benefits-of-using-dhatupay-webp.webp" alt="" width={780} height={390}></Image>
 
                                 <div className="half-blog-info">
@@ -65,7 +66,7 @@ export default function HomeBlogHighlight() {
                                         <span>19 November 2025</span>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                         </div>
                     </div>
                 </div>

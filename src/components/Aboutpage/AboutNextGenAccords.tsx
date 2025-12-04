@@ -1,6 +1,7 @@
 "use client"
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger, } from "@/components/ui/accordion"
+import Image from "next/image";
 
 export default function AboutNextGenAccords() {
     return (
@@ -33,7 +34,7 @@ export default function AboutNextGenAccords() {
                             </Accordion>
                         </div>
 
-                        <span className="next-gen-gif"></span>
+                        <Image className="next-gen-gif" src='/images/aboutpage/about-next-gen-ai.gif' alt="" width={605} height={380} priority={false}></Image>
                     </div>
                 </div>
             </section>

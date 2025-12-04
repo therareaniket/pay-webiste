@@ -250,6 +250,46 @@ body { background-color: #FAFAFA; }
 .donut-circle { width: 375px; height: 375px; background: linear-gradient(120deg, #693399 0%, #557CFF 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
 .donut-inner-circle { width: calc(100% - 120px); height: calc(100% - 120px); display: flex; align-items: center; justify-content: center; border-radius: 50%; background-color: var(--off-whitee); }
 .donut-inner-circle span { line-height: 1; margin-bottom: 0; }
+.donut-circle {
+  width: 375px;
+  height: 375px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Linear gradient background */
+  background: linear-gradient(120deg, #693399 0%, #557CFF 100%);
+  background-size: 200% 200%; /* larger than container to allow motion */
+  animation: moveGradient 5s linear infinite;
+}
+
+.donut-inner-circle {
+  width: calc(100% - 120px);
+  height: calc(100% - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--off-whitee);
+}
+
+.donut-inner-circle span {
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+/* Animate the background position to move the gradient */
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
 .wf-list-item:first-child { margin-bottom: 90px; }
 .wf-list-icon { width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; }
 .wf-list-icon span { font-size: 30px; }

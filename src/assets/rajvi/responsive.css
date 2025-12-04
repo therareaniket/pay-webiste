@@ -44,6 +44,9 @@
 
     .SecurityRegulatoryImage{ width: 650px; }
     .sec-regulatory-heading p{ width: 700px; }
+
+    .comming-soon-logo img{ width: 200px !important; }
+    .coming-soon-img{ width: 500px; }
 }
 
 @media screen and (max-width: 1599px) {
@@ -68,6 +71,9 @@
     .blog-detail-heading{ width: 100%; }
     .contact-left{ width: 590px; }
     .SecurityRegulatoryImage{ object-fit: cover; border-radius: 20px; }
+
+        .comming-soon-logo img{ width: 200px !important; }
+    .coming-soon-img{ width: 400px !important; }
 } 
 
 @media screen and (max-width: 1439px) {
@@ -152,6 +158,8 @@
 
     .sec-regulatory-heading p{ width: 560px; }
     .sec-regulatory-left{ width: 550px; }
+
+    .row-2{ flex-direction: column; }
 }   
 
 @media screen and (max-width: 1199px) {
@@ -373,6 +381,7 @@
     .contact-hero .hero-details-wrapper img{ transform: none !important; }
     .solution-hero .hero-details-wrapper img{ transform: none !important; }
     .security-hero .hero-details-wrapper img{ transform: none !important; }
+    .coming-soon-hero-wrapper{ gap: 200px !important; flex-direction: column !important; }    
 } 
 
 @media screen and (max-width: 839px) { 
@@ -510,6 +519,9 @@
 
     .plan-tab-trigger[data-state="active"] { color: #00092E !important; }
     .pricing-mob-tabs{ width: 100%; }
+
+    .coming-soon-hero-wrapper{ display: visible!important; }
+    .coming-soon-img{ display: block!important; }
 }
 
 @media screen and (max-width: 639px) {
@@ -570,7 +582,7 @@
     .capablty-list, .capablty-divider{ position: sticky; top: 300px; }
     .capablty-list{ background-color: var(--light-grey); padding: 20px; border-radius: 20px; }
     .capablty-lists-responsive-wrapper .capablty-lists{  gap: 20px; }
-
+    .adv-card span{ padding-bottom: 10px; } 
 }
 
 @media screen and (max-width: 480px) {
