@@ -16,12 +16,12 @@ export default function DhatuPayWorksSlider() {
         },
         {
             icon: "icon-hm-config-contract",
-            title: "Configure Budgets and Contracts",
+            title: "Configure Contracts",
             desc: "Centralize budgets, agreements, and compliance rules for seamless setup."
         },
         {
             icon: "icon-pay-via",
-            title: "Trigger Payments via Events",
+            title: "Payments via Events",
             desc: "Automate payouts on milestones, visits, or triggers for real-time efficiency."
         },
         {

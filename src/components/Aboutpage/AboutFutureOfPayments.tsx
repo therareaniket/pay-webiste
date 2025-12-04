@@ -2,6 +2,13 @@
 
 import Image from "next/image";
 import { useEffect } from "react";
+import { motion } from 'framer-motion';
+import { once } from "events";
+
+const AboutPaymentAnimate =  { 
+    ltrInitial: { x: -100, opacity: 0 },
+    ltrAnimate: { x: 0, opacity: 1, transition: { duration: 1 } },
+}
 
 export default function FutureOfPayments() {
 
@@ -100,12 +107,12 @@ const startSVG = (svg: Element) => {
 
                                 <div className="detailed-text">
                                     <h3 className="h5 text-md">The Challenge</h3>
-                                    <ul>
+                                    <motion.ul variants={AboutPaymentAnimate} initial="ltrInitial" whileInView="ltrAnimate" viewport={{once: true, amount: 1 }}>
                                         <li><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />Multi-country regulations and diverse tax laws make compliance slow and complex.</li>
                                         <li><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />Multiple currencies create reconciliation, FX, and conversion headaches.</li>
                                         <li><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />Strict standards such as 21 CFR Part 11 and KYC/AML increase operational burden.</li>
                                         <li><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />Manual workflows delay payments and frustrate sites, vendors, and participants.</li>
-                                    </ul>
+                                    </motion.ul>
                                 </div>
                             </div>
 
@@ -141,12 +148,12 @@ const startSVG = (svg: Element) => {
 
                                 <div className="detailed-text">
                                     <h3 className="h5 text-md">The Solution</h3>
-                                    <ul>
+                                    <motion.ul variants={AboutPaymentAnimate} initial="ltrInitial" whileInView="ltrAnimate" viewport={{once: true, amount: 1 }}>
                                         <li><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />Built-in support for global regulations (21 CFR Part 11, KYC/AML).</li>
                                         <li><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />A single platform for budgeting, invoicing, reconciliation, and disbursements.</li>
                                         <li><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />Jurisdiction packs for US, EU, and India tax and e-invoicing rules.</li>
                                         <li><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />Multi-currency capabilities with accurate, automated conversions.</li>
-                                    </ul>
+                                    </motion.ul>
                                 </div>
                             </div>
 
@@ -182,12 +189,12 @@ const startSVG = (svg: Element) => {
 
                                 <div className="detailed-text">
                                     <h3 className="h5 text-md">The Difference</h3>
-                                    <ul>
+                                    <motion.ul variants={AboutPaymentAnimate} initial="ltrInitial" whileInView="ltrAnimate" viewport={{once: true, amount: 1 }}>
                                         <li><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />Purpose-built for life sciences, optimized for clinical trial workflows.</li>
                                         <li><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />Event-driven automation from CTMS/EDC data.</li>
                                         <li><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />Compliance-first architecture with 21 CFR Part 11, KYC, AML.</li>
                                         <li><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />Global scale with local rules via jurisdiction packs.</li>
-                                    </ul>
+                                    </motion.ul>
                                 </div>
                             </div>
 

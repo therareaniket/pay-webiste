@@ -335,3 +335,8 @@ body { background-color: #FAFAFA; }
 .lc-info-block { width: 345px; height: 300px; border-left: 1px solid #B8B8B8; transform: translate(15px, -100%); padding-left: 10px; }
 .lc-block-2,.lc-block-4 { transform: translate(15px, 30px); display: flex; flex-direction: column; justify-content: end; }
 .lc-info-block p { color: var(--grey); }
+
+.comingsoon { position: relative; overflow: hidden; height: 900px; }
+.comingsoon-wrapper { width: 100%; height: 650px; position: relative; display: flex; align-items: center; gap: 400px; }
+.comingsoon-content h1 { margin-top: 20px; margin-bottom: 40px; }
+.comingsoon-content a { border-radius: 30px; margin-top: 30px; }

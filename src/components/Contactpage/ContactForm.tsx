@@ -11,12 +11,12 @@ const ContactForm = () => {
                     <div className="contact-form-top">
                         <div className="contact-left">
                             <div className="contact-head-main">
-                                <h2 className='h3 text-md'>Your Questions Matter — We’re Here to Help.</h2>
+                                <h2 className='h3 text-md'>Your Questions Matter — We're Here to Help.</h2>
 
                                 <p className='h6 text-grey text-rg'>Share your request and our team will get in touch shortly with secure payment solutions and seamless portal integration.</p>
                             </div>
 
-                            <Image src="/images/contactpage/ContactFormGif.png" alt='' width={559} height={367} priority={false}></Image>
+                            <Image src="/images/contactpage/ContactFormGif.png" alt='ContactForm' width={559} height={367} priority={false}></Image>
                         </div>
 
                         <div className="contact-right">

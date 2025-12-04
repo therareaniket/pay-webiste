@@ -529,8 +529,8 @@
 .next-gen-item[data-state="open"] svg { stroke: var(--white); }
 
 
-.pymt-box{transition: all 0.8s ease-in-out; cursor: default;} 
-.pymt-box:hover  {
+.pymt-box { transition: all 0.8s ease-in-out; cursor: default;} 
+.pymt-box:hover {
   background: linear-gradient(100deg, #00092E 0%, #011e80 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

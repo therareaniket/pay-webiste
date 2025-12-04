@@ -2,6 +2,18 @@
 
 import Image from "next/image";
 import React from "react";
+import { motion } from 'framer-motion';
+
+const ContactHeroAnimate =  { 
+    ltrInitial: { x: -100, opacity: 0 },
+    ltrAnimate: { x: 0, opacity: 1, transition: { duration: 1 } },
+
+    ttbText: {  y: -50, opacity: 0 },
+    ttbTextAnimate: { y: 0, opacity: 1, transition: { duration: 1, delay: 1 } },
+    
+    ttbTextDelayed: {  y: -50, opacity: 0 },
+    ttbTextAnimateDelayed: { y: 0, opacity: 1, transition: { duration: 1, delay: 2 } },
+}
 
 const ContactHero = () => {
     return (
@@ -12,57 +24,19 @@ const ContactHero = () => {
 
             <div className="container">
                 <div className="hero-details-wrapper">
-                    <Image src="/images/contactpage/ContactHeroImage.webp" alt="about-hero" width={578} height={260} priority={true}></Image>
+                    <motion.div className="" variants={ContactHeroAnimate} initial="ltrInitial" animate="ltrAnimate" viewport={{ once: true }}>
+                        <Image src="/images/contactpage/ContactHeroImage.webp" alt="about-hero" width={578} height={260} priority={true}></Image>
+                    </motion.div>
 
                     <div className="subpage-hero-details">
-                        <h1 className="text-sb">Your Payment Questions, Answered Securely</h1>
+                        <motion.h1 className="text-sb" variants={ContactHeroAnimate} initial="ttbText" animate="ttbTextAnimate" viewport={{ once: true }}>Your Payment Questions, Answered Securely</motion.h1>
                         {/* <h1 className="text-sb">Simplifying Global Clinical Trial Payments</h1> */}
 
-                        <p className="h6 text-rg">Purpose-built for life sciences, DhatuPay automates global trial payments with a compliance-first architecture, real-time visibility, and event-driven workflows that keep every stakeholder in sync.</p>
+                        <motion.p className="h6 text-rg" variants={ContactHeroAnimate} initial="ttbTextDelayed" animate="ttbTextAnimateDelayed" viewport={{ once: true }}>Purpose-built for life sciences, DhatuPay automates global trial payments with a compliance-first architecture, real-time visibility, and event-driven workflows that keep every stakeholder in sync.</motion.p>
                     </div>
                 </div>
             </div>
         </section>
-
-        // <section className="section hero-home site-hero solution-hero Contact-hero">
-        //     {/* Background Elements */}
-        //     <span className="light-orange-box"></span>
-
-        //     <Image
-        //         src="/images/homepage/site-hero-blob.svg"
-        //         alt="site-hero-blob"
-        //         width={600}
-        //         height={600}
-        //         draggable={false}
-        //         className="site-hero-blob"
-        //     />
-
-        //     {/* Foreground Content */}
-        //     <div className="container">
-        //         <div className="sol-hero-text-wrapper">
-        //             <div className="sol-hero-text">
-
-        //                 <Image
-        //                     src="/images/contactpage/ContactHeroImage.webp"
-        //                     alt="sol-hero"
-        //                     width={539}
-        //                     height={294}
-        //                     priority={false}
-        //                     className="sol-hero-img"
-        //                 />
-
-        //                 <div className="sol-hero-detail">
-        //                     <h1 className="text-sb">Your Payment Questions, Answered Securely</h1>
-
-        //                     <p className="h6 text-rg">
-        //                         Reach out for seamless payments, secure transactions, and effortless integration—across every platform and partner
-        //                     </p>
-        //                 </div>
-
-        //             </div>
-        //         </div>
-        //     </div>  
-        // </section>
     );
 };
 

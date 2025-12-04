@@ -4,42 +4,30 @@ import React from 'react'
 
 const ComingSoon = () => {
     return (
-        <section className="section sub-site-hero solution-hero">
-            <span className="light-orange-box"></span>
+        <>
+            <section className="section hero-home comingsoon">
+                <span className="light-orange-box"></span>
 
-            <Image src="/images/homepage/site-hero-blob.svg" alt="site-hero-blob" width={600} height={600} draggable={false} priority={true} className="site-hero-blob"></Image>
+                <Image src="/images/homepage/site-hero-blob.svg" alt="site-hero-blob" width={600} height={600} draggable={false} priority={true} className="site-hero-blob"></Image>
 
-            <div className="container">
-                <div className="hero-details-wrapper coming-soon-hero-wrapper">
-                    <div className="subpage-hero-details">
-                        <Image className='coming-soon-img' src="/images/comingsoonpage.png" alt='' width={524} height={474}></Image>
-                    </div>
+                <div className="container">
+                    <div className="comingsoon-wrapper">
+                        <Image src="/images/comingsoon.webp" alt="comingsoon" width={524} height={475} priority={true}></Image>
 
-                    <div className="coming-soon-text">
-                        <Link href="/" className="headerLogo comming-soon-logo">
-                            <Image
-                                src="/images/logo/headerLogo.svg"
-                                alt="header-logo"
-                                width={176}
-                                height={34}
-                                priority
-                            />
-                        </Link>
+                        <div className="comingsoon-content">
+                            <Image src="/images/logo-comingsoon.svg" alt='logo-comingsoon' width={280} height={62} priority={true}></Image>
 
-                        <p className='text-md h5'>Coming Soon...</p>
+                            <h1 className='h5 text-md' style={{ color: "#3A3A3A" }}>Coming Soon...</h1>
 
-                        <Link
-                            href="/Contact"
-                            title="Book a Demo"
-                            className=" link-padding site-radius-100  comin-soon-btn"
-                        >
-                            Get Early Access
-                        </Link>
+                            <h2 className='h5'>Pay Smarter, Faster</h2>
+
+                            <Link href="/Contact" title='' className='link-padding btn-blue text-18 text-md'>Get Early Access</Link>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    )
+            </section>
+        </>
+    );
 }
 
 export default ComingSoon
