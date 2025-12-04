@@ -95,7 +95,7 @@ export default function HeroHome() {
                             <div className="home-hero-cta">
                                 {/* Button 1 */}
                                 <Link
-                                    href="/Contact"
+                                    href="/Contact#contactForm"
                                     title="Book a Demo"
                                     className="link-padding link-radius text-20 text-md btn-tranpearent hero-btn hero-btn-1 animate-on-scroll"
                                 >

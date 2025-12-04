@@ -1,5 +1,6 @@
 "use client"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import Image from "next/image";
 
 export default function HomeTrust() {
     return (
@@ -30,7 +31,7 @@ export default function HomeTrust() {
                                         <p>Secure tamper-proof records of every clinical trial transaction ensure full transparency and regulatory compliance. DhatuPay&apos;s immutable audit trails create verifiable histories that meet healthcare standards effortlessly.</p>
                                     </div>
 
-                                    <span className="trust-image-scalaton h4 text-rg site-radius-20"></span>
+                                    <Image src="/images/homepage/trust-integrity.webp" alt="trust-integrity" width={2080} height={1200} className="trust-image-scalaton site-radius-10"></Image>
                                 </div>
                             </TabsContent>
 
@@ -42,7 +43,8 @@ export default function HomeTrust() {
                                         <p>Secure, legally recognized digital signatures ensure document authenticity, prevent fraud, and guarantee global regulatory compliance.</p>
                                     </div>
 
-                                    <span className="trust-image-scalaton h4 text-rg site-radius-20"></span>
+                                    {/* <span className="trust-image-scalaton h4 text-rg site-radius-20"></span> */}
+                                    <Image src="/images/homepage/trust-security.webp" alt="trust-integrity" width={2080} height={1200} className="trust-image-scalaton site-radius-10"></Image>
                                 </div>
                             </TabsContent>
 
@@ -54,7 +56,8 @@ export default function HomeTrust() {
                                         <p>Pre-configured packs for US, EU, and India simplify local laws, tax norms, and security—enabling confident multi-market operations.</p>
                                     </div>
 
-                                    <span className="trust-image-scalaton h4 text-rg site-radius-20"></span>
+                                    {/* <span className="trust-image-scalaton h4 text-rg site-radius-20"></span> */}
+                                    <Image src="/images/homepage/trust-compliance.webp" alt="trust-integrity" width={2080} height={1200} className="trust-image-scalaton site-radius-10"></Image>
                                 </div>
                             </TabsContent>
                         </Tabs>

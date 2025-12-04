@@ -37,7 +37,7 @@ export default function BlogDetailPage() {
                 <div className="blog-detail-heading">
                     <span className="blog-text-heading-tag site-radius-20 link-padding text-14 text-rg">Digital Payments</span>
                     <h1 className="h3 text-md">The Future of Digital Payments: Trends Driving Secure, Seamless, and Smarter Solutions</h1>
-                    <p className="text-18 text-rg">Explore how payment gateways like Dhatupay are shaping the future of online transactions and why security is non-negotiable for businesses today. From advanced encryption protocols to seamless multi-portal integration, modern gateways are redefining convenience without compromising trust.</p>
+                    <p className="text-18 text-rg">Explore how payment gateways like DhatuPay are shaping the future of online transactions and why security is non-negotiable for businesses today. From advanced encryption protocols to seamless multi-portal integration, modern gateways are redefining convenience without compromising trust.</p>
                 </div>
 
                 <div className="blog-image-main">

@@ -15,7 +15,7 @@ import React from 'react'
 
                         <p className='h6 text-rg'>Expand worldwide with multi-currency support and secure international payment solutions.</p>
                     </div>
-                    <Link href="/Contact" type="button" className='footer-cta-btn'>Get Started</Link>
+                    <Link href="/Contact#contactForm" type="button" className='footer-cta-btn'>Get Started</Link>
                 </div>
 
                 <div className="footer-bottom">

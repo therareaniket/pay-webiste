@@ -24,7 +24,7 @@ export default function HomeBlogHighlight() {
                                 <div className="home-blog-content">
                                     <h3 className="h5 text-md">The Future of Digital Payments</h3>
 
-                                    <p>Explore how payment gateways like Dhatupay are shaping the future of online transactions and why security is non-negotiable for businesses today. From advanced encryption protocols to seamless multi-portal integration, modern gateways are redefining convenience without compromising trust.</p>
+                                    <p>Explore how payment gateways like DhatuPay are shaping the future of online transactions and why security is non-negotiable for businesses today. From advanced encryption protocols to seamless multi-portal integration, modern gateways are redefining convenience without compromising trust.</p>
 
                                     <div className="blog-writer">
                                         <span>Siddharth Shah</span>
@@ -58,7 +58,7 @@ export default function HomeBlogHighlight() {
                                 <div className="half-blog-info">
                                     <span className="category-chip site-radius-20 text-14">Business Benefits</span>
 
-                                    <h3 className="h5 text-md">7 Benefits of Using Dhatupay for Your Business</h3>
+                                    <h3 className="h5 text-md">7 Benefits of Using DhatuPay for Your Business</h3>
 
                                     <div className="blog-writer">
                                         <span>Harsh Nayak</span>

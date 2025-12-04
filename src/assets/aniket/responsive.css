@@ -447,6 +447,8 @@
     .blog-slide-item { height: 500px !important; }
     .slider-item-details p { width: 100%; }
 
+    .life-cycle-headings { text-align: left; }
+
 }
 
 @media screen and (max-width: 639px) {

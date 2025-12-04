@@ -6,7 +6,7 @@ import React from 'react'
 const ContactForm = () => {
     return (
         <>
-            <section className="section contact-main">
+            <section className="section contact-main" id='contactForm'>
                 <div className="container">
                     <div className="contact-form-top">
                         <div className="contact-left">

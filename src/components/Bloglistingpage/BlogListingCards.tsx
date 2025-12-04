@@ -42,7 +42,7 @@ const blogData = [
     },
     {
         id: 3,
-        title: "7 Benefits of Using Dhatupay for Your Business",
+        title: "7 Benefits of Using DhatuPay for Your Business",
         img: "/images/bloglisting/blog-card-3.webp",
         category: "Business Benefits",
         author: "Harsh Nayak",
