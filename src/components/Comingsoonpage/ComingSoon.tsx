@@ -21,7 +21,7 @@ const ComingSoon = () => {
 
                             <h2 className='h5'>Pay Smarter, Faster</h2>
 
-                            <Link href="/Contact" title='' className='link-padding btn-blue text-18 text-md'>Get Early Access</Link>
+                            <Link href="/Contact#contactForm" title='' className='link-padding btn-blue text-18 text-md'>Get Early Access</Link>
                         </div>
                     </div>
                 </div>

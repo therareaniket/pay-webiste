@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { once } from "events";
 
 const AboutPaymentAnimate =  { 
-    ltrInitial: { x: -100, opacity: 0 },
+    ltrInitial: { x: '-20px', opacity: 0 },
     ltrAnimate: { x: 0, opacity: 1, transition: { duration: 1 } },
 }
 

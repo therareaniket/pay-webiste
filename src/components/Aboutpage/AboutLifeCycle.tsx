@@ -2,8 +2,7 @@
 
 export default function AboutLifeCycle() {
 
-      const pathD = "M10.5001 264.998L307.675 264.998C308.885 264.998 310.088 264.815 311.243 264.456L476.5 212.998L581.501 180.498L865.5 81.498L1076.65 11.1141C1077.88 10.7062 1079.16 10.4983 1080.45 10.4983L1404 10.4983";
-
+    const pathD = "M10.5001 264.998L307.675 264.998C308.885 264.998 310.088 264.815 311.243 264.456L476.5 212.998L581.501 180.498L865.5 81.498L1076.65 11.1141C1077.88 10.7062 1079.16 10.4983 1080.45 10.4983L1404 10.4983";
 
     return (
         <>
@@ -78,7 +77,44 @@ export default function AboutLifeCycle() {
                                 </div>
                             </div>
                         </div>
-                        
+                    </div>
+
+                    <div className="life-cycle-timeline-mob">
+                        <div className="lc-mob-centerline site-radius-20">
+                            <div className="lc-mob-animated-line site-radius-20 absolute"></div>
+
+                            <div className="center-point">
+                                <div className="lc-info-block lc-block-1">
+                                    <h5 className="text-md">Contract</h5>
+
+                                    <p className="text-18">AI-assisted term extraction ensures accurate interpretation of contract clauses, reducing manual effort and compliance risks.</p>
+                                </div>
+                            </div>
+
+                            <div className="center-point">
+                                <div className="lc-info-block lc-block-2">
+                                    <h5 className="text-md">Invoice</h5>
+
+                                    <p className="text-18">Optical Character Recognition (OCR) combined with e-Invoicing standards like PEPPOL and GSTN streamlines invoice processing and guarantees compliance.</p>
+                                </div>
+                            </div>
+
+                            <div className="center-point">
+                                <div className="lc-info-block lc-block-3">
+                                    <h5 className="text-md">Disbursement</h5>
+
+                                    <p className="text-18">Supports multiple payment channels including ACH, SEPA, UPI, and SWIFT, enabling fast, secure, and global disbursements.</p>
+                                </div>
+                            </div>
+                            
+                            <div className="center-point">
+                                <div className="lc-info-block lc-block-4">
+                                    <h5 className="text-md">Reconcile</h5>
+
+                                    <p className="text-18">Leverages bank file matching and General Ledger tie-outs for accurate reconciliation, reducing errors and enhancing financial integrity.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

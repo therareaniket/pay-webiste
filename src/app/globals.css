@@ -122,7 +122,6 @@
 }
 .container { max-width: 1636px; padding: 0 18px; margin: 0 auto; background-color: none; }
 
-
 @font-face {
     font-family: 'poppins-rg';
     src: url('../../public/fonts/Poppins-Regular.woff2') format('woff2'),
@@ -274,7 +273,7 @@ h6, .h6 { font-size: 20px; line-height: 30px; margin-bottom: 10px; }
 
 p { font-family: 'poppins-rg'; font-size: 18px; line-height: 28px;  }
 
-body { font-family: 'poppins-rg'; }
+body { font-family: 'poppins-rg';  }
 
 .text-20 { font-size: 20px; line-height: 30px; }
 .text-18 { font-size: 18px; line-height: 28px; }
