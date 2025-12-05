@@ -72,8 +72,10 @@
     .contact-left{ width: 590px; }
     .SecurityRegulatoryImage{ object-fit: cover; border-radius: 20px; }
 
-        .comming-soon-logo img{ width: 200px !important; }
+    .comingsoon-content img{ width: 200px !important; }
     .coming-soon-img{ width: 400px !important; }
+
+    .comingsoon-wrapper{ gap: 220px !important; }
 } 
 
 @media screen and (max-width: 1439px) {
@@ -104,7 +106,10 @@
 
     .sec-regulatory-heading p{ width: 650px; }
     .SecurityRegulatoryImage{ width: 500px; }
-
+    .comingsoon-content h1{ margin-bottom: 30px !important; }
+    .comingsoon-content a{ margin-top: 10px !important; }
+    .comingsoon-wrapper img{ width: 400px; }
+    .comingsoon-wrapper{ justify-content: center !important; }
 }
 
 @media screen and (max-width: 1359px) {
@@ -160,6 +165,12 @@
     .sec-regulatory-left{ width: 550px; }
 
     .row-2{ flex-direction: column; }
+
+    .blog-detail-qns{ padding-top: 50px !important; }
+    .blog-image-main{ padding-top: 50px; }
+
+    .comingsoon-wrapper{ gap: 160px !important; }
+    .comingsoon-content h1{ margin-top: 15px !important; margin-bottom: 20px !important; }
 }   
 
 @media screen and (max-width: 1199px) {
@@ -243,6 +254,9 @@
     .contact-info-wrapper{ padding-top: 65px; }
     .info-card .h5{ font-size: 20px; }
     .info-card span{ font-size: 22px; }
+
+    .comingsoon-wrapper img{ width: 360px; }
+    .comingsoon-content img{ width: 180px !important; }
 }
 
 @media screen and (max-width: 991px) {
@@ -323,38 +337,13 @@
     .secur-gover-card{ flex-direction: row; width: 100%; text-align: left; }
     .sol-hero-text{ padding-top: 0; }
 
-    
-    .adv-protection-wrapper {
-        display: block;
-    }
-
-    .adv-protextion-txt-head {
-        width: 100%;
-        position: static;
-        margin-bottom: 25px;
-    }
-
-    /* Hide desktop cards */
-    .adv-protection-cards-main {
-        display: none;
-    }
+    .adv-protection-wrapper { display: block; }
+    .adv-protextion-txt-head { width: 100%; position: static; margin-bottom: 25px; }
+    .adv-protection-cards-main { display: none;}
 
     /* SCROLL WRAPPER */
-    .adv-protection-scroll-wrapper {
-        display: flex;
-        overflow: hidden;
-        /* width: 300px; */
-        gap: 20px;
-        position: relative;
-    }
-
-    .adv-protection-scroll-wrapper .scroll-track {
-        display: flex;
-        gap: 20px;
-        flex-shrink: 0;
-        animation: scrolling 12s linear infinite;
-    }
-
+    .adv-protection-scroll-wrapper { display: flex; overflow: hidden; gap: 20px; position: relative; }
+    .adv-protection-scroll-wrapper .scroll-track { display: flex; gap: 20px; flex-shrink: 0; animation: scrolling 12s linear infinite; }
     .adv-card span{ font-size: 22px; }
 
     /* MOBILE CARD STYLE */
@@ -382,6 +371,12 @@
     .solution-hero .hero-details-wrapper img{ transform: none !important; }
     .security-hero .hero-details-wrapper img{ transform: none !important; }
     .coming-soon-hero-wrapper{ gap: 200px !important; flex-direction: column !important; }    
+    .capablty-lists:first-child{ width: 300px; }
+    .capablty-lists-divider{ display: none !important; }
+    .capablty-lists-wrapper{ gap: 90px !important; }
+    .privacy-policy-hero{ padding-top: 50px; }
+
+    .comingsoon-wrapper{ gap: 120px !important; }
 } 
 
 @media screen and (max-width: 839px) { 
@@ -433,6 +428,7 @@
     .sec-regulatory-wrapper{ flex-direction: column-reverse; gap: 30px; }
     .SecurityRegulatoryImage{ width: 100%; height: 300px; }
     .sec-regulatory-left{ gap: 20px; }
+    .capablty-lists:first-child, .capablty-lists:last-child{ gap: 40px; }
 }
 
 @media screen and (max-width: 767px) {
@@ -483,7 +479,7 @@
     .advance-security-pro-text h2, .advance-security-pro-text p, .sec-regulatory-heading{ text-align: left; }
     .sec-regulatory-text-wrap{ padding-left: 0; }
 
-        .plan-descrptn{ display: none !important; }
+    .plan-descrptn{ display: none !important; }
     .pricing-wrapper{ flex-direction: column; }
     .pricing-headings{ margin-bottom: 0 !important; }
     .plan-descrptn-tabs{ display: flex; justify-content: center; align-items: center; padding-top: 50px; }
@@ -522,6 +518,25 @@
 
     .coming-soon-hero-wrapper{ display: visible!important; }
     .coming-soon-img{ display: block!important; }
+
+    .capablty-list{ width: 100% !important; }
+    .capablty-lists:first-child{ width: 100%; }
+    .capablty-lists:last-child{ gap: 40px; }
+    .capablty-lists-wrapper{ gap: 40px !important; }
+    .terms-condition-main{ gap: 20px; }
+    .cookienoticemain p, .privacypolicymain p, .termsmain p{ padding-top: 0; padding-bottom: 10px; }
+
+    /* .capablty-lists{ align-items: flex-start; position: sticky; top: 0; } */  
+
+    .comingsoon-wrapper{ flex-direction: column-reverse; }
+    .comingsoon{ height: 820px!important; padding-top: 100px !important; }
+    /* .comingsoon-wrapper{ padding-bottom: 500px !important; } */
+    .comingsoon-wrapper{ gap: 50px !important; }
+
+    .secur-gover-card{ flex-direction: column; }
+    .secur-gover-card img{ width: 100%; }
+    .adv-card span{ padding-bottom: 10px; }
+    .footer-cta-left{ text-align: left; }
 }
 
 @media screen and (max-width: 639px) {
@@ -553,6 +568,11 @@
     .info-card{ width: 240px; padding: 20px 10px; }
     .info-card-location{ width: 100%; }
     .secur-gover-card{ flex-direction: column; }
+
+    .comingsoon-wrapper img{ width: 300px; }
+    .comingsoon-content img{ width: 150px !important; }
+    .comingsoon{ padding-top: 50px !important; height: 750px !important; }
+
 }
 
 @media screen and (max-width: 575px) {
@@ -576,13 +596,7 @@
 
     .mobile-menu{ padding-left: 18px; }
     .info-card{ padding: 15px; width: 100%;  }
-    .capablty-lists-wrapper{ display: none !important; }
-    /* .core-capablty-headings{ position: sticky; top: 100px; } */
-    .capablty-lists-responsive-wrapper{ display: block; padding: 60px 0 30px 0; gap: 20px; }
-    .capablty-list, .capablty-divider{ position: sticky; top: 300px; }
-    .capablty-list{ background-color: var(--light-grey); padding: 20px; border-radius: 20px; }
-    .capablty-lists-responsive-wrapper .capablty-lists{  gap: 20px; }
-    .adv-card span{ padding-bottom: 10px; } 
+
 }
 
 @media screen and (max-width: 480px) {
@@ -647,6 +661,14 @@
     .headerLogo img{ width: 100px; }
     .sol-hero-text{ padding-top: 50px; }
     .adv-card{ width: 300px; }
+
+    .mobile-menu ul li a{ font-size: 20px; line-height: 30px; }
+    .mobile-menu ul{ gap: 20px; }
+    .mobile-menu ul { padding-top: 80px; }
+    .coming-soon-image{ display: none; }
+    .comingsoon{ height: 600px !important; }
+    .comingsoon-wrapper{ height: 500px !important; }
+    .comingsoon-content img { width: 200px !important; } 
 }
 
 @media screen and (max-width: 374px) {

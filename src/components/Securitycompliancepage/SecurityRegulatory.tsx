@@ -1,64 +1,88 @@
+'use client'
+
 import Image from 'next/image'
 import React from 'react'
+import { motion } from 'framer-motion'
 
 const SecurityRegulatory = () => {
+    // Parent container variant for stagger
+    const containerVariants = {
+        hidden: {},
+        visible: {
+            transition: {
+                staggerChildren: 0.8, // delay between each child
+            }
+        }
+    }
+
+    // Child variants
+    const textVariants = {
+        hidden: { x: -100, opacity: 0 },
+        visible: { x: 0, opacity: 1, transition: { duration: 1 } }
+    }
+
+    const items = [
+        {
+            title: '21 CFR Part 11 eSignatures',
+            text: 'Support electronic signatures that satisfy FDA requirements for authenticity and data integrity.'
+        },
+        {
+            title: 'Immutable Audit Trails',
+            text: 'Preserve tamper‑proof records of every transaction and system event for full traceability.'
+        },
+        {
+            title: 'Jurisdiction Packs (US, EU, India)',
+            text: 'Use pre‑configured compliance packs tailored to regional regulations and documentation needs.'
+        }
+    ]
+
     return (
-        <>
-            <section className="section-bottom">
-                <div className="container">
-                    <div className="secr-regulatory-main">
-                        <div className="sec-regulatory-heading">
-                            <h2 className='h3 text-md'>Built for Global Regulatory Excellence</h2>
+        <section className="section-bottom">
+            <div className="container">
+                <div className="secr-regulatory-main">
+                    <div className="sec-regulatory-heading">
+                        <h2 className='h3 text-md'>Built for Global Regulatory Excellence</h2>
+                        <p className='h6 text-rg'>
+                            Our platform is designed to meet stringent international compliance frameworks, providing end-to-end protection for sensitive financial and clinical data. Every transaction is validated against regulatory benchmarks.
+                        </p>
+                    </div>
 
-                            <p className='h6 text-rg'>Our platform is designed to meet stringent international compliance frameworks, providing end-to-end protection for sensitive financial and clinical data. Every transaction is validated against regulatory benchmarks.</p>
-
-                        </div>
-                        <div className="sec-regulatory-wrapper">
-                            <div className="sec-regulatory-left">
-                                <div className='sec-regulatory-text-wrap'>
-                                    <Image src="images/securitypage/check.svg" alt='' width={15} height={12} priority={false}></Image>
-
-                                    <div className=''>
-                                        <h5 className='h5 text-sb'>21 CFR Part 11 eSignatures</h5>
-
-                                        <p className='text-18 text-rg'>Support electronic signatures that satisfy FDA requirements for authenticity and data integrity.</p>
+                    <div className="sec-regulatory-wrapper">
+                        {/* Parent motion div for stagger */}
+                        <motion.div
+                            className="sec-regulatory-left"
+                            variants={containerVariants}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, amount: 0.5 }}
+                        >
+                            {items.map((item, i) => (
+                                <motion.div
+                                    key={i}
+                                    className='sec-regulatory-text-wrap'
+                                    variants={textVariants} // child variant
+                                >
+                                    <Image src="/images/securitypage/check.svg" alt='' width={15} height={12} />
+                                    <div>
+                                        <h5 className='h5 text-sb'>{item.title}</h5>
+                                        <p className='text-18 text-rg'>{item.text}</p>
                                     </div>
+                                </motion.div>
+                            ))}
+                        </motion.div>
 
-                                </div>
-
-                                <div className='sec-regulatory-text-wrap'>
-                                    <Image src="images/securitypage/check.svg" alt='' width={15} height={12} priority={false}></Image>
-
-                                    <div className=''>
-                                        <h5 className='h5 text-sb'>Immutable Audit Trails</h5>
-
-                                        <p className='text-18 text-rg'>Preserve tamper‑proof records of every transaction and system event for full traceability.</p>
-                                    </div>
-
-                                </div>
-
-                                <div className='sec-regulatory-text-wrap'>
-                                    <Image src="images/securitypage/check.svg" alt='' width={15} height={12} priority={false}></Image>
-
-                                    <div className=''>
-                                        <h5 className='h5 text-sb'>Jurisdiction Packs (US, EU, India)</h5>
-
-                                        <p className='text-18 text-rg'>Use pre‑configured compliance packs tailored to regional regulations and documentation needs.</p>
-                                    </div>
-
-                                </div>
-                            </div>
-
-
-
-                            <Image className='SecurityRegulatoryImage' src="/images/securitypage/SecurityRegulatoryImage.webp" alt='' width={748} height={548} priority></Image>
-
-
-                        </div>
+                        <Image
+                            className='SecurityRegulatoryImage'
+                            src="/images/securitypage/SecurityRegulatoryImage.webp"
+                            alt=''
+                            width={748}
+                            height={548}
+                            priority
+                        />
                     </div>
                 </div>
-            </section>
-        </>
+            </div>
+        </section>
     )
 }
 

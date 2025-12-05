@@ -1,51 +1,99 @@
 "use client"
 
 import Image from "next/image";
+import { useEffect, useRef } from "react";
 
 export default function SeamlessPayments() {
-    return (
-        <>
-            <section className="section seamless-payment">
-                <div className="container">
-                    <div className="smls-pymt-headings">
-                        <h2>The Foundation of Seamless Payments</h2>
+  // type the ref as an HTMLSectionElement (or HTMLElement)
+  const sectionRef = useRef<HTMLElement | null>(null);
 
-                        <p className="h6 text-rg">Four core capabilities powering secure, compliant clinical trial payments.</p>
-                    </div>
+  useEffect(() => {
+    const sectionEl = sectionRef.current;
+    if (!sectionEl) return;
 
-                    <Image src="/images/homepage/seamless-payment-updated.webp" alt="seamless-payment" width={870} height={551}></Image>
+    // type the NodeList as NodeListOf<HTMLElement>
+    const boxes = sectionEl.querySelectorAll(".pymt-box") as NodeListOf<HTMLElement>;
 
-                    <div className="smls-pymt-details">
-                        <div className="smls-pymt-box-wrapper">
-                            <div className="pymt-box">
-                                <h5>Plan & Configure</h5>
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          // add a staggered animationDelay and a class to trigger CSS animation
+          boxes.forEach((box, index) => {
+            // ensure we set a unit for the delay
+            box.style.animationDelay = `${index * 1}s`;
+            box.classList.add("pymt-stagger");
+          });
 
-                                <p className="text-18">Design budgets, set FX and tax rules, and integrate systems effortlessly to ensure accurate financial planning.</p>
-                            </div>
-
-                            <div className="pymt-box">
-                                <h5>Govern & Comply</h5>
-
-                                <p className="text-18">Ensure KYC/AML screening, audit trails, and global regulatory compliance.</p>
-                            </div>
-                        </div>
-
-                        <div className="smls-pymt-box-wrapper">
-                            <div className="pymt-box">
-                                <h5>Execute Payments</h5>
-
-                                <p className="text-18">Process invoices, batch disbursements, and timely participant payouts securely.</p>
-                            </div>
-
-                            <div className="pymt-box">
-                                <h5>Operate & Optimize</h5>
-
-                                <p className="text-18">Reconcile transactions via analytics dashboards and automated workflows.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </>
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 }
     );
+
+    observer.observe(sectionEl);
+
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <>
+      <section ref={sectionRef} className="section seamless-payment">
+        <div className="container">
+          <div className="smls-pymt-headings">
+            <h2>The Foundation of Seamless Payments</h2>
+
+            <p className="h6 text-rg">
+              Four core capabilities powering secure, compliant clinical trial payments.
+            </p>
+          </div>
+
+          <Image
+            src="/images/homepage/seamless-payment-updated.webp"
+            alt="seamless-payment"
+            width={870}
+            height={551}
+          />
+
+          <div className="smls-pymt-details">
+            <div className="smls-pymt-box-wrapper">
+              <div className="pymt-box">
+                <h5>Plan & Configure</h5>
+
+                <p className="text-18">
+                  Design budgets, set FX and tax rules, and integrate systems effortlessly to ensure
+                  accurate financial planning.
+                </p>
+              </div>
+
+              <div className="pymt-box">
+                <h5>Govern & Comply</h5>
+
+                <p className="text-18">
+                  Ensure KYC/AML screening, audit trails, and global regulatory compliance.
+                </p>
+              </div>
+            </div>
+
+            <div className="smls-pymt-box-wrapper">
+              <div className="pymt-box">
+                <h5>Execute Payments</h5>
+
+                <p className="text-18">
+                  Process invoices, batch disbursements, and timely participant payouts securely.
+                </p>
+              </div>
+
+              <div className="pymt-box">
+                <h5>Operate & Optimize</h5>
+
+                <p className="text-18">
+                  Reconcile transactions via analytics dashboards and automated workflows.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }

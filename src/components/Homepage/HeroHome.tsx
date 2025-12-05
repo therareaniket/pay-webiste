@@ -6,24 +6,35 @@ import Link from "next/link";
 
 export default function HeroHome() {
 
-    useEffect(() => {
-        const elements = document.querySelectorAll(".animate-on-scroll");
+useEffect(() => {
+    // --- HAND ANIMATION ON PAGE LOAD --- //
+    const hand = document.querySelector(".home-hero-hand");
 
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("animate-active");
-                    }
-                });
-            },
-            { threshold: 0.3 }
-        );
+    if (hand) {
+        requestAnimationFrame(() => {
+            hand.classList.add("hero-hand-active");
+        });
+    }
 
-        elements.forEach((el) => observer.observe(el));
+    // --- TEXT & BUTTON ANIMATIONS (your existing code) --- //
+    const elements = document.querySelectorAll(".animate-on-scroll");
 
-        return () => observer.disconnect();
-    }, []);
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("animate-active");
+                }
+            });
+        },
+        { threshold: 0.3 }
+    );
+
+    elements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+}, []);
+
 
     return (
         <>

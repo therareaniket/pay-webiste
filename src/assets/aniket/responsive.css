@@ -327,7 +327,7 @@
     .faster-cycle, .payout-success { gap: 20px; }
     .payout-success { right: -65%; }
     .pymt-box { width: 320px; height: 130px; }
-    .capablty-lists-divider { display: none; }
+    .capablty-lists-divider, .capablty-divider { display: none !important; }
     .capablty-lists:first-child { justify-content: start; }
     .capablty-lists:last-child { display: flex; flex-direction: column; justify-content: end; }
     /* .pillar-details { width: 80%; } */

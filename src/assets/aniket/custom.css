@@ -197,11 +197,11 @@ body { background-color: #FAFAFA; }
 	  rgba(255, 255, 255, 0) 30%,
 	  rgba(255, 255, 255, 0.25) 55%,
 	  rgba(255, 255, 255, 0) 70%
-	); mix-blend-mode: screen; opacity: 0.15; transform: translateX(-25%); transition: all var(--anim-time) var(--anim-ease); z-index: 2;
+	); mix-blend-mode: screen; opacity: 0.15; transform: translateX(-50%); transition: all var(--anim-time) var(--anim-ease); z-index: 2;
 }
 
 .glass-bg:hover::before { --angle: -120deg; }
-.glass-bg:hover::after { opacity: 0.3; transform: translateX(25%); }
+.glass-bg:hover::after { opacity: 0.3; transform: translateX(35%); }
 
 .future-of-payments { 
     background: linear-gradient(#00000033, #00000033),
@@ -259,11 +259,9 @@ body { background-color: #FAFAFA; }
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /* Linear gradient background */
-  background: linear-gradient(120deg, #693399 0%, #557CFF 100%);
-  background-size: 200% 200%; /* larger than container to allow motion */
-  animation: moveGradient 5s linear infinite;
+  background: linear-gradient(120deg, #1a0033 0%, #693399 50%, #557CFF 100%);
+  background-size: 200% 200%;
+  animation: moveGradient 10s linear infinite;
 }
 
 .donut-inner-circle {
@@ -283,12 +281,9 @@ body { background-color: #FAFAFA; }
 
 /* Animate the background position to move the gradient */
 @keyframes moveGradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
 }
 
 

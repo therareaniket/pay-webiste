@@ -12,7 +12,7 @@ const ComingSoon = () => {
 
                 <div className="container">
                     <div className="comingsoon-wrapper">
-                        <Image src="/images/comingsoon.webp" alt="comingsoon" width={524} height={475} priority={true}></Image>
+                        <Image className='coming-soon-image' src="/images/comingsoon.webp" alt="comingsoon" width={524} height={475} priority={true}></Image>
 
                         <div className="comingsoon-content">
                             <Image src="/images/logo-comingsoon.svg" alt='logo-comingsoon' width={280} height={62} priority={true}></Image>
