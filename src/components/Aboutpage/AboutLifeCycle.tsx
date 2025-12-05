@@ -38,7 +38,7 @@ export default function AboutLifeCycle() {
                                     </mask>
                                 </defs>
 
-                                <path d={pathD} stroke="#F2F2F2" strokeWidth={20} strokeLinecap="round" fill="none" />
+                                <path d={pathD} stroke="url(#purpleStroke)" strokeWidth={20} strokeLinecap="round" fill="none" />
 
                                 <g mask="url(#strokeMask)">
                                     <path d={pathD} stroke="url(#purpleStroke)" strokeWidth={20} strokeLinecap="round" fill="none" />

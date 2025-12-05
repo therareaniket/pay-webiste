@@ -342,3 +342,4 @@ body { background-color: #FAFAFA; }
 .life-cycle-timeline-mob { display: none; }
 
 .hero-home, .sub-site-hero { box-shadow: 0px 10px 40px rgba(0,0,0,0.08); }
+.seamless-payment { overflow: none !important; }
