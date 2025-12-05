@@ -444,7 +444,7 @@
     .sub-site-hero .hero-details-wrapper img { display: none; }
     .sub-site-hero .site-hero-blob { width: 400px; }
 
-    .meet-dhatupay { padding-top: 0px; }
+    /* .meet-dhatupay { padding-top: 0px; } */
     .meet-dp-headings { flex-direction: column; text-align: left; align-items: start; }
     .meet-dp-headings h2{  width: 100%; } 
     .meet-dp-headings .h6 { width: 100%; }
