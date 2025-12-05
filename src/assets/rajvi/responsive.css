@@ -671,9 +671,7 @@
     .comingsoon-content img { width: 200px !important; } 
 }
 
-@media screen and (max-width: 374px) {
-    /* .image-tag-wrapper{ flex-direction: column; align-items: flex-end; gap: 20px  ; } */
-}
+@media screen and (max-width: 374px) {}
 
 @media screen and (max-width: 359px) {
     /* footer */
