@@ -343,3 +343,5 @@ body { background-color: #FAFAFA; }
 .seamless-payment { overflow: none !important; }
 
 .active-footer-link { color: var(--secondary); }
+.integ-trigger[data-state="open"] { color: var(--secondary-purple-bluish); }
+.integ-trigger[data-state="open"] svg { stroke: var(--secondary-purple-bluish); }

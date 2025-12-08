@@ -168,6 +168,7 @@ export default function AboutIntegration() {
                         <Accordion type="single" defaultValue="item-1" collapsible>
                             <AccordionItem value="item-1" className="integr-item">
                                 <AccordionTrigger className="integ-trigger"><h3 className="h4 text-md">Integration Layer</h3></AccordionTrigger>
+                                
                                 <AccordionContent className="integ-cont">
                                     <div className="integration-tab-content">
                                         <div className="content-list">
