@@ -6,13 +6,13 @@ import { motion } from 'framer-motion';
 
 const SecurityHeroAnimate =  { 
     ltrInitial1: { x: -100, opacity: 0 },
-    ltrAnimate1: { x: 0, opacity: 1, transition: { duration: 1 } },
+    ltrAnimate1: { x: 0, opacity: 1, transition: { duration: 1, delay: 2 } },
 
     ttbText1: {  y: -50, opacity: 0 },
-    ttbTextAnimate1: { y: 0, opacity: 1, transition: { duration: 1, delay: 1 } },
+    ttbTextAnimate1: { y: 0, opacity: 1, transition: { duration: 1, } },
     
     ttbTextDelayed1: {  y: -50, opacity: 0 },
-    ttbTextAnimateDelayed1: { y: 0, opacity: 1, transition: { duration: 1, delay: 2 } },
+    ttbTextAnimateDelayed1: { y: 0, opacity: 1, transition: { duration: 1, delay: 1 } },
 }
 
 const SolutionHero = () => {

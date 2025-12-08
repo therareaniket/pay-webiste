@@ -475,26 +475,26 @@
 }
 
 /* Active state when JS triggers */
-.hero-hand-active { animation: heroHandSlideLeft 1.2s ease-out forwards; animation-delay: 0s; }
+.hero-hand-active { animation: heroHandSlideLeft 1.2s ease-out forwards; animation-delay: 2s;  }
 
 @keyframes heroSlideFromTop {
     0% { opacity: 0; transform: translateY(-60px); }
     100% { opacity: 1; transform: translateY(0); }
 }
-.animate-active.hero-title {   animation: heroSlideFromTop 1.5s ease-out forwards; animation-delay: 1.3s; }
+.animate-active.hero-title { animation: heroSlideFromTop 1.5s ease-out forwards;  }
 
 @keyframes heroFadeUp {
     0% { opacity: 0; transform: translateY(-20px); }
     100% { opacity: 1; transform: translateY(0); }
 }
-.animate-active.hero-desc { animation: heroFadeUp 1s ease-out forwards; animation-delay: 1.8s; }
+.animate-active.hero-desc { animation: heroFadeUp 1s ease-out forwards; animation-delay: 1s; }
 
 @keyframes heroSlideLeft {
     0% { opacity: 0; transform: translateX(-60px); }
     100% { opacity: 1; transform: translateX(0); }
 }
-.animate-active.hero-btn-1 { animation: heroSlideLeft 0.9s ease-out forwards; animation-delay: 2.4s;}
-.animate-active.hero-btn-2 { animation: heroSlideLeft 0.9s ease-out forwards; animation-delay: 2.9s; }
+.animate-active.hero-btn-1 { animation: heroSlideLeft 0.9s ease-out forwards; animation-delay: 3s;}
+.animate-active.hero-btn-2 { animation: heroSlideLeft 0.9s ease-out forwards; animation-delay: 4s; }
 
 .popout-card {
   position: relative;
@@ -507,7 +507,6 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
-
 
 .popout-card:hover { transform: translateY(-10px) scale(1.03); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); cursor: pointer; }
 .popout-card:hover h3{ color: var(--secondary-purple-bluish); }
@@ -545,7 +544,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 
 
 .inner-circle-text{ display: flex !important; flex-direction: column; align-items: center; justify-content: center; width: 150px !important; gap: 10px; text-align: center; }
@@ -618,7 +616,6 @@
 
 .sol-stats-list-desc { opacity: 0; transform: translateX(-60px); transition: all 1s ease-out; }
 .sol-stats-list-desc.animate { opacity: 1; transform: translateX(0); }
-
 
 .stakeholders-cards {
   position: relative;

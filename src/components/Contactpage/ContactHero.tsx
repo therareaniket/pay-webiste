@@ -6,13 +6,13 @@ import { motion } from 'framer-motion';
 
 const ContactHeroAnimate =  { 
     ltrInitial: { x: -100, opacity: 0 },
-    ltrAnimate: { x: 0, opacity: 1, transition: { duration: 1 } },
+    ltrAnimate: { x: 0, opacity: 1, transition: { duration: 1, delay: 2 } },
 
     ttbText: {  y: -50, opacity: 0 },
-    ttbTextAnimate: { y: 0, opacity: 1, transition: { duration: 1, delay: 1 } },
+    ttbTextAnimate: { y: 0, opacity: 1, transition: { duration: 1, } },
     
     ttbTextDelayed: {  y: -50, opacity: 0 },
-    ttbTextAnimateDelayed: { y: 0, opacity: 1, transition: { duration: 1, delay: 2 } },
+    ttbTextAnimateDelayed: { y: 0, opacity: 1, transition: { duration: 1, delay: 1 } },
 }
 
 const ContactHero = () => {
