@@ -634,6 +634,10 @@
     .capablty-icon img { width: 28px; }
     .capablty-lists-wrapper { padding-bottom: 0; }
 
+    .lc-mob-centerline { width: 10px; height: 100%; }
+    .lc-mob-animated-line { width: 10px; height: 20%;  }
+    .lc-mob-centerline .center-point { width: 20px; height: 20px; }
+    .lc-block-1, .lc-block-2, .lc-block-3, .lc-block-4 { transform: translate(20px, 10px); }
 }
 
 @media screen and (max-width: 374px) {
