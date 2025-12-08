@@ -167,7 +167,7 @@ body { background-color: #FAFAFA; }
 
 
 /* ABOUT-US PAGE */
-.sub-site-hero { min-height: 700px; position: relative; overflow: hidden; }
+.sub-site-hero { max-height: 700px; position: relative; overflow: hidden; }
 .sub-site-hero .light-orange-box { height: 700px;  }
 .subpage-hero-details { max-width: 850px; position: relative; padding-top: 100px; }
 .sub-site-hero .hero-details-wrapper { justify-content: space-between; align-items: end; position: relative; }
@@ -281,9 +281,9 @@ body { background-color: #FAFAFA; }
 
 /* Animate the background position to move the gradient */
 @keyframes moveGradient {
-  0% { background-position: 0% 0%; }
-  50% { background-position: 100% 100%; }
-  100% { background-position: 0% 0%; }
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
 }
 
 
@@ -315,12 +315,10 @@ body { background-color: #FAFAFA; }
 .blog-hero-slider .swiper-pagination { position: relative !important; text-align: right; padding: 30px 100px 0 0; }
 .blog-swiper-slider .swiper-pagination-bullet { background-color: var(--grey); opacity: 0.5; }
 .blog-swiper-slider .swiper-pagination-bullet-active { background: linear-gradient(135deg, #557CFF 0%, #693399 100%); width: 20px; border-radius: 5px; opacity: 1; }
-
 .life-cycle-headings { text-align: center; }
 
-
 .life-cycle-timeline { height: 660px; display: flex; align-items: center; justify-content: center; margin-top: 100px; }
-.stroke-mask-path { stroke-dasharray: 1500; stroke-dashoffset: 1500; animation: strokeReveal 3s ease-out forwards; animation-delay: 2s; }
+/* .stroke-mask-path { stroke-dasharray: 1500; stroke-dashoffset: 1500; animation: strokeReveal 3s ease-out forwards; animation-delay: 2s; } */
 .life-cycle-list-wrapper { position: relative; }
 .point { width: 30px; height: 30px; border-radius: 50%; position: absolute; bottom: 0; left: 20%; background-color: var(--light-grey); transform: translateY(5px); }
 .point-2 { bottom: 30%; left: 40%; transform: translateY(0px);}
@@ -343,3 +341,5 @@ body { background-color: #FAFAFA; }
 
 .hero-home, .sub-site-hero { box-shadow: 0px 10px 40px rgba(0,0,0,0.08); }
 .seamless-payment { overflow: none !important; }
+
+.active-footer-link { color: var(--secondary); }

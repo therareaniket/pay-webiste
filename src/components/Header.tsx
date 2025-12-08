@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -32,6 +33,12 @@ const Header = () => {
     return () => window.removeEventListener("scroll", checkScroll);
   }, []);
 
+      const pathname = usePathname();
+      
+      const isActive = (href: string) => {
+          return pathname?.toLowerCase() === href.toLowerCase();
+      };
+
   return (
     <header className={`header-main ${scrolled ? "scrolled" : ""}`}>
       <div className="container">
@@ -50,16 +57,16 @@ const Header = () => {
           {/* Desktop Nav */}
           <div className="header-nav-links">
             <ul>
-              <li><Link href="/About">About</Link></li>
-              <li><Link href="/Solutions">Solutions</Link></li>
-              <li><Link href="/SecurityCompliance">Security & Compliance</Link></li>
-              <li><Link href="/BlogListing">Resources</Link></li>
+              <li><Link href="/About" className={`${isActive("/About") ? "active-link-header" : ""}`}>About</Link></li>
+              <li><Link href="/Solutions" className={`${isActive("/Solutions") ? "active-link-header" : ""}`}>Solutions</Link></li>
+              <li><Link href="/SecurityCompliance" className={`${isActive("/SecurityCompliance") ? "active-link-header" : ""}`}>Security & Compliance</Link></li>
+              <li><Link href="/BlogListing" className={`${isActive("/BlogListing") ? "active-link-header" : ""}`}>Resources</Link></li>
             </ul>
           </div>
 
           {/* Contact */}
           <div className="contact-link site-radius-50">
-            <Link href="/Contact" className="header-contact-link site-radius-50 link-padding">
+            <Link href="/Contact" className={`header-contact-link site-radius-50 link-padding ${isActive("/Contact") ? "contact-active-header" : ""}`}>
               Contact
             </Link>
           </div>
@@ -79,12 +86,12 @@ const Header = () => {
       {/* Fullscreen Mobile Menu */}
       <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
         <ul>
-          <li><Link href="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
-          <li><Link href="/About" onClick={() => setMenuOpen(false)}>About</Link></li>
-          <li><Link href="/Solutions" onClick={() => setMenuOpen(false)}>Solutions</Link></li>
-          <li><Link href="/SecurityCompliance" onClick={() => setMenuOpen(false)}>Security & Compliance</Link></li>
-          <li><Link href="/BlogListing" onClick={() => setMenuOpen(false)}>Resources</Link></li>
-          <li><Link href="/Contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
+          <li><Link href="/" onClick={() => setMenuOpen(false)} className={`${isActive("/") ? "active-link-header" : ""}`}>Home</Link></li>
+          <li><Link href="/About" onClick={() => setMenuOpen(false)} className={`${isActive("/About") ? "active-link-header" : ""}`}>About</Link></li>
+          <li><Link href="/Solutions" onClick={() => setMenuOpen(false)} className={`${isActive("/Solutions") ? "active-link-header" : ""}`}>Solutions</Link></li>
+          <li><Link href="/SecurityCompliance" onClick={() => setMenuOpen(false)} className={`${isActive("/SecurityCompliance") ? "active-link-header" : ""}`}>Security & Compliance</Link></li>
+          <li><Link href="/BlogListing" onClick={() => setMenuOpen(false)} className={`${isActive("/BlogListing") ? "active-link-header" : ""}`}>Resources</Link></li>
+          <li><Link href="/Contact" onClick={() => setMenuOpen(false)} className={`${isActive("/Contact") ? "active-link-header" : ""}`}>Contact</Link></li>
         </ul>
       </div>
     </header>

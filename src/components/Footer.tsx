@@ -3,12 +3,21 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { usePathname } from "next/navigation";
 
-    const Footer = () => {
+
+const Footer = () => {
+
+    const pathname = usePathname();
+
+    const isActive = (href: string) => {
+        return pathname?.toLowerCase() === href.toLowerCase();
+    };
+
     return (
         <footer className='footer-section-main'>
             <div className="container">
-                <h1 className='text-md footer-lets-connect'>Let’s Connect</h1>
+                <h1 className='text-md footer-lets-connect'>Let's Connect</h1>
                 <div className="glass-footer-cta">
                     <div className="footer-cta-left">
                         <h2 className='h3 text-sb'>Take Your Clinical Trials Global with DhatuPay</h2>
@@ -20,7 +29,7 @@ import React from 'react'
 
                 <div className="footer-bottom">
                     <div className="footer-logo-section">
-                      <Link href="/"><Image className='footer-logo' src='/images/logo/paylogo.svg' alt='pay-logo' width={176} height={34} priority={false}></Image></Link>  
+                        <Link href="/"><Image className='footer-logo' src='/images/logo/paylogo.svg' alt='pay-logo' width={176} height={34} priority={false}></Image></Link>
 
                         <p className='text-md text-16 text-grey footer-logo-para'>Secure Payments. Global Compliance. Trusted by Businesses. Delivering seamless transactions with advanced security.</p>
 
@@ -35,19 +44,19 @@ import React from 'react'
                             <ul>
 
                                 <li className='text-rg text-16 text-grey'>
-                                    <Link href="/About">About</Link>
+                                    <Link href="/About" className={`${isActive("/About") ? "active-footer-link" : ""}`}>About</Link>
                                 </li>
                                 <li className='text-rg text-16 text-grey'>
-                                    <Link href="/Solutions">Solutions</Link>
+                                    <Link href="/Solutions" className={`${isActive("/Solutions") ? "active-footer-link" : ""}`}>Solutions</Link>
                                 </li>
                                 <li className='text-rg text-16 text-grey'>
-                                    <Link href="/SecurityCompliance">Security & Compliance </Link>
+                                    <Link href="/SecurityCompliance" className={`${isActive("/SecurityCompliance") ? "active-footer-link" : ""}`}>Security & Compliance </Link>
                                 </li>
                                 <li className='text-rg text-16 text-grey'>
-                                    <Link href="/BlogListing">Resources</Link>
+                                    <Link href="/BlogListing" className={`${isActive("/BlogListing") ? "active-footer-link" : ""}`}>Resources</Link>
                                 </li>
                                 <li className='text-rg text-16 text-grey'>
-                                    <Link href="/Contact">Contact</Link>
+                                    <Link href="/Contact" className={`${isActive("/Contact") ? "active-footer-link" : ""}`}>Contact</Link>
                                 </li>
                             </ul>
                         </div>
