@@ -178,6 +178,7 @@
     .integration-tab-content { gap: 60px; }
 
     .lc-info-block { width: 250px; height: 270px; }
+    .blog-slide-item { height: 500px !important; }
 }   
 
 @media screen and (max-width: 1199px) {
@@ -257,6 +258,8 @@
     .blog-slider { padding-top: 90px; }
     .point { width: 25px; height: 25px; }
     .lc-info-block { width: 235px; }
+
+    .capablty-lists-divider { max-height: 500px; }
 
 
 }
@@ -352,7 +355,7 @@
     .faster-cycle, .payout-success { gap: 20px; }
     .payout-success { right: -65%; }
     .pymt-box { width: 320px; height: 130px; }
-    .capablty-lists-divider, .capablty-divider { display: none !important; }
+    /* .capablty-lists-divider, .capablty-divider { display: none !important; } */
     .capablty-lists:first-child { justify-content: start; }
     .capablty-lists:last-child { display: flex; flex-direction: column; justify-content: end; }
     /* .pillar-details { width: 80%; } */
@@ -388,6 +391,10 @@
     .lc-block-1, .lc-block-2, .lc-block-3, .lc-block-4 { width: 270px; }
     .lc-block-1 h5, .lc-block-1 p, .lc-block-2 h5, .lc-block-2 p, .lc-block-3 h5, .lc-block-3 p, .lc-block-4 h5, .lc-block-4 p { width: 80%; }
     .life-cycle { padding-bottom: 120px; }
+    .capablty-lists { width: 320px; }
+    .capablty-list { width: 100%; height: max-content; gap: 16px; }
+    .capablty-divider { width: 100% !important; }
+    .list-details { width: 250px; }
 }
 
 /* THIS IS FOR HOMEPAGE SLIDER ONLY */
@@ -415,7 +422,7 @@
     .capablty-lists-wrapper { flex-direction: column; height: max-content; gap: 25px; }
     .capablty-list { width: 80%; height: 130px; height: max-content; margin: 0 auto; }
     .list-details { width: calc(100% - 80px); }
-    .capablty-lists-divider { display: block; width: 100%; height: 1px; }
+    .capablty-lists-divider { display: block; width: 100%; height: 1px !important; }
     .pricing-headings { text-align: left; }
     .plan-descrptn { flex-direction: column; }
     .plan-item { width: 100%; }
@@ -480,10 +487,12 @@
     .integ-cont { padding-top: 30px; }
     .integr-item .h5 { margin-bottom: 10px; }
 
-    .blog-slide-item { height: 500px !important; }
+    
     .slider-item-details p { width: 100%; }
 
     .life-cycle-headings { text-align: left; }
+    .capablty-lists { width: 100%; }
+    .capablty-lists-wrapper { gap: 25PX !important; }
 
 }
 
@@ -619,6 +628,11 @@
     .slider-item-details { left: 20px; width: 95%; }
     .lc-info-block h5 { margin-bottom: 6px; }
     .lc-block-1, .lc-block-2, .lc-block-3, .lc-block-4 { width: 290px; }
+
+    .capablty-icon { width: 40px; height: 40px; }
+    .list-details { width: calc(100% - 60px); }
+    .capablty-icon img { width: 28px; }
+    .capablty-lists-wrapper { padding-bottom: 0; }
 
 }
 
