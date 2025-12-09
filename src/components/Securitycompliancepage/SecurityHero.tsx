@@ -29,7 +29,7 @@ const SolutionHero = () => {
                   </motion.div>
         
                   <div className="subpage-hero-details">
-                    <motion.h1 className="text-sb" variants={SecurityHeroAnimate} initial="ttbText1" animate="ttbTextAnimate1" viewport={{ once: true }}>Where Compliance Leads, Security Thrives</motion.h1>
+                    <motion.h1 className="text-sb" variants={SecurityHeroAnimate} initial="ttbText1" animate="ttbTextAnimate1" viewport={{ once: true }}>Compliance Leads, Security Thrives</motion.h1>
                     {/* <h1 className="text-sb">Simplifying Global Clinical Trial Payments</h1> */}
         
                     <motion.p className="h6 text-rg" variants={SecurityHeroAnimate} initial="ttbTextDelayed1" animate="ttbTextAnimateDelayed1" viewport={{ once: true }}>DhatuPay is built for life sciences, combining global regulatory adherence with enterprise-grade security to protect every transaction. It supports frameworks like GxP and 21 CFR Part 11 while enforcing strong encryption, access controls, and immutable audit trails to keep your clinical payment data safe and audit-ready.</motion.p>

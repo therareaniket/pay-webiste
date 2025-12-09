@@ -73,7 +73,7 @@ const startSVG = (svg: Element) => {
 
                     {/* Heading */}
                     <div className="payment-headings">
-                        <h2>The Future of Clinical Trial Payments</h2>
+                        <h2>The Future of Clinical Trials Payments</h2>
                         <p className="h6 text-rg">Global Reach with Local Regulatory Confidence</p>
                     </div>
 
@@ -190,7 +190,7 @@ const startSVG = (svg: Element) => {
                                 <div className="detailed-text">
                                     <h3 className="h5 text-md">The Difference</h3>
                                     <motion.ul variants={AboutPaymentAnimate} initial="ltrInitial" whileInView="ltrAnimate" viewport={{once: true, amount: 1 }}>
-                                        <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />Purpose-built for life sciences, optimized for clinical trial workflows.</li>
+                                        <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />Purpose-built for life sciences, optimized for clinical trials workflows.</li>
                                         <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />Event-driven automation from CTMS/EDC data.</li>
                                         <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />Compliance-first architecture with 21 CFR Part 11, KYC, AML.</li>
                                         <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />Global scale with local rules via jurisdiction packs.</li>

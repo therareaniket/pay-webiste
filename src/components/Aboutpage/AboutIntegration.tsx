@@ -12,7 +12,7 @@ export default function AboutIntegration() {
                     <div className="integration-headings">
                         <h2>Layered, Modular Framework for Secure, Scalable Integration</h2>
 
-                        <p className="h6 text-rg">A flexible, layered design enabling seamless, secure connections across clinical trial ecosystems and financial systems</p>
+                        <p className="h6 text-rg">A flexible, layered design enabling seamless, secure connections across clinical trials ecosystems and financial systems</p>
                     </div>
 
                     <div className="trust-tabs integration-tabs">

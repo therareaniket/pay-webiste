@@ -367,3 +367,10 @@ body { background-color: #FAFAFA; }
 .headerLogo img {  width: 170px; }
 
 .wf-list-details p { color: var(--grey); }
+
+.workflow-lists .donut-circle { position: relative; z-index: 5; }
+.wf-list-item { position: relative; }
+.arrow-top-left { position: absolute; right: 0; top: 25%; transform: translateX(100%); z-index: 2; }
+.arrow-bottom-left { position: absolute; right: 0; bottom: 25%; transform: translateX(100%); z-index: 2; }
+.arrow-top-right { position: absolute; left: 0; top: 25%; transform: translateX(-100%); }
+.arrow-bottom-right { position: absolute; left: 0; bottom: 25%; transform: translateX(-100%); }

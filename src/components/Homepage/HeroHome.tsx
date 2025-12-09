@@ -108,7 +108,7 @@ useEffect(() => {
 
                             {/* Paragraph with animation class */}
                             <p className="h6 text-rg hero-desc animate-on-scroll">
-                                Effortless, compliant, and timely payments for Sponsors, CROs, Sites, and Participants. Our platform streamlines clinical trial payments with full transparency, accelerating every step from invoicing to payout worldwide.
+                                Effortless, compliant, and timely payments for Sponsors, CROs, Sites, and Participants. Our platform streamlines clinical trials payments with full transparency, accelerating every step from invoicing to payout worldwide.
                             </p>
                             {/* <p className="h6 text-rg hero-desc animate-on-scroll">
                                 Secure, compliant, and fast payouts for Sponsors, CROs, Sites, and participants , streamlining every step of clinical trial payments with transparency and efficiency.

@@ -89,9 +89,9 @@ export default function HomePayIntro() {
             <div className="container">
                 <div className="redefine-payment-wrapper">
                     <div className="redefine-pymt-details">
-                        <h2>Redefining Clinical Trial Payments</h2>
+                        <h2>Redefining Clinical Trials Payments</h2>
                         <p className="h6 text-rg">
-                            DhatuPay delivers secure, compliant clinical trial payments tailored for Sponsors, CROs, Sites, and Participants. This platform automates complex workflows for fast, transparent global payouts, eliminating delays and compliance risks.
+                            DhatuPay delivers secure, compliant clinical trials payments tailored for Sponsors, CROs, Sites, and Participants. This platform automates complex workflows for fast, transparent global payouts, eliminating delays and compliance risks.
                         </p>
                         <p className="h6 text-rg">
                             Bridge all stakeholders with reliable, real-time payment solutions that boost trial efficiency worldwide.

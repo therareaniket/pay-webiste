@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef } from "react";
 
 
@@ -53,6 +54,8 @@ export default function FinancialWorkflow() {
                                     Enable precise operations by processing standard bank formats—CAMT.053 and MT940—for seamless matching.
                                 </p>
                             </div>
+
+                            <Image src="/images/aboutpage/top-left-arrow.svg" alt="top-left-arrow" width={150} height={62} className="arrow-top-left"></Image>
                         </div>
 
                         <div className="wf-list-item site-radius-20 bg-[#FEE4D2]">
@@ -65,6 +68,8 @@ export default function FinancialWorkflow() {
                                     Empower decision-makers with end-to-end visibility through comprehensive operational and financial analytics dashboards.
                                 </p>
                             </div>
+
+                            <Image src="/images/aboutpage/bottom-left-arrow.svg" alt="bottom-left-arrow" width={150} height={62} className="arrow-bottom-left"></Image>
                         </div>
                     </div>
 
@@ -87,6 +92,8 @@ export default function FinancialWorkflow() {
                                     Monitor operational reliability with real-time SLA timers tracking every request&apos;s progress and status.
                                 </p>
                             </div>
+
+                            <Image src="/images/aboutpage/top-right-arrow.svg" alt="top-right-arrow" width={150} height={62} className="arrow-top-right"></Image>
                         </div>
 
                         <div className="wf-list-item site-radius-20 bg-[#DDD2FE]">
@@ -99,6 +106,8 @@ export default function FinancialWorkflow() {
                                     Deploy AI-driven anomaly detection and risk scoring to proactively shield against financial threats and irregularities.
                                 </p>
                             </div>
+
+                            <Image src="/images/aboutpage/bottom-right-arrow.svg" alt="bottom-right-arrow" width={150} height={62} className="arrow-bottom-right"></Image>
                         </div>
                     </div>
                 </div>

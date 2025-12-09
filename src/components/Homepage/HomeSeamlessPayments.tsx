@@ -43,7 +43,7 @@ export default function SeamlessPayments() {
             <h2>The Foundation of Seamless Payments</h2>
 
             <p className="h6 text-rg">
-              Four core capabilities powering secure, compliant clinical trial payments.
+              Four core capabilities powering secure, compliant clinical trials payments.
             </p>
           </div>
 

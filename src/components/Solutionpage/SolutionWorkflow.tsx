@@ -9,7 +9,7 @@ export default function SolutionWorkflow() {
                         <div className="soln-workflow-text" >
                             <h2 className="h3 text-md"> Solutions That Fit Every Workflow </h2>
 
-                            <p className="h6 text-rg">End-to-end payment and compliance solutions tailored for every clinical trial stakeholder.</p>
+                            <p className="h6 text-rg">End-to-end payment and compliance solutions tailored for every clinical trials stakeholder.</p>
                         </div>
 
                         <div className="soln-workflow-cards">

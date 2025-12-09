@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import Image from "next/image";
+import { motion } from 'framer-motion';
 
 export default function CoreCapabilities() {
 
@@ -82,6 +83,26 @@ export default function CoreCapabilities() {
         if (section) observer.observe(section);
     }, []);
 
+    const homeCoreCapabilities = (typeof window !== "undefined" && window.innerWidth <= 767) ? {
+        initialLTR1: { x: -40, opacity: 0 },
+        animateLTR1: { x: 0, opacity: 1, transition: { duration: 1, delay: 0.5 } },
+        initialLTR2: { x: 40, opacity: 0 },
+        animateLTR2: { x: 0, opacity: 1, transition: { duration: 1, delay: 0.5 } },
+        initialLTR3: { x: -40, opacity: 0 },
+        animateLTR3: { x: 0, opacity: 1, transition: { duration: 1, delay: 0.5 } },
+        initialLTR4: { x: 40, opacity: 0 },
+        animateLTR4: { x: 0, opacity: 1, transition: { duration: 1, delay: 0.5 } },
+    } : {
+        initialLTR1: { x: 0, opacity: 1 },
+        animateLTR1: { x: 0, opacity: 1, },
+        initialLTR2: { x: 0, opacity: 1 },
+        animateLTR2: { x: 0, opacity: 1, },
+        initialLTR3: { x: 0, opacity: 1 },
+        animateLTR3: { x: 0, opacity: 1, },
+        initialLTR4: { x: 0, opacity: 1 },
+        animateLTR4: { x: 0, opacity: 1, },
+    }
+
     return (
         <section className="section core-capabiblities">
             <div className="container">
@@ -90,7 +111,7 @@ export default function CoreCapabilities() {
                     <div className="core-capablty-headings">
                         <h2>Core Capabilities Powering DhatuPay</h2>
                         <p className="h6 text-rg">
-                            Secure, compliant clinical trial payments with global automation,
+                            Secure, compliant clinical trials payments with global automation,
                             AI insights, and built-in compliance.
                         </p>
                     </div>
@@ -98,7 +119,7 @@ export default function CoreCapabilities() {
                     <div className="capablty-lists-wrapper">
                         {/* LEFT BLOCK */}
                         <div className="capablty-lists capablty-left-lists">
-                            <div className="capablty-list capablty-left-list">
+                            <motion.div className="capablty-list capablty-left-list" variants={homeCoreCapabilities} initial="initialLTR1" whileInView="animateLTR1" viewport={{ once: true, amount: 0.8 }}>
                                 <div className="capablty-icon site-radius-10">
                                     <Image src="/images/homepage/icon-globe-coverage.svg" width={32} height={32} alt="" />
                                 </div>
@@ -106,11 +127,11 @@ export default function CoreCapabilities() {
                                     <h5>Global Coverage</h5>
                                     <p>Manage multi-currency transactions, FX conversions, and regional tax regulations seamlessly.</p>
                                 </div>
-                            </div>
+                            </motion.div>
 
                             <span className="capablty-divider capability-gradient"></span>
 
-                            <div className="capablty-list capablty-left-list">
+                            <motion.div className="capablty-list capablty-left-list" variants={homeCoreCapabilities} initial="initialLTR2" whileInView="animateLTR2" viewport={{ once: true, amount: 0.8 }}>
                                 <div className="capablty-icon site-radius-10">
                                     <Image src="/images/homepage/icon-ai-automation.svg" width={32} height={32} alt="" />
                                 </div>
@@ -118,7 +139,7 @@ export default function CoreCapabilities() {
                                     <h5>AI-Powered Automation</h5>
                                     <p>Intelligent algorithms predict, optimize, and execute payment workflows efficiently.</p>
                                 </div>
-                            </div>
+                            </motion.div>
                         </div>
 
                         {/* VERTICAL DIVIDER */}
@@ -126,7 +147,7 @@ export default function CoreCapabilities() {
 
                         {/* RIGHT BLOCK */}
                         <div className="capablty-lists capablty-right-lists">
-                            <div className="capablty-list capablty-right-list">
+                            <motion.div className="capablty-list capablty-right-list" variants={homeCoreCapabilities} initial="initialLTR3" whileInView="animateLTR3" viewport={{ once: true, amount: 0.8 }}>
                                 <div className="capablty-icon site-radius-10">
                                     <Image src="/images/homepage/icon-auto-payments.svg" width={32} height={32} alt="" />
                                 </div>
@@ -134,11 +155,11 @@ export default function CoreCapabilities() {
                                     <h5>Automated Payments</h5>
                                     <p>Streamline disbursements and approvals with smart, hands-free workflows.</p>
                                 </div>
-                            </div>
+                            </motion.div>
 
                             <span className="capablty-divider capability-gradient"></span>
 
-                            <div className="capablty-list capablty-right-list">
+                            <motion.div className="capablty-list capablty-right-list" variants={homeCoreCapabilities} initial="initialLTR4" whileInView="animateLTR4" viewport={{ once: true, amount: 0.8 }}>
                                 <div className="capablty-icon site-radius-10">
                                     <Image src="/images/homepage/icon-in-built-compliance.svg" width={32} height={32} alt="" />
                                 </div>
@@ -146,7 +167,7 @@ export default function CoreCapabilities() {
                                     <h5>Compliance Built-In</h5>
                                     <p>Achieve 21 CFR Part 11 readiness with KYC/AML checks and automated tax enforcement.</p>
                                 </div>
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
 

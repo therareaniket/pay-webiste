@@ -37,7 +37,7 @@ export default function DhatuPayWorksSlider() {
                 <div className="works-headings">
                     <h2>How DhatuPay Works</h2>
                     <p className="h6 text-rg">
-                        Streamlined clinical trial payments from onboarding to global payouts.
+                        Streamlined clinical trials payments from onboarding to global payouts.
                     </p>
                 </div>
 

@@ -18,7 +18,7 @@ const SolutionHeroAnimate =  {
 
 const SolutionHero = () => {
   	return (
-			<section className="section sub-site-hero solution-hero">
+			<section className="section sub-site-hero ">
 				<span className="light-orange-box"></span>
 
 		  		<Image src="/images/homepage/site-hero-blob.svg" alt="site-hero-blob" width={600} height={600} draggable={false} priority={true} className="site-hero-blob"></Image>
@@ -30,7 +30,7 @@ const SolutionHero = () => {
 						</motion.div>
 
 				  		<div className="subpage-hero-details">
-					  		<motion.h1 className="text-sb" variants={SolutionHeroAnimate} initial="ttbText" animate="ttbTextAnimate" viewport={{ once: true }}>Smart Solutions for Complex Workflows</motion.h1>
+					  		<motion.h1 className="text-sb" variants={SolutionHeroAnimate} initial="ttbText" animate="ttbTextAnimate" viewport={{ once: true }}>Smart Solutions for Complex Workflow</motion.h1>
 					  		{/* <h1 className="text-sb">Simplifying Global Clinical Trial Payments</h1> */}
 
 					  		<motion.p className="h6 text-rg" variants={SolutionHeroAnimate} initial="ttbTextDelayed" animate="ttbTextAnimateDelayed" viewport={{ once: true }}>Streamline payments, regulatory compliance, and end-to-end workflow automation with a fully integrated platform that delivers speed, superior security, and reliable scalability for complex clinical operations. Experience seamless management of every transaction and process, empowering your team to focus on driving clinical success.</motion.p>

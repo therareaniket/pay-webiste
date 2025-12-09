@@ -26,7 +26,7 @@ export default function Pricing() {
                             <div className="pricing-headings">
                                 <h2>Flexible Pricing for Every Clinical Operation</h2>
 
-                                <p className="h6 text-rg">Choose from Standard or Enterprise plans designed for your clinical trial operations. Scale seamlessly with DhatuPay&apos;s two-tier pricing that fits every business need.</p>
+                                <p className="h6 text-rg">Choose from Standard or Enterprise plans designed for your clinical trials operations. Scale seamlessly with DhatuPay&apos;s two-tier pricing that fits every business need.</p>
                             </div>
 
                             <div className="plan-descrptn">

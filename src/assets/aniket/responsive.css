@@ -224,7 +224,7 @@
     .faq-lists { width: 80%; margin: 0 auto; }
 
     /* ABOUT-US PAGE */
-    .sub-site-hero .hero-details-wrapper img { width: 430px; transform: translateY(100px); }
+    .sub-site-hero .hero-details-wrapper img { width: 400px; transform: translateY(40px); }
     .meet-dp-headings h2 { width: 425px; }
     .meet-dp-headings .h6 { width: 490px; }
 
@@ -278,7 +278,11 @@
     }
 
     .circle-badge { bottom: 65%; transform: translate(0, 0);}
-
+    .header-wrapper.shrink { padding: 15px 30px; }
+    .header-wrapper.shrink .contact-link a { padding: 6px 12px; }
+    .header-nav-links a { font-size: 16px; line-height: 24px; }
+    .header-nav-links ul { gap: 30px; }
+    .arrow-top-left, .arrow-bottom-left, .arrow-top-right, .arrow-bottom-right { display: none; }
 }
 
 @media screen and (max-width: 1023px) {}
@@ -366,6 +370,10 @@
     .lc-block-4 h5, .lc-block-4 p { width: 80%; }
 
     .circle-badge { left: auto; right: 100px; bottom: 150px; }
+
+    .subpage-hero-details { padding-top: 100px; }
+    .subpage-hero-details { height: max-content; margin-bottom: 20px; }
+
 }
 
 @media screen and (max-width: 839px) {
@@ -414,6 +422,9 @@
     .capablty-list { width: 100%; height: max-content; gap: 16px; }
     .capablty-divider { width: 100% !important; }
     .list-details { width: 250px; }
+
+    .subpage-hero-details { padding-top: 100px; }
+
 }
 
 /* THIS IS FOR HOMEPAGE SLIDER ONLY */
@@ -515,6 +526,8 @@
 
     .home-stripe { bottom: 170px; }
     .circle-badge { left: auto; right: 50px; bottom: 140px; }
+    .sub-site-hero { max-height: max-content; }
+    .subpage-hero-details { max-width: max-content; }
 
 }
 
@@ -534,7 +547,9 @@
     .testimonial-slide-item { height: 370px !important; }
     
     /* ABOUT-US PAGE */
-    .sub-site-hero { min-height: auto; max-height: 460px; }
+    /* .sub-site-hero { min-height: auto; max-height: 460px; } */
+    .subpage-hero-details, .subpage-hero-details p { margin-bottom: 0; }
+
     .regulatory-slide-item { height: 240px !important; }
 
     .workflow-list { flex-direction: column; }

@@ -11,7 +11,7 @@ export default function HomeBlogHighlight() {
                     <div className="bloh-highlight-headings">
                         <h2>Knowledge Hub - Discover expert insights</h2>
 
-                        <p>Stay updated on product innovations, and explore effective clinical trial strategies all in one place.</p>
+                        <p>Stay updated on product innovations, and explore effective clinical trials strategies all in one place.</p>
                     </div>
 
                     <div className="home-blog-listing">
