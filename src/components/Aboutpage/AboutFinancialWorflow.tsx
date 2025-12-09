@@ -35,7 +35,7 @@ export default function FinancialWorkflow() {
         <section className="section financial-workflow" ref={sectionRef}>
             <div className="container">
                 <div className="financial-headings">
-                    <h2>Operational Excellence: Optimizing Core Workflows</h2>
+                    <h2>Operational Excellence Optimizing Core Workflows</h2>
                     <p className="h6 text-rg">
                         Driving accuracy, resilience, and insights across every critical process
                     </p>

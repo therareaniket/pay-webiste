@@ -17,7 +17,7 @@ const SecurityAdvancedProtection = () => {
                 <div className="container">
                     <div className="adv-protection-wrapper">
                         <div className="adv-protextion-txt-head">
-                            <h2 className=''>Security Architecture: Advanced Protection for Your Data</h2>
+                            <h2 className=''>Security Architecture Advanced Protection for Your Data</h2>
                             <p className='h6 text-rg'>
                                 DhatuPay is built to align with strict global and industry-specific regulations, keeping your operations continuously compliant. It enforces strong data privacy controls end to end, using layered security to protect sensitive information and preserve confidentiality. 
                             </p>
