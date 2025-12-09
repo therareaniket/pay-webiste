@@ -93,14 +93,14 @@ export default function CoreCapabilities() {
         initialLTR4: { x: 40, opacity: 0 },
         animateLTR4: { x: 0, opacity: 1, transition: { duration: 1, delay: 0.5 } },
     } : {
-        initialLTR1: { x: 0, opacity: 1 },
-        animateLTR1: { x: 0, opacity: 1, },
-        initialLTR2: { x: 0, opacity: 1 },
-        animateLTR2: { x: 0, opacity: 1, },
-        initialLTR3: { x: 0, opacity: 1 },
-        animateLTR3: { x: 0, opacity: 1, },
-        initialLTR4: { x: 0, opacity: 1 },
-        animateLTR4: { x: 0, opacity: 1, },
+        initialLTR1: { x: -100, opacity: 0 },
+        animateLTR1: { x: 0, opacity: 1, transition: { duration: 1, delay: 1 } },
+        initialLTR2: { x: -100, opacity: 0 },
+        animateLTR2: { x: 0, opacity: 1, transition: { duration: 1, delay: 3 } },
+        initialLTR3: { x: 100, opacity: 0 },
+        animateLTR3: { x: 0, opacity: 1, transition: { duration: 1, delay: 2 } },
+        initialLTR4: { x: 100, opacity: 0 },
+        animateLTR4: { x: 0, opacity: 1, transition: { duration: 1, delay: 4 } },
     }
 
     return (
