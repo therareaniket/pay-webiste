@@ -89,6 +89,14 @@ useEffect(() => {
 
                 <Image src="/images/homepage/hero-home-hand.webp" alt="hero-home-hand" width={878} height={813} draggable={false} priority={true} className="home-hero-hand"></Image>
 
+                <div className="circle-badge">
+                    <Image src="/images/homepage/hero-home-circle.svg" alt="hero-badge" width={120} height={120}></Image>
+
+                    <Link href="/ComingSoon" className="circle-arrow">
+                        <Image src="/images/homepage/hero-circle-arrow.svg" alt="badge-arrow" width={16} height={16}></Image>
+                    </Link>
+                </div>
+                
                 <div className="container">
                     <div className="hero-details-wrapper">
                         <div className="home-hero-details">
@@ -102,13 +110,16 @@ useEffect(() => {
                             <p className="h6 text-rg hero-desc animate-on-scroll">
                                 Effortless, compliant, and timely payments for Sponsors, CROs, Sites, and Participants. Our platform streamlines clinical trial payments with full transparency, accelerating every step from invoicing to payout worldwide.
                             </p>
+                            {/* <p className="h6 text-rg hero-desc animate-on-scroll">
+                                Secure, compliant, and fast payouts for Sponsors, CROs, Sites, and participants , streamlining every step of clinical trial payments with transparency and efficiency.
+                            </p> */}
 
                             <div className="home-hero-cta">
                                 {/* Button 1 */}
                                 <Link
                                     href="/Contact#contactForm"
                                     title="Book a Demo"
-                                    className="link-padding link-radius text-20 text-md btn-tranpearent hero-btn hero-btn-1 animate-on-scroll"
+                                    className="link-padding link-radius text-18 text-md btn-tranpearent hero-btn hero-btn-1 animate-on-scroll"
                                 >
                                     Book a Demo
                                 </Link>
@@ -117,7 +128,7 @@ useEffect(() => {
                                 <Link
                                     href="/ComingSoon"
                                     title="Explore Product"
-                                    className="link-padding link-radius text-20 text-md btn-blue hero-btn hero-btn-2 animate-on-scroll"
+                                    className="link-padding link-radius text-18 text-md btn-blue hero-btn hero-btn-2 animate-on-scroll"
                                 >
                                     Explore Product
                                 </Link>

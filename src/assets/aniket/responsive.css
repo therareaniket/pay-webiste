@@ -38,6 +38,8 @@
     .donut-circle { width: 365px; height: 365px; }
     .wf-list-item { width: 480px; height: 190px; }
     .wf-list-details { width: 350px; }
+
+    .circle-badge { position: absolute;  bottom: 220px; left: 40px; }
 }
 
 @media screen and (max-width: 1599px) { 
@@ -179,6 +181,9 @@
 
     .lc-info-block { width: 250px; height: 270px; }
     .blog-slide-item { height: 500px !important; }
+
+    .circle-badge { position: absolute;  bottom: 180px; left: 30px; }
+    .circle-badge > img { width: 100px; height: 100px; }
 }   
 
 @media screen and (max-width: 1199px) {
@@ -261,6 +266,18 @@
 
     .capablty-lists-divider { max-height: 500px; }
 
+    @keyframes heroHandSlideLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-120px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(-15%);
+        }
+    }
+
+    .circle-badge { bottom: 65%; transform: translate(0, 0);}
 
 }
 
@@ -347,6 +364,8 @@
     .lc-block-2 h5, .lc-block-2 p { width: 60%; }
     .lc-block-4 { width: 300px; }
     .lc-block-4 h5, .lc-block-4 p { width: 80%; }
+
+    .circle-badge { left: auto; right: 100px; bottom: 150px; }
 }
 
 @media screen and (max-width: 839px) {
@@ -494,6 +513,9 @@
     .capablty-lists { width: 100%; }
     .capablty-lists-wrapper { gap: 25PX !important; }
 
+    .home-stripe { bottom: 170px; }
+    .circle-badge { left: auto; right: 50px; bottom: 140px; }
+
 }
 
 @media screen and (max-width: 639px) {
@@ -566,6 +588,11 @@
     .lc-block-1, .lc-block-2, .lc-block-3, .lc-block-4 { width: 380px; }
     .lc-mob-centerline { justify-content: space-around; }
 
+    .circle-badge > img { width: 90px; height: 90px; }
+    .circle-badge .circle-arrow { width: 35px; height: 35px; }
+    .circle-arrow img { width: 14px; height: 14px; }
+    .circle-badge { left: auto; right: 30px; bottom: 130px; }
+
 }
 
 @media screen and (max-width: 480px) {}
@@ -597,6 +624,7 @@
     .blog-slide-item { height: 520px !important; }
     .lc-block-1, .lc-block-2, .lc-block-3, .lc-block-4 { width: 340px; }
     .lc-info-block h5 { margin-bottom: 6px; }
+    .circle-badge { bottom: 120px; }
 }
 
 @media screen and (max-width: 400px) {
@@ -638,6 +666,8 @@
     .lc-mob-animated-line { width: 10px; height: 20%;  }
     .lc-mob-centerline .center-point { width: 20px; height: 20px; }
     .lc-block-1, .lc-block-2, .lc-block-3, .lc-block-4 { transform: translate(20px, 10px); }
+
+    .circle-badge { display: none; }
 }
 
 @media screen and (max-width: 374px) {

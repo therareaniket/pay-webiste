@@ -180,7 +180,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 22px 50px;
+  padding: 30px 0px;
   transition: all 0.35s ease;
   position: relative;
   z-index: 10002; 
@@ -199,16 +199,16 @@
 }
 
 .header-main.scrolled { top: 0; }
-.contact-link a{ border: 1px solid var(--black); padding: 5px 20px; }
+.contact-link a{ border: 1px solid var(--black); padding: 12px 30px; }
 .contact-link a:hover{ background: linear-gradient(100deg, #00092E 0%, #011e80 100%); border: linear-gradient(100deg, #00092E 0%, #011e80 100%); color: var(--white); }
 /* Desktop nav */
-.header-nav-links ul { display: flex; gap: 30px; }
+.header-nav-links ul { display: flex; gap: 40px; }
 .header-nav-links a {
   position: relative;
   color: var(--black);
   text-decoration: none;
   transition: 0.3s;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .contact-active-header { background: linear-gradient(100deg, #00092E 0%, #011e80 100%); border: linear-gradient(100deg, #00092E 0%, #011e80 100%); color: var(--white); }
