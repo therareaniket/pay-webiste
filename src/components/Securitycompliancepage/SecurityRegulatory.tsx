@@ -41,7 +41,7 @@ const SecurityRegulatory = () => {
             <div className="container">
                 <div className="secr-regulatory-main">
                     <div className="sec-regulatory-heading">
-                        <h2 className='h3 text-md'>Built for Global Regulatory Excellence</h2>
+                        <h2 className=''>Built for Global Regulatory Excellence</h2>
                         <p className='h6 text-rg'>
                             Our platform is designed to meet stringent international compliance frameworks, providing end-to-end protection for sensitive financial and clinical data. Every transaction is validated against regulatory benchmarks.
                         </p>

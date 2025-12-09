@@ -394,9 +394,9 @@
 
 .adv-protextion-txt-head { width: 720px; position: sticky; top: 50px;   }
 /* .adv-protextion-txt-head { width: 720px; } */
-.adv-protextion-txt-head h2 { padding-bottom: 20px; }
+/* .adv-protextion-txt-head h2 { padding-bottom: 20px; } */
 .adv-protextion-txt-head p { padding-top: 20px; }
-.adv-protection-wrapper { display: flex; position: sticky; top: 100px; justify-content: space-between; align-items: flex-start; max-height: 500px; overflow-y: scroll; }
+.adv-protection-wrapper { display: flex; position: sticky; top: 100px; justify-content: space-between; align-items: flex-start; max-height: 550px; overflow-y: scroll; }
 
 .adv-protection-cards{ width: 550px; padding: 20px; }
 .adv-protection-cards h4{ padding-top: 14px; padding-bottom: 20px; }

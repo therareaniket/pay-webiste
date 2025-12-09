@@ -32,9 +32,9 @@ export default function Pricing() {
                             <div className="plan-descrptn">
                                 <div className="plan-item standard-plan site-radius-20 bg-red-500" style={{ backgroundColor: "var(--light-grey)" }}>
                                     <div className="plan-price">
-                                        <p className="h4 text-bd">Standard</p>
+                                        <p className="h4 text-sb">Standard</p>
 
-                                        <p className="h4 text-bd">$49<span className="text-18 text-rg">per user/month</span></p>
+                                        <p className="h4 text-sb">$49<span className="text-18 text-rg">per user/month</span></p>
                                     </div>
 
                                     <div className="plan-includes">
@@ -78,9 +78,9 @@ export default function Pricing() {
 
                                 <div className="plan-item enterprise-plan site-radius-20 bg-red-500" style={{ backgroundColor: "var(--hero-bg)", color: "var(--white)" }}>
                                     <div className="plan-price">
-                                        <p className="h4 text-bd">Enterprise</p>
+                                        <p className="h4 text-sb">Enterprise</p>
 
-                                        <p className="h4 text-bd">$299<span className="text-18 text-rg">per user/month</span></p>
+                                        <p className="h4 text-sb">$299<span className="text-18 text-rg">per user/month</span></p>
                                     </div>
 
                                     <div className="plan-includes">
@@ -137,9 +137,9 @@ export default function Pricing() {
                             <TabsContent value="standard">
                                 <div className="plan-item standard-plan site-radius-20 bg-red-500" style={{ backgroundColor: "var(--light-grey)" }}>
                                     <div className="plan-price">
-                                        <p className="h4 text-bd">Standard</p>
+                                        <p className="h4 text-sb">Standard</p>
 
-                                        <p className="h4 text-bd">$49<span className="text-18 text-rg">per user/month</span></p>
+                                        <p className="h4 text-sb">$49<span className="text-18 text-rg">per user/month</span></p>
                                     </div>
 
                                     <div className="plan-includes">
@@ -185,9 +185,9 @@ export default function Pricing() {
                             <TabsContent value="enterprise">
                                 <div className="plan-item enterprise-plan site-radius-20 bg-red-500" style={{ backgroundColor: "var(--hero-bg)", color: "var(--white)" }}>
                                     <div className="plan-price">
-                                        <p className="h4 text-bd">Enterprise</p>
+                                        <p className="h4 text-sb">Enterprise</p>
 
-                                        <p className="h4 text-bd">$299<span className="text-18 text-rg">per user/month</span></p>
+                                        <p className="h4 text-sb">$299<span className="text-18 text-rg">per user/month</span></p>
                                     </div>
 
                                     <div className="plan-includes">

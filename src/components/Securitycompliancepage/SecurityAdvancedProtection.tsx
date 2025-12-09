@@ -6,7 +6,7 @@ const SecurityAdvancedProtection = () => {
             <section className="section advance-security-pro-text-main">
                 <div className="container">
                     <div className="advance-security-pro-text">
-                        <h2 className='advance-security-pro-text-title text-md h3'>Compliance Is Non‑Negotiable. Secure. Trusted. Always.</h2>
+                        <h2 className='advance-security-pro-text-title'>Compliance Is Non‑Negotiable. Secure. Trusted. Always.</h2>
 
                         <p className='advance-security-pro-text-desc h6 text-rg'>Safeguard participant data, meet global regulations, and preserve trust with a platform built for audit‑ready transactions. From identity verification to payment workflows, every step is engineered to satisfy international compliance requirements and rigorous security standards.</p>
                     </div>
@@ -17,7 +17,7 @@ const SecurityAdvancedProtection = () => {
                 <div className="container">
                     <div className="adv-protection-wrapper">
                         <div className="adv-protextion-txt-head">
-                            <h2 className='h3 text-md'>Security Architecture: Advanced Protection for Your Data</h2>
+                            <h2 className=''>Security Architecture: Advanced Protection for Your Data</h2>
                             <p className='h6 text-rg'>
                                 DhatuPay is built to align with strict global and industry-specific regulations, keeping your operations continuously compliant. It enforces strong data privacy controls end to end, using layered security to protect sensitive information and preserve confidentiality. 
                             </p>

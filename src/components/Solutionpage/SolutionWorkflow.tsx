@@ -7,7 +7,7 @@ export default function SolutionWorkflow() {
                 <div className="container">
                     <div className="sol-workflow-main">
                         <div className="soln-workflow-text" >
-                            <h2 className="h3 text-md"> Solutions That Fit Every Workflow </h2>
+                            <h2 className="h3"> Solutions That Fit Every Workflow </h2>
 
                             <p className="h6 text-rg">End-to-end payment and compliance solutions tailored for every clinical trials stakeholder.</p>
                         </div>

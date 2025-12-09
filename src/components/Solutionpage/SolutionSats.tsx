@@ -93,7 +93,7 @@ export default function SolutionStats() {
             <section className="section solution-stats-main">
                 <div className="container">
                     <div className="solution-stats-text">
-                        <h2 className="h3 text-md">Connected payments. Complete control. Seamless payouts.</h2>
+                        <h2 className="h3">Connected payments. Complete control. Seamless payouts.</h2>
 
                         <p className="h6 text-rg">
                             Dhatu Pay simplifies complex payment workflows for Sponsors, CROs, Sites, Vendors, and Participants with one

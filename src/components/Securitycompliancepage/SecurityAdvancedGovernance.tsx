@@ -8,7 +8,7 @@ const SecurityAdvancedGovernance = () => {
                 <div className="container">
                     <div className="sec-advance-governance-main">
                         <div className="sec-advance-gover-head">
-                            <h2 className='h3 text-md'>Advanced Governance for Modern Enterprises</h2>
+                            <h2 className=''>Advanced Governance for Modern Enterprises</h2>
 
                             <p className='h6 text-rg'>Drive transparency, accountability, and control with governance tools built to support strict compliance and resilient security across your organization.</p>
                         </div>
