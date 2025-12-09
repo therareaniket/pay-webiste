@@ -103,7 +103,7 @@ useEffect(() => {
 
                             {/* H1 with animation class */}
                             <h1 className="text-sb hero-title animate-on-scroll">
-                                Simplifying Global Clinical Trial Payments
+                                Simplify Payments for Global Clinical Trials
                             </h1>
 
                             {/* Paragraph with animation class */}
