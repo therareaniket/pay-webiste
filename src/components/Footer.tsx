@@ -85,13 +85,10 @@ const Footer = () => {
                                 </div>
 
                                 <div className="footer-social-icons">
-                                    <span className='icon-facebook'></span>
-
-                                    <span className='icon-instagram'></span>
-
-                                    <span className='icon-twitter'></span>
-
                                     <span className='icon-linkedin'></span>
+                                    <span className='icon-twitter'></span>
+                                    <span className='icon-instagram'></span>
+                                    <span className='icon-facebook'></span>
                                 </div>
                             </div>
                         </div>
