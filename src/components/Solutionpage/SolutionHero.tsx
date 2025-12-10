@@ -18,7 +18,7 @@ const SolutionHeroAnimate =  {
 
 const SolutionHero = () => {
   	return (
-			<section className="section sub-site-hero ">
+			<section className="section sub-site-hero solutions-hero-section">
 				<span className="light-orange-box"></span>
 
 		  		<Image src="/images/homepage/site-hero-blob.svg" alt="site-hero-blob" width={600} height={600} draggable={false} priority={true} className="site-hero-blob"></Image>
@@ -26,7 +26,7 @@ const SolutionHero = () => {
 		  		<div className="container">
 			  		<div className="hero-details-wrapper">
 						<motion.div className="" variants={SolutionHeroAnimate} initial="ltrInitial" animate="ltrAnimate" viewport={{ once: true }}>
-				  			<Image src="/images/solutionpage/Solhero.webp" alt="about-hero" width={500} height={294} priority={true}></Image>
+				  			<Image src="/images/solutionpage/Solhero.webp" alt="about-hero" width={500} height={294} priority={true} className="solution-hero-img"></Image>
 						</motion.div>
 
 				  		<div className="subpage-hero-details">

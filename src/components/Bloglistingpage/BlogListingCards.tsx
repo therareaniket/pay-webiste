@@ -1,177 +1,129 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-import {
-    Tabs,
-    TabsList,
-    TabsTrigger,
-} from "@/components/ui/tabs";
-
-import {
-    Select,
-    SelectTrigger,
-    SelectValue,
-    SelectContent,
-    SelectItem,
-} from "@/components/ui/select";
-
-// Blog data
-const blogData = [
-    {
-        id: 1,
-        title: "The Future of Digital Payments",
-        img: "/images/bloglisting/blog-card-1.webp",
-        category: "Digital Payments",
-        author: "Ishita Rao",
-        slug: "BlogDetail",
-        date: "20 November 2025",
-        popularity: 95,
-    },
-    {
-        id: 2,
-        title: "Integrate Portal in 5 Easy Steps",
-        img: "/images/bloglisting/blog-card-2.webp",
-        category: "Payment Integration",
-        author: "Dev Shah",
-        slug: "BlogDetail",
-        date: "19 November 2025",
-        popularity: 88,
-    },
-    {
-        id: 3,
-        title: "7 Benefits of Using DhatuPay for Your Business",
-        img: "/images/bloglisting/blog-card-3.webp",
-        category: "Business Benefits",
-        author: "Harsh Nayak",
-        slug: "BlogDetail",
-        date: "19 November 2025",
-        popularity: 80,
-    },
-    {
-        id: 4,
-        title: "Digital Signatures: A Must for Online Payment",
-        img: "/images/bloglisting/blog-card-4.webp",
-        category: "Digital Signatures",
-        author: "John Menon",
-        slug: "BlogDetail",
-        date: "19 November 2025",
-        popularity: 85,
-    },
-    {
-        id: 5,
-        title: "International Payments Made Easy",
-        img: "/images/bloglisting/blog-card-5.webp",
-        category: "Global Business",
-        author: "Malti Chahar",
-        slug: "BlogDetail",
-        date: "19 November 2025",
-        popularity: 90,
-    },
-
-    {
-        id: 6,
-        title: "How Digitally Redefine Secure Transactions",
-        img: "/images/bloglisting/blog-card-6.webp",
-        category: "Payment Encryption",
-        author: "Kapish Modi",
-        slug: "BlogDetail",
-        date: "19 November 2025",
-        popularity: 90,
-    },
-];
-
+// Blog Type Definition
 type Blog = {
-    id: number;
-    title: string;
-    img: string;
-    category: string;
-    author: string;
-    slug: string;
-    date: string;
-    popularity: number;
+	id: number;
+	title: string;
+	img: string;
+	category: string;
+	author: string;
+	slug: string;
+	date: string;
+	popularity: number;
 };
 
+// Category-based blog data
+const digitalSignatures = [
+	{
+		id: 1,
+		title: "Digital Signature — What It Is & Why You Need It",
+		img: "/images/bloglisting/digital-signature.webp",
+		category: "Digital Signatures",
+		author: "Smit Shah",
+		slug: "DigitalSignature-TheSecure-PaperlessWaytoSignDocuments",
+		date: "09 December 2025",
+		popularity: 95,
+	},
+];
+
+const digitalPayments = [
+	{
+		id: 2,
+		title: "Digital Payments — Understanding the Benefits",
+		img: "/images/bloglisting/digital-payments.webp",
+		category: "Digital Payments",
+		author: "Smit Shah",
+		slug: "DigitalPayments-101",
+		date: "09 December 2025",
+		popularity: 80,
+	},
+];
+
+const paymentIntegration = [
+	{
+		id: 3,
+		title: "One-Stop Payment Platform for Clinical Trials",
+		img: "/images/bloglisting/payment-integration.webp",
+		category: "Payment Integration",
+		author: "Smit Shah",
+		slug: "Why-Clinical-Trial-Portals-Need-One-Stop-Payment-Platform",
+		date: "09 December 2025",
+		popularity: 90,
+	},
+];
+
+// Category configuration
+const categories = [
+	{ value: "digitalSignatures", label: "Digital Signatures", data: digitalSignatures },
+	{ value: "digitalPayments", label: "Digital Payments", data: digitalPayments },
+	{ value: "paymentIntegration", label: "Payment Integration", data: paymentIntegration },
+];
+
 export default function BlogListingCards() {
-    const [activeSort, setActiveSort] = useState("popularity");
-
-    const parseDate = (dateStr: string) => new Date(dateStr);
-
-    // Sort blog data according to dropdown
-    const sortedBlogs = [...blogData].sort((a, b) => {
-        if (activeSort === "latest") return parseDate(b.date).getTime() - parseDate(a.date).getTime();
-        if (activeSort === "oldest") return parseDate(a.date).getTime() - parseDate(b.date).getTime();
-        if (activeSort === "popularity") return b.popularity - a.popularity;
-        return 0;
-    });
-
-    // Split blogs into rows of 2 cards each
-    const rows: Blog[][] = [];
-    for (let i = 0; i < sortedBlogs.length; i += 2) {
-        rows.push(sortedBlogs.slice(i, i + 2));
+	const [activeTab, setActiveTab] = useState("digitalSignatures");
+	const tabsListRef = useRef<HTMLDivElement>(null);
+	  useEffect(() => {
+    // Only apply on screens less than 575px
+    if (window.innerWidth < 575 && tabsListRef.current) {
+      const activeTabElement = tabsListRef.current.querySelector(`[data-state="active"]`);
+      
+      if (activeTabElement) {
+        activeTabElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest',
+          inline: 'center'
+        });
+      }
     }
+  }, [activeTab]);
 
-    return (
-        <section className="section blog-listing-main">
-            <div className="container">
-                <div className="blog-listing-tabs">
-                    {/* <Tabs defaultValue="dates">
-                        <TabsList className="tabs-list">
-                            <TabsTrigger value="dates" className="tabs-trigger text-rg h6">
-                                Dates
-                            </TabsTrigger>
-                            <TabsTrigger value="duration" className="tabs-trigger text-rg h6">
-                                Duration
-                            </TabsTrigger>
+	// Get current category data based on active tab
+	const currentCategoryData = categories.find(cat => cat.value === activeTab)?.data || [];
+
+	return (
+		<section className="section blog-listing-main">
+			<div className="container">
+				<div className="blog-listing-tabs">
+					<Tabs value={activeTab} onValueChange={setActiveTab}>
+						<TabsList className="trust-tabs-list" ref={tabsListRef}>
+							{categories.map((category) => (
+                                <TabsTrigger key={category.value} value={category.value}  className="trust-tab-trigger text-20 text-md">
+									{category.label}
+								</TabsTrigger>
+							))}
                         </TabsList>
-                    </Tabs> */}
+					</Tabs>
+				</div>
 
-                    <div className="sort-dropdown">
-                        <span className="sort-label text-md h6 text-grey">Sort By</span>
-                        <Select defaultValue={activeSort} onValueChange={(val) => setActiveSort(val)}>
-                            <SelectTrigger className="select-trigger text-rg text-16">
-                                <SelectValue placeholder="Popularity" />
-                            </SelectTrigger>
-                            <SelectContent>
-                                <SelectItem className="text-rg text-16" value="popularity">Popularity</SelectItem>
-                                <SelectItem className="text-rg text-16" value="latest">Latest</SelectItem>
-                                <SelectItem className="text-rg text-16" value="oldest">Oldest</SelectItem>
-                            </SelectContent>
-                        </Select>
-                    </div>
-                </div>
+				<div className="blog-listing-card-wrapper">
+					{currentCategoryData.map((blog) => (
+						<div key={blog.id} className="blog-list-cards">
+							<Link href={blog.slug} className="block">
+								<div className="blog-card-1">
+									<Image src={blog.img} alt={blog.title} width={780} height={577} />
+								</div>
 
-                <div className="blog-listing-card-wrapper">
-                    {rows.map((row, rowIndex) => (
-                        <div key={rowIndex} className={`blog-list-card-rw blog-list-card-rw-${rowIndex + 1}`}>
-                            {row.map((blog) => (
-                                <div key={blog.id} className="blog-list-cards">
-                                    <Link href={`/${blog.slug}`} className="block">
-                                        <div className="blog-card-1">
-                                            <Image
-                                                src={blog.img}
-                                                alt={blog.title}
-                                                width={780}
-                                                height={577}
-                                            />
-                                            <div className="blog-listing-card-detail">
-                                                <span className="digi-payment-blog text-rg text-14 site-radius-20">{blog.category}</span>
-                                                <h3 className="blog-listing-title text-md h5 ">{blog.title}</h3>
-                                                <div className="blog-listing-cards-name-date">
-                                                    <span className="text-rg text-14 text-grey">{blog.author}</span>
-                                                    <span className="text-rg text-14 text-grey">{blog.date}</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </Link>
-                                </div>
-                            ))}
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </section>
-    );
+								<div className="blog-listing-card-detail">
+									<span className="digi-payment-blog text-rg text-14 site-radius-20">{blog.category}</span>
+
+									<h3 className="blog-listing-title text-md h5">{blog.title}</h3>
+
+									<div className="blog-listing-cards-name-date">
+										<span className="text-rg text-14 text-grey">{blog.author}</span>
+
+										<span className="text-rg text-14 text-grey">{blog.date}</span>
+									</div>
+								</div>
+							</Link>
+						</div>
+					))}
+				</div>
+			</div>
+		</section>
+	);
 }

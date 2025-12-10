@@ -161,8 +161,8 @@
 @font-face {
   font-family: 'icomoon';
   src:  
-    url('/fonts/icon/icomoon.ttf?mrdxx') format('truetype'),
-    url('/fonts/icon/icomoon.woff?mrdxx') format('woff');
+    url('/fonts/icon/icomoon.ttf?wjbjjl') format('truetype'),
+    url('/fonts/icon/icomoon.woff?wjbjjl') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -183,6 +183,85 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* .icon-sites-cros-payments:before {
+  content: "\e918";
+}
+.icon-participant-payments:before {
+  content: "\e919";
+}
+.icon-vendor-regualatory-payments:before {
+  content: "\e91a";
+}
+.icon-triggers-accruals:before {
+  content: "\e91b";
+}
+.icon-analytics-optimisation:before {
+  content: "\e91c";
+}
+.icon-security-architecture:before {
+  content: "\e91d";
+}
+.icon-contact-location:before {
+  content: "\e91f";
+}
+.icon-contact-call:before {
+  content: "\e921";
+}
+.icon-contact-mail:before {
+  content: "\e923";
+}
+.icon-risk-monitoring:before {
+  content: "\e924";
+}
+.icon-analytics:before {
+  content: "\e925";
+}
+.icon-queue-health:before {
+  content: "\e926";
+}
+.icon-reconciliation:before {
+  content: "\e927";
+}
+.icon-digital-signature:before {
+  content: "\e928";
+}
+.icon-immutable-audit:before {
+  content: "\e929";
+}
+.icon-disburse:before {
+  content: "\e92c";
+}
+.icon-pay-via:before {
+  content: "\e92d";
+}
+.icon-hm-config-contract:before {
+  content: "\e92f";
+}
+.icon-hm-onboard:before {
+  content: "\e931";
+}
+.icon-footerCall:before {
+  content: "\e932";
+}
+.icon-footerMail:before {
+  content: "\e933";
+}
+.icon-twitter:before {
+  content: "\e934";
+}
+.icon-instagram:before {
+  content: "\e935";
+}
+.icon-facebook:before {
+  content: "\e936";
+}
+.icon-linkedin:before {
+  content: "\e900";
+} */
+ 
+.icon-linkedin:before {
+  content: "\e900";
+}
 .icon-sites-cros-payments:before {
   content: "\e918";
 }
@@ -255,7 +334,6 @@
 .icon-facebook:before {
   content: "\e936";
 }
-  
 
 .text-rg { font-family: 'poppins-rg' !important; }
 .text-md { font-family: 'poppins-md' !important; }

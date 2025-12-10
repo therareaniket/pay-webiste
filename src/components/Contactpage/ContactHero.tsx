@@ -25,11 +25,11 @@ const ContactHero = () => {
             <div className="container">
                 <div className="hero-details-wrapper">
                     <motion.div className="" variants={ContactHeroAnimate} initial="ltrInitial" animate="ltrAnimate" viewport={{ once: true }}>
-                        <Image src="/images/contactpage/contact-hero-img-new-webp.webp" alt="about-hero" width={578} height={260} priority={true}></Image>
+                        <Image src="/images/contactpage/contact-hero-img-new-webp.webp" alt="about-hero" width={578} height={260} priority={true} className="contact-hero-img"></Image>
                     </motion.div>
 
                     <div className="subpage-hero-details">
-                        <motion.h1 className="text-sb" variants={ContactHeroAnimate} initial="ttbText" animate="ttbTextAnimate" viewport={{ once: true }}>Your Payment Questions, Answered Securely</motion.h1>
+                        <motion.h1 className="text-sb" variants={ContactHeroAnimate} initial="ttbText" animate="ttbTextAnimate" viewport={{ once: true }}>Get Secure Answers to Payment Questions</motion.h1>
                         {/* <h1 className="text-sb">Simplifying Global Clinical Trial Payments</h1> */}
 
                         <motion.p className="h6 text-rg" variants={ContactHeroAnimate} initial="ttbTextDelayed" animate="ttbTextAnimateDelayed" viewport={{ once: true }}>Purpose-built for life sciences, DhatuPay automates global trial payments with a compliance-first architecture, real-time visibility, and event-driven workflows that keep every stakeholder in sync.</motion.p>

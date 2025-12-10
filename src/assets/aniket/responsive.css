@@ -374,6 +374,8 @@
     .subpage-hero-details { padding-top: 100px; }
     .subpage-hero-details { height: max-content; margin-bottom: 20px; }
 
+
+    .blog-section { padding: 60px 0; }
 }
 
 @media screen and (max-width: 839px) {
@@ -529,6 +531,9 @@
     .sub-site-hero { max-height: max-content; }
     .subpage-hero-details { max-width: max-content; }
 
+    .blog-list-cards { width: 100%; height: max-content; }
+    
+
 }
 
 @media screen and (max-width: 639px) {
@@ -565,6 +570,8 @@
     
     .item-details > svg { display: none; }
     .lc-block-1, .lc-block-2, .lc-block-3, .lc-block-4 { width: 250px; }
+    .blog-listing-tabs .trust-tabs-list { width: 500px; overflow-x: scroll !important; scrollbar-width: none; justify-content: start; }
+    /* .blog-listing-card-wrapper { width: 100%; } */
 
 }
 
@@ -608,6 +615,12 @@
     .circle-arrow img { width: 14px; height: 14px; }
     .circle-badge { left: auto; right: 30px; bottom: 130px; }
 
+    .blog-listing-tabs .trust-tabs-list { width: 100%;  }
+    .blog-listing-tabs { width: 100%; overflow-x: scroll; scrollbar-width: none; }
+
+    .blog-section { padding: 40px 0; }
+    .blog-section h3 { font-size: 20px; line-height: 28px; margin-bottom: 10px; }
+    .blog-detail-heading .h2 { margin-bottom: 0; padding-bottom: 0; }
 }
 
 @media screen and (max-width: 480px) {}

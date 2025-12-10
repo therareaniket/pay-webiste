@@ -90,6 +90,8 @@ const Footer = () => {
                                     <span className='icon-instagram'></span>
 
                                     <span className='icon-twitter'></span>
+
+                                    <span className='icon-linkedin'></span>
                                 </div>
                             </div>
                         </div>

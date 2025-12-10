@@ -165,6 +165,7 @@
 .footer-social-icons{ padding-top: 30px; display: flex; align-items: center; gap: 20px;  }
 .footer-social-icons span{ font-size: 28px; color: var(--grey); }
 .footer-social-icons span:hover{ color: var(--secondary); cursor: pointer; }
+.footer-social-icons span.icon-facebook { font-size: 26px; }
 
 /* HEADER MAIN */
 .header-main {
@@ -310,6 +311,7 @@
 /* bloglisting */
 .blog-slider-wrapper{ margin-top: 80px; }
 .blog-hero-image { position: relative; }
+.blog-listing-card-wrapper{ display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 60px; }
 .blog-hero-content {
   display: flex;
   flex-direction: column;
@@ -331,8 +333,6 @@
 .blog-listing-tabs .h6{ margin-bottom: 0; }
 .sort-dropdown{ display: flex; align-items: center; gap: 20px; }
 .select-content-width { width: 162px; }
-.blog-listing-card-wrapper{ margin-top: 60px; }
-.blog-list-cards{ width: 780px; height: 577px; }
 .blog-listing-card-detail{ padding: 30px; background-color: var(--white); border-radius: 0 0 30px 30px; }
 .digi-payment-blog{ background-color: var(--light-grey); color: var(--secondary-purple-bluish); padding: 8px 20px; }
 .blog-list-cards a{ display: block; }
@@ -594,6 +594,8 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
+.blog-list-cards{ width: 780px; height: max-content; }  
+
 
 .blog-list-cards:hover { transform: translateY(-10px) scale(1.03); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); cursor: pointer; }
 .blog-list-cards:hover h3{ color: var(--secondary-purple-bluish); }
@@ -649,3 +651,14 @@
 .info-card { transform: translateY(-50px); opacity: 0; transition: all 2s ease-out;}
 .info-card.slide-from-top { transform: translateY(0); opacity: 1; }
 .section:not(.seamless-payment) { overflow: hidden; }
+.blog-list-cards { margin-bottom: 40px; }
+.solution-hero-img { transform: translate(0, 0) !important; }
+.contact-hero .hero-details-wrapper img { transform: translateY(0) !important; }
+.solutions-hero-section { align-items: flex-start; }
+.blog-listing-title { margin-bottom: 0; }
+.blog-listing-card-detail > span { display: inline-block; margin-bottom: 10px; }
+
+.blog-section { padding: 80px 0; }
+.blog-section + .blog-section { padding-top: 0; }
+.blog-section ul { padding-left: 20px; }
+.blog-section li { list-style-type: disc; list-style-position: outside; padding-left: 10px; }
