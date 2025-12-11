@@ -66,7 +66,7 @@ const Header = () => {
 
           {/* Contact */}
           <div className="contact-link site-radius-50">
-            <Link href="/Contact" className={`header-contact-link text-18 text-md site-radius-50 link-padding ${isActive("/Contact") ? "contact-active-header" : ""}`}>
+            <Link href="/Contact" className={`header-contact-link text-18  site-radius-50 link-padding ${isActive("/Contact") ? "contact-active-header" : ""}`}>
               Contact
             </Link>
           </div>
