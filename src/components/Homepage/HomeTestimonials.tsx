@@ -4,30 +4,45 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-export default function HomeTestimonials() {
+type TestimonialsProps = {
+    testimonialsTitle: string;
+    testimonialList: {
+    	testimonials1Content: string;
+    	testimonials1Author: string;
+    	testimonials1Designation: string;
+    	testimonials2Content: string;
+    	testimonials2Author: string;
+    	testimonials2Designation: string;
+    	testimonials3Content: string;
+    	testimonials3Author: string;
+    	testimonials3Designation: string;
+    }
+}
+
+export default function HomeTestimonials({testimonialsTitle, testimonialList}: TestimonialsProps) {
     
     const testimonialsData = [
         {
-            review: "DhatuPay has completely transformed the way we handle payments on our portal. The integration was seamless, and the security features give us and our customers complete peace of mind.",
-            author: "Rajesh Mehta",
-            position: "Founder, EduConnect Portal",
+            review: testimonialList.testimonials1Content,
+            author: testimonialList.testimonials1Author,
+            position: testimonialList.testimonials1Designation,
         },
         {
-            review: "The platform connected our ERP and banking systems effortlessly, eliminating the complexity of manual reconciliations. Real-time synchronization has saved us countless hours of work.",
-            author: "Prajakta Modi",
-            position: "Operations Head, Global Pharma",
+            review: testimonialList.testimonials2Content,
+            author: testimonialList.testimonials2Author,
+            position: testimonialList.testimonials2Designation,
         },
         {
-            review: "Identity management and compliance features gave us peace of mind. We trust the system for all critical workflows. It ensures strict adherence to regulatory standards.",
-            author: "Anshika Khanna",
-            position: "CFO, FinTech Solutions",
+            review: testimonialList.testimonials3Content,
+            author: testimonialList.testimonials3Author,
+            position: testimonialList.testimonials3Designation,
         },
     ];
     return (
         <>
             <section className="section testimonials">
                 <div className="container">
-                    <h2>What Customers Say About DhatuPay</h2>
+                    <h2>{testimonialsTitle}</h2>
 
                     <Swiper
                         modules={[Autoplay, Pagination]}

@@ -4,7 +4,14 @@ import { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function HeroHome() {
+type HeroHomeProps = {
+    heroTitle: string;
+    heroSubtitle: string;
+    heroCta1?: { url: string; title: string } | null;
+    heroCta2?: { url: string; title: string } | null;
+}
+
+export default function HeroHome( { heroTitle, heroSubtitle, heroCta1, heroCta2 }:HeroHomeProps ) {
 
 useEffect(() => {
     // --- HAND ANIMATION ON PAGE LOAD --- //
@@ -103,12 +110,12 @@ useEffect(() => {
 
                             {/* H1 with animation class */}
                             <h1 className="text-sb hero-title animate-on-scroll">
-                                Simplify Payments for Global Clinical Trials
+                                {heroTitle}
                             </h1>
 
                             {/* Paragraph with animation class */}
                             <p className="h6 text-rg hero-desc animate-on-scroll">
-                                Effortless, compliant, and timely payments for Sponsors, CROs, Sites, and Participants. Our platform streamlines clinical trials payments with full transparency, accelerating every step from invoicing to payout worldwide.
+                                {heroSubtitle}
                             </p>
                             {/* <p className="h6 text-rg hero-desc animate-on-scroll">
                                 Secure, compliant, and fast payouts for Sponsors, CROs, Sites, and participants , streamlining every step of clinical trial payments with transparency and efficiency.
@@ -116,22 +123,14 @@ useEffect(() => {
 
                             <div className="home-hero-cta">
                                 {/* Button 1 */}
-                                <Link
-                                    href="/Contact#contactForm"
-                                    title="Book a Demo"
-                                    className="link-padding link-radius text-18 text-md btn-tranpearent hero-btn hero-btn-1 animate-on-scroll"
-                                >
-                                    Book a Demo
-                                </Link>
+                                {heroCta1 && (
+                                    <Link href={heroCta1.url} title={heroCta1.title} className="btn-bg btn-padding text-md text-18">{heroCta1.title}</Link>
+                                )}
 
                                 {/* Button 2 */}
-                                <Link
-                                    href="/ComingSoon"
-                                    title="Explore Product"
-                                    className="link-padding link-radius text-18 text-md btn-blue hero-btn hero-btn-2 animate-on-scroll"
-                                >
-                                    Explore Product
-                                </Link>
+                                {heroCta2 && (
+                                    <Link href={heroCta2.url} title={heroCta2.title} className="btn-bg btn-padding text-md text-18">{heroCta2.title}</Link>
+                                )}
                             </div>
                         </div>
                     </div>

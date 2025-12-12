@@ -3,7 +3,24 @@
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 
-export default function SeamlessPayments() {
+type SeamlessPaymentsProps = {
+    seamlessTitle: string;
+    seamlessSubtitle: string;
+
+    seamlessPaymentsAdvantages: {
+    	paymentsAdvantages1Title: string;
+    	paymentsAdvantages2Title: string;
+    	paymentsAdvantages3Title: string;
+    	paymentsAdvantages4Title: string;
+
+    	paymentsAdvantages1Subtitle: string;
+    	paymentsAdvantages2Subtitle: string;
+    	paymentsAdvantages3Subtitle: string;
+    	paymentsAdvantages4Subtitle: string;
+    }
+};
+
+export default function SeamlessPayments( { seamlessTitle, seamlessSubtitle, seamlessPaymentsAdvantages }: SeamlessPaymentsProps) {
   // type the ref as an HTMLSectionElement (or HTMLElement)
   const sectionRef = useRef<HTMLElement | null>(null);
 
@@ -40,11 +57,9 @@ export default function SeamlessPayments() {
       <section ref={sectionRef} className="section seamless-payment">
         <div className="container">
           <div className="smls-pymt-headings">
-            <h2>The Foundation of Seamless Payments</h2>
+            <h2>{seamlessTitle}</h2>
 
-            <p className="h6 text-rg">
-              Four core capabilities powering secure, compliant clinical trials payments.
-            </p>
+            <p className="h6 text-rg">{seamlessSubtitle}</p>
           </div>
 
           <Image
@@ -57,38 +72,29 @@ export default function SeamlessPayments() {
           <div className="smls-pymt-details">
             <div className="smls-pymt-box-wrapper">
               <div className="pymt-box">
-                <h5>Plan & Configure</h5>
+                <h5>{seamlessPaymentsAdvantages.paymentsAdvantages1Title}</h5>
 
-                <p className="text-18">
-                  Design budgets, set FX and tax rules, and integrate systems effortlessly to ensure
-                  accurate financial planning.
-                </p>
+                <p className="text-18">{seamlessPaymentsAdvantages.paymentsAdvantages1Subtitle}</p>
               </div>
 
               <div className="pymt-box">
-                <h5>Govern & Comply</h5>
+                <h5>{seamlessPaymentsAdvantages.paymentsAdvantages2Title}</h5>
 
-                <p className="text-18">
-                  Ensure KYC/AML screening, audit trails, and global regulatory compliance.
-                </p>
+                <p className="text-18">{seamlessPaymentsAdvantages.paymentsAdvantages2Subtitle}</p>
               </div>
             </div>
 
             <div className="smls-pymt-box-wrapper">
               <div className="pymt-box">
-                <h5>Execute Payments</h5>
+                <h5>{seamlessPaymentsAdvantages.paymentsAdvantages3Title}</h5>
 
-                <p className="text-18">
-                  Process invoices, batch disbursements, and timely participant payouts securely.
-                </p>
+                <p className="text-18">{seamlessPaymentsAdvantages.paymentsAdvantages3Subtitle}</p>
               </div>
 
               <div className="pymt-box">
-                <h5>Operate & Optimize</h5>
+                <h5>{seamlessPaymentsAdvantages.paymentsAdvantages4Title}</h5>
 
-                <p className="text-18">
-                  Reconcile transactions via analytics dashboards and automated workflows.
-                </p>
+                <p className="text-18">{seamlessPaymentsAdvantages.paymentsAdvantages4Subtitle}</p>
               </div>
             </div>
           </div>

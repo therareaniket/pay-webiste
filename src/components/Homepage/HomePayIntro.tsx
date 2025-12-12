@@ -2,7 +2,13 @@
 
 import { useEffect, useRef, useState } from "react";
 
-export default function HomePayIntro() {
+type HomePayIntroProps = {
+    redefiningClinicalTrialsTitle: string;
+    redefiningClinicalTrialsPara1: string;
+    redefiningClinicalTrialsPara2: string;
+};
+
+export default function HomePayIntro( { redefiningClinicalTrialsTitle, redefiningClinicalTrialsPara1, redefiningClinicalTrialsPara2 }:HomePayIntroProps ) {
     const [count, setCount] = useState<number>(0);
     const [animateBoxes, setAnimateBoxes] = useState(false);
 
@@ -89,13 +95,9 @@ export default function HomePayIntro() {
             <div className="container">
                 <div className="redefine-payment-wrapper">
                     <div className="redefine-pymt-details">
-                        <h2>Redefining Clinical Trials Payments</h2>
-                        <p className="h6 text-rg">
-                            DhatuPay delivers secure, compliant clinical trials payments tailored for Sponsors, CROs, Sites, and Participants. This platform automates complex workflows for fast, transparent global payouts, eliminating delays and compliance risks.
-                        </p>
-                        <p className="h6 text-rg">
-                            Bridge all stakeholders with reliable, real-time payment solutions that boost trial efficiency worldwide.
-                        </p>
+                        <h2>{redefiningClinicalTrialsTitle}</h2>
+                        <p className="h6 text-rg">{redefiningClinicalTrialsPara1}</p>
+                        <p className="h6 text-rg">{redefiningClinicalTrialsPara2}</p>
                     </div>
 
                     <div className="redefine-pymt-growth">

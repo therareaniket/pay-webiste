@@ -4,7 +4,22 @@ import { useEffect } from "react";
 import Image from "next/image";
 import { motion } from 'framer-motion';
 
-export default function CoreCapabilities() {
+type CoreCapabilitiesProps = {
+    coreCapabilitiesTitle: string;
+    coreCapabilitiesSubtitle: string;
+    coreCapabilitiesList:{
+    	capabilitiesList1Title: string;
+    	capabilitiesList1Subtitle: string;
+    	capabilitiesList2Title: string;
+    	capabilitiesList2Subtitle: string;
+    	capabilitiesList3Title: string;
+    	capabilitiesList3Subtitle: string;
+    	capabilitiesList4Title: string;
+    	capabilitiesList4Subtitle: string;
+    }
+};
+
+export default function CoreCapabilities( { coreCapabilitiesTitle, coreCapabilitiesSubtitle, coreCapabilitiesList }: CoreCapabilitiesProps) {
 
     useEffect(() => {
         const verticalLines = document.querySelectorAll<HTMLElement>(".capablty-lists-divider");
@@ -109,11 +124,8 @@ export default function CoreCapabilities() {
                 <div className="capabiblity-wrapper">
 
                     <div className="core-capablty-headings">
-                        <h2>Core Capabilities Powering DhatuPay</h2>
-                        <p className="h6 text-rg">
-                            Secure, compliant clinical trials payments with global automation,
-                            AI insights, and built-in compliance.
-                        </p>
+                        <h2>{coreCapabilitiesTitle}</h2>
+                        <p className="h6 text-rg">{coreCapabilitiesSubtitle}</p>
                     </div>
 
                     <div className="capablty-lists-wrapper">
@@ -124,8 +136,8 @@ export default function CoreCapabilities() {
                                     <Image src="/images/homepage/icon-globe-coverage.svg" width={32} height={32} alt="" />
                                 </div>
                                 <div className="list-details">
-                                    <h5>Global Coverage</h5>
-                                    <p>Manage multi-currency transactions, FX conversions, and regional tax regulations seamlessly.</p>
+                                    <h5>{coreCapabilitiesList.capabilitiesList1Title}</h5>
+                                    <p>{coreCapabilitiesList.capabilitiesList1Subtitle}</p>
                                 </div>
                             </motion.div>
 
@@ -136,8 +148,8 @@ export default function CoreCapabilities() {
                                     <Image src="/images/homepage/icon-ai-automation.svg" width={32} height={32} alt="" />
                                 </div>
                                 <div className="list-details">
-                                    <h5>AI-Powered Automation</h5>
-                                    <p>Intelligent algorithms predict, optimize, and execute payment workflows efficiently.</p>
+                                    <h5>{coreCapabilitiesList.capabilitiesList2Title}</h5>
+                                    <p>{coreCapabilitiesList.capabilitiesList2Subtitle}</p>
                                 </div>
                             </motion.div>
                         </div>
@@ -152,8 +164,8 @@ export default function CoreCapabilities() {
                                     <Image src="/images/homepage/icon-auto-payments.svg" width={32} height={32} alt="" />
                                 </div>
                                 <div className="list-details">
-                                    <h5>Automated Payments</h5>
-                                    <p>Streamline disbursements and approvals with smart, hands-free workflows.</p>
+                                    <h5>{coreCapabilitiesList.capabilitiesList3Title}</h5>
+                                    <p>{coreCapabilitiesList.capabilitiesList3Subtitle}</p>
                                 </div>
                             </motion.div>
 
@@ -164,8 +176,8 @@ export default function CoreCapabilities() {
                                     <Image src="/images/homepage/icon-in-built-compliance.svg" width={32} height={32} alt="" />
                                 </div>
                                 <div className="list-details">
-                                    <h5>Compliance Built-In</h5>
-                                    <p>Achieve 21 CFR Part 11 readiness with KYC/AML checks and automated tax enforcement.</p>
+                                    <h5>{coreCapabilitiesList.capabilitiesList4Title}</h5>
+                                    <p>{coreCapabilitiesList.capabilitiesList4Subtitle}</p>
                                 </div>
                             </motion.div>
                         </div>

@@ -4,7 +4,25 @@ import Image from "next/image";
 import Link from "next/link";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
-export default function Pricing() {
+type PricingProps = {
+    pricingTitle: string;
+    pricingSubtitle: string;
+    planDetails: {
+    	standardInclude1: string;
+    	standardInclude2: string;
+    	standardInclude3: string;
+    	standardInclude4: string;
+    	standardInclude5: string;
+
+    	enterpriseInclude1: string;
+    	enterpriseInclude2: string;
+    	enterpriseInclude3: string;
+    	enterpriseInclude4: string;
+    	enterpriseInclude5: string;
+    }
+};
+
+export default function Pricing({ pricingTitle, pricingSubtitle, planDetails }: PricingProps ) {
     return (
         <>
             <section className="section pricing">
@@ -24,9 +42,9 @@ export default function Pricing() {
 
                         <div className="pricing-plan-details">
                             <div className="pricing-headings">
-                                <h2>Flexible Pricing for Every Clinical Operation</h2>
+                                <h2>{pricingTitle}</h2>
 
-                                <p className="h6 text-rg">Choose from Standard or Enterprise plans designed for your clinical trials operations. Scale seamlessly with DhatuPay&apos;s two-tier pricing that fits every business need.</p>
+                                <p className="h6 text-rg">{pricingSubtitle}</p>
                             </div>
 
                             <div className="plan-descrptn">
@@ -44,31 +62,31 @@ export default function Pricing() {
                                             <li>
                                                 <Image src="/images/homepage/pricing-includes-check.svg" alt="pricing-includes-check" width={15} height={11}></Image>
 
-                                                <span className="text-18">FX & Tax Settings</span>
+                                                <span className="text-18">{planDetails.standardInclude1}</span>
                                             </li>
 
                                             <li>
                                                 <Image src="/images/homepage/pricing-includes-check.svg" alt="pricing-includes-check" width={15} height={11}></Image>
 
-                                                <span className="text-18">Basic Integrations</span>
+                                                <span className="text-18">{planDetails.standardInclude2}</span>
                                             </li>
 
                                             <li>
                                                 <Image src="/images/homepage/pricing-includes-check.svg" alt="pricing-includes-check" width={15} height={11}></Image>
 
-                                                <span className="text-18">Budget Designer</span>
+                                                <span className="text-18">{planDetails.standardInclude3}</span>
                                             </li>
 
                                             <li>
                                                 <Image src="/images/homepage/pricing-includes-check.svg" alt="pricing-includes-check" width={15} height={11}></Image>
 
-                                                <span className="text-18">Invoice Management</span>
+                                                <span className="text-18">{planDetails.standardInclude4}</span>
                                             </li>
 
                                             <li>
                                                 <Image src="/images/homepage/pricing-includes-check.svg" alt="pricing-includes-check" width={15} height={11}></Image>
 
-                                                <span className="text-18">Basic Analytics Dashboard</span>
+                                                <span className="text-18">{planDetails.standardInclude5}</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -90,31 +108,31 @@ export default function Pricing() {
                                             <li>
                                                 <Image src="/images/homepage/pricing-includes-check-white.svg" alt="pricing-includes-check" width={15} height={11}></Image>
 
-                                                <span className="text-18">Everything in Standard,</span>
+                                                <span className="text-18">{planDetails.enterpriseInclude1}</span>
                                             </li>
 
                                             <li>
                                                 <Image src="/images/homepage/pricing-includes-check-white.svg" alt="pricing-includes-check" width={15} height={11}></Image>
 
-                                                <span className="text-18">Advanced Integrations (ERP, EDC)</span>
+                                                <span className="text-18">{planDetails.enterpriseInclude2}</span>
                                             </li>
 
                                             <li>
                                                 <Image src="/images/homepage/pricing-includes-check-white.svg" alt="pricing-includes-check" width={15} height={11}></Image>
 
-                                                <span className="text-18">Participant Payouts</span>
+                                                <span className="text-18">{planDetails.enterpriseInclude3}</span>
                                             </li>
 
                                             <li>
                                                 <Image src="/images/homepage/pricing-includes-check-white.svg" alt="pricing-includes-check" width={15} height={11}></Image>
 
-                                                <span className="text-18">Jurisdiction Packs (US/EU/IN)</span>
+                                                <span className="text-18">{planDetails.enterpriseInclude4}</span>
                                             </li>
 
                                             <li>
                                                 <Image src="/images/homepage/pricing-includes-check-white.svg" alt="pricing-includes-check" width={15} height={11}></Image>
 
-                                                <span className="text-18">Advanced Analytics & Reporting</span>
+                                                <span className="text-18">{planDetails.enterpriseInclude5}</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -149,31 +167,31 @@ export default function Pricing() {
                                             <li>
                                                 <Image src="/images/homepage/pricing-includes-check.svg" alt="pricing-includes-check" width={15} height={11}></Image>
 
-                                                <span className="text-18">FX & Tax Settings</span>
+                                                <span className="text-18">{planDetails.standardInclude1}</span>
                                             </li>
 
                                             <li>
                                                 <Image src="/images/homepage/pricing-includes-check.svg" alt="pricing-includes-check" width={15} height={11}></Image>
 
-                                                <span className="text-18">Basic Integrations</span>
+                                                <span className="text-18">{planDetails.standardInclude2}</span>
                                             </li>
 
                                             <li>
                                                 <Image src="/images/homepage/pricing-includes-check.svg" alt="pricing-includes-check" width={15} height={11}></Image>
 
-                                                <span className="text-18">Budget Designer</span>
+                                                <span className="text-18">{planDetails.standardInclude3}</span>
                                             </li>
 
                                             <li>
                                                 <Image src="/images/homepage/pricing-includes-check.svg" alt="pricing-includes-check" width={15} height={11}></Image>
 
-                                                <span className="text-18">Invoice Management</span>
+                                                <span className="text-18">{planDetails.standardInclude4}</span>
                                             </li>
 
                                             <li>
                                                 <Image src="/images/homepage/pricing-includes-check.svg" alt="pricing-includes-check" width={15} height={11}></Image>
 
-                                                <span className="text-18">Basic Analytics Dashboard</span>
+                                                <span className="text-18">{planDetails.standardInclude5}</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -197,31 +215,31 @@ export default function Pricing() {
                                             <li>
                                                 <Image src="/images/homepage/pricing-includes-check-white.svg" alt="pricing-includes-check" width={15} height={11}></Image>
 
-                                                <span className="text-18">Everything in Standard,</span>
+                                                <span className="text-18">{planDetails.enterpriseInclude1}</span>
                                             </li>
 
                                             <li>
                                                 <Image src="/images/homepage/pricing-includes-check-white.svg" alt="pricing-includes-check" width={15} height={11}></Image>
 
-                                                <span className="text-18">Advanced Integrations (ERP, EDC)</span>
+                                                <span className="text-18">{planDetails.enterpriseInclude2}</span>
                                             </li>
 
                                             <li>
                                                 <Image src="/images/homepage/pricing-includes-check-white.svg" alt="pricing-includes-check" width={15} height={11}></Image>
 
-                                                <span className="text-18">Participant Payouts</span>
+                                                <span className="text-18">{planDetails.enterpriseInclude3}</span>
                                             </li>
 
                                             <li>
                                                 <Image src="/images/homepage/pricing-includes-check-white.svg" alt="pricing-includes-check" width={15} height={11}></Image>
 
-                                                <span className="text-18">Jurisdiction Packs (US/EU/IN)</span>
+                                                <span className="text-18">{planDetails.enterpriseInclude4}</span>
                                             </li>
 
                                             <li>
                                                 <Image src="/images/homepage/pricing-includes-check-white.svg" alt="pricing-includes-check" width={15} height={11}></Image>
 
-                                                <span className="text-18">Advanced Analytics & Reporting</span>
+                                                <span className="text-18">{planDetails.enterpriseInclude5}</span>
                                             </li>
                                         </ul>
                                     </div>
