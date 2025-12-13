@@ -3,6 +3,11 @@
 import Image from "next/image";
 import { motion } from 'framer-motion';
 
+type AboutHeroProps = {
+    aboutHeroTitle: string;
+    aboutHeroSubtitle: string;
+}
+
 const AboutHeroAnimate =  { 
     ltrInitial: { x: -100, opacity: 0 },
     ltrAnimate: { x: 0, opacity: 1, transition: { duration: 1, delay: 2 } },
@@ -14,7 +19,7 @@ const AboutHeroAnimate =  {
     ttbTextAnimateDelayed: { y: 0, opacity: 1, transition: { duration: 1, delay: 1 } },
 }
 
-export default function AboutHero () {
+export default function AboutHero ( { aboutHeroTitle, aboutHeroSubtitle}: AboutHeroProps ) {
     return (
         <>
             <section className="section sub-site-hero">
@@ -29,10 +34,10 @@ export default function AboutHero () {
                         </motion.div>
 
                         <div className="subpage-hero-details">
-                            <motion.h1 className="text-sb" variants={AboutHeroAnimate} initial="ttbText" animate="ttbTextAnimate" viewport={{ once: true }}>The Intelligent Engine Behind Every Payment</motion.h1>
+                            <motion.h1 className="text-sb" variants={AboutHeroAnimate} initial="ttbText" animate="ttbTextAnimate" viewport={{ once: true }}>{aboutHeroTitle}</motion.h1>
                             {/* <h1 className="text-sb">Simplifying Global Clinical Trial Payments</h1> */}
 
-                            <motion.p className="h6 text-rg" variants={AboutHeroAnimate} initial="ttbTextDelayed" animate="ttbTextAnimateDelayed" viewport={{ once: true }}>Purpose-built for life sciences, DhatuPay automates global trial payments with a compliance-first architecture, real-time visibility, and event-driven workflows that keep every stakeholder in sync.</motion.p>
+                            <motion.p className="h6 text-rg" variants={AboutHeroAnimate} initial="ttbTextDelayed" animate="ttbTextAnimateDelayed" viewport={{ once: true }}>{aboutHeroSubtitle}</motion.p>
                         </div>
                     </div>
                 </div>

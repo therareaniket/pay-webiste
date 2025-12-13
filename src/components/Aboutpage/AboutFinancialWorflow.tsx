@@ -3,8 +3,17 @@
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 
+type FinancialWorkflowProps = {
+    coreWorkflowsTitle: string;
+    coreWorkflowsSubtitle: string;
+    reconciliationDetails: string;
+    analyticsDetails: string;
+    queueHealthDetails: string;
+    riskMonitoringDetails: string;
+};
 
-export default function FinancialWorkflow() {
+
+export default function FinancialWorkflow( {coreWorkflowsTitle, coreWorkflowsSubtitle, reconciliationDetails, analyticsDetails, queueHealthDetails, riskMonitoringDetails}: FinancialWorkflowProps ) {
     const sectionRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
@@ -35,10 +44,8 @@ export default function FinancialWorkflow() {
         <section className="section financial-workflow" ref={sectionRef}>
             <div className="container">
                 <div className="financial-headings">
-                    <h2>Operational Excellence Optimizing Core Workflows</h2>
-                    <p className="h6 text-rg">
-                        Driving accuracy, resilience, and insights across every critical process
-                    </p>
+                    <h2>{coreWorkflowsTitle}</h2>
+                    <p className="h6 text-rg">{coreWorkflowsSubtitle}</p>
                 </div>
 
                 <div className="workflow-lists">
@@ -50,9 +57,7 @@ export default function FinancialWorkflow() {
                             </div>
                             <div className="wf-list-details">
                                 <h3 className="h5 text-md">Reconciliation</h3>
-                                <p className="text-18">
-                                    Enable precise operations by processing standard bank formats—CAMT.053 and MT940—for seamless matching.
-                                </p>
+                                <p className="text-18">{reconciliationDetails}</p>
                             </div>
 
                             <Image src="/images/aboutpage/top-left-arrow.svg" alt="top-left-arrow" width={150} height={62} className="arrow-top-left"></Image>
@@ -64,9 +69,7 @@ export default function FinancialWorkflow() {
                             </div>
                             <div className="wf-list-details">
                                 <h3 className="h5 text-md">Analytics</h3>
-                                <p className="text-18">
-                                    Empower decision-makers with end-to-end visibility through comprehensive operational and financial analytics dashboards.
-                                </p>
+                                <p className="text-18">{analyticsDetails}</p>
                             </div>
 
                             <Image src="/images/aboutpage/bottom-left-arrow.svg" alt="bottom-left-arrow" width={150} height={62} className="arrow-bottom-left"></Image>
@@ -88,9 +91,7 @@ export default function FinancialWorkflow() {
                             </div>
                             <div className="wf-list-details">
                                 <h3 className="h5 text-md">Queue Health</h3>
-                                <p className="text-18">
-                                    Monitor operational reliability with real-time SLA timers tracking every request&apos;s progress and status.
-                                </p>
+                                <p className="text-18">{queueHealthDetails}</p>
                             </div>
 
                             <Image src="/images/aboutpage/top-right-arrow.svg" alt="top-right-arrow" width={150} height={62} className="arrow-top-right"></Image>
@@ -102,9 +103,7 @@ export default function FinancialWorkflow() {
                             </div>
                             <div className="wf-list-details">
                                 <h3 className="h5 text-md">Risk Monitoring</h3>
-                                <p className="text-18">
-                                    Deploy AI-driven anomaly detection and risk scoring to proactively shield against financial threats and irregularities.
-                                </p>
+                                <p className="text-18">{riskMonitoringDetails}</p>
                             </div>
 
                             <Image src="/images/aboutpage/bottom-right-arrow.svg" alt="bottom-right-arrow" width={150} height={62} className="arrow-bottom-right"></Image>

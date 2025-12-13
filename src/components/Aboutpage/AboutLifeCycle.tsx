@@ -2,8 +2,16 @@
 import { useRef } from 'react';
 import { motion, useInView, Variants } from 'framer-motion';
 
+type AboutLifeCycleProps = {
+    introTitle: string;
+    introSubtitle: string;
 
-export default function AboutLifeCycle() {
+    lifecycleTitle: string;
+    lifecycleSubtitle: string;
+}
+
+
+export default function AboutLifeCycle( { introTitle, introSubtitle, lifecycleTitle, lifecycleSubtitle }: AboutLifeCycleProps ) {
 
     const pathD = "M10.5001 264.998L307.675 264.998C308.885 264.998 310.088 264.815 311.243 264.456L476.5 212.998L581.501 180.498L865.5 81.498L1076.65 11.1141C1077.88 10.7062 1079.16 10.4983 1080.45 10.4983L1404 10.4983";
     const ref = useRef(null);
@@ -39,9 +47,9 @@ export default function AboutLifeCycle() {
             <section className="section meet-dhatupay">
                 <div className="container">
                     <div className="meet-dp-headings">
-                        <h2>Meet DhatuPay Your Digital Payment Partner</h2>
+                        <h2>{introTitle}</h2>
 
-                        <p className="h6 text-rg">Transform how you run trials with expert insights, deep dives, and industry innovation focused on modern payment operations. Stay ahead with curated content on trial transformation, compliance excellence, and operational leadership tailored for life sciences.</p>
+                        <p className="h6 text-rg">{introSubtitle}</p>
                     </div>
                 </div>
             </section>
@@ -49,9 +57,9 @@ export default function AboutLifeCycle() {
             <section className="section life-cycle" style={{ paddingTop: 0 }}>
                 <div className="container">
                     <div className="life-cycle-headings">
-                        <h2>End-to-End Payment Lifecycle Intelligence</h2>
+                        <h2>{lifecycleTitle}</h2>
 
-                        <p className="h6 text-rg">From contract through reconciliation, gain full transparency and intelligent control over every stage of the financial lifecycle for truly seamless payments.</p>
+                        <p className="h6 text-rg">{lifecycleSubtitle}</p>
                     </div>
 
                     {/* <motion.div ref={ref} className="life-cycle-timeline"  initial="hidden" animate={isInView ? "visible" : "hidden"} variants={containerVariants}>

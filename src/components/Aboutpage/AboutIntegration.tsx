@@ -3,16 +3,20 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger, } from "@/components/ui/accordion"
 import Image from "next/image";
 
+type IntegrationProps = {
+    integrationsTitle: string;
+    integrationsSubtitle: string;
+}
 
-export default function AboutIntegration() {
+export default function AboutIntegration( {integrationsTitle, integrationsSubtitle}: IntegrationProps ) {
     return (
         <>
             <section className="section integration" style={{ paddingTop: 0 }}>
                 <div className="container">
                     <div className="integration-headings">
-                        <h2>Layered, Modular Framework for Secure, Scalable Integration</h2>
+                        <h2>{integrationsTitle}</h2>
 
-                        <p className="h6 text-rg">A flexible, layered design enabling seamless, secure connections across clinical trials ecosystems and financial systems</p>
+                        <p className="h6 text-rg">{integrationsSubtitle}</p>
                     </div>
 
                     <div className="trust-tabs integration-tabs">

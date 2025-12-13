@@ -5,12 +5,34 @@ import { useEffect } from "react";
 import { motion } from 'framer-motion';
 import { once } from "events";
 
+type FutureOfPaymentsProps = {
+    clinicalTrialsPaymentsTitle: string;
+    clinicalTrialsPaymentsSubtitle: string;
+
+    trialsPaymentsList: {
+        challengePoint1: string;
+        challengePoint2: string;
+        challengePoint3: string;
+        challengePoint4: string;
+
+        theSolutionPoint1: string;
+        theSolutionPoint2: string;
+        theSolutionPoint3: string;
+        theSolutionPoint4: string;
+
+        theDifferencePoint1: string;
+        theDifferencePoint2: string;
+        theDifferencePoint3: string;
+        theDifferencePoint4: string;
+    };
+}
+
 const AboutPaymentAnimate =  { 
     ltrInitial: { x: '-20px', opacity: 0 },
     ltrAnimate: { x: 0, opacity: 1, transition: { duration: 1 } },
 }
 
-export default function FutureOfPayments() {
+export default function FutureOfPayments( {clinicalTrialsPaymentsTitle, clinicalTrialsPaymentsSubtitle, trialsPaymentsList}: FutureOfPaymentsProps) {
 
     useEffect(() => {
         const svgs = document.querySelectorAll(".animate-svg");
@@ -73,8 +95,8 @@ const startSVG = (svg: Element) => {
 
                     {/* Heading */}
                     <div className="payment-headings">
-                        <h2>The Future of Clinical Trials Payments</h2>
-                        <p className="h6 text-rg">Global Reach with Local Regulatory Confidence</p>
+                        <h2>{clinicalTrialsPaymentsTitle}</h2>
+                        <p className="h6 text-rg">{clinicalTrialsPaymentsSubtitle}</p>
                     </div>
 
                     <div className="future-payment-lists">
@@ -108,10 +130,10 @@ const startSVG = (svg: Element) => {
                                 <div className="detailed-text">
                                     <h3 className="h5 text-md">The Challenge</h3>
                                     <motion.ul variants={AboutPaymentAnimate} initial="ltrInitial" whileInView="ltrAnimate" viewport={{once: true, amount: 1 }}>
-                                        <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />Multi-country regulations and diverse tax laws make compliance slow and complex.</li>
-                                        <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />Multiple currencies create reconciliation, FX, and conversion headaches.</li>
-                                        <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />Strict standards such as 21 CFR Part 11 and KYC/AML increase operational burden.</li>
-                                        <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />Manual workflows delay payments and frustrate sites, vendors, and participants.</li>
+                                        <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="tick" />{trialsPaymentsList.challengePoint1}</li>
+                                        <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="tick" />{trialsPaymentsList.challengePoint2}</li>
+                                        <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="tick" />{trialsPaymentsList.challengePoint3}</li>
+                                        <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="tick" />{trialsPaymentsList.challengePoint4}</li>
                                     </motion.ul>
                                 </div>
                             </div>
@@ -149,10 +171,10 @@ const startSVG = (svg: Element) => {
                                 <div className="detailed-text">
                                     <h3 className="h5 text-md">The Solution</h3>
                                     <motion.ul variants={AboutPaymentAnimate} initial="ltrInitial" whileInView="ltrAnimate" viewport={{once: true, amount: 1 }}>
-                                        <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />Built-in support for global regulations (21 CFR Part 11, KYC/AML).</li>
-                                        <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />A single platform for budgeting, invoicing, reconciliation, and disbursements.</li>
-                                        <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />Jurisdiction packs for US, EU, and India tax and e-invoicing rules.</li>
-                                        <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />Multi-currency capabilities with accurate, automated conversions.</li>
+                                        <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />{trialsPaymentsList.theSolutionPoint1}</li>
+                                        <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />{trialsPaymentsList.theSolutionPoint2}</li>
+                                        <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />{trialsPaymentsList.theSolutionPoint3}</li>
+                                        <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />{trialsPaymentsList.theSolutionPoint4}</li>
                                     </motion.ul>
                                 </div>
                             </div>
@@ -190,10 +212,10 @@ const startSVG = (svg: Element) => {
                                 <div className="detailed-text">
                                     <h3 className="h5 text-md">The Difference</h3>
                                     <motion.ul variants={AboutPaymentAnimate} initial="ltrInitial" whileInView="ltrAnimate" viewport={{once: true, amount: 1 }}>
-                                        <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />Purpose-built for life sciences, optimized for clinical trials workflows.</li>
-                                        <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />Event-driven automation from CTMS/EDC data.</li>
-                                        <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />Compliance-first architecture with 21 CFR Part 11, KYC, AML.</li>
-                                        <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />Global scale with local rules via jurisdiction packs.</li>
+                                        <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />{trialsPaymentsList.theDifferencePoint1}</li>
+                                        <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />{trialsPaymentsList.theDifferencePoint2}</li>
+                                        <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />{trialsPaymentsList.theDifferencePoint3}</li>
+                                        <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />{trialsPaymentsList.theDifferencePoint4}</li>
                                     </motion.ul>
                                 </div>
                             </div>

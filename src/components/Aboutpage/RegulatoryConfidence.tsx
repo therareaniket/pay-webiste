@@ -5,34 +5,43 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-export default function RegulatoryConfidence () {
+type RegulatoryProps = {
+    regulatoryTitle: string;
+    regulatorySubtitle: string;
+    regulatorySlide1Details: string;
+    regulatorySlide2Details: string;
+    regulatorySlide3Details: string;
+    regulatorySlide4Details: string;
+}
+
+export default function RegulatoryConfidence ( {regulatoryTitle, regulatorySubtitle, regulatorySlide1Details, regulatorySlide2Details, regulatorySlide3Details, regulatorySlide4Details}: RegulatoryProps ) {
 
     const Regulatoryslides = [
         {
             icon: "icon-immutable-audit",
             title: "Immutable Audit Trails",
-            desc: "Maintain a permanent, tamper-proof record of every transaction and action to support full transparency and regulatory compliance.",
+            desc: regulatorySlide1Details,
             bgColor: "bg-[#CDD8FF]",
             iconBgColor: "bg-[#557CFF]",
         },
         {
             icon: "icon-digital-signature",
             title: "Digital Signatures",
-            desc: "Protect documents with secure, legally recognized digital signatures that preserve authenticity and data integrity.",
+            desc: regulatorySlide2Details,
             bgColor: "bg-[#D1EAD3]",
             iconBgColor: "bg-[#87C88E]",
         },
         {
             icon: "icon-security-architecture",
             title: "Jurisdiction Packs",
-            desc: "Stay compliant across regions with pre-configured packs for US, EU, and India, simplifying global operations with ready-to-use rules.",
+            desc: regulatorySlide3Details,
             bgColor: "bg-[#DDD2FE]",
             iconBgColor: "bg-[#A78BFC]",
         },
         {
             icon: "icon-vendor-regualatory-payments",
             title: "Data Residency",
-            desc: "Meet regional requirements by choosing where your data lives, while end‑to‑end encryption safeguards sensitive financial and participant information.",
+            desc: regulatorySlide4Details,
             bgColor: "bg-[#FEE4D2]",
             iconBgColor: "bg-[#FBB98A]",
         }
@@ -43,9 +52,9 @@ export default function RegulatoryConfidence () {
             <section className="section">
                 <div className="container">
                     <div className="regulatory-headings">
-                        <h2>Regulatory Confidence for a Borderless World</h2>
+                        <h2>{regulatoryTitle}</h2>
 
-                        <p className="h6 text-rg">Get field-level “before” snapshots for complete transparency, with every change inside the system captured and traceable.</p>
+                        <p className="h6 text-rg">{regulatorySubtitle}</p>
                     </div>
 
                     {/* <div className="regulatory-nav flex gap-4 mb-6">
