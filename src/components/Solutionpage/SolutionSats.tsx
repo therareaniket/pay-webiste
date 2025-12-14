@@ -3,7 +3,16 @@
 import Image from "next/image";
 import { useEffect } from "react";
 
-export default function SolutionStats() {
+type SolutionStatsProps = {
+    solutionIntroTitle: string;
+    solutionIntroSubtitle: string;
+    solutionsIncludes1: string;
+    solutionsIncludes2: string;
+    solutionsIncludes3: string;
+    solutionsIncludes4: string;
+}
+
+export default function SolutionStats( {solutionIntroTitle, solutionIntroSubtitle, solutionsIncludes1, solutionsIncludes2, solutionsIncludes3, solutionsIncludes4} : SolutionStatsProps ) {
 
     useEffect(() => {
 
@@ -93,12 +102,9 @@ export default function SolutionStats() {
             <section className="section solution-stats-main">
                 <div className="container">
                     <div className="solution-stats-text">
-                        <h2 className="h3">Connected payments. Complete control. Seamless payouts.</h2>
+                        <h2 className="h3">{solutionIntroTitle}</h2>
 
-                        <p className="h6 text-rg">
-                            Dhatu Pay simplifies complex payment workflows for Sponsors, CROs, Sites, Vendors, and Participants with one
-                            integrated platform that unifies every payment process.
-                        </p>
+                        <p className="h6 text-rg">{solutionIntroSubtitle}</p>
                     </div>
 
                     <div className="sol-stats-list">
@@ -110,22 +116,22 @@ export default function SolutionStats() {
                             <ul>
                                 <li className="sol-tick-desc text-rg text-18">
                                     <span><Image src="/images/solutionpage/soln-stats-tick.svg" alt="" width={15} height={12} /></span>
-                                    Multi-entity integration for seamless collaboration
+                                    {solutionsIncludes1}
                                 </li>
 
                                 <li className="sol-tick-desc text-rg text-18">
                                     <span><Image src="/images/solutionpage/soln-stats-tick.svg" alt="" width={15} height={12} /></span>
-                                    Global compliance with regulatory and financial standards
+                                    {solutionsIncludes2}
                                 </li>
 
                                 <li className="sol-tick-desc text-rg text-18">
                                     <span><Image src="/images/solutionpage/soln-stats-tick.svg" alt="" width={15} height={12} /></span>
-                                    Automated payment workflows for Sponsors, CROs, Sites, and Vendors
+                                    {solutionsIncludes3}
                                 </li>
 
                                 <li className="sol-tick-desc text-rg text-18">
                                     <span><Image src="/images/solutionpage/soln-stats-tick.svg" alt="" width={15} height={12} /></span>
-                                    Fast participant reimbursements for travel and stipends
+                                    {solutionsIncludes4}
                                 </li>
                             </ul>
                         </div>

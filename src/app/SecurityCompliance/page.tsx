@@ -3,6 +3,15 @@ import SecurityAdvancedProtection from "@/components/Securitycompliancepage/Secu
 import SecurityHero from "@/components/Securitycompliancepage/SecurityHero";
 import SecurityRegulatory from "@/components/Securitycompliancepage/SecurityRegulatory";
 
+// type SecuritypageData = {
+//     page: {
+//         securitypage: {
+//             securityHeroTitle: string;
+//             securityHeroSubtitle: string;
+//         };
+//     };
+// };
+
 export default function SecurityCompliance() {
     return (
         <>

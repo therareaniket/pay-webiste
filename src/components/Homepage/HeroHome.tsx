@@ -124,12 +124,12 @@ useEffect(() => {
                             <div className="home-hero-cta">
                                 {/* Button 1 */}
                                 {heroCta1 && (
-                                    <Link href={heroCta1.url} title={heroCta1.title} className="btn-bg btn-padding text-md text-18">{heroCta1.title}</Link>
+                                    <Link href={heroCta1.url} title={heroCta1.title} className="link-padding link-radius text-18 text-md btn-tranpearent hero-btn hero-btn-1 animate-on-scroll">{heroCta1.title}</Link>
                                 )}
 
                                 {/* Button 2 */}
                                 {heroCta2 && (
-                                    <Link href={heroCta2.url} title={heroCta2.title} className="btn-bg btn-padding text-md text-18">{heroCta2.title}</Link>
+                                    <Link href={heroCta2.url} title={heroCta2.title} className="link-padding link-radius text-18 text-md btn-blue hero-btn hero-btn-2 animate-on-scroll">{heroCta2.title}</Link>
                                 )}
                             </div>
                         </div>

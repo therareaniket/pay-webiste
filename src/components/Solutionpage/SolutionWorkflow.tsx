@@ -1,15 +1,25 @@
 import Image from "next/image";
 
-export default function SolutionWorkflow() {
+type SolutionWorkflowProps = {
+    solutionWorkflowTitle: string;
+    solutionWorkflowSubtitle: string;
+    sitesCroPaymentsDetails: string;
+    participantPaymentsDetails: string;
+    analyticsOptimizationDetails: string;
+    vendorRegulatoryPaymentsDetails: string;
+    triggersAccrualsDetails: string;
+}
+
+export default function SolutionWorkflow( {solutionWorkflowTitle, solutionWorkflowSubtitle, sitesCroPaymentsDetails, participantPaymentsDetails, analyticsOptimizationDetails, vendorRegulatoryPaymentsDetails, triggersAccrualsDetails}: SolutionWorkflowProps ) {
     return (
         <>
             <section className="section soln-workflow" >
                 <div className="container">
                     <div className="sol-workflow-main">
                         <div className="soln-workflow-text" >
-                            <h2 className="h3"> Solutions That Fit Every Workflow </h2>
+                            <h2 className="h3">{solutionWorkflowTitle}</h2>
 
-                            <p className="h6 text-rg">End-to-end payment and compliance solutions tailored for every clinical trials stakeholder.</p>
+                            <p className="h6 text-rg">{solutionWorkflowSubtitle}</p>
                         </div>
 
                         <div className="soln-workflow-cards">
@@ -22,7 +32,7 @@ export default function SolutionWorkflow() {
 
                                         <h3 className="h5 text-md">Sites & CRO Payments</h3>
 
-                                        <p className="text-18 text-rg">Automate invoicing and disbursements to ensure timely, accurate payments while reducing manual effort and maintaining tax compliance.</p>
+                                        <p className="text-18 text-rg">{sitesCroPaymentsDetails}</p>
                                     </div>
 
                                     <div className="parti-payments-card stakeholders-cards site-radius-20">
@@ -30,7 +40,7 @@ export default function SolutionWorkflow() {
 
                                         <h3 className="h5 text-md">Participant Payments</h3>
 
-                                        <p className="text-18 text-rg">Provide wallets, instant payouts, and OCR-based receipt capture to simplify expenses, speed reimbursements, and improve participant experience..</p>
+                                        <p className="text-18 text-rg">{participantPaymentsDetails}</p>
                                     </div>
                                 </div>
                             </div>
@@ -41,7 +51,7 @@ export default function SolutionWorkflow() {
 
                                     <h3 className="h5 text-md">Analytics & Optimization</h3>
 
-                                    <p className="text-18 text-rg">Gain real-time dashboards for spend vs. plan, trend tracking, and actionable insights to improve financial decisions.</p>
+                                    <p className="text-18 text-rg">{analyticsOptimizationDetails}</p>
                                 </div>
 
                                 <div className="vendor-payment-card stakeholders-cards site-radius-20">
@@ -49,7 +59,7 @@ export default function SolutionWorkflow() {
 
                                     <h3 className="h5 text-md">Vendor & Regulatory Payments</h3>
 
-                                    <p className="text-18 text-rg">Streamline vendor payouts with automated compliance checks, local regulation support, and secure cross-border transactions.</p>
+                                    <p className="text-18 text-rg">{vendorRegulatoryPaymentsDetails}</p>
                                 </div>
 
                                 <div className="trigger-accruals-card stakeholders-cards site-radius-20">
@@ -57,7 +67,7 @@ export default function SolutionWorkflow() {
 
                                     <h3 className="h5 text-md">Triggers & Accruals</h3>
 
-                                    <p className="text-18 text-rg">Automate expense and liability recognition from predefined events for accurate financial reporting and audit-ready compliance.</p>
+                                    <p className="text-18 text-rg">{triggersAccrualsDetails}</p>
                                 </div>
                             </div>
                         </div>
