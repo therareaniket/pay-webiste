@@ -4,7 +4,15 @@ import Image from 'next/image'
 import React from 'react'
 import { motion } from 'framer-motion'
 
-const SecurityRegulatory = () => {
+type SecurityRegulatoryProps = {
+    globalExcellenceTitle: string;
+    globalExcellenceSubtitle: string;
+    esignaturesDetails: string;
+    auditTrailsDetails: string;
+    jurisdictionPacksDetails: string;
+}
+
+const SecurityRegulatory = ( {globalExcellenceTitle, globalExcellenceSubtitle, esignaturesDetails, auditTrailsDetails, jurisdictionPacksDetails}: SecurityRegulatoryProps ) => {
     // Parent container variant for stagger
     const containerVariants = {
         hidden: {},
@@ -24,15 +32,15 @@ const SecurityRegulatory = () => {
     const items = [
         {
             title: '21 CFR Part 11 eSignatures',
-            text: 'Support electronic signatures that satisfy FDA requirements for authenticity and data integrity.'
+            text: esignaturesDetails
         },
         {
             title: 'Immutable Audit Trails',
-            text: 'Preserve tamper‑proof records of every transaction and system event for full traceability.'
+            text: auditTrailsDetails
         },
         {
             title: 'Jurisdiction Packs (US, EU, India)',
-            text: 'Use pre‑configured compliance packs tailored to regional regulations and documentation needs.'
+            text: jurisdictionPacksDetails
         }
     ]
 
@@ -41,10 +49,8 @@ const SecurityRegulatory = () => {
             <div className="container">
                 <div className="secr-regulatory-main">
                     <div className="sec-regulatory-heading">
-                        <h2 className=''>Built for Global Regulatory Excellence</h2>
-                        <p className='h6 text-rg'>
-                            Our platform is designed to meet stringent international compliance frameworks, providing end-to-end protection for sensitive financial and clinical data. Every transaction is validated against regulatory benchmarks.
-                        </p>
+                        <h2 className=''>{globalExcellenceTitle}</h2>
+                        <p className='h6 text-rg'>{globalExcellenceSubtitle}</p>
                     </div>
 
                     <div className="sec-regulatory-wrapper">

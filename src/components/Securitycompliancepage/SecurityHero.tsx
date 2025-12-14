@@ -4,6 +4,11 @@ import Image from "next/image";
 import React from "react";
 import { motion } from 'framer-motion';
 
+type SecurityHeroProps ={
+	securityHeroTitle: string;
+	securityHeroSubtitle: string;
+}
+
 const SecurityHeroAnimate =  { 
     ltrInitial1: { x: -100, opacity: 0 },
     ltrAnimate1: { x: 0, opacity: 1, transition: { duration: 1, delay: 2 } },
@@ -15,7 +20,7 @@ const SecurityHeroAnimate =  {
     ttbTextAnimateDelayed1: { y: 0, opacity: 1, transition: { duration: 1, delay: 1 } },
 }
 
-const SolutionHero = () => {
+const SolutionHero = ( {securityHeroTitle, securityHeroSubtitle}: SecurityHeroProps ) => {
     return (
             <section className="section sub-site-hero security-hero">
               <span className="light-orange-box"></span>
@@ -29,10 +34,10 @@ const SolutionHero = () => {
                   </motion.div>
         
                   <div className="subpage-hero-details">
-                    <motion.h1 className="text-sb" variants={SecurityHeroAnimate} initial="ttbText1" animate="ttbTextAnimate1" viewport={{ once: true }}>Compliance Leads, Security Thrives</motion.h1>
+                    <motion.h1 className="text-sb" variants={SecurityHeroAnimate} initial="ttbText1" animate="ttbTextAnimate1" viewport={{ once: true }}>{securityHeroTitle}</motion.h1>
                     {/* <h1 className="text-sb">Simplifying Global Clinical Trial Payments</h1> */}
         
-                    <motion.p className="h6 text-rg" variants={SecurityHeroAnimate} initial="ttbTextDelayed1" animate="ttbTextAnimateDelayed1" viewport={{ once: true }}>DhatuPay is built for life sciences, combining global regulatory adherence with enterprise-grade security to protect every transaction. It supports frameworks like GxP and 21 CFR Part 11 while enforcing strong encryption, access controls, and immutable audit trails to keep your clinical payment data safe and audit-ready.</motion.p>
+                    <motion.p className="h6 text-rg" variants={SecurityHeroAnimate} initial="ttbTextDelayed1" animate="ttbTextAnimateDelayed1" viewport={{ once: true }}>{securityHeroSubtitle}</motion.p>
                   </div>
                 </div>
               </div>

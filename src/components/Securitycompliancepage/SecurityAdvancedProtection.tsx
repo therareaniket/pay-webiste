@@ -1,14 +1,23 @@
 import React from 'react'
 
-const SecurityAdvancedProtection = () => {
+type AdvancedProtectionProps = {
+    complianceIntroTitle: string;
+    complianceIntroSubtitle: string;
+
+    securityArchitectureTitle: string;
+    securityArchitectureSubtitle1: string;
+    securityArchitectureSubtitle2: string;
+}
+
+const SecurityAdvancedProtection = ( {complianceIntroTitle, complianceIntroSubtitle, securityArchitectureTitle, securityArchitectureSubtitle1, securityArchitectureSubtitle2 }: AdvancedProtectionProps ) => {
     return (
         <>
             <section className="section advance-security-pro-text-main">
                 <div className="container">
                     <div className="advance-security-pro-text">
-                        <h2 className='advance-security-pro-text-title'>Compliance Is Non‑Negotiable. Secure. Trusted. Always.</h2>
+                        <h2 className='advance-security-pro-text-title'>{complianceIntroTitle}</h2>
 
-                        <p className='advance-security-pro-text-desc h6 text-rg'>Safeguard participant data, meet global regulations, and preserve trust with a platform built for audit‑ready transactions. From identity verification to payment workflows, every step is engineered to satisfy international compliance requirements and rigorous security standards.</p>
+                        <p className='advance-security-pro-text-desc h6 text-rg'>{complianceIntroSubtitle}</p>
                     </div>
                 </div>
             </section>
@@ -17,13 +26,9 @@ const SecurityAdvancedProtection = () => {
                 <div className="container">
                     <div className="adv-protection-wrapper">
                         <div className="adv-protextion-txt-head">
-                            <h2 className=''>Security Architecture Advanced Protection for Your Data</h2>
-                            <p className='h6 text-rg'>
-                                DhatuPay is built to align with strict global and industry-specific regulations, keeping your operations continuously compliant. It enforces strong data privacy controls end to end, using layered security to protect sensitive information and preserve confidentiality. 
-                            </p>
-                            <p className='h6 text-rg'>
-                                By embedding trust into every interaction, it enables organizations to operate with confidence, backed by secure, transparent, and responsibly managed systems.
-                            </p>
+                            <h2 className=''>{securityArchitectureTitle}</h2>
+                            <p className='h6 text-rg'>{securityArchitectureSubtitle1}</p>
+                            <p className='h6 text-rg'>{securityArchitectureSubtitle2}</p>
                         </div>
 
                         {/* DESKTOP CARDS */}

@@ -1,16 +1,21 @@
 import Image from 'next/image'
 import React from 'react'
 
-const SecurityAdvancedGovernance = () => {
+type AdvancedGovernanceProps = {
+    advancedGovernanceTitle: string;
+    advancedGovernanceSubtitle: string;
+}
+
+const SecurityAdvancedGovernance = ( {advancedGovernanceTitle, advancedGovernanceSubtitle}: AdvancedGovernanceProps ) => {
     return (
         <>
             <div className="security-advan-governance section">
                 <div className="container">
                     <div className="sec-advance-governance-main">
                         <div className="sec-advance-gover-head">
-                            <h2 className=''>Advanced Governance for Modern Enterprises</h2>
+                            <h2 className=''>{advancedGovernanceTitle}</h2>
 
-                            <p className='h6 text-rg'>Drive transparency, accountability, and control with governance tools built to support strict compliance and resilient security across your organization.</p>
+                            <p className='h6 text-rg'>{advancedGovernanceSubtitle}</p>
                         </div>
 
                         <div className="sec-gover-cards-wrapper">
