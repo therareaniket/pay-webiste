@@ -46,7 +46,7 @@ export default function AboutIntegration( {integrationsTitle, integrationsSubtit
                                         </div>
                                     </div>
 
-                                    <Image src="/images/aboutpage/integration-layer-webp.webp" alt="integration-layer" width={601} height={386} className="site-radius-20"></Image>
+                                    <Image src="/images/aboutpage/integration-layer-webp.webp" alt="integration-layer" width={601} height={386} className="site-radius-20" priority={true}></Image>
 
                                     <div className="content-list">
                                         <div className="content-item">
@@ -80,7 +80,7 @@ export default function AboutIntegration( {integrationsTitle, integrationsSubtit
                                         </div>
                                     </div>
 
-                                    <Image src="/images/aboutpage/core-engine-webp.webp" alt="integration-layer" width={601} height={386} className="site-radius-20"></Image>
+                                    <Image src="/images/aboutpage/core-engine-webp.webp" alt="core-engine" width={601} height={386} className="site-radius-20" priority={true}></Image>
 
                                     <div className="content-list">
                                         <div className="content-item">
@@ -114,7 +114,7 @@ export default function AboutIntegration( {integrationsTitle, integrationsSubtit
                                         </div>
                                     </div>
 
-                                    <Image src="/images/aboutpage/experience-webp.webp" alt="integration-layer" width={601} height={386} className="site-radius-20"></Image>
+                                    <Image src="/images/aboutpage/experience-webp.webp" alt="experience" width={601} height={386} className="site-radius-20" priority={true}></Image>
 
                                     <div className="content-list">
                                         <div className="content-item">
@@ -148,7 +148,7 @@ export default function AboutIntegration( {integrationsTitle, integrationsSubtit
                                         </div>
                                     </div>
 
-                                    <Image src="/images/aboutpage/analytics-webp.webp" alt="integration-layer" width={601} height={386} className="site-radius-20"></Image>
+                                    <Image src="/images/aboutpage/analytics-webp.webp" alt="analytics" width={601} height={386} className="site-radius-20" priority={true}></Image>
 
                                     <div className="content-list">
                                         <div className="content-item">
@@ -189,7 +189,7 @@ export default function AboutIntegration( {integrationsTitle, integrationsSubtit
                                             </div>
                                         </div>
 
-                                        <Image src="/images/aboutpage/integration-layer-webp.webp" alt="integration-layer" width={601} height={386} className="site-radius-20"></Image>
+                                        <Image src="/images/aboutpage/integration-layer-webp.webp" alt="integration-layer" width={601} height={386} className="site-radius-20" priority={true}></Image>
 
                                         <div className="content-list">
                                             <div className="content-item">
@@ -226,7 +226,7 @@ export default function AboutIntegration( {integrationsTitle, integrationsSubtit
                                         </div>
                                     </div>
 
-                                    <Image src="/images/aboutpage/core-engine-webp.webp" alt="integration-layer" width={601} height={386} className="site-radius-20"></Image>
+                                    <Image src="/images/aboutpage/core-engine-webp.webp" alt="core-engine" width={601} height={386} className="site-radius-20" priority={true}></Image>
 
                                     <div className="content-list">
                                         <div className="content-item">
@@ -263,7 +263,7 @@ export default function AboutIntegration( {integrationsTitle, integrationsSubtit
                                         </div>
                                     </div>
 
-                                    <Image src="/images/aboutpage/experience-webp.webp" alt="integration-layer" width={601} height={386} className="site-radius-20"></Image>
+                                    <Image src="/images/aboutpage/experience-webp.webp" alt="experience" width={601} height={386} className="site-radius-20" priority={true}></Image>
 
                                     <div className="content-list">
                                         <div className="content-item">
@@ -300,7 +300,7 @@ export default function AboutIntegration( {integrationsTitle, integrationsSubtit
                                         </div>
                                     </div>
 
-                                    <Image src="/images/aboutpage/analytics-webp.webp" alt="integration-layer" width={601} height={386} className="site-radius-20"></Image>
+                                    <Image src="/images/aboutpage/analytics-webp.webp" alt="analytics" width={601} height={386} className="site-radius-20" priority={true}></Image>
 
                                     <div className="content-list">
                                         <div className="content-item">
