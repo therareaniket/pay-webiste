@@ -15,55 +15,55 @@ export default function HomeBlogHighlight() {
                     </div>
 
                     <div className="home-blog-listing">
-                        <Link href="/BlogDetail" className="blog-full site-radius-20 overflow-hidden popout-card">
-                            <Image src="/images/homepage/blog-future-of-digital-payments-webp.webp" alt="blog-future-of-digital-payments" width={918} height={459}></Image>
+                        <Link href="/DigitalSignature-TheSecure-PaperlessWaytoSignDocuments" className="blog-full site-radius-20 overflow-hidden popout-card">
+                            <Image src="/images/bloglisting/digital-signature.webp" alt="blog-future-of-digital-payments" width={918} height={459}></Image>
 
                             <div className="full-blog-info">
-                                <span className="category-chip site-radius-20 text-14">Business Benefits</span>
+                                <span className="category-chip site-radius-20 text-14">Digital Signatures</span>
 
                                 <div className="home-blog-content">
-                                    <h3 className="h5 text-md">The Future of Digital Payments</h3>
+                                    <h3 className="h5 text-md">Digital Signature — What It Is & Why You Need It</h3>
 
-                                    <p>Explore how payment gateways like DhatuPay are shaping the future of online transactions and why security is non-negotiable for businesses today. From advanced encryption protocols to seamless multi-portal integration, modern gateways are redefining convenience without compromising trust.</p>
+                                    <p>Explore Digital Signature: using cryptographic techniques rather than handwritten ink. Briefly mention that many jurisdictions now legally recognize digital / electronic signatures if done under valid frameworks/standards.</p>
 
                                     <div className="blog-writer">
-                                        <span>Siddharth Shah</span>
+                                        <span>Smit Shah</span>
 
-                                        <span>20 November 2025</span>
+                                        <span>09 December 2025</span>
                                     </div>
                                 </div>
                             </div>
                         </Link>
 
                         <div className="blog-half-group ">
-                            <Link href="/BlogDetail" className="blog-half site-radius-20 popout-card">
-                                <Image src="/images/homepage/blog-integrate-portal-in-easy-steps-webp.webp" alt="" width={780} height={390}></Image>
+                            <Link href="/DigitalPayments-101" className="blog-half site-radius-20 popout-card">
+                                <Image src="/images/bloglisting/digital-payments.webp" alt="" width={780} height={390}></Image>
 
                                 <div className="half-blog-info">
-                                    <span className="category-chip site-radius-20 text-14">Payment Integration</span>
+                                    <span className="category-chip site-radius-20 text-14">Digital Payments</span>
 
-                                    <h3 className="h5 text-md">With DhatuPay Integrate Portal in 5 Easy Steps</h3>
+                                    <h3 className="h5 text-md">Digital Payments — Understanding the Benefits</h3>
 
                                     <div className="blog-writer">
-                                        <span>Dev Shah</span>
+                                        <span>Smit Shah</span>
 
-                                        <span>19 November 2025</span>
+                                        <span>09 December 2025</span>
                                     </div>
                                 </div>
                             </Link>
 
-                            <Link href="/BlogDetail" className="blog-half site-radius-20 popout-card">
-                                <Image src="/images/homepage/blog-benefits-of-using-dhatupay-webp.webp" alt="" width={780} height={390}></Image>
+                            <Link href="/Why-Clinical-Trial-Portals-Need-One-Stop-Payment-Platform" className="blog-half site-radius-20 popout-card">
+                                <Image src="/images/bloglisting/payment-integration.webp" alt="" width={780} height={390}></Image>
 
                                 <div className="half-blog-info">
-                                    <span className="category-chip site-radius-20 text-14">Business Benefits</span>
+                                    <span className="category-chip site-radius-20 text-14">Payment Integration</span>
 
-                                    <h3 className="h5 text-md">7 Benefits of Using DhatuPay for Your Business</h3>
+                                    <h3 className="h5 text-md">One-Stop Payment Platform for Clinical Trials</h3>
 
                                     <div className="blog-writer">
-                                        <span>Harsh Nayak</span>
+                                        <span>Smit Shah</span>
 
-                                        <span>19 November 2025</span>
+                                        <span>09 December 2025</span>
                                     </div>
                                 </div>
                             </Link>
