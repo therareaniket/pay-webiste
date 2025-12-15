@@ -2,8 +2,18 @@
 
 import Image from 'next/image'
 import React, { useEffect, useRef } from 'react'
+import FormSubmission from './FormSubmission';
 
-const ContactForm = () => {
+type ContactFormProps = {
+    contactFormTitle: string;
+    contactFormSubtitle: string;
+
+    contactEmail: string;
+    contactPhone: string;
+    contactLocation: string;
+}
+
+const ContactForm = ( {contactFormTitle, contactFormSubtitle, contactEmail, contactPhone, contactLocation}: ContactFormProps ) => {
     const infoWrapperRef = useRef<HTMLDivElement>(null)
 
     useEffect(() => {
@@ -39,14 +49,14 @@ const ContactForm = () => {
                 <div className="contact-form-top">
                     <div className="contact-left">
                         <div className="contact-head-main">
-                            <h2 className=''>Your Questions Matter — We&apos;re Here to Help.</h2>
-                            <p className='h6 text-grey text-rg'>Share your request and our team will get in touch shortly with secure payment solutions and seamless portal integration.</p>
+                            <h2 className=''>{contactFormTitle}</h2>
+                            <p className='h6 text-grey text-rg'>{contactFormSubtitle}</p>
                         </div>
 
                         <Image src="/images/contactpage/ContactFormGif.png" alt='ContactForm' width={559} height={367} priority={false} />
                     </div>
 
-                    <div className="contact-right">
+                    {/* <div className="contact-right">
                         <form className="contact-form">
                             <div className="row-2">
                                 <input className='site-radius-10 text-rg h6 text-grey' type="text" placeholder="Full Name" />
@@ -57,7 +67,9 @@ const ContactForm = () => {
                             <textarea className='site-radius-10 text-rg h6 text-grey form-message' placeholder="Your Message"></textarea>
                             <button className='btn-padding text-rg h6 text-grey site-radius-100' type="submit">Send message</button>
                         </form>
-                    </div>
+                    </div> */}
+
+                    <FormSubmission />
                 </div>
 
                 {/* Animated Info Cards */}
@@ -66,7 +78,7 @@ const ContactForm = () => {
                         <span className="icon-contact-mail"></span>
                         <div>
                             <h4 className='text-md h5'>Email</h4>
-                            <p className='text-rg text-18 text-grey'>enquiry@adhatpay.com</p>
+                            <p className='text-rg text-18 text-grey'>{contactEmail}</p>
                         </div>
                     </div>
 
@@ -74,7 +86,7 @@ const ContactForm = () => {
                         <span className="icon-contact-call"></span>
                         <div>
                             <h4 className='text-md h5'>Phone Number</h4>
-                            <p className='text-rg text-18 text-grey'>+1 512 843 2002</p>
+                            <p className='text-rg text-18 text-grey'>{contactPhone}</p>
                         </div>
                     </div>
 
@@ -82,7 +94,7 @@ const ContactForm = () => {
                         <span className="icon-contact-location"></span>
                         <div>
                             <h4 className='text-md h5'>Location</h4>
-                            <p className='text-rg text-18 text-grey'>240, Newark, DE 19702, USA</p>
+                            <p className='text-rg text-18 text-grey'>{contactLocation}</p>
                         </div>
                     </div>
                 </div>

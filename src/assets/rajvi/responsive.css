@@ -378,6 +378,9 @@
 
     .comingsoon-wrapper{ gap: 120px !important; }
     .adv-protection-wrapper { max-height: max-content; }
+
+    .animate-active.hero-btn-1 { animation: heroSlideLeft 0.9s ease-out forwards; animation-delay: 2s;}
+    .animate-active.hero-btn-2 { animation: heroSlideLeft 0.9s ease-out forwards; animation-delay: 3s; }
 } 
 
 @media screen and (max-width: 839px) { 
