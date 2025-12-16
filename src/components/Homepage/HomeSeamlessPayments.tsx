@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useRef } from "react";
+import { motion } from 'framer-motion';
 
 type SeamlessPaymentsProps = {
     seamlessTitle: string;
@@ -24,33 +25,39 @@ export default function SeamlessPayments( { seamlessTitle, seamlessSubtitle, sea
   // type the ref as an HTMLSectionElement (or HTMLElement)
   const sectionRef = useRef<HTMLElement | null>(null);
 
-  useEffect(() => {
-    const sectionEl = sectionRef.current;
-    if (!sectionEl) return;
+  // useEffect(() => {
+  //   const sectionEl = sectionRef.current;
+  //   if (!sectionEl) return;
 
-    // type the NodeList as NodeListOf<HTMLElement>
-    const boxes = sectionEl.querySelectorAll(".pymt-box") as NodeListOf<HTMLElement>;
+  //   // type the NodeList as NodeListOf<HTMLElement>
+  //   const boxes = sectionEl.querySelectorAll(".pymt-box") as NodeListOf<HTMLElement>;
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          // add a staggered animationDelay and a class to trigger CSS animation
-          boxes.forEach((box, index) => {
-            // ensure we set a unit for the delay
-            box.style.animationDelay = `${index * 1}s`;
-            box.classList.add("pymt-stagger");
-          });
+  //   const observer = new IntersectionObserver(
+  //     ([entry]) => {
+  //       if (entry.isIntersecting) {
+  //         // add a staggered animationDelay and a class to trigger CSS animation
+  //         boxes.forEach((box, index) => {
+  //           // ensure we set a unit for the delay
+  //           box.style.animationDelay = `${index * 1.5}s`;
+  //           box.classList.add("pymt-stagger");
+  //         });
 
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.3 }
-    );
+  //         observer.disconnect();
+  //       }
+  //     },
+  //     { threshold: 0.3 }
+  //   );
 
-    observer.observe(sectionEl);
+  //   observer.observe(sectionEl);
 
-    return () => observer.disconnect();
-  }, []);
+  //   return () => observer.disconnect();
+  // }, []);
+
+
+	const HeroSeamlessAnimate =  { 
+    	bttInitial: { y: 50, opacity: 0 },
+    	bttAnimate: { y: 0, opacity: 1, transition: { duration: 1, } },
+	}
 
   return (
     <>
@@ -71,31 +78,31 @@ export default function SeamlessPayments( { seamlessTitle, seamlessSubtitle, sea
 
           <div className="smls-pymt-details">
             <div className="smls-pymt-box-wrapper">
-              <div className="pymt-box">
+              <motion.div className="pymt-box" variants={HeroSeamlessAnimate} initial="bttInitial" whileInView="bttAnimate" viewport={{ once: true, amount: 1 }}>
                 <h5>{seamlessPaymentsAdvantages.paymentsAdvantages1Title}</h5>
 
                 <p className="text-18">{seamlessPaymentsAdvantages.paymentsAdvantages1Subtitle}</p>
-              </div>
+              </motion.div>
 
-              <div className="pymt-box">
+              <motion.div className="pymt-box" variants={HeroSeamlessAnimate} initial="bttInitial" whileInView="bttAnimate" viewport={{ once: true, amount: 1 }}>
                 <h5>{seamlessPaymentsAdvantages.paymentsAdvantages2Title}</h5>
 
                 <p className="text-18">{seamlessPaymentsAdvantages.paymentsAdvantages2Subtitle}</p>
-              </div>
+              </motion.div>
             </div>
 
-            <div className="smls-pymt-box-wrapper">
-              <div className="pymt-box">
+            <div className="smls-pymt-box-wrapper" >
+              <motion.div className="pymt-box" variants={HeroSeamlessAnimate} initial="bttInitial" whileInView="bttAnimate" viewport={{ once: true, amount: 1 }}>
                 <h5>{seamlessPaymentsAdvantages.paymentsAdvantages3Title}</h5>
 
                 <p className="text-18">{seamlessPaymentsAdvantages.paymentsAdvantages3Subtitle}</p>
-              </div>
+              </motion.div>
 
-              <div className="pymt-box">
+              <motion.div className="pymt-box" variants={HeroSeamlessAnimate} initial="bttInitial" whileInView="bttAnimate" viewport={{ once: true, amount: 1 }}>
                 <h5>{seamlessPaymentsAdvantages.paymentsAdvantages4Title}</h5>
 
                 <p className="text-18">{seamlessPaymentsAdvantages.paymentsAdvantages4Subtitle}</p>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>

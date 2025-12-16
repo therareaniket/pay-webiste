@@ -519,9 +519,6 @@
 .faq-item[data-state="open"] .faq-trigger svg{ stroke: var(--white); }
 .next-gen-item[data-state="open"] svg { stroke: var(--white); }
 
-.pymt-box { opacity: 0; transform: translateY(20px) scale(0.96); transition: all 0.8s ease-in-out; cursor: default; }
-.pymt-stagger { animation: pymtStaggerAnim 1s ease-out forwards; }
-
 @keyframes pymtStaggerAnim {
   0% {
     opacity: 0;
@@ -533,18 +530,21 @@
   }
 }
 
+/* .pymt-box { opacity: 0; transform: translateY(20px) scale(0.96); transition: all 0.8s ease-in-out; cursor: default; }
+.pymt-stagger { animation: pymtStaggerAnim 1s ease-in-out forwards;  } */
+
+
 .pymt-box:hover {
-  background: linear-gradient(100deg, #00092E 0%, #011e80 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transform: translateY(0px) scale(1.111);
+    background: linear-gradient(100deg, #00092E 0%, #011e80 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.pymt-box:hover h5 {
+/* .pymt-box:hover h5 {
   background: linear-gradient(100deg, #00092E 0%, #011e80 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 
 
 .inner-circle-text{ display: flex !important; flex-direction: column; align-items: center; justify-content: center; width: 150px !important; gap: 10px; text-align: center; }
@@ -648,7 +648,7 @@
 
 .secur-gover-card:hover { transform: translateY(-10px) scale(1.00); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);  cursor: pointer;   }
 .secur-gover-card:active { transform: translateY(-5px) scale(1); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);   }
-.info-card { transform: translateY(-50px); opacity: 0; transition: all 2s ease-out;}
+.info-card { transform: translateY(-50px); opacity: 0; transition: all 2s ease-out; }
 .info-card.slide-from-top { transform: translateY(0); opacity: 1; }
 .section:not(.seamless-payment) { overflow: hidden; }
 .blog-list-cards { margin-bottom: 40px; }
