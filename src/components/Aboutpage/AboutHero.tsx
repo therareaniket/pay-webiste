@@ -30,7 +30,7 @@ export default function AboutHero ( { aboutHeroTitle, aboutHeroSubtitle}: AboutH
                 <div className="container">
                     <div className="hero-details-wrapper">
                         <motion.div className="" variants={AboutHeroAnimate} initial="ltrInitial" animate="ltrAnimate" viewport={{ once: true }}>
-                            <Image src="/images/aboutpage/about-hero-showcase-webp.webp" alt="about-hero" width={570} height={367} priority={true}></Image>
+                            <Image src="/images/aboutpage/about-hero-banner-updated.webp" alt="about-hero" width={570} height={367} priority={true}></Image>
                         </motion.div>
 
                         <div className="subpage-hero-details">

@@ -30,7 +30,7 @@ const ContactHero = ( {contactHeroTitle, contactHeroSubtitle}:  ContactHeroProps
             <div className="container">
                 <div className="hero-details-wrapper">
                     <motion.div className="" variants={ContactHeroAnimate} initial="ltrInitial" animate="ltrAnimate" viewport={{ once: true }}>
-                        <Image src="/images/contactpage/contact-hero-img-new-webp.webp" alt="about-hero" width={578} height={260} priority={true} className="contact-hero-img"></Image>
+                        <Image src="/images/contactpage/contact-hero-banner-updated.webp" alt="about-hero" width={533} height={329} priority={true} className="contact-hero-img"></Image>
                     </motion.div>
 
                     <div className="subpage-hero-details">
