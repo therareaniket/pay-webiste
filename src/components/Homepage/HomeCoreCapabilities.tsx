@@ -88,6 +88,7 @@ export default function CoreCapabilities( { coreCapabilitiesTitle, coreCapabilit
                             block.classList.add("capability-animate");
                             block.style.animationDelay = `${i * 1}s`;
                         });
+                        observer.unobserve(entry.target);
                     }
                 });
             },
