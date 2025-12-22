@@ -251,10 +251,10 @@ body { background-color: #FAFAFA; }
 .next-gen-trigger svg { stroke-width: 2px; width: 20px; height: 20px; stroke: var(--black); }
 .next-gen-content { padding: 0 20px 20px; color: var(--grey); }
 .next-gen-item:not(:first-child) { margin-top: 20px; }
-.next-gen-gif { width: 600px; background-color: var(--grey); border-radius: 20px; }
+.next-gen-gif { width: 600px; background-color: var(--grey); border-radius: 20px; object-fit: cover; border-radius: 10px; }
 
 .regulatory-slider { margin-top: 40px; position: relative; }
-.regulatory-slide-item  { padding: 30px; height: 310px !important; }
+.regulatory-slide-item { padding: 20px; height: 310px !important; margin-right: 20px !important; }
 .regulatory-slider .swiper-pagination { position: relative; padding-top: 20px; text-align: right; }
 .regulatory-item-icon { width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; margin-bottom: 30px; }
 .regulatory-item-icon span { font-size: 28px; color: var(--white); }

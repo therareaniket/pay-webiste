@@ -402,7 +402,7 @@
 .adv-protection-cards h4{ padding-top: 14px; padding-bottom: 20px; }
 .adv-protection-cards span{ font-size: 32px; }
 
-.adv-protection-cards-main{ display: flex; flex-direction: column; gap: 40px; }
+.adv-protection-cards-main{ display: flex; flex-direction: column; gap: 20px; }
 .iso-certified-card{ background-color: var(--purple-light); }
 .aes-encry-card{ background-color: var(--green-light); }
 .mfa-rbac-card{ background-color: var(--blue-light); }
@@ -662,3 +662,4 @@
 .blog-section + .blog-section { padding-top: 0; }
 .blog-section ul { padding-left: 20px; }
 .blog-section li { list-style-type: disc; list-style-position: outside; padding-left: 10px; }
+.secur-gover-card { cursor: default; }

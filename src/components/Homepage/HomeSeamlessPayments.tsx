@@ -70,7 +70,7 @@ export default function SeamlessPayments( { seamlessTitle, seamlessSubtitle, sea
           </div>
 
           <Image
-            src="/images/homepage/seamless-payment-updated.webp"
+            src="/images/homepage/seamless-payment-mockup-updt.webp"
             alt="seamless-payment"
             width={870}
             height={551}

@@ -42,7 +42,7 @@ export default function AboutNextGenAccords( {nextGenIntelligenceTitle, nextGenI
                             </Accordion>
                         </div>
 
-                        <Image className="next-gen-gif" src='/images/aboutpage/about-next-gen-ai.gif' alt="" width={605} height={380} priority={false}></Image>
+                        <Image className="next-gen-gif" src='/images/aboutpage/next-gen-ai-updated.webp' alt="next-gen-ai" width={605} height={380} priority={false}></Image>
                     </div>
                 </div>
             </section>

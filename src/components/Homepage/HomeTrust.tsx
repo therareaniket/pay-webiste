@@ -44,7 +44,7 @@ export default function HomeTrust({securityTrustTitle, securityTrustSubtitle, tr
                                         <p>{trustList.integritySubtitle}</p>
                                     </div>
 
-                                    <Image src="/images/homepage/trust-integrity.webp" alt="trust-integrity" width={2080} height={1200} className="trust-image-scalaton site-radius-10"></Image>
+                                    <Image src="/images/homepage/trust-integrity-updt.webp" alt="trust-integrity" width={2080} height={1200} className="trust-image-scalaton site-radius-10"></Image>
                                 </div>
                             </TabsContent>
 
@@ -57,7 +57,7 @@ export default function HomeTrust({securityTrustTitle, securityTrustSubtitle, tr
                                     </div>
 
                                     {/* <span className="trust-image-scalaton h4 text-rg site-radius-20"></span> */}
-                                    <Image src="/images/homepage/trust-security.webp" alt="trust-integrity" width={2080} height={1200} className="trust-image-scalaton site-radius-10"></Image>
+                                    <Image src="/images/homepage/trust-security-updt.webp" alt="trust-integrity" width={2080} height={1200} className="trust-image-scalaton site-radius-10"></Image>
                                 </div>
                             </TabsContent>
 
@@ -70,7 +70,7 @@ export default function HomeTrust({securityTrustTitle, securityTrustSubtitle, tr
                                     </div>
 
                                     {/* <span className="trust-image-scalaton h4 text-rg site-radius-20"></span> */}
-                                    <Image src="/images/homepage/trust-compliance.webp" alt="trust-integrity" width={2080} height={1200} className="trust-image-scalaton site-radius-10"></Image>
+                                    <Image src="/images/homepage/trust-compliance-updt.webp" alt="trust-integrity" width={2080} height={1200} className="trust-image-scalaton site-radius-10"></Image>
                                 </div>
                             </TabsContent>
                         </Tabs>
