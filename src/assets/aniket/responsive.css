@@ -55,7 +55,6 @@
     .sub-site-hero .hero-details-wrapper img { transform: translateY(30px); width: 570px; }
 
     .lc-info-block { height: 280px; }
-    .payout-success { inset: auto -30% 10% auto; }
 
 }
 
@@ -114,7 +113,7 @@
     .point-4 { transform: translateY(-5px); }
     .lc-info-block { height: 260px; }
 
-    .payout-success { inset: auto -10% 10% auto; }
+
 }
 
 @media screen and (max-width: 1359px) {
@@ -131,7 +130,8 @@
     .reduction-spike-left { width: 150px; left: -148px; }
     .reduction-spike-right { width: 100px; }
     .faster-cycle { left: -65%; }
-    .payout-success { right: -45%; }
+    .payout-success { right: -50%; inset: auto -42% 10% auto; }
+    
 
     .seamless-payment img { width: 650px; }
     .pymt-box { width: 250px; }
@@ -185,8 +185,6 @@
 
     .circle-badge { position: absolute;  bottom: 180px; left: 30px; }
     .circle-badge > img { width: 100px; height: 100px; }
-
-    .payout-success { inset: auto -15% 10% auto; }
 }   
 
 @media screen and (max-width: 1199px) {
