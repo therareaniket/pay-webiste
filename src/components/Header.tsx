@@ -57,16 +57,16 @@ const Header = () => {
           {/* Desktop Nav */}
           <div className="header-nav-links">
             <ul>
-              <li><Link href="/About" className={`${isActive("/About") ? "active-link-header" : ""}`}>About</Link></li>
-              <li><Link href="/Solutions" className={`${isActive("/Solutions") ? "active-link-header" : ""}`}>Solutions</Link></li>
-              <li><Link href="/SecurityCompliance" className={`${isActive("/SecurityCompliance") ? "active-link-header" : ""}`}>Security & Compliance</Link></li>
-              <li><Link href="/BlogListing" className={`${isActive("/BlogListing") ? "active-link-header" : ""}`}>Resources</Link></li>
+              <li className="text-16 text-rg"><Link href="/About" className={`${isActive("/About") ? "active-link-header" : ""}`}>About</Link></li>
+              <li className="text-16 text-rg"><Link href="/Solutions" className={`${isActive("/Solutions") ? "active-link-header" : ""}`}>Solutions</Link></li>
+              <li className="text-16 text-rg"><Link href="/SecurityCompliance" className={`${isActive("/SecurityCompliance") ? "active-link-header" : ""}`}>Security & Compliance</Link></li>
+              <li className="text-16 text-rg"><Link href="/BlogListing" className={`${isActive("/BlogListing") ? "active-link-header" : ""}`}>Resources</Link></li>
             </ul>
           </div>
 
           {/* Contact */}
           <div className="contact-link site-radius-50">
-            <Link href="/Contact" className={`header-contact-link text-18  site-radius-50 link-padding ${isActive("/Contact") ? "contact-active-header" : ""}`}>
+            <Link href="/Contact" className={`header-contact-link text-16 text-rg site-radius-50 link-padding ${isActive("/Contact") ? "contact-active-header" : ""}`}>
               Contact
             </Link>
           </div>
@@ -85,14 +85,16 @@ const Header = () => {
 
       {/* Fullscreen Mobile Menu */}
       <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
+        <div className="container">
         <ul>
-          <li><Link href="/" onClick={() => setMenuOpen(false)} className={`${isActive("/") ? "active-link-header" : ""}`}>Home</Link></li>
-          <li><Link href="/About" onClick={() => setMenuOpen(false)} className={`${isActive("/About") ? "active-link-header" : ""}`}>About</Link></li>
-          <li><Link href="/Solutions" onClick={() => setMenuOpen(false)} className={`${isActive("/Solutions") ? "active-link-header" : ""}`}>Solutions</Link></li>
-          <li><Link href="/SecurityCompliance" onClick={() => setMenuOpen(false)} className={`${isActive("/SecurityCompliance") ? "active-link-header" : ""}`}>Security & Compliance</Link></li>
-          <li><Link href="/BlogListing" onClick={() => setMenuOpen(false)} className={`${isActive("/BlogListing") ? "active-link-header" : ""}`}>Resources</Link></li>
-          <li><Link href="/Contact" onClick={() => setMenuOpen(false)} className={`${isActive("/Contact") ? "active-link-header" : ""}`}>Contact</Link></li>
+          <li className="text-16 text-rg"><Link href="/" onClick={() => setMenuOpen(false)} className={`${isActive("/") ? "active-link-header" : ""}`}>Home</Link></li>
+          <li className="text-16 text-rg"><Link href="/About" onClick={() => setMenuOpen(false)} className={`${isActive("/About") ? "active-link-header" : ""}`}>About</Link></li>
+          <li className="text-16 text-rg"><Link href="/Solutions" onClick={() => setMenuOpen(false)} className={`${isActive("/Solutions") ? "active-link-header" : ""}`}>Solutions</Link></li>
+          <li className="text-16 text-rg"><Link href="/SecurityCompliance" onClick={() => setMenuOpen(false)} className={`${isActive("/SecurityCompliance") ? "active-link-header" : ""}`}>Security & Compliance</Link></li>
+          <li className="text-16 text-rg"><Link href="/BlogListing" onClick={() => setMenuOpen(false)} className={`${isActive("/BlogListing") ? "active-link-header" : ""}`}>Resources</Link></li>
+          <li className="text-16 text-rg"><Link href="/Contact" onClick={() => setMenuOpen(false)} className={`${isActive("/Contact") ? "active-link-header" : ""}`}>Contact</Link></li>
         </ul>
+        </div>
       </div>
     </header>
   );

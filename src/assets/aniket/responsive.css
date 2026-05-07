@@ -283,8 +283,8 @@
     .circle-badge { bottom: 65%; transform: translate(0, 0);}
     .header-wrapper.shrink { padding: 15px 30px; }
     .header-wrapper.shrink .contact-link a { padding: 6px 12px; }
-    .header-nav-links a { font-size: 16px; line-height: 24px; }
-    .header-nav-links ul { gap: 30px; }
+    /* .header-nav-links a { font-size: 16px; line-height: 24px; } */
+    /* .header-nav-links ul { gap: 30px; } */
     .arrow-top-left, .arrow-bottom-left, .arrow-top-right, .arrow-bottom-right { display: none; }
 }
 
