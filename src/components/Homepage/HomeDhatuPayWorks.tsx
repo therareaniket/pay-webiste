@@ -59,8 +59,8 @@ export default function DhatuPayWorksSlider( { howDhatupayWorksTitle, howDhatupa
                     spaceBetween={10}
                     slidesPerView={1}
                     breakpoints={{
-                        600: { slidesPerView: 1 },
-                        800: { slidesPerView: 2 },
+                        0: { slidesPerView: 1 },
+                        600: { slidesPerView: 2 },
                         1200: { slidesPerView: 3 }
                     }}
                     autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -75,7 +75,7 @@ export default function DhatuPayWorksSlider( { howDhatupayWorksTitle, howDhatupa
                                 <span className={slide.icon}></span>
                             </div>
 
-                            <div className="slide-item-details">
+                            <div className="slide-item-details home-slide-item-detail">
                                 <h3 className="h5">{slide.title}</h3>
                                 <p className="text-18">{slide.desc}</p>
                             </div>

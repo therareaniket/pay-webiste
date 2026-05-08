@@ -52,52 +52,50 @@ useEffect(() => {
 
                 <div className="home-stripe">
                     <div className="stripe-slogan">
-                        <span className="h5 text-sb">Pay Smarter, Faster</span>
-                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h5 text-sb"></Image>
-                        <span className="h5 text-sb">Pay Smarter, Faster</span>
-                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h5 text-sb"></Image>
-                        <span className="h5 text-sb">Pay Smarter, Faster</span>
-                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h5 text-sb"></Image>
-                        <span className="h5 text-sb">Pay Smarter, Faster</span>
-                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h5 text-sb"></Image>
-                        <span className="h5 text-sb">Pay Smarter, Faster</span>
-                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h5 text-sb"></Image>
-                        <span className="h5 text-sb">Pay Smarter, Faster</span>
-                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h5 text-sb"></Image>
-                        <span className="h5 text-sb">Pay Smarter, Faster</span>
-                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h5 text-sb"></Image>
-                        <span className="h5 text-sb">Pay Smarter, Faster</span>
-                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h5 text-sb"></Image>
+                        <span className="h6 text-sb">Pay Smarter, Faster</span>
+                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h6 text-sb"></Image>
+                        <span className="h6 text-sb">Pay Smarter, Faster</span>
+                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h6 text-sb"></Image>
+                        <span className="h6 text-sb">Pay Smarter, Faster</span>
+                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h6 text-sb"></Image>
+                        <span className="h6 text-sb">Pay Smarter, Faster</span>
+                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h6 text-sb"></Image>
+                        <span className="h6 text-sb">Pay Smarter, Faster</span>
+                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h6 text-sb"></Image>
+                        <span className="h6 text-sb">Pay Smarter, Faster</span>
+                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h6 text-sb"></Image>
+                        <span className="h6 text-sb">Pay Smarter, Faster</span>
+                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h6 text-sb"></Image>
+                        <span className="h6 text-sb">Pay Smarter, Faster</span>
+                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h6 text-sb"></Image>
 
                         {/* </div> */}
 
 
                         {/* <div className="stripe-slogan"> */}
-                        <span className="h5 text-sb">Pay Smarter, Faster</span>
-                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h5 text-sb"></Image>
-                        <span className="h5 text-sb">Pay Smarter, Faster</span>
-                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h5 text-sb"></Image>
-                        <span className="h5 text-sb">Pay Smarter, Faster</span>
-                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h5 text-sb"></Image>
-                        <span className="h5 text-sb">Pay Smarter, Faster</span>
-                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h5 text-sb"></Image>
-                        <span className="h5 text-sb">Pay Smarter, Faster</span>
-                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h5 text-sb"></Image>
-                        <span className="h5 text-sb">Pay Smarter, Faster</span>
-                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h5 text-sb"></Image>
-                        <span className="h5 text-sb">Pay Smarter, Faster</span>
-                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h5 text-sb"></Image>
-                        <span className="h5 text-sb">Pay Smarter, Faster</span>
-                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h5 text-sb"></Image>
+                        <span className="h6 text-sb">Pay Smarter, Faster</span>
+                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h6 text-sb"></Image>
+                        <span className="h6 text-sb">Pay Smarter, Faster</span>
+                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h6 text-sb"></Image>
+                        <span className="h6 text-sb">Pay Smarter, Faster</span>
+                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h6 text-sb"></Image>
+                        <span className="h6 text-sb">Pay Smarter, Faster</span>
+                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h6 text-sb"></Image>
+                        <span className="h6 text-sb">Pay Smarter, Faster</span>
+                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h6 text-sb"></Image>
+                        <span className="h6 text-sb">Pay Smarter, Faster</span>
+                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h6 text-sb"></Image>
+                        <span className="h6 text-sb">Pay Smarter, Faster</span>
+                        <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h6 text-sb"></Image>
                     </div>
 
-                    <span className="h5 text-sb">Pay Smarter, Faster</span>
+                    <span className="h6 text-sb">Pay Smarter, Faster</span>
                 </div>
 
                 <Image src="/images/homepage/hero-home-hand.webp" alt="hero-home-hand" width={878} height={813} draggable={false} priority={true} className="home-hero-hand"></Image>
 
                 <div className="circle-badge">
-                    <Image src="/images/homepage/hero-home-circle.svg" alt="hero-badge" width={120} height={120}></Image>
+                    <Image className="home-hero-badge" src="/images/homepage/hero-home-circle.svg" alt="hero-badge" width={120} height={120}></Image>
 
                     <Link href="/ComingSoon" className="circle-arrow">
                         <Image src="/images/homepage/hero-circle-arrow.svg" alt="badge-arrow" width={16} height={16}></Image>
@@ -109,7 +107,7 @@ useEffect(() => {
                         <div className="home-hero-details">
 
                             {/* H1 with animation class */}
-                            <h1 className="text-sb hero-title animate-on-scroll">
+                            <h1 className="text-md hero-title animate-on-scroll">
                                 {heroTitle}
                             </h1>
 

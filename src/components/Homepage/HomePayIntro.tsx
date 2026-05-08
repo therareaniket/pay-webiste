@@ -106,7 +106,7 @@ export default function HomePayIntro( { redefiningClinicalTrialsTitle, redefinin
                                 <div className="donut-inner-circle hm-donut-inner-circle">
                                     <div className="inner-circle-text">
                                         <span className="h2">{count}%</span>
-                                        <span className="text-md text-18"> Reduction in Payment Errors</span>
+                                        <span className="text-rg text-18"> Reduction in Payment Errors</span>
                                     </div>
                                 </div>
                             </div>

@@ -61,7 +61,7 @@ export default function HomeFAQs ({faqTitle, faqSubtitle, question1, answer1, qu
                             </div>
                         </div>
 
-                        <Image src="/images/homepage/faqs.webp" alt="faqs" width={555} height={555} priority={false} className="site-radius-20"></Image>
+                        <Image src="/images/homepage/faqs.webp" alt="faqs" width={555} height={555} priority={false} className="site-radius-20 hm-faq-image"></Image>
                     </div>
                 </div>
             </section>

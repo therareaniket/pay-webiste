@@ -55,9 +55,9 @@ export default function HomeTestimonials({testimonialsTitle, testimonialList}: T
                         {testimonialsData.map((slide, index) => (
                             <SwiperSlide key={index} className={`testimonial-slide-item`}>
                                 <div className="slide-item-details">
-                                    <h3 className="h4 text-rg">"{slide.review}"</h3>
+                                    <h3 className="h4 text-rg">&quot;{slide.review}&quot;</h3>
 
-                                    <h4 className="h5">{slide.author}</h4>
+                                    <h4 className="h5 text-rg">{slide.author}</h4>
 
                                     <p className="text-18">{slide.position}</p>
                                 </div>
