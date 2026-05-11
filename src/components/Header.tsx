@@ -86,7 +86,7 @@ const Header = () => {
       {/* Fullscreen Mobile Menu */}
       <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
         <div className="container">
-        <ul>
+        <ul className="mobile-menu-links">
           <li className="text-16 text-rg"><Link href="/" onClick={() => setMenuOpen(false)} className={`${isActive("/") ? "active-link-header" : ""}`}>Home</Link></li>
           <li className="text-16 text-rg"><Link href="/About" onClick={() => setMenuOpen(false)} className={`${isActive("/About") ? "active-link-header" : ""}`}>About</Link></li>
           <li className="text-16 text-rg"><Link href="/Solutions" onClick={() => setMenuOpen(false)} className={`${isActive("/Solutions") ? "active-link-header" : ""}`}>Solutions</Link></li>

@@ -9,15 +9,16 @@ export default function HomeBlogHighlight() {
             <section className="section" style={{ paddingTop: 0 }}>
                 <div className="container">
                     <div className="bloh-highlight-headings">
-                        <h2>Knowledge Hub - Discover expert insights</h2>
+                        <h2 className="text-md">Knowledge Hub - Discover expert insights</h2>
 
-                        <p>Stay updated on product innovations, and explore effective clinical trials strategies all in one place.</p>
+                        <p className="text-rg h6">Stay updated on product innovations, and explore effective clinical trials strategies all in one place.</p>
                     </div>
 
                     <div className="home-blog-listing">
                         <Link href="/DigitalSignature-TheSecure-PaperlessWaytoSignDocuments" className="blog-full site-radius-20 overflow-hidden popout-card">
-                            <Image src="/images/bloglisting/digital-signature.webp" alt="blog-future-of-digital-payments" width={918} height={459}></Image>
-
+                            <div className="hm-first-blog-image-wrapper">
+                                <Image src="/images/bloglisting/digital-signature.webp" alt="blog-future-of-digital-payments" width={918} height={459}></Image>
+                            </div>
                             <div className="full-blog-info">
                                 <span className="category-chip site-radius-20 text-14">Digital Signatures</span>
 
