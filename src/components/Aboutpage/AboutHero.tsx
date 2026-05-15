@@ -22,19 +22,19 @@ const AboutHeroAnimate =  {
 export default function AboutHero ( { aboutHeroTitle, aboutHeroSubtitle}: AboutHeroProps ) {
     return (
         <>
-            <section className="section sub-site-hero">
+            <section className="section sub-site-hero abt-hero-section">
                 <span className="light-orange-box"></span>
                 
                 <Image src="/images/homepage/site-hero-blob.svg" alt="site-hero-blob" width={600} height={600} draggable={false} priority={true} className="site-hero-blob"></Image>
 
                 <div className="container">
-                    <div className="hero-details-wrapper">
-                        <motion.div className="" variants={AboutHeroAnimate} initial="ltrInitial" animate="ltrAnimate" viewport={{ once: true }}>
+                    <div className="hero-details-wrapper abt-hero-detail-wrapper">
+                        <motion.div className="about-hero-img" variants={AboutHeroAnimate} initial="ltrInitial" animate="ltrAnimate" viewport={{ once: true }}>
                             <Image src="/images/aboutpage/about-hero-banner-updated.webp" alt="about-hero" width={570} height={367} priority={true}></Image>
                         </motion.div>
 
-                        <div className="subpage-hero-details">
-                            <motion.h1 className="text-sb" variants={AboutHeroAnimate} initial="ttbText" animate="ttbTextAnimate" viewport={{ once: true }}>{aboutHeroTitle}</motion.h1>
+                        <div className="subpage-hero-details abt-hero-detail">
+                            <motion.h1 className="text-md" variants={AboutHeroAnimate} initial="ttbText" animate="ttbTextAnimate" viewport={{ once: true }}>{aboutHeroTitle}</motion.h1>
                             {/* <h1 className="text-sb">Simplifying Global Clinical Trial Payments</h1> */}
 
                             <motion.p className="h6 text-rg" variants={AboutHeroAnimate} initial="ttbTextDelayed" animate="ttbTextAnimateDelayed" viewport={{ once: true }}>{aboutHeroSubtitle}</motion.p>
