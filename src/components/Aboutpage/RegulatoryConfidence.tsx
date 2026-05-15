@@ -68,8 +68,9 @@ export default function RegulatoryConfidence ( {regulatoryTitle, regulatorySubti
                             spaceBetween={10}
                             slidesPerView={1}
                             breakpoints={{
-                                600: { slidesPerView: 1 },
-                                800: { slidesPerView: 2 },
+                                0: { slidesPerView: 1 },
+                                575: { slidesPerView: 1.5 },
+                                700: { slidesPerView: 2 },
                                 1200: { slidesPerView: 3 }
                             }}
                             navigation={{

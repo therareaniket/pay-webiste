@@ -697,7 +697,7 @@
     /* h2, .h2{ font-size: 30px; line-height: 40px; } */
 
     /* footer */
-    .footer-lets-connect{ font-size: 62px; line-height: 46px; -webkit-text-stroke: 1px var(--secondary-orange); }
+    .footer-lets-connect{ font-size: 62px; line-height: 70px; -webkit-text-stroke: 1px var(--secondary-orange); }
     .glass-footer-cta{ padding: 30px; }
     .footer-bottom{ gap: 30px; }
 
