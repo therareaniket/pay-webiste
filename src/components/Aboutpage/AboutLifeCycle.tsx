@@ -123,12 +123,12 @@ export default function AboutLifeCycle( { introTitle, introSubtitle, lifecycleTi
                                     </linearGradient>
                                 </defs>
 
-                                <path d={pathD} stroke="var(--light-grey)" strokeWidth={20} strokeLinecap="round" fill="none" />
+                                <path d={pathD} stroke="var(--light-grey)" strokeWidth={12} strokeLinecap="round" fill="none" />
 
                                 <motion.path
                                     d={pathD}
                                     stroke="url(#purpleStroke)"
-                                    strokeWidth={20}
+                                    strokeWidth={12}
                                     strokeLinecap="round"
                                     fill="none"
                                     initial={{ pathLength: 0 }}

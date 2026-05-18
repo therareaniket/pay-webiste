@@ -45,7 +45,7 @@ export default function BlogListingHero() {
 						modules={[Autoplay, Pagination, Navigation]}
 						spaceBetween={10}
 						slidesPerView={1}
-						autoplay={{ delay: 3000, disableOnInteraction: false }}
+						// autoplay={{ delay: 3000, disableOnInteraction: false }}
 						loop={true}
 						pagination={{ clickable: true }}
 						className="blog-swiper-slider">
@@ -55,13 +55,13 @@ export default function BlogListingHero() {
 								
 								<div className="slider-item-details">
 									<div className="container">
-										<span className="h5 text-md">{slide.blogType}</span>
+										<span className="h5 text-md blog-type-span">{slide.blogType}</span>
 
-										<h2 className="text-md">{slide.blogTitle}</h2>
+										<h2 className="text-md blog-title">{slide.blogTitle}</h2>
 
-										<p className="text-18">{slide.blogSubtitle}</p>
+										<p className="text-18 blog-subtitle">{slide.blogSubtitle}</p>
 
-										<p className="text-18">{slide.blogTime}</p>
+										<p className="text-18 blog-time">{slide.blogTime}</p>
 
 										<Link href={slide.blogLink} title="Read More" className="text-18 link-padding blog-link">Read More</Link>
 									</div>

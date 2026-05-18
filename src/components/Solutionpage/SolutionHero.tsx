@@ -23,19 +23,19 @@ const SolutionHeroAnimate =  {
 
 const SolutionHero = ( { solutionHeroTitle, solutionHeroSubtitle }: SolutionHeroProps ) => {
   	return (
-			<section className="section sub-site-hero solutions-hero-section">
+			<section className="section sub-site-hero abt-hero-section">
 				<span className="light-orange-box"></span>
 
 		  		<Image src="/images/homepage/site-hero-blob.svg" alt="site-hero-blob" width={600} height={600} draggable={false} priority={true} className="site-hero-blob"></Image>
 
 		  		<div className="container">
-			  		<div className="hero-details-wrapper">
+			  		<div className="hero-details-wrapper abt-hero-detail-wrapper">
 						<motion.div className="" variants={SolutionHeroAnimate} initial="ltrInitial" animate="ltrAnimate" viewport={{ once: true }}>
-				  			<Image src="/images/solutionpage/Solhero.webp" alt="about-hero" width={500} height={294} priority={true} className="solution-hero-img"></Image>
+				  			<Image src="/images/solutionpage/Solhero.webp" alt="about-hero" width={500} height={294} priority={true} className="about-hero-img"></Image>
 						</motion.div>
 
-				  		<div className="subpage-hero-details">
-					  		<motion.h1 className="text-sb" variants={SolutionHeroAnimate} initial="ttbText" animate="ttbTextAnimate" viewport={{ once: true }}>{solutionHeroTitle}</motion.h1>
+				  		<div className="subpage-hero-details abt-hero-detail">
+					  		<motion.h1 className="text-md" variants={SolutionHeroAnimate} initial="ttbText" animate="ttbTextAnimate" viewport={{ once: true }}>{solutionHeroTitle}</motion.h1>
 					  		{/* <h1 className="text-sb">Simplifying Global Clinical Trial Payments</h1> */}
 
 					  		<motion.p className="h6 text-rg" variants={SolutionHeroAnimate} initial="ttbTextDelayed" animate="ttbTextAnimateDelayed" viewport={{ once: true }}>{solutionHeroSubtitle}</motion.p>

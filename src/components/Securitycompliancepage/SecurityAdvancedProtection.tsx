@@ -1,4 +1,11 @@
-import React from 'react'
+"use client";
+
+import React, { use } from 'react'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+
 
 type AdvancedProtectionProps = {
     complianceIntroTitle: string;
@@ -9,7 +16,7 @@ type AdvancedProtectionProps = {
     securityArchitectureSubtitle2: string;
 }
 
-const SecurityAdvancedProtection = ( {complianceIntroTitle, complianceIntroSubtitle, securityArchitectureTitle, securityArchitectureSubtitle1, securityArchitectureSubtitle2 }: AdvancedProtectionProps ) => {
+const SecurityAdvancedProtection = ({ complianceIntroTitle, complianceIntroSubtitle, securityArchitectureTitle, securityArchitectureSubtitle1, securityArchitectureSubtitle2 }: AdvancedProtectionProps) => {
     return (
         <>
             <section className="section advance-security-pro-text-main">
@@ -59,59 +66,45 @@ const SecurityAdvancedProtection = ( {complianceIntroTitle, complianceIntroSubti
                         </div>
 
                         {/* MOBILE SCROLL */}
-                        <div className="adv-protection-scroll-wrapper">
-                            <div className="scroll-track">
-                             
-                                <div className="adv-card iso-certified-card">
+                        <div className="">
+                            <Swiper
+                                modules={[Autoplay, Pagination]}
+                                spaceBetween={10}
+                                slidesPerView={1}
+                                breakpoints={{
+                                    0: { slidesPerView: 1 },
+                                    481: { slidesPerView: 1.5 },
+                                    768: { slidesPerView: 2 },
+                                }}
+                                autoplay={{ delay: 3000, disableOnInteraction: false }}
+                                pagination={{ clickable: true }}
+                                loop={true}
+                                className="adv-protection-swiper">
+                                <SwiperSlide className="adv-card iso-certified-card">
                                     <span className='icon-security-architecture'></span>
                                     <h4 className="h5 text-md">SOC 2 & ISO 27001 Certified</h4>
                                     <p className='text-rg text-18'>Validated against globally recognized security standards with strong controls for data confidentiality, integrity, and availability.</p>
-                                </div>
+                                </SwiperSlide>
 
-                                <div className="adv-card aes-encry-card">
+                                <SwiperSlide className="adv-card aes-encry-card">
                                     <span className='icon-security-architecture'></span>
                                     <h4 className="h5 text-md">AES-256 Encryption</h4>
                                     <p className='text-rg text-18'>Sensitive data is protected with AES‑256, a leading industry-standard cipher that encrypts and safeguards your information end to end.</p>
-                                </div>
+                                </SwiperSlide>
 
-                                <div className="adv-card mfa-rbac-card">
+                                <SwiperSlide className="adv-card mfa-rbac-card">
                                     <span className='icon-security-architecture'></span>
                                     <h4 className="h5 text-md">MFA & RBAC</h4>
                                     <p className='text-rg text-18'>Strengthen account security with multi-factor authentication and granular role-based access control so only authorized users get access.</p>
-                                </div>
+                                </SwiperSlide>
 
-                                <div className="adv-card data-residency-card">
+                                <SwiperSlide className="adv-card data-residency-card">
                                     <span className='icon-security-architecture'></span>
                                     <h4 className="h5 text-md">Data Residency Options</h4>
                                     <p className='text-rg text-18'>Choose US, EU, or India data centers to align storage locations with regulatory obligations and internal data governance policies.</p>
-                                </div>
-                            </div>
+                                </SwiperSlide>
 
-                            <div className="scroll-track">
-                                <div className="adv-card iso-certified-card">
-                                    <span className='icon-security-architecture'></span>
-                                    <h4 className="h5 text-md">SOC 2 & ISO 27001 Certified</h4>
-                                    <p className='text-rg text-18'>Validated against globally recognized security standards with strong controls for data confidentiality, integrity, and availability.</p>
-                                </div>
-
-                                <div className="adv-card aes-encry-card">
-                                    <span className='icon-security-architecture'></span>
-                                    <h4 className="h5 text-md">AES-256 Encryption</h4>
-                                    <p className='text-rg text-18'>Sensitive data is protected with AES‑256, a leading industry-standard cipher that encrypts and safeguards your information end to end.</p>
-                                </div>
-
-                                <div className="adv-card mfa-rbac-card">
-                                    <span className='icon-security-architecture'></span>
-                                    <h4 className="h5 text-md">MFA & RBAC</h4>
-                                    <p className='text-rg text-18'>Strengthen account security with multi-factor authentication and granular role-based access control so only authorized users get access.</p>
-                                </div>
-
-                                <div className="adv-card data-residency-card">
-                                    <span className='icon-security-architecture'></span>
-                                    <h4 className="h5 text-md">Data Residency Options</h4>
-                                    <p className='text-rg text-18'>Choose US, EU, or India data centers to align storage locations with regulatory obligations and internal data governance policies.</p>
-                                </div>
-                            </div>
+                            </Swiper>
                         </div>
                     </div>
 

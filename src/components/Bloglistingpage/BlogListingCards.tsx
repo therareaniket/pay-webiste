@@ -111,7 +111,7 @@ export default function BlogListingCards() {
 								<div className="blog-listing-card-detail">
 									<span className="digi-payment-blog text-rg text-14 site-radius-20">{blog.category}</span>
 
-									<h3 className="blog-listing-title text-md h5">{blog.title}</h3>
+									<h3 className="blog-listing-title text-md h6">{blog.title}</h3>
 
 									<div className="blog-listing-cards-name-date">
 										<span className="text-rg text-14 text-grey">{blog.author}</span>

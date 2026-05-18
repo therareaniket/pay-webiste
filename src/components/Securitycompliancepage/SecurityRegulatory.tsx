@@ -70,7 +70,7 @@ const SecurityRegulatory = ( {globalExcellenceTitle, globalExcellenceSubtitle, e
                                 >
                                     <Image src="/images/securitypage/check.svg" alt='' width={15} height={12} />
                                     <div>
-                                        <h5 className='h5 text-sb'>{item.title}</h5>
+                                        <h5 className='h5 text-md'>{item.title}</h5>
                                         <p className='text-18 text-rg'>{item.text}</p>
                                     </div>
                                 </motion.div>
@@ -78,9 +78,9 @@ const SecurityRegulatory = ( {globalExcellenceTitle, globalExcellenceSubtitle, e
                         </motion.div>
 
                         <Image
-                            className='SecurityRegulatoryImage'
+                            className='sec-regulatory-right'
                             src="/images/securitypage/SecurityRegulatoryImage.webp"
-                            alt=''
+                            alt='security-regulatory-image'
                             width={748}
                             height={548}
                             priority
