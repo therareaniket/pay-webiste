@@ -1294,13 +1294,13 @@
     .reduction-spike-left{ left: -66px; }
     /* .hamburger, .bar{ width: 16px; } */
     .category-chip{  padding: 6px 14px; }
-    .testimonial-slide-item{ height: 200px !important; }
     .qna-list, .testimonial-slider{  margin-top: 20px; }
     .regulatory-slide-item .text-18{ font-size: 12px; line-height: 18px; }
     .regulatory-slide-item{ height: 185px !important; }
     .regulatory-slide-item .h5{ font-size: 16px; line-height: 20px; }
     .abt-hero-detail{ padding-top: 10px !important; }
     .subpage-hero-details h1{ margin-bottom: 15px; }
+    .testimonials .slide-item-details .h5{ margin-bottom: 6px; }
 }
 
 @media screen and (max-width: 374px) {
@@ -1324,6 +1324,6 @@
     /* .err-redc-center p { font-size: 16px; line-height: 26px; } */
     .trust-tab-trigger { padding: 5px 10px; }
     /* .blog-full img { height: 200px; } */
-    .testimonial-slide-item { height: 200px !important; }
+    .testimonial-slide-item { height: 180px !important; }
     .regulatory-slide-item { height: 300px !important; }
 }
