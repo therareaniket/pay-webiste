@@ -20,6 +20,8 @@
     h2, .h2{ font-size: 38px; line-height: 46px; }
     h3, .h3{ font-size: 34px; line-height: 44px; }
     h4, .h4{ font-size: 26px; line-height: 34px; }
+    .section{ padding: 120px 0; }
+    .section-bottom{ padding-bottom: 120px; }
 
     /* header */
     .headerLogo img{ width: 110px !important; height: auto !important; }
@@ -70,7 +72,7 @@
     .stakeholders-cards .h5{ font-size: 20px; line-height: 26px; }
     .stakeholders-cards p{ font-size: 16px; line-height: 20px; }
     .soln-workflow-img{ width: 860px; height: 420px; }
-    .stakeholders-cards{ padding: 20px; width: 420px; height: 200px; }
+    .stakeholders-cards{ padding: 20px; width: 420px; height: 190px; }
     .stakeholders-cards .icon-sites-cros-payments, .icon-triggers-accruals, .icon-vendor-regualatory-payments, .icon-analytics-optimisation, .icon-participant-payments{ font-size: 22px; }
     .sec-regulatory-right{ width: 600px; height: 350px; }
     .sec-regulatory-text-wrap h5{ font-size: 22px; line-height: 28px; }
@@ -81,6 +83,9 @@
     .blog-listing-card-wrapper{ margin-top: 40px; }
     .contact-left img{ width: 400px; }
     .contact-form input, .contact-form textarea{ margin-bottom: 0; }
+    .footer-copyright-main{ padding-top: 0; }
+    .adv-protection-cards h4{ padding-bottom: 0; }
+    .sec-advance-gover-head .h6{ margin-bottom: 0; }
 }
 
 @media screen and (max-width: 1599px) {
@@ -124,6 +129,7 @@
 
     .comingsoon-wrapper{ gap: 220px !important; }
     .soln-stats-cards{ width: 360px; }
+    .soln-workflow-text .h6{ margin-bottom: 0; }
     .stats-cards-5{ width: 435px; }
     .solution-stats-text h2{ width: 600px; }
     .solution-stats-text p{ width: 580px; }
@@ -162,6 +168,9 @@
     .contact-left img{ width: 365px; padding-top: 40px; }
     .info-card .text-18{ font-size: 14px; line-height: 20px; }
     .contact-info-wrapper{ padding-top: 65px; }
+    .blog-image-section-icons span{ font-size: 24px; }
+    .blog-section{ padding: 40px 0; }
+    .blog-section li{ margin-bottom: 10px; }
 } 
 
 @media screen and (max-width: 1439px) {
@@ -211,8 +220,8 @@
     .sol-tick-desc img{ width: 9px; }
     .soln-stats-cards .h2, .stats-cards-5 .h2{ font-size: 20px; line-height: 28px; margin-bottom: 12px; }
     .soln-stats-cards .h6, .stats-cards-5 .h6{ font-size: 14px; line-height: 20px; margin-bottom: 0; }
-    .soln-stats-cards{ width: 320px; height: 120px; }
-    .stats-cards-5{ width: 370px; height: 260px; }
+    .soln-stats-cards{ width: 320px; height: 110px; }
+    .stats-cards-5{ width: 370px; height: 240px; padding: 25px; }
     .sol-stats-cards{ margin-top: 20px; }
     .stakeholders-cards .h5{ font-size: 18px; line-height: 26px; }
     .soln-workflow-cards{ padding-top: 30px; }
@@ -231,6 +240,8 @@
     .contact-left{ width: 380px; }
     .contact-form-top{ gap: 120px; }
     .contact-info-wrapper span{ padding-top: 2; }
+    .secur-card-head .h4{ font-size: 20px; line-height: 28px; }
+    .contact-left img{ width: 310px; }
 }
 
 @media screen and (max-width: 1359px) {
@@ -264,6 +275,7 @@
     .sol-hero-detail{ width: 600px; }
     .stats-cards-5{ width: 320px; padding: 30px; }
     .soln-stats-cards{ width: 300px; }
+    .solution-stats-text p{ margin-bottom: 0; }
     .sol-stats-list{ margin-top: 50px; }
     .solution-stats-text{ flex-direction: column; text-align: center; justify-content: center; align-items: center; }
     .solution-stats-text h2, .solution-stats-text p{ width: 900px; }
@@ -275,12 +287,16 @@
     .blog-listing-card-detail .h5 { font-size: 20px; margin-bottom: 0; }
     .blog-list-cards{ width: 555px; height: 440px; }
 
-    .container-sm{ max-width: 900px; } 
+    .container-sm{ max-width: 800px; } 
+    .blog-detail-breadcrumb{ padding-top: 130px; }
+    .blog-image-section-icons span{ font-size: 18px; }
     .contact-left{ width: 450px; }
     .contact-form-top{ justify-content: space-between; gap: 70px; }
     .contact-right { width: 500px; }
     .info-card{ width: 320px; }
     .contact-left img{ width: 300px; padding-top: 40px; }
+    .blog-detail-heading{ padding-top: 30px; }
+    .blog-image-main{ padding-top: 35px; }
 
     .sec-advance-gover-head{ width: 100%; }
     .sec-gover-cards-wrapper{ gap: 20px; }
@@ -399,6 +415,11 @@
     .sec-regulatory-right{ width: 330px; }
 
     .advance-security-pro-text{ width: 100%; }
+    .blog-section h3{ margin-bottom: 12px; }
+    .blog-section li{ margin-bottom: 6px; }
+    .blog-section{ padding: 30px 0; }
+    .advance-security-pro-text{ gap: 15px; }
+    .secur-card-head .h4{ font-size: 16px; line-height: 20px; margin-bottom: 8px; }
 }
 
 @media screen and (max-width: 1023px) {
@@ -437,7 +458,7 @@
     .blog-list-cards{ width: 340px; height: 320px; }
     .blog-list-card-rw-2{ margin: 40px 0; padding: 0; }
 
-    .container-sm{ max-width: 880px; } 
+    /* .container-sm{ max-width: 880px; }  */
 
     .contact-form-top { gap: 100px; } 
     .contact-info-wrapper{ padding-top: 65px; }
@@ -464,6 +485,7 @@
     .sec-regulatory-heading h2, .sec-regulatory-heading p{ width: 100%; }
     .sec-advance-gover-head p{ margin-bottom: 0; }
     .adv-protection-cards span{ font-size: 16px; }
+    .secur-card-head .h4{ font-size: 14px; line-height: 20px; }
 }
 
 @media screen and (max-width: 991px) {
@@ -501,8 +523,8 @@
     }
 
     .mobile-menu.open { height: max-content; padding-bottom: 30px; }
-    .mobile-menu ul { display: flex; flex-direction: column; gap: 30px; text-align: left; font-size: 24px;padding-top: 100px; padding-left: 22px; }
-    .mobile-menu ul li a { font-size: 30px; color: var(--black); text-decoration: none; font-weight: 500; }
+    .mobile-menu ul { display: flex; flex-direction: column; gap: 15px; text-align: left; font-size: 24px;padding-top: 100px; padding-left: 22px; }
+    .mobile-menu ul li a { font-size:16px; line-height: 22px; color: var(--black); text-decoration: none; font-weight: 500; }
     .mobile-menu ul li a:hover{ color: var(--secondary); }
     .mobile-menu.open .header-wrapper.shrink{ background-color: transparent; }
 
@@ -530,7 +552,10 @@
     .blog-list-card-rw{ justify-content: space-between; }
     .blog-listing-card-detail{ height: max-content; }
 
-    .container-sm{ max-width: 100%; } 
+    .container-sm{ max-width: 700px; } 
+    .blog-detail-breadcrumb{ padding-top: 100px; }
+    .blog-image-main{ padding-top: 30px; }
+
     .contact-form-top{ gap: 50px; }
     .contact-info-wrapper{ gap: 20px; }
     /* .info-card{ height: 130px; } */
@@ -541,7 +566,8 @@
     .contact-right{ width: 600px; } */
 
     .sec-gover-cards-wrapper{ flex-direction: column; }
-    .secur-gover-card{ flex-direction: row; width: 100%; text-align: left; }
+    .secur-gover-card{ flex-direction: row; width: 100%; text-align: left;  height: 150px;}
+    .secur-gover-card img{ height: 100%; border-radius: 20px; object-fit: cover; }
     .sol-hero-text{ padding-top: 0; }
 
     .adv-protection-wrapper { display: block; }
@@ -649,7 +675,7 @@
 
     /* header */
     /* .mobile-menu{ padding-left: 90px; } */
-    .mobile-menu ul li a{ font-size: 28px; line-height: 28px; }
+    /* .mobile-menu ul li a{ font-size: 28px; line-height: 28px; } */
 
     /* footer */
     .footer-lets-connect{ font-size: 74px; line-height: 73px; }
@@ -677,7 +703,7 @@
     .sol-stats-card-1, .sol-stats-card-2, .stats-cards-5{ flex-direction: row; }
     .stats-cards-5{ width: 100%; height: 150px;}
     .stats-cards-5 .h6{ width: 50%; text-align: left; padding-left: 20px; }
-    .soln-stats-cards{ width: 250px; height: 120px; }
+    .soln-stats-cards{ width: 250px; height: 90px; }
     .sol-stats-cards{ flex-direction: column; }
     .soln-stats-cards .h2{ margin-bottom: 10px; }
     .sol-stats-card-1, .sol-stats-card-2{ width: 100%; }
@@ -765,6 +791,8 @@
     .blog-listing-card-detail > span{ font-size: 10px; line-height: 16px; }
     .row-2{ flex-direction: row; }
     .contact-left img{ width: 260px; }
+    .sec-regulatory-left{ gap: 15px; }
+    .sec-advance-gover-head{ padding-bottom: 25px; }
 }
 
 @media screen and (max-width: 639px) {
@@ -809,6 +837,8 @@
     .sec-regulatory-left{ gap: 10px; }
     .sec-advance-gover-head{ padding-bottom: 20px; }
     .sec-regulatory-wrapper{ padding-top: 20px; }
+    .adv-protection-swiper .swiper-slide{ height: 160px !important; }
+    .adv-protection-swiper{ height: 200px; }
 }
 
 @media screen and (max-width: 575px) {
@@ -817,7 +847,7 @@
     .text-14{ font-size: 10px; line-height: 18px; }
 
     /* header */
-    .mobile-menu ul li a{ font-size: 24px; line-height: 24px; }
+    /* .mobile-menu ul li a{ font-size: 24px; line-height: 24px; } */
 
     /* footer */
     .footer-lets-connect{ font-size: 65px; line-height: 75px; }
@@ -836,10 +866,12 @@
 
     /* .mobile-menu{ padding-left: 18px; } */
     .info-card{ padding: 15px; width: 100%;  }
-    .secur-gover-card{ flex-direction: column; }
+    .secur-gover-card{ flex-direction: column; height: max-content; }
     .secur-card-head .h4{ margin-bottom: 10px; }
     .secur-gover-card img{ height: 200px; object-fit: cover; border-radius: 20px; }
     .row-2{ flex-direction: column; }
+    .adv-protection-swiper .swiper-slide{ height: 180px !important; }
+    .adv-protection-swiper{ height: 220px; }
 }
 
 @media screen and (max-width: 480px) {
@@ -853,26 +885,28 @@
     .footer-bottom{ gap: 30px; }
 
     /* header */
-    .mobile-menu ul li a{ font-size: 22px; line-height: 22px; }
+    /* .mobile-menu ul li a{ font-size: 22px; line-height: 22px; } */
     /* .headerLogo{ width: 120px; } */
     .hamburger{ width: 20px; } 
     .bar{ width: 20px; }
 
     /* soln page */
 
-    .soln-stats-cards{ width: 200px; height: 130px; }
+    .soln-stats-cards{ width: 200px; }
     .soln-stats-cards h4, .soln-stats-cards p{ margin-bottom: 0; }
     .stats-cards-5{ padding: 33px 20px; }
     .stats-cards-5 h4{ margin-bottom: 5px; } 
     .stakeholders-cards{ height: 170px; }
     .stakeholders-cards .h5{ font-size: 14px; line-height: 22px; }
     .blog-image-section-icons span{ font-size: 20px; }
+    .adv-protection-swiper .swiper-slide{ height: 160px !important; }
+    .adv-protection-swiper { height: 200px; }
 }
 
 @media screen and (max-width: 459px) {
     /* font-size */
-    /* h1, .h1{ font-size: 26px; line-height: 36px; } */
-    /* h2, .h2{ font-size: 24px; line-height: 34px; } */
+    h1, .h1{ font-size: 22px; line-height: 30px; }
+    h2, .h2{ font-size: 20px; line-height: 28px; }
 
     /* footer */
     .glass-footer-cta{ padding: 20px; }
@@ -908,7 +942,7 @@
     .adv-card{ width: 300px; }
     .news-letter-button input{ width: 250px ; }
 
-    .mobile-menu ul li a{ font-size: 20px; line-height: 30px; }
+    /* .mobile-menu ul li a{ font-size: 20px; line-height: 30px; } */
     .mobile-menu ul{ gap: 20px; }
     .mobile-menu ul { padding-top: 80px; }
     .coming-soon-image{ display: none; }
@@ -917,7 +951,10 @@
     .comingsoon-content img { width: 200px !important; } 
 }
 
-@media screen and (max-width: 374px) {}
+@media screen and (max-width: 374px) {
+    .adv-protection-swiper .swiper-slide{ height: 180px !important; }
+    .adv-protection-swiper{ height: 220px; }
+}
 
 @media screen and (max-width: 359px) {
     /* footer */

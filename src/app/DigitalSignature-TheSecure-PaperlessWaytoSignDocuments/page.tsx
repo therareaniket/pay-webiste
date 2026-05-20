@@ -54,72 +54,72 @@ export default function SecurePaperless() {
                     </div>
 
                     <div className="blog-section">
-                        <h3>What is a Digital Signature? </h3>
+                        <h3 className="h4 text-rg">What is a Digital Signature? </h3>
 
                         <ul>
-                            <li className="h6 text-rg">Define digital signature: using cryptographic techniques rather than handwritten ink.</li>
-                            <li className="h6 text-rg">How it works (public/private keys, hashing, certificates).</li>
-                            <li className="h6 text-rg">Difference between traditional (wet-ink) signature and digital signature.</li>
+                            <li className="text-18 text-rg">Define digital signature: using cryptographic techniques rather than handwritten ink.</li>
+                            <li className="text-18 text-rg">How it works (public/private keys, hashing, certificates).</li>
+                            <li className="text-18 text-rg">Difference between traditional (wet-ink) signature and digital signature.</li>
                         </ul>
                     </div>
 
                     <div className="blog-section">
-                        <h3>Types of Digital Signatures & Technologies Behind Them</h3>
+                        <h3 className="h4 text-rg">Types of Digital Signatures & Technologies Behind Them</h3>
 
                         <ul>
-                            <li className="h6 text-rg">Asymmetric cryptography (private/public key), trust-service providers, digital certificates.</li>
-                            <li className="h6 text-rg">Timestamping, audit trails, non-repudiation, integrity & tamper-proofing.</li>
+                            <li className="text-18 text-rg">Asymmetric cryptography (private/public key), trust-service providers, digital certificates.</li>
+                            <li className="text-18 text-rg">Timestamping, audit trails, non-repudiation, integrity & tamper-proofing.</li>
                         </ul>
                     </div>
 
                     <div className="blog-section">
-                        <h3>Benefits of Digital Signatures</h3>
+                        <h3 className="h4 text-rg">Benefits of Digital Signatures</h3>
 
                         <ul>
-                            <li className="h6 text-rg">Security: ensures authenticity, prevents tampering and forgery.</li>
-                            <li className="h6 text-rg">Time & Cost Savings: eliminates printing, scanning, mailing; speeds up signing process.</li>
-                            <li className="h6 text-rg">Better Compliance & Traceability: audit trails, timestamping, legal compliance in many jurisdictions.</li>
-                            <li className="h6 text-rg">Enhanced Efficiency & Workflow: faster approvals, remote signing, integration with digital workflows.</li>
-                            <li className="h6 text-rg">Environmental / Sustainability Benefits: less paper, less physical courier/shipping.</li>
+                            <li className="text-18 text-rg">Security: ensures authenticity, prevents tampering and forgery.</li>
+                            <li className="text-18 text-rg">Time & Cost Savings: eliminates printing, scanning, mailing; speeds up signing process.</li>
+                            <li className="text-18 text-rg">Better Compliance & Traceability: audit trails, timestamping, legal compliance in many jurisdictions.</li>
+                            <li className="text-18 text-rg">Enhanced Efficiency & Workflow: faster approvals, remote signing, integration with digital workflows.</li>
+                            <li className="text-18 text-rg">Environmental / Sustainability Benefits: less paper, less physical courier/shipping.</li>
                         </ul>
                     </div>
 
                     <div className="blog-section">
-                        <h3>Use Cases Where Digital Signatures Shine</h3>
+                        <h3 className="h4 text-rg">Use Cases Where Digital Signatures Shine</h3>
 
                         <ul>
-                            <li className="h6 text-rg">Contracts, vendor agreements, business documents — when signatures are needed from different people in different locations.</li>
-                            <li className="h6 text-rg">Healthcare / Clinical Settings: consents, delegations, audit-trail documents — need security, compliance, speed.</li>
-                            <li className="h6 text-rg">Remote or distributed business workflows (e.g. collaborators in different cities/countries).</li>
-                            <li className="h6 text-rg">Any workflow where speed, reliability, auditability, and lower costs matter.</li>
+                            <li className="text-18 text-rg">Contracts, vendor agreements, business documents — when signatures are needed from different people in different locations.</li>
+                            <li className="text-18 text-rg">Healthcare / Clinical Settings: consents, delegations, audit-trail documents — need security, compliance, speed.</li>
+                            <li className="text-18 text-rg">Remote or distributed business workflows (e.g. collaborators in different cities/countries).</li>
+                            <li className="text-18 text-rg">Any workflow where speed, reliability, auditability, and lower costs matter.</li>
                         </ul>
                     </div>
 
                     <div className="blog-section">
-                        <h3>Digital Signatures in the Indian / Global Regulatory Context <br /><i>(Optional — useful for Indian audience)</i></h3>
+                        <h3 className="h4 text-rg">Digital Signatures in the Indian / Global Regulatory Context <br /><i>(Optional — useful for Indian audience)</i></h3>
 
                         <ul>
-                            <li className="h6 text-rg">Briefly mention that many jurisdictions now legally recognize digital / electronic signatures if done under valid frameworks/standards.</li>
-                            <li className="h6 text-rg">For example, in India, solutions like Bharat eSign are used for electronic signatures compliant with local regulations.</li>
+                            <li className="text-18 text-rg">Briefly mention that many jurisdictions now legally recognize digital / electronic signatures if done under valid frameworks/standards.</li>
+                            <li className="text-18 text-rg">For example, in India, solutions like Bharat eSign are used for electronic signatures compliant with local regulations.</li>
                         </ul>
                     </div>
 
                     <div className="blog-section">
-                        <h3>How to Get Started — Implementing Digital Signatures </h3>
+                        <h3 className="h4 text-rg">How to Get Started — Implementing Digital Signatures </h3>
 
                         <ul>
-                            <li className="h6 text-rg">Steps: choose a trusted e-signature provider, integrate digital certificates, set up key management / authentication protocols, migrate document workflows.</li>
-                            <li className="h6 text-rg">Best practices: ensure secure certificate management, keep audit trails, verify signer identity, ensure compliance.</li>
-                            <li className="h6 text-rg">Tips for organizations: start with high-volume or multi-signatory documents; gradually expand to other document workflows.</li>
+                            <li className="text-18 text-rg">Steps: choose a trusted e-signature provider, integrate digital certificates, set up key management / authentication protocols, migrate document workflows.</li>
+                            <li className="text-18 text-rg">Best practices: ensure secure certificate management, keep audit trails, verify signer identity, ensure compliance.</li>
+                            <li className="text-18 text-rg">Tips for organizations: start with high-volume or multi-signatory documents; gradually expand to other document workflows.</li>
                         </ul>
                     </div>
 
                     <div className="blog-section">
-                        <h3>Conclusion & Call to Action</h3>
+                        <h3 className="h4 text-rg">Conclusion & Call to Action</h3>
 
                         <ul>
-                            <li className="h6 text-rg">Summarize why digital signatures are a must for modern businesses.</li>
-                            <li className="h6 text-rg">Encourage readers to explore implementing digital signatures, especially if they handle contracts, compliance documents, or remote workflows.</li>
+                            <li className="text-18 text-rg">Summarize why digital signatures are a must for modern businesses.</li>
+                            <li className="text-18 text-rg">Encourage readers to explore implementing digital signatures, especially if they handle contracts, compliance documents, or remote workflows.</li>
                         </ul>
                     </div>
                 </div>
@@ -128,4 +128,4 @@ export default function SecurePaperless() {
     );
 }
 
-{/* <li className="h6 text-rg"></li> */}
+{/* <li className="text-18 text-rg"></li> */}

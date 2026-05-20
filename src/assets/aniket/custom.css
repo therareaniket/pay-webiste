@@ -334,7 +334,7 @@ body { background-color: #FAFAFA; }
 .blog-slide-item { height: 600px !important; position: relative; }
 .blog-slide-item img { width: 100%; height: 600px; object-fit: cover; }
 .blog-title{ margin-top: 10px; }
-.slider-item-details { width: 1150px; position: absolute; top: 120px; left: 60px; color: var(--white); }
+.slider-item-details { width: 910px; position: absolute; top: 120px; left: 60px; color: var(--white); }
 .slider-item-details span { color: #FBB98A; margin-bottom: 20px; }
 .slider-item-details p { width: 570px; margin-bottom: 16px; }
 .blog-link { border: 1px solid var(--grey); border-radius: 30px; margin-top: 60px; }

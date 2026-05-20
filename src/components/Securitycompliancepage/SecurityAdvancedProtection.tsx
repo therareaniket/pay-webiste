@@ -66,7 +66,6 @@ const SecurityAdvancedProtection = ({ complianceIntroTitle, complianceIntroSubti
                         </div>
 
                         {/* MOBILE SCROLL */}
-                        <div className="">
                             <Swiper
                                 modules={[Autoplay, Pagination]}
                                 spaceBetween={10}
@@ -105,7 +104,6 @@ const SecurityAdvancedProtection = ({ complianceIntroTitle, complianceIntroSubti
                                 </SwiperSlide>
 
                             </Swiper>
-                        </div>
                     </div>
 
                 </div>

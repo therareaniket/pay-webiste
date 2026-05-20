@@ -56,22 +56,22 @@ export default function BlogDetailPage() {
 
                     <div className="blog-detail-qns section">
                         <div>
-                            <h3 className="h6 text-md">What are the key trends shaping the future of digital payments?</h3>
+                            <h3 className="h4 text-rg">What are the key trends shaping the future of digital payments?</h3>
                             <p className="text-rg text-18">The major trends include AI-powered fraud detection, blockchain for secure transactions, contactless and mobile payments, cross-border payment solutions, and embedded finance through API integrations.</p>
                         </div>
 
                         <div>
-                            <h3 className="h6 text-md">Why is security non-negotiable in digital payments?</h3>
+                            <h3 className="h4 text-rg">Why is security non-negotiable in digital payments?</h3>
                             <p className="text-rg text-18">With increasing online transactions, businesses face risks like data breaches and fraud. Strong security measures such as encryption, tokenization, and compliance with global standards ensure trust and protect sensitive information.</p>
                         </div>
 
                         <div>
-                            <h3 className="h6 text-md">How is AI transforming payment gateways?</h3>
+                            <h3 className="h4 text-rg">How is AI transforming payment gateways?</h3>
                             <p className="text-rg text-18">AI helps detect fraudulent activities in real time, predicts transaction patterns, and enhances customer experience through more personalized payment solutions.</p>
                         </div>
 
                         <div>
-                            <h3 className="h6 text-md">Digital Payment Introduces AI-Powered Fraud Detection for Safer Transactions</h3>
+                            <h3 className="h4 text-rg">Digital Payment Introduces AI-Powered Fraud Detection for Safer Transactions</h3>
                             <p className="text-rg text-18">Digital Payment has launched an advanced AI-driven fraud detection system to enhance security and prevent unauthorized transactions. This innovation ensures real-time monitoring and protection for businesses and customers alike.</p>
                         </div>
                     </div>
