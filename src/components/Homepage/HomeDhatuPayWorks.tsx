@@ -31,17 +31,17 @@ export default function DhatuPayWorksSlider( { howDhatupayWorksTitle, howDhatupa
         },
         {
             icon: "icon-hm-config-contract",
-            title: dhatupayWorksSlider.homeWorksCard1Title,
+            title: dhatupayWorksSlider.homeWorksCard2Title,
             desc: dhatupayWorksSlider.homeWorksCard2Subtitle,
         },
         {
             icon: "icon-pay-via",
-            title: dhatupayWorksSlider.homeWorksCard1Title,
+            title: dhatupayWorksSlider.homeWorksCard3Title,
             desc: dhatupayWorksSlider.homeWorksCard3Subtitle,
         },
         {
             icon: "icon-disburse",
-            title: dhatupayWorksSlider.homeWorksCard1Title,
+            title: dhatupayWorksSlider.homeWorksCard4Title,
             desc: dhatupayWorksSlider.homeWorksCard4Subtitle,
         }
     ];

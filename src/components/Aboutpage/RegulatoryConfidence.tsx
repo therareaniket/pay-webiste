@@ -1,6 +1,6 @@
 "use client"
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation  } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -14,7 +14,7 @@ type RegulatoryProps = {
     regulatorySlide4Details: string;
 }
 
-export default function RegulatoryConfidence ( {regulatoryTitle, regulatorySubtitle, regulatorySlide1Details, regulatorySlide2Details, regulatorySlide3Details, regulatorySlide4Details}: RegulatoryProps ) {
+export default function RegulatoryConfidence({ regulatoryTitle, regulatorySubtitle, regulatorySlide1Details, regulatorySlide2Details, regulatorySlide3Details, regulatorySlide4Details }: RegulatoryProps) {
 
     const Regulatoryslides = [
         {
@@ -39,12 +39,19 @@ export default function RegulatoryConfidence ( {regulatoryTitle, regulatorySubti
             iconBgColor: "bg-[#A78BFC]",
         },
         {
-            icon: "icon-vendor-regualatory-payments",
+            icon: "icon-hm-config-contract",
             title: "Data Residency",
             desc: regulatorySlide4Details,
             bgColor: "bg-[#FEE4D2]",
             iconBgColor: "bg-[#FBB98A]",
         }
+        // {
+        //     icon: "icon-vendor-regualatory-payments",
+        //     title: "Data Residency",
+        //     desc: regulatorySlide4Details,
+        //     bgColor: "bg-[#FEE4D2]",
+        //     iconBgColor: "bg-[#FBB98A]",
+        // }
     ];
 
     return (
@@ -77,7 +84,7 @@ export default function RegulatoryConfidence ( {regulatoryTitle, regulatorySubti
                                 nextEl: ".reg-next-btn",
                                 prevEl: ".reg-prev-btn",
                             }}
-                            autoplay={{ delay: 3000, disableOnInteraction: false }}
+                            // autoplay={{ delay: 3000, disableOnInteraction: false }}
                             pagination={{ clickable: true }}
                             loop={true}
                             className="regulatory-swiper-slider">
@@ -97,7 +104,7 @@ export default function RegulatoryConfidence ( {regulatoryTitle, regulatorySubti
                             ))}
                         </Swiper>
                     </div>
-                </div>  
+                </div>
             </section>
         </>
     );

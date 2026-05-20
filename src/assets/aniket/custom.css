@@ -346,12 +346,12 @@ body { background-color: #FAFAFA; }
 .life-cycle-timeline { height: 660px; display: flex; align-items: center; justify-content: center; margin-top: 100px; }
 /* .stroke-mask-path { stroke-dasharray: 1500; stroke-dashoffset: 1500; animation: strokeReveal 3s ease-out forwards; animation-delay: 2s; } */
 .life-cycle-list-wrapper { position: relative; }
-.point { width: 20px; height: 20px; border-radius: 50%; position: absolute; bottom: 1; left: 21%; background-color: var(--light-grey); transform: translateY(5px); }
+.point { width: 20px; height: 20px; border-radius: 50%; position: absolute; bottom: 1; left: 21%; background-color: var(--secondary); transform: translateY(5px); }
 .point-2 { bottom: 30%; left: 40%; transform: translateY(0px);}
 .point-3 { bottom: 65%; left: 60%; transform: translateY(0px);}
 .point-4 { top: 2px; left: 75.3%; transform: translateY(0px);}
 
-.lc-info-block { width: 345px; height: 300px; border-left: 1px solid #B8B8B8; transform: translate(8px, -100%); padding-left: 10px; }
+.lc-info-block { width: 345px; height: 300px; border-left: 1px solid var(--secondary); transform: translate(8px, -100%); padding-left: 10px; }
 .lc-block-2,.lc-block-4 { transform: translate(10px, 21px); display: flex; flex-direction: column; justify-content: end; }
 .lc-info-block p { color: var(--grey); }
 

@@ -617,8 +617,14 @@
 
     .adv-protection-swiper{ display: flex !important; }
     .adv-protection-swiper .swiper-slide{ height: 180px !important; }
-    .adv-protection-swiper .swiper-pagination{ bottom: 0px !important; padding-top: 20px !important; }
+    .adv-protection-swiper .swiper-pagination{ bottom: 0px !important; padding-top: 20px !important; right: 0 !important; text-align: right; }
     .adv-protection-swiper .swiper-wrapper{ height: 230px !important; }
+    .adv-protection-swiper .swiper-pagination-bullet-active {
+        opacity: 1;
+        background: linear-gradient(135deg, #557cff 0%, #693399 100%);
+        border-radius: 5px;
+        width: 20px;
+    }
 } 
 
 @media screen and (max-width: 839px) { 
