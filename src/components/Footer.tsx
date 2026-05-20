@@ -42,7 +42,9 @@ const Footer = () => {
                         <div className="footer-links quick-links">
                             <p className='text-18 text-md quick-link-heading'>Quick Links</p>
                             <ul>
-
+                                <li className='text-rg text-16 text-grey'>
+                                    <Link href="/" className={`${isActive("/") ? "active-footer-link" : ""}`}>Home</Link>
+                                </li>
                                 <li className='text-rg text-16 text-grey'>
                                     <Link href="/About" className={`${isActive("/About") ? "active-footer-link" : ""}`}>About</Link>
                                 </li>
