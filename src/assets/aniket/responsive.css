@@ -862,7 +862,7 @@
     .abt-integration-card button{ padding: 0; }
     .collapsible-arrow{ transition: all 0.3s ease; }
     button[aria-expanded="true"] .collapsible-arrow{ transform: rotate(180deg); }
-    button[aria-expanded="true"]  { color: var(--secondary-purple-bluish); }
+    button[aria-expanded="true"] .abt-intergration-title{ color: var(--secondary-purple-bluish) !important; }
     .lc-mob-centerline .center-point{ top: -67px; }
 }
 
@@ -1250,6 +1250,7 @@
     .life-cycle-timeline-mob{ padding-bottom: 30px; }
     .blog-detail-heading{ padding-top: 80px; }
     .lc-mob-centerline .center-point{  top: -52px; }
+    .blog-image-section-icons{ gap: 15px; }
 }
 
 @media screen and (max-width: 400px) {

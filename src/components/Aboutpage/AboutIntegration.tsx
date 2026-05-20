@@ -177,13 +177,12 @@ export default function AboutIntegration({ integrationsTitle, integrationsSubtit
                     </div>
 
                     <div className="integration-accord">
-
                         <Card className="abt-integration-card">
                             <CardContent>
                                 <Collapsible className="rounded-md data-[state=open]:bg-muted abt-card-collapsible">
                                     <CollapsibleTrigger asChild>
                                         <Button variant="ghost" className="group w-full justify-between ">
-                                            <h3 className="h4 text-md " style={{ marginBottom: "0" }}>Integration Layer</h3>
+                                            <h3 className="abt-intergration-title h4 text-md " style={{ marginBottom: "0" }}>Integration Layer</h3>
 
                                             <div className="collapsible-arrow">
                                                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -238,7 +237,7 @@ export default function AboutIntegration({ integrationsTitle, integrationsSubtit
                                 <Collapsible className="rounded-md data-[state=open]:bg-muted abt-card-collapsible">
                                     <CollapsibleTrigger asChild>
                                         <Button variant="ghost" className="group w-full justify-between ">
-                                            <h3 className="h4 text-md " style={{ marginBottom: "0" }}>Accrual Engine</h3>
+                                            <h3 className="abt-intergration-title h4 text-md " style={{ marginBottom: "0" }}>Accrual Engine</h3>
 
                                             <div className="collapsible-arrow">
                                                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -293,7 +292,7 @@ export default function AboutIntegration({ integrationsTitle, integrationsSubtit
                                 <Collapsible className="rounded-md data-[state=open]:bg-muted abt-card-collapsible">
                                     <CollapsibleTrigger asChild>
                                         <Button variant="ghost" className="group w-full justify-between ">
-                                            <h3 className="h4 text-md " style={{ marginBottom: "0" }}>Experience Layer</h3>
+                                            <h3 className="abt-intergration-title h4 text-md " style={{ marginBottom: "0" }}>Experience Layer</h3>
 
                                             <div className="collapsible-arrow">
                                                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -348,7 +347,7 @@ export default function AboutIntegration({ integrationsTitle, integrationsSubtit
                                 <Collapsible className="rounded-md data-[state=open]:bg-muted abt-card-collapsible">
                                     <CollapsibleTrigger asChild>
                                         <Button variant="ghost" className="group w-full justify-between ">
-                                            <h3 className="h4 text-md " style={{ marginBottom: "0" }}>Real-Time Dashboards</h3>
+                                            <h3 className="abt-intergration-title h4 text-md " style={{ marginBottom: "0" }}>Real-Time Dashboards</h3>
 
                                             <div className="collapsible-arrow">
                                                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">

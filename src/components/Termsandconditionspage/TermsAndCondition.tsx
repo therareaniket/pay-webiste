@@ -5,9 +5,9 @@ import Link from "next/link"
 
 export default function TermsAndCondition() {
     return (
-        <section className='termsmain inner-page section'>
+        <section className='privacypolicymain inner-page section'>
             <div className="container-sm">
-                <div className='terms-hero'>
+                <div className='privacy-policy-hero'>
                     <div className="container-sm">
                         <h1 className='h2'>DhatuPay — Terms of Use</h1>
                     </div>
