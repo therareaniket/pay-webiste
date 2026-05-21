@@ -737,7 +737,7 @@
     .plan-descrptn{ display: none !important; }
     .pricing-wrapper{ flex-direction: column; }
     .pricing-headings{ margin-bottom: 0 !important; }
-    .plan-descrptn-tabs{ display: flex; justify-content: center; align-items: center; padding-top: 50px; }
+    .plan-descrptn-tabs{ display: flex; justify-content: center; align-items: center; padding-top: 20px; }
     .plan-item{ width: 100%; }
 
     .plan-tabs-list{ margin: 0 auto; }

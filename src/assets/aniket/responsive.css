@@ -16,7 +16,7 @@
     .donut-inner-circle .h2{ font-size: 30px; line-height: 38px; }
     .redefine-payment-wrapper { gap: 20px; }
 
-    .seamless-payment img { width: 680px; }
+    .seamless-payment img { width: 630px; bottom: 150px; }
     .core-capablty-headings { width: 477px; }
     .capablty-lists-wrapper { width: 770px; }
     .capablty-list { width: 360px; justify-content: start; gap: 30px; }
@@ -56,7 +56,7 @@
     .testimonials .swiper-pagination-bullet:first-child:before{ font-size: 28px; line-height: 60px; }
     .testimonials .swiper-pagination-bullet:nth-child(2):before{ font-size: 28px; line-height: 60px; }
     .testimonials .swiper-pagination-bullet:nth-child(3):before{ font-size: 28px; line-height: 60px; }
-    .testimonial-slide-item{ height: 330px !important; }
+    .testimonial-slide-item{ height: 300px !important; }
     .trust-headings h2{ width: 615px; }
 
     .pricing-plan-details { width: 750px; }
@@ -64,7 +64,7 @@
     .plan-includes{ height: 300px; }
     .pricing-left-pillar{ height: 790px;}
     .dp-work-slide-item{ height: 305px !important; }
-    .smls-pymt-box-wrapper{ gap: 50px; }
+    .smls-pymt-box-wrapper{ gap: 30px; }
     .capablty-lists-divider{ height: 460px; }
     .plan-item{ height: 550px; }
     .tab-line-seprator{ margin-bottom: 15px; }
@@ -123,7 +123,7 @@
     .slide-item-icon{ width: 46px; height: 46px; }
     .slide-item-icon span{ font-size: 22px;}
     .pymt-box{ width: 255px; }
-    .seamless-payment img{ width: 650px;}
+    .seamless-payment img{ width: 590px;}
     .smls-pymt-box-wrapper{ gap: 30px; }
     .list-details{ width: 260px; }
     .capablty-icon{ width: 40px; height: 40px; }
@@ -135,10 +135,6 @@
     .faq-lists{ width: 750px; }
     .faq-content{ font-size: 14px; line-height: 22px; }
     .faq-wrapper img{ width: 370px;}
-    .testimonials .swiper-pagination-bullet{ width: 55px; height: 55px; }
-    .testimonials .swiper-pagination-bullet:first-child:before{ font-size: 26px; line-height: 55px; }
-    .testimonials .swiper-pagination-bullet:nth-child(2):before{ font-size: 26px; line-height: 55px; }
-    .testimonials .swiper-pagination-bullet:nth-child(3):before{ font-size: 26px; line-height: 55px; }
     .blog-full{ height: 400px; }
     .hm-first-blog-image-wrapper{ height: 400px; }
     .hm-first-blog-image-wrapper img{ height: 100%; object-fit: cover; }
@@ -149,8 +145,8 @@
     .trust-headings h2{ width: 550px; }
     .trust-headings .h6{ width: 520px; }
     .pillar-details p{ font-size: 14px; line-height: 22px;}
-    .pricing-left-pillar{ height: 690px;}
-    .plan-includes{ height: 270px;}
+    .pricing-left-pillar{ height: 640px;}
+    .plan-includes{ height: 270px; margin-top: 0; margin-bottom: 10px; }
 
     .dp-work-slide-item{ height: 273px !important; }
     .capablty-lists-divider{ height: 520px }
@@ -158,11 +154,11 @@
     .list-details p{ font-size: 16px; line-height: 22px; }
     .capablty-list{ height: 115px; }
     .capablty-lists-divider{ height: 370px !important; }
-    .plan-item{ height: 515px; }
+    .plan-item{ height: 465px; }
     .plans-link{ padding: 10px 0px; }  
     .blog-full, .hm-first-blog-image-wrapper{ height: 290px; }
     .abt-hero-detail-wrapper img{ transform: translate(0) !important; }
-    .abt-hero-section{ height: 520px; }
+    .abt-hero-section{ height: 580px; }
     .about-hero-img{ width: 340px !important; height: 340px !important; object-fit: contain !important; }
     .meet-dp-headings .h6{ width: 550px; }
     .lc-info-block p{ font-size: 14px; line-height: 22px; }
@@ -201,26 +197,32 @@
     .abt-hero-detail-wrapper{ padding-top: 50px; }
     .blog-slider{ padding-top: 74px; }
     .blog-full .h5{ font-size: 20px; line-height: 28px; }
-    .home-blog-content p{ font-size: 16px; line-height: 24px; margin-bottom: 25px; }
+    .home-blog-content p{ font-size: 14px; line-height: 20px; margin-bottom: 25px; }
+    .blog-writer span{ font-size: 12px; line-height: 18px; }
     .blog-half .h5{ font-size: 20px; line-height: 28px; }
     .category-chip{ margin-bottom: 10px; }
-    .testimonial-slide-item .h4{ font-size: 22px; line-height: 30px; }
     .testimonials .slide-item-details .h5{ margin-top: 35px; }
-    .testimonial-slide-item{ height: 260px !important; }
-    .testimonials .swiper-pagination-bullet{ width: 40px; height: 40px; }
+    .testimonial-slide-item{ height: 220px !important; }
+    .testimonials .swiper-pagination-bullet{ width: 30px; height: 30px; }
     .testimonials .swiper-pagination-bullet:first-child::before, .testimonials .swiper-pagination-bullet:nth-child(2)::before, .testimonials .swiper-pagination-bullet:nth-child(3)::before
     {
-        font-size: 20px; line-height: 40px;
+        font-size: 18px; line-height: 30px;
     }
     .testimonial-slider{ margin-top: 40px; }
     .item-details .animate-svg{ height: 240px; }
     .slider-item-details{ width: 710px; }
+    .plan-includes li{ margin-bottom: 10px; }
+    .testimonial-slide-item .h4{ font-size: 18px; line-height: 26px; }
+    .testimonials .slide-item-details .h5{ font-size: 20px; line-height: 26px; margin-bottom: 5px; }
+    .testimonials .text-18{ font-size: 14px; }
+    .trust-content-tab-seperator{ height: 250px; }
 }
 
 @media screen and (max-width: 1439px) { 
     .hero-home { height: 620px; }
     .home-hero-details, .subpage-hero-details { max-width: 567px; padding-top: 50px; }
 
+    
     .link-padding { padding: 10px 20px; }
     .text-20 { font-size: 18px; line-height: 28px; }
     .site-hero-blob { width: 600px; left: 40%; }
@@ -232,7 +234,7 @@
     .redefine-pymt-growth .site-radius-20 { border-radius: 10px; }
     .dp-work-slide-item { padding-right: 40px; }
     .swiper-slide { height: 250px !important; }
-    .seamless-payment img { width: 540px; }
+    .seamless-payment img { width: 440px; }
     .smls-pymt-details{ margin-top: 50px; }
     .smls-pymt-box-wrapper{ gap: 20px; }
     .core-capablty-headings { width: 500px; }
@@ -248,7 +250,6 @@
     .faq-lists { width: 680px; }
     .faq-trigger svg { width: 25px; height: 25px; }
     .faq-headings { width: 100%; }
-    .testimonial-slide-item .h4 { font-size: 20px; line-height: 28px; }
     
     /* .payment-list-item { padding: 30px; } */
     .accordian-list { width: 750px; }
@@ -290,10 +291,10 @@
     .capablty-icon img{ width: 20px; height: 20px; }
     .list-details{ width: 290px; }
     .qna-list{ margin-top: 45px; }
-    .testimonial-slide-item{ height: 240px !important; }
+    .testimonial-slide-item{ height: 210px !important; }
     .home-blog-content p{ font-size: 16px; line-height: 22px; }
     .full-blog-info .home-blog-content{ width: 450px;}
-    .blog-full, .hm-first-blog-image-wrapper{ height: 290px;}
+    .blog-full, .hm-first-blog-image-wrapper{ height: 255px;}
     .category-chip{ padding: 6px 20px; font-size: 10px; line-height: 16px; height: auto; }
     .home-blog-content p{ margin-bottom: 25px; }
     .trust-info p{ font-size: 14px; line-height: 22px; }
@@ -308,7 +309,8 @@
     .plan-includes ul li .text-18{ font-size: 14px; line-height: 22px; }
     .plan-includes ul li img{ width: 10px; height: 10px;  margin-top: 6px; }
     .plan-includes li{ align-items: flex-start; }
-    .plan-item{ height: 490px; }
+    .pricing-left-pillar{ height: 653px; }
+    .plan-item{ height: 460px; }
     .plan-includes p{ margin-bottom: 10px; }
     .plan-includes{ margin-top: 10px; }
     .redefine-pymt-growth{ width: 580px; }
@@ -334,6 +336,8 @@
     .integration-headings .h6{ width: 415px; }
 
     .abt-hero-detail-wrapper{ padding-top: 0; }
+    .trust-content-tab-seperator{ height: 220px; }
+    .abt-hero-section{ height: 520px; }
 }
 
 @media screen and (max-width: 1359px) {
@@ -363,7 +367,7 @@
     .payout-success { inset: auto -43% 10% auto; right: -50%; }
     .donut-inner-circle .text-18{ width: 80%; }
 
-    .seamless-payment img { width: 475px; }
+    .seamless-payment img { width: 430px; }
     .pymt-box { width: 250px; height: 155px; }
 
     .capablty-lists-wrapper { width: 80%; height: 325px; margin: 0 auto; }
@@ -443,7 +447,7 @@
     .testimonials .slide-item-details .h5{ margin-top: 40px; }
     .testimonial-slider{ margin-top: 30px; }
     .about-hero-img{ width: 300px; height: 300px; }
-    .abt-hero-section{ height: 480px; }
+    .abt-hero-section{ height: 510px; }
     .abt-hero-detail{ height: max-content; max-width: 525px; }
     .lc-info-block{ width: 225px; }
     .life-cycle-timeline{ margin-top: 60px; }
@@ -456,6 +460,16 @@
     .blog-slide-item{ height: 500px !important; }
     .dp-work-slide-item{ height: 300px !important; }
     .slider-item-details{ width: 620px ; }
+    .testimonial-slide-item .h4{ font-size: 16px; line-height: 20px; }
+    .testimonials .slide-item-details .h5{ margin-top: 25px; }
+    .testimonial-slide-item{ height: 160px !important; }
+    .testimonials .slide-item-details .h5{ font-size: 18px; line-height: 22px; }
+    .testimonials .swiper-pagination-bullet{ width: 26px; height: 26px; }
+    .testimonials .swiper-pagination-bullet:first-child:before, .testimonials .swiper-pagination-bullet:nth-child(2):before, .testimonials .swiper-pagination-bullet:nth-child(3):before
+    {
+        font-size: 16px;
+        line-height: 26px;
+    }
 }   
 
 @media screen and (max-width: 1199px) {
@@ -473,7 +487,8 @@
     .faster-cycle .h5, .payout-success .h5{ font-size: 16px; line-height: 24px; }
     .reduction-spike-right{ top: 5%; }
     .redefine-pymt-growth { width: 100%; min-height: max-content; align-items: start; justify-content: center;  }
-    .seamless-payment img { width: 370px; }
+    .seamless-payment img { width: 350px; bottom: 120px; }
+    .trust-content-tab-seperator{ height: 200px; }
     .donut-circle{ width: 250px; height: 250px; }
     .donut-inner-circle{ width: calc(100% - 90px); height: calc(100% - 90px); }
     .capablty-lists-wrapper {width: 100%; height: 305px; }
@@ -578,7 +593,7 @@
 
     .pymt-box h5{ margin-bottom: 10px; width: 70%; }
     .abt-hero-detail{ padding-top: 0; }
-    .abt-hero-section{ height: 430px; }
+    .abt-hero-section{ height: 410px; }
     .about-hero-img{ width: 270px !important; height: auto !important; }
     .abt-hero-detail-wrapper{ transform: translateY(30%); }
     .lc-block-2, .lc-block-4{ transform: translate(8px, 16px); }
@@ -596,9 +611,9 @@
     .integration-headings .h6{ width: 100%; }
     .blog-slide-item img{ height: 450px  !important; }
     .blog-slide-item{ height: 450px !important; }
-    .testimonial-slide-item .h4{ font-size: 18px; line-height: 24px; }
+    /* .testimonial-slide-item .h4{ font-size: 18px; line-height: 24px; } */
     .testimonials .slide-item-details .h5{ margin-top: 25px; margin-bottom: 10px; }
-    .testimonial-slide-item{ height: 200px !important; }
+    .testimonial-slide-item{ height: 160px !important; }
     .blog-half img{ height: 200px; }
     .slider-item-details{ width: 560px; }
 }
@@ -608,7 +623,8 @@
     .circle-badge{ bottom: 26%; left: 20px; }
     .home-slide-item-detail .h5{ font-size: 20px; line-height: 28px; }
     .slide-item-icon{ width: 36px; height: 36px; }
-    .seamless-payment img { position: relative; width: 440px; height: auto; }
+    .seamless-payment img { position: relative; width: 440px; height: auto; bottom: 0; }
+    .trust-content-tab-seperator{ height: 180px; }
     .smls-pymt-details { margin-top: 70px; }
     .pymt-box h5 { width: 100%; }
     .pymt-box { width: 350px; }
@@ -649,7 +665,7 @@
     .redefine-payment-wrapper { gap: 10px; }
     .redefine-pymt-details p{ margin-bottom: 12px; }
     .swiper-slide{ height: 240px !important; }
-    .plan-item{ height: 400px; }
+    .plan-item{ height: 380px; }
     .abt-hero-detail{ max-width: 380px; }
     .abt-hero-section{ height: 400px; }
     .about-hero-img{ width: 260px; }
@@ -668,7 +684,7 @@
     .detailed-text li.text-18{ font-size: 12px; line-height: 20px; }
     .detailed-text{ width: 330px; }
     .item-details{ width: 350px; }
-    .abt-hero-detail-wrapper{ transform: translateY(0); padding-top: 40px; }
+    .abt-hero-detail-wrapper{ transform: translateY(0); padding-top: 50px; }
     .blog-slide-item img{ height: 400px  !important; }
     .blog-slide-item{ height: 400px !important; }
     .slider-item-details{ width: 75%; top: 50%; transform: translateY(-50%); }
@@ -676,8 +692,8 @@
     .testimonials .swiper-pagination-bullet:first-child:before, .testimonials .swiper-pagination-bullet:nth-child(2):before, .testimonials .swiper-pagination-bullet:nth-child(3):before{ 
         font-size: 13px; line-height: 30px;
     }
-    .testimonial-slide-item{ height: 190px !important; }
-    .testimonial-slide-item .h4{ font-size: 16px; line-height: 20px; }
+    .testimonial-slide-item{ height: 175px !important; }
+    .testimonial-slide-item .h4{ font-size: 14px; line-height: 20px; }
     .blog-half .h5, .blog-full .h5{ font-size: 16px; line-height: 20px; }
     .life-cycle-timeline{ margin-top: 40px; }
     .item-details .animate-svg{ height: 230px; }
@@ -685,6 +701,9 @@
     .payment-list-item{ height: 280px; }
     .wf-list-item{ gap: 20px; justify-content: flex-start; height: 155px; }
     .wf-list-details{ width: 250px; }
+    .plan-includes{ margin: 0; }
+    .testimonials .slide-item-details .h5{ font-size: 16px; line-height: 20px; }
+    .testimonials .text-18{ font-size: 12px; line-height: 18px; }
 }
 
 @media screen and (max-width: 991px) {
@@ -788,6 +807,8 @@
     .blog-slide-item img, .blog-slide-item{ height: 400px !important; }
     .blog-link{ margin-top: 20px !important; }
     .blog-slider{ padding-top: 60px; }
+    .trust-content-tab-seperator{ display: none; }
+    .abt-hero-detail-wrapper{ padding: 0; }
 }
 
 @media screen and (max-width: 839px) {
@@ -841,7 +862,9 @@
     .list-details h5{ margin-bottom: 10px; }
     .capablty-lists-divider{ height: 280px !important; }
     .plan-item{ padding: 20px; }
-    .plan-item{ height: 380px; }
+    .plan-item{ height: 335px; }
+    .plan-includes ul{ margin-top: 10px; }
+    .plan-includes{ height: 195px; }
     .testimonial-slider{ margin-top: 30px; }
     .testimonials .slide-item-details .h5{ margin-top: 25px; margin-bottom: 10px; }
     .abt-hero-detail{ padding-top: 0; max-width: 90%; }
@@ -867,6 +890,7 @@
     .lc-mob-centerline .center-point{ top: -67px; }
     .regulatory-slide-item{ height: 205px !important; }
     .testimonial-slide-item{ height: 180px !important; }
+    .plan-includes li{ margin-bottom: 8px; }
 }
 
 /* THIS IS FOR HOMEPAGE SLIDER ONLY */
@@ -1090,7 +1114,7 @@
     .capabiblity-wrapper{ gap: 15px; }
     .pricing-left-pillar img{ width: 175px; }
     .trust-info p{  font-size: 12px; line-height: 18px; }
-    .testimonial-slide-item{ height: 180px !important; }
+    .testimonial-slide-item{ height: 170px !important; }
     .testimonial-slider{ margin-top: 30px; }
     /* .regulatory-slide-item .text-18{ font-size: 12px; line-height: 18px; } */
     .detailed-text li img{ width: 9px; }
@@ -1099,7 +1123,7 @@
     .wf-list-item{ height: 185px; }
     .blog-slide-item img, .blog-slide-item{ height: 350px !important; }
     .text-20{ font-size: 14px; line-height: 20px; }
-
+    .abt-hero-detail{ height: 250px; }
 }
 
 @media screen and (max-width: 575px) {
@@ -1171,6 +1195,7 @@
     .home-slide-item-detail .text-18{ font-size: 12px; line-height: 20px; }
     .dp-work-slide-item{ height: 220px !important; }
     .integration-accord{ margin-top: 0; }
+    .abt-hero-detail{ height: 220px; }
 }
 
 @media screen and (max-width: 480px) {
@@ -1192,6 +1217,7 @@
     .integration-tab-content{ width: 100%; }
     .integ-trigger{ padding: 16px 0; }
     .wf-list-item{ gap: 12px; }
+    .abt-hero-detail{ height: 230px; }
 }
 
 @media screen and (max-width: 459px) {
@@ -1255,8 +1281,7 @@
     .blog-detail-heading{ padding-top: 80px; }
     .lc-mob-centerline .center-point{  top: -52px; }
     .blog-image-section-icons{ gap: 15px; }
-    .abt-hero-detail-wrapper{ height: 250px !important; }
-
+    .abt-hero-detail-wrapper{ height: 250px !important; padding-top: 20px; }
 }
 
 @media screen and (max-width: 400px) {
@@ -1305,9 +1330,9 @@
     .circle-badge { display: none; }
     .faster-cycle{ top: 3px }
     .payout-success{ bottom: -3px;  }
-    .reduction-spike-right{ top: 24%; }
-    .donut-circle { width: 200px; height: 200px; }
-    .donut-inner-circle { width: calc(100% - 70px); height: calc(100% - 70px); }
+    .reduction-spike-right{ top: 15%; }
+    .donut-circle { width: 170px; height: 170px; }
+    .donut-inner-circle { width: calc(100% - 60px); height: calc(100% - 60px); }
     .reduction-spike-left{ left: -66px; }
     /* .hamburger, .bar{ width: 16px; } */
     .category-chip{  padding: 6px 14px; }
@@ -1318,6 +1343,8 @@
     .abt-hero-detail{ padding-top: 10px !important; }
     .subpage-hero-details h1{ margin-bottom: 15px; }
     .testimonials .slide-item-details .h5{ margin-bottom: 6px; }
+    .donut-inner-circle .h2{ font-size: 16px; line-height: 18px; }
+    .donut-inner-circle .text-18{ font-size: 10px; line-height: 12px; }
 }
 
 @media screen and (max-width: 374px) {

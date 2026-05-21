@@ -33,11 +33,11 @@ const Header = () => {
     return () => window.removeEventListener("scroll", checkScroll);
   }, []);
 
-      const pathname = usePathname();
-      
-      const isActive = (href: string) => {
-          return pathname?.toLowerCase() === href.toLowerCase();
-      };
+  const pathname = usePathname();
+
+  const isActive = (href: string) => {
+    return pathname?.toLowerCase() === href.toLowerCase();
+  };
 
   return (
     <header className={`header-main ${scrolled ? "scrolled" : ""}`}>
@@ -61,15 +61,15 @@ const Header = () => {
               <li className="text-16 text-rg"><Link href="/Solutions" className={`${isActive("/Solutions") ? "active-link-header" : ""}`}>Solutions</Link></li>
               <li className="text-16 text-rg"><Link href="/SecurityCompliance" className={`${isActive("/SecurityCompliance") ? "active-link-header" : ""}`}>Security & Compliance</Link></li>
               <li className="text-16 text-rg"><Link href="/BlogListing" className={`${isActive("/BlogListing") ? "active-link-header" : ""}`}>Resources</Link></li>
+              {/* Contact */}
+              <div className="contact-link site-radius-50">
+                <Link href="/Contact" className={`header-contact-link text-16 text-rg site-radius-50 link-padding ${isActive("/Contact") ? "contact-active-header" : ""}`}>
+                  Contact
+                </Link>
+              </div>
             </ul>
           </div>
 
-          {/* Contact */}
-          <div className="contact-link site-radius-50">
-            <Link href="/Contact" className={`header-contact-link text-16 text-rg site-radius-50 link-padding ${isActive("/Contact") ? "contact-active-header" : ""}`}>
-              Contact
-            </Link>
-          </div>
 
           {/* Hamburger */}
           <div
@@ -86,14 +86,14 @@ const Header = () => {
       {/* Fullscreen Mobile Menu */}
       <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
         <div className="container">
-        <ul className="mobile-menu-links">
-          <li className="text-16 text-rg"><Link href="/" onClick={() => setMenuOpen(false)} className={`${isActive("/") ? "active-link-header" : ""}`}>Home</Link></li>
-          <li className="text-16 text-rg"><Link href="/About" onClick={() => setMenuOpen(false)} className={`${isActive("/About") ? "active-link-header" : ""}`}>About</Link></li>
-          <li className="text-16 text-rg"><Link href="/Solutions" onClick={() => setMenuOpen(false)} className={`${isActive("/Solutions") ? "active-link-header" : ""}`}>Solutions</Link></li>
-          <li className="text-16 text-rg"><Link href="/SecurityCompliance" onClick={() => setMenuOpen(false)} className={`${isActive("/SecurityCompliance") ? "active-link-header" : ""}`}>Security & Compliance</Link></li>
-          <li className="text-16 text-rg"><Link href="/BlogListing" onClick={() => setMenuOpen(false)} className={`${isActive("/BlogListing") ? "active-link-header" : ""}`}>Resources</Link></li>
-          <li className="text-16 text-rg"><Link href="/Contact" onClick={() => setMenuOpen(false)} className={`${isActive("/Contact") ? "active-link-header" : ""}`}>Contact</Link></li>
-        </ul>
+          <ul className="mobile-menu-links">
+            <li className="text-16 text-rg"><Link href="/" onClick={() => setMenuOpen(false)} className={`${isActive("/") ? "active-link-header" : ""}`}>Home</Link></li>
+            <li className="text-16 text-rg"><Link href="/About" onClick={() => setMenuOpen(false)} className={`${isActive("/About") ? "active-link-header" : ""}`}>About</Link></li>
+            <li className="text-16 text-rg"><Link href="/Solutions" onClick={() => setMenuOpen(false)} className={`${isActive("/Solutions") ? "active-link-header" : ""}`}>Solutions</Link></li>
+            <li className="text-16 text-rg"><Link href="/SecurityCompliance" onClick={() => setMenuOpen(false)} className={`${isActive("/SecurityCompliance") ? "active-link-header" : ""}`}>Security & Compliance</Link></li>
+            <li className="text-16 text-rg"><Link href="/BlogListing" onClick={() => setMenuOpen(false)} className={`${isActive("/BlogListing") ? "active-link-header" : ""}`}>Resources</Link></li>
+            <li className="text-16 text-rg"><Link href="/Contact" onClick={() => setMenuOpen(false)} className={`${isActive("/Contact") ? "active-link-header" : ""}`}>Contact</Link></li>
+          </ul>
         </div>
       </div>
     </header>

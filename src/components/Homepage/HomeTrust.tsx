@@ -6,16 +6,16 @@ type HomeTrustProps = {
     securityTrustTitle: string;
     securityTrustSubtitle: string;
     trustList: {
-    	integrityTitle: string;
-    	integritySubtitle: string;
-    	securityTitle: string;
-    	securitySubtitle: string;
-    	complianceTitle: string;
-    	complianceSubtitle: string;
+        integrityTitle: string;
+        integritySubtitle: string;
+        securityTitle: string;
+        securitySubtitle: string;
+        complianceTitle: string;
+        complianceSubtitle: string;
     }
 };
 
-export default function HomeTrust({securityTrustTitle, securityTrustSubtitle, trustList}: HomeTrustProps ) {
+export default function HomeTrust({ securityTrustTitle, securityTrustSubtitle, trustList }: HomeTrustProps) {
     return (
         <>
             <section className="section">
@@ -44,6 +44,8 @@ export default function HomeTrust({securityTrustTitle, securityTrustSubtitle, tr
                                         <p>{trustList.integritySubtitle}</p>
                                     </div>
 
+                                    <span className="trust-content-tab-seperator"></span>
+
                                     <Image src="/images/homepage/trust-integrity-updt.webp" alt="trust-integrity" width={2080} height={1200} className="trust-image-scalaton site-radius-10"></Image>
                                 </div>
                             </TabsContent>
@@ -55,6 +57,8 @@ export default function HomeTrust({securityTrustTitle, securityTrustSubtitle, tr
 
                                         <p>{trustList.securitySubtitle}</p>
                                     </div>
+
+                                    <span className="trust-content-tab-seperator"></span>
 
                                     {/* <span className="trust-image-scalaton h4 text-rg site-radius-20"></span> */}
                                     <Image src="/images/homepage/trust-security-updt.webp" alt="trust-integrity" width={2080} height={1200} className="trust-image-scalaton site-radius-10"></Image>
@@ -69,13 +73,14 @@ export default function HomeTrust({securityTrustTitle, securityTrustSubtitle, tr
                                         <p>{trustList.complianceSubtitle}</p>
                                     </div>
 
+                                    <span className="trust-content-tab-seperator"></span>
+
                                     {/* <span className="trust-image-scalaton h4 text-rg site-radius-20"></span> */}
                                     <Image src="/images/homepage/trust-compliance-updt.webp" alt="trust-integrity" width={2080} height={1200} className="trust-image-scalaton site-radius-10"></Image>
                                 </div>
                             </TabsContent>
                         </Tabs>
                     </div>
-
                 </div>
             </section>
         </>

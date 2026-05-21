@@ -59,7 +59,7 @@ export default function HomeTestimonials({testimonialsTitle, testimonialList}: T
 
                                     <h4 className="h5 text-rg">{slide.author}</h4>
 
-                                    <p className="text-18">{slide.position}</p>
+                                    <p className="text-18 text-rg text-grey">{slide.position}</p>
                                 </div>
                             </SwiperSlide>
                         ))}

@@ -1,26 +1,27 @@
 "use client"
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 import { useState } from "react";
 
 type DhatuPayWorksSliderProps = {
     howDhatupayWorksTitle: string;
-	howDhatupayWorksSubtitle: string;
-	dhatupayWorksSlider : {
-		homeWorksCard1Title: string;
-		homeWorksCard2Title: string;
-		homeWorksCard3Title: string;
-		homeWorksCard4Title: string;
-		homeWorksCard1Subtitle: string;
-		homeWorksCard2Subtitle: string;
-		homeWorksCard3Subtitle: string;
-		homeWorksCard4Subtitle: string;
-	}
+    howDhatupayWorksSubtitle: string;
+    dhatupayWorksSlider: {
+        homeWorksCard1Title: string;
+        homeWorksCard2Title: string;
+        homeWorksCard3Title: string;
+        homeWorksCard4Title: string;
+        homeWorksCard1Subtitle: string;
+        homeWorksCard2Subtitle: string;
+        homeWorksCard3Subtitle: string;
+        homeWorksCard4Subtitle: string;
+    }
 }
 
-export default function DhatuPayWorksSlider( { howDhatupayWorksTitle, howDhatupayWorksSubtitle, dhatupayWorksSlider }: DhatuPayWorksSliderProps ) {
+export default function DhatuPayWorksSlider({ howDhatupayWorksTitle, howDhatupayWorksSubtitle, dhatupayWorksSlider }: DhatuPayWorksSliderProps) {
     const [activeSlide, setActiveSlide] = useState(0);
 
     const slides = [
@@ -55,7 +56,7 @@ export default function DhatuPayWorksSlider( { howDhatupayWorksTitle, howDhatupa
                 </div>
 
                 <Swiper
-                    modules={[Autoplay, Pagination]}
+                    modules={[Autoplay, Navigation]}
                     spaceBetween={10}
                     slidesPerView={1}
                     breakpoints={{
@@ -63,11 +64,12 @@ export default function DhatuPayWorksSlider( { howDhatupayWorksTitle, howDhatupa
                         600: { slidesPerView: 2 },
                         1200: { slidesPerView: 3 }
                     }}
-                    autoplay={{ delay: 3000, disableOnInteraction: false }}
+                    // autoplay={{ delay: 3000, disableOnInteraction: false }}
                     pagination={{ clickable: true }}
+                    // navigation = {true}
                     loop={true}
                     // onSlideChange={(swiper) => setActiveSlide(swiper.realIndex)}
-                    onSlideChange={(swiper) => { const real = swiper.realIndex; const middleIndex = (real + 1) % slides.length;  setActiveSlide(middleIndex); }}
+                    onSlideChange={(swiper) => { const real = swiper.realIndex; const middleIndex = (real + 1) % slides.length; setActiveSlide(middleIndex); }}
                     className="dp-work-slider">
                     {slides.map((slide, index) => (
                         <SwiperSlide key={index} className={`dp-work-slide-item ${activeSlide === index ? "active-slide" : ""}`}>
