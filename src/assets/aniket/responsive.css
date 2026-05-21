@@ -1255,6 +1255,8 @@
     .blog-detail-heading{ padding-top: 80px; }
     .lc-mob-centerline .center-point{  top: -52px; }
     .blog-image-section-icons{ gap: 15px; }
+    .abt-hero-detail-wrapper{ height: 250px !important; }
+
 }
 
 @media screen and (max-width: 400px) {
