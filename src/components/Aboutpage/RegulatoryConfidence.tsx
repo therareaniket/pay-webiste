@@ -76,7 +76,7 @@ export default function RegulatoryConfidence({ regulatoryTitle, regulatorySubtit
                             slidesPerView={1}
                             breakpoints={{
                                 0: { slidesPerView: 1 },
-                                575: { slidesPerView: 1.5 },
+                                576: { slidesPerView: 1.5 },
                                 700: { slidesPerView: 2 },
                                 1200: { slidesPerView: 3 }
                             }}

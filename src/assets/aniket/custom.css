@@ -384,3 +384,8 @@ body { background-color: #FAFAFA; }
 .arrow-bottom-right { position: absolute; left: 0; bottom: 25%; transform: translateX(-100%); }
 
 .hm-first-blog-image-wrapper{ width: calc(50% - 20px); height: 100%; object-fit: cover; overflow: hidden; }
+
+.capability-gradient { background: linear-gradient(100deg, #00092E 0%, #011e80 100%); }
+.capablty-lists-divider { width: 1px; height: 1px; border-radius: 20px; display: block; }
+.capablty-divider { height: 1px; width: 0; border-radius: 20px; display: block; }
+.capablty-list{ opacity: 1;}
