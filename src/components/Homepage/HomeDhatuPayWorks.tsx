@@ -4,7 +4,7 @@ import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 type DhatuPayWorksSliderProps = {
     howDhatupayWorksTitle: string;
@@ -23,6 +23,13 @@ type DhatuPayWorksSliderProps = {
 
 export default function DhatuPayWorksSlider({ howDhatupayWorksTitle, howDhatupayWorksSubtitle, dhatupayWorksSlider }: DhatuPayWorksSliderProps) {
     const [activeSlide, setActiveSlide] = useState(0);
+
+    const prevRef = useRef(null);
+    const nextRef = useRef(null);
+
+    const [isBeginning, setIsBeginning] = useState(true);
+    const [isEnd, setIsEnd] = useState(false);
+
 
     const slides = [
         {
@@ -55,22 +62,46 @@ export default function DhatuPayWorksSlider({ howDhatupayWorksTitle, howDhatupay
                     <p className="h6 text-rg">{howDhatupayWorksSubtitle}</p>
                 </div>
 
+
                 <Swiper
                     modules={[Autoplay, Navigation]}
                     spaceBetween={10}
                     slidesPerView={1}
                     breakpoints={{
                         0: { slidesPerView: 1 },
-                        600: { slidesPerView: 2 },
+                        768: { slidesPerView: 2 },
                         1200: { slidesPerView: 3 }
                     }}
-                    // autoplay={{ delay: 3000, disableOnInteraction: false }}
-                    pagination={{ clickable: true }}
-                    // navigation = {true}
                     loop={true}
-                    // onSlideChange={(swiper) => setActiveSlide(swiper.realIndex)}
-                    onSlideChange={(swiper) => { const real = swiper.realIndex; const middleIndex = (real + 1) % slides.length; setActiveSlide(middleIndex); }}
-                    className="dp-work-slider">
+                    navigation={true}
+
+                    onSwiper={(swiper) => {
+                        setTimeout(() => {
+                            if (
+                                swiper.params.navigation &&
+                                typeof swiper.params.navigation !== "boolean"
+                            ) {
+                                swiper.params.navigation.prevEl = prevRef.current;
+                                swiper.params.navigation.nextEl = nextRef.current;
+
+                                swiper.navigation.destroy();   // reset
+                                swiper.navigation.init();      // re-init
+                                swiper.navigation.update();    // update
+                            }
+                        });
+                    }}
+
+                    onSlideChange={(swiper) => {
+                        const real = swiper.realIndex;
+                        const middleIndex = (real + 1) % slides.length;
+                        setActiveSlide(middleIndex);
+
+                        setIsBeginning(real === 0);
+                        setIsEnd(real === slides.length - 1);
+                    }}
+                    className="dp-work-slider"
+                >
+
                     {slides.map((slide, index) => (
                         <SwiperSlide key={index} className={`dp-work-slide-item ${activeSlide === index ? "active-slide" : ""}`}>
                             <div className="slide-item-icon site-radius-10">
@@ -86,6 +117,21 @@ export default function DhatuPayWorksSlider({ howDhatupayWorksTitle, howDhatupay
                         </SwiperSlide>
                     ))}
                 </Swiper>
+                <div className="custom-navigation">
+                    <button
+                        ref={prevRef}
+                        className={`custom-prev ${isBeginning ? "disabled" : ""}`}
+                    >
+                        ← Prev
+                    </button>
+
+                    <button
+                        ref={nextRef}
+                        className={`custom-next ${isEnd ? "disabled" : ""}`}
+                    >
+                        Next →
+                    </button>
+                </div>
             </div>
         </section>
     );

@@ -171,6 +171,10 @@
     .blog-image-section-icons span{ font-size: 24px; }
     .blog-section{ padding: 40px 0; }
     .blog-section li{ margin-bottom: 10px; }
+        .footer-copyright-main{ margin-top: 50px; }
+    .glass-footer-cta{ padding: 30px 80px; }
+    .footer-cta-left p{ padding-top: 10px; }
+    .footer-cta-btn{ padding: 10px 30px; }
 } 
 
 @media screen and (max-width: 1439px) {
@@ -486,6 +490,8 @@
     .sec-advance-gover-head p{ margin-bottom: 0; }
     .adv-protection-cards span{ font-size: 16px; }
     .secur-card-head .h4{ font-size: 14px; line-height: 20px; }
+        .footer-cta-left{ width: 400px; }
+    .footer-call-sec{ padding-bottom: 10px; }
 }
 
 @media screen and (max-width: 991px) {

@@ -216,6 +216,10 @@
     .testimonials .slide-item-details .h5{ font-size: 20px; line-height: 26px; margin-bottom: 5px; }
     .testimonials .text-18{ font-size: 14px; }
     .trust-content-tab-seperator{ height: 250px; }
+    .custom-prev, .custom-next { padding: 10px 15px; font-size: 12px; margin-top: 10px; }
+    .dp-work-slide-item{ padding-bottom: 50px; height: 240px !important; }
+    .slider-bottom-line{ margin-top: 30px; }
+
 }
 
 @media screen and (max-width: 1439px) { 
@@ -240,7 +244,8 @@
     .core-capablty-headings { width: 500px; }
     /* .plan-item { width: 410px; } */
     .donut-circle{ width: 290px; height: 290px; }
-    .slider-bottom-line{ margin-top: 20px; }
+    .slider-bottom-line{ margin-top: 30px; }
+    .custom-prev, .custom-next{ margin-top: 0px; }
 
     .blog-half .h5{ font-size: 18px; line-height: 26px; }
     .blog-full .h5{ font-size: 18px; line-height: 26px; }
@@ -338,6 +343,7 @@
     .abt-hero-detail-wrapper{ padding-top: 0; }
     .trust-content-tab-seperator{ height: 220px; }
     .abt-hero-section{ height: 520px; }
+    .dp-work-slide-item{  height: 240px !important; }
 }
 
 @media screen and (max-width: 1359px) {
@@ -577,7 +583,7 @@
     /* .header-nav-links a { font-size: 16px; line-height: 24px; } */
     .header-nav-links ul { gap: 20px; }
     .arrow-top-left, .arrow-bottom-left, .arrow-top-right, .arrow-bottom-right { display: none; }
-    .slider-bottom-line{ margin-top: 30px;}
+    .slider-bottom-line{ margin-top: 20px;}
     .swiper-slide{ height: 255px !important; }
     .dp-work-slide-item{ padding-bottom: 50px;}
     .dp-work-slider{ margin-top: 45px; }
@@ -616,6 +622,7 @@
     .testimonial-slide-item{ height: 160px !important; }
     .blog-half img{ height: 200px; }
     .slider-item-details{ width: 560px; }
+    .dp-work-slide-item{ height: 235px !important; }
 }
 
 @media screen and (max-width: 1023px) {
@@ -704,6 +711,7 @@
     .plan-includes{ margin: 0; }
     .testimonials .slide-item-details .h5{ font-size: 16px; line-height: 20px; }
     .testimonials .text-18{ font-size: 12px; line-height: 18px; }
+    .dp-work-slide-item{ height: 230px !important; }
 }
 
 @media screen and (max-width: 991px) {
@@ -891,6 +899,7 @@
     .regulatory-slide-item{ height: 205px !important; }
     .testimonial-slide-item{ height: 180px !important; }
     .plan-includes li{ margin-bottom: 8px; }
+    .dp-work-slide-item{ height: 225px !important; }
 }
 
 /* THIS IS FOR HOMEPAGE SLIDER ONLY */
@@ -1053,6 +1062,10 @@
     .blog-slide-item img, .blog-slide-item{ height: 400px !important; }
     .life-cycle-timeline-mob{ height: 390px; }
     .lc-mob-centerline .center-point{ top: -73px; }
+    .dp-work-slide-item{ height: 220px !important; }
+    .dp-work-slide-item .slide-item-icon { background: linear-gradient(135deg, #557CFF 0%, #693399 100%); color: var(--white); }
+    .dp-work-slide-item .h5 { color: var(--secondary-purple-bluish); }
+    .dp-work-slide-item .slider-bottom-line { display: block; background: linear-gradient(100deg, #00092E 0%, #011e80 100%); }
 
 }
 
@@ -1124,6 +1137,7 @@
     .blog-slide-item img, .blog-slide-item{ height: 350px !important; }
     .text-20{ font-size: 14px; line-height: 20px; }
     .abt-hero-detail{ height: 250px; }
+    .dp-work-slide-item{ height: 220px !important; }
 }
 
 @media screen and (max-width: 575px) {
@@ -1196,6 +1210,7 @@
     .dp-work-slide-item{ height: 220px !important; }
     .integration-accord{ margin-top: 0; }
     .abt-hero-detail{ height: 220px; }
+    .dp-work-slide-item{ height: 210px !important; }
 }
 
 @media screen and (max-width: 480px) {
@@ -1226,7 +1241,7 @@
 
     .faster-cycle { left: -70px; top: -4px; }
     .payout-success { right: -67px; bottom: 0px; }
-    .swiper-slide { height: 220px !important; }
+    /* .swiper-slide { height: 220px !important; } */
     .testimonials .slide-item-details .h5 { width: 70%; }
     /* .pricing-left-pillar img { width: 100%; } */
     .plan-item { height: max-content; }
@@ -1282,6 +1297,9 @@
     .lc-mob-centerline .center-point{  top: -52px; }
     .blog-image-section-icons{ gap: 15px; }
     .abt-hero-detail-wrapper{ height: 250px !important; padding-top: 20px; }
+    .custom-prev, .custom-next{ padding: 8px 12px; font-size: 10px; }
+    .slider-bottom-line{ margin-top: 20px; }
+    .dp-work-slide-item{ height: 200px !important; }
 }
 
 @media screen and (max-width: 400px) {
@@ -1345,6 +1363,10 @@
     .testimonials .slide-item-details .h5{ margin-bottom: 6px; }
     .donut-inner-circle .h2{ font-size: 16px; line-height: 18px; }
     .donut-inner-circle .text-18{ font-size: 10px; line-height: 12px; }
+    .redefine-payment-wrapper{ gap: 30px; }
+    .redefine-pymt-growth{ padding-bottom: 20px; }
+    .payout-success{ bottom: -13px; }
+    .faster-cycle{ top: -16px; }
 }
 
 @media screen and (max-width: 374px) {
@@ -1354,7 +1376,7 @@
     .faster-cycle{ left: -55px; }
     .payout-success{ right: -55px; }
     .hero-home{ height: 430px; }
-    .swiper-slide{ height: 240px !important; }
+    /* .swiper-slide{ height: 240px !important; } */
     .testimonial-slide-item{ height: 190px !important; }
     .lc-block-1, .lc-block-2, .lc-block-3, .lc-block-4{ width: 315px; }
     .regulatory-slide-item{ height: 190px !important; }

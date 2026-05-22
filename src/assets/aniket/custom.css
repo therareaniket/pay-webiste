@@ -391,32 +391,29 @@ body { background-color: #FAFAFA; }
 .capablty-list{ opacity: 1;}
 
 .trust-content-tab-seperator{ width: 1px; height: 300px; border-radius: 20px;  background-color: rgb(235, 235, 235); }
-.dhatu-pay-swiper-buttons{ display: flex !important; }
-.swiper-button-prev{ 
-  background-color: var(--secondary); 
-  border-radius: 50%; 
-  width: 30px; 
-  height: 30px; 
-  display: flex !important; 
-  align-items: center; 
-  justify-content: center;
-  color: #fff; 
-  position: absolute !important;
-  bottom: 0 !important;
-  right: 40px !important;
+.swiper-button-prev, .swiper-button-next { display: none !important; }
+.custom-navigation {
+  display: flex;
+  gap: 10px;
+  /* margin-top: 20px; */
+  justify-content: end;
 }
-.swiper-button-next{ 
-  background-color: var(--secondary); 
-  border-radius: 50%; 
-  width: 30px; 
-  height: 30px; 
-  display: flex !important; 
-  align-items: center; 
-  justify-content: center;
-  color: #fff; 
-  position: absolute !important;
-  bottom: 0 !important;
-  right: 0 !important;
+
+.custom-prev,
+.custom-next {
+  background: var(--secondary);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
 }
-.dp-work-slide-item{ height: 350px !important; }
-.swiper-button-prev, .swiper-button-next{ top: 90% !important; }
+
+/* Disabled style */
+.custom-prev.disabled,
+.custom-next.disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
