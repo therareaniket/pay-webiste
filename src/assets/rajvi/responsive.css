@@ -151,7 +151,7 @@
     .sec-regulatory-heading h2{ width: 450px; }
     .sec-regulatory-heading p{ width: 620px; }
     .sec-regulatory-left{ width: 600px; }
-    .sec-regulatory-right{ width: 560px; height: 320px; }
+    .sec-regulatory-right{ width: 560px; height: 290px; }
     .sec-regulatory-text-wrap h5{ margin-bottom: 10px; }
     .sec-regulatory-wrapper{ padding-top: 30px; }
     .sec-advance-gover-head{ padding-bottom: 30px; }
@@ -177,8 +177,14 @@
     .glass-footer-cta{ padding: 30px 80px; }
     .footer-cta-left p{ padding-top: 10px; }
     .footer-cta-btn{ padding: 10px 30px; }
-        .soln-stats-cards .h2, .stats-cards-5 .h2{ font-size: 22px; line-height: 30px; margin-bottom: 6px; }
+    .soln-stats-cards .h2, .stats-cards-5 .h2{ font-size: 22px; line-height: 30px; margin-bottom: 6px; }
     .soln-stats-cards .h6, .stats-cards-5 .h6{ font-size: 14px; line-height: 22px; }
+    .adv-protection-cards .h5{ font-size: 18px; line-height: 26px; }
+    .adv-protection-cards .text-18{ font-size: 14px; line-height: 20px; }
+    .secur-card-head .h4{ font-size: 18px; line-height: 26px; }
+    .secur-card-head .text-18{ font-size: 14px; line-height: 20px; }
+    .sec-regulatory-text-wrap .h5{ font-size: 18px; line-height: 26px; }
+    .sec-regulatory-text-wrap .text-18{ font-size: 14px; line-height: 20px; }
 } 
 
 @media screen and (max-width: 1439px) {
@@ -248,7 +254,7 @@
     .contact-left{ width: 380px; }
     .contact-form-top{ gap: 120px; }
     .contact-info-wrapper span{ padding-top: 2; }
-    .secur-card-head .h4{ font-size: 20px; line-height: 28px; }
+    /* .secur-card-head .h4{ font-size: 20px; line-height: 28px; } */
     .contact-left img{ width: 310px; }
 }
 
@@ -493,9 +499,15 @@
     .sec-regulatory-heading h2, .sec-regulatory-heading p{ width: 100%; }
     .sec-advance-gover-head p{ margin-bottom: 0; }
     .adv-protection-cards span{ font-size: 16px; }
-    .secur-card-head .h4{ font-size: 14px; line-height: 20px; }
+    /* .secur-card-head .h4{ font-size: 14px; line-height: 20px; } */
     .footer-cta-left{ width: 400px; }
     .footer-call-sec{ padding-bottom: 10px; }
+    .sec-gover-cards-wrapper{ flex-direction: column; gap: 10px; }
+    .secur-gover-card{ flex-direction: row; width: 100%; text-align: left;  height: 150px;}
+    .secur-gover-card img{ height: 100%; border-radius: 20px; object-fit: cover; }
+    .sol-hero-text{ padding-top: 0; }
+    .sec-regulatory-text-wrap .h5{ font-size: 16px; line-height: 22px; }
+    .adv-protection-cards .h5{ font-size: 16px; line-height: 22px; }
 }
 
 @media screen and (max-width: 991px) {
@@ -575,10 +587,7 @@
     .contact-left img{ padding-top: 0; width: 400px; }
     .contact-right{ width: 600px; } */
 
-    .sec-gover-cards-wrapper{ flex-direction: column; }
-    .secur-gover-card{ flex-direction: row; width: 100%; text-align: left;  height: 150px;}
-    .secur-gover-card img{ height: 100%; border-radius: 20px; object-fit: cover; }
-    .sol-hero-text{ padding-top: 0; }
+
 
     .adv-protection-wrapper { display: block; }
     .adv-protextion-txt-head { width: 100%; position: static; margin-bottom: 25px; }
@@ -626,9 +635,9 @@
     .animate-active.hero-btn-2 { animation: heroSlideLeft 0.9s ease-out forwards; animation-delay: 3s; }
 
     .adv-protection-swiper{ display: flex !important; }
-    .adv-protection-swiper .swiper-slide{ height: 180px !important; }
+    .adv-protection-swiper .swiper-slide{ height: 160px !important; }
     .adv-protection-swiper .swiper-pagination{ bottom: 0px !important; padding-top: 20px !important; right: 0 !important; text-align: right; }
-    .adv-protection-swiper .swiper-wrapper{ height: 230px !important; }
+    .adv-protection-swiper .swiper-wrapper{ height: 210px !important; }
     .adv-protection-swiper .swiper-pagination-bullet-active {
         opacity: 1;
         background: linear-gradient(135deg, #557cff 0%, #693399 100%);
@@ -915,8 +924,10 @@
     .stakeholders-cards{ height: 170px; }
     .stakeholders-cards .h5{ font-size: 14px; line-height: 22px; }
     .blog-image-section-icons span{ font-size: 20px; }
-    .adv-protection-swiper .swiper-slide{ height: 160px !important; }
+    .adv-protection-swiper .swiper-slide{ height: 150px !important; }
     .adv-protection-swiper { height: 200px; }
+    .sec-regulatory-text-wrap .h5, .adv-protection-swiper .swiper-slide .h5, .adv-protection-cards .h5, .secur-card-head .h4{ font-size: 14px; line-height: 22px; margin-bottom: 10px; }
+    .secur-card-head .text-18, .sec-regulatory-text-wrap .text-18{ font-size: 12px; line-height: 18px; }
 }
 
 @media screen and (max-width: 459px) {
