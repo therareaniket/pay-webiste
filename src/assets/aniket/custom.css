@@ -391,7 +391,7 @@ body { background-color: #FAFAFA; }
 .capablty-list{ opacity: 1;}
 
 .trust-content-tab-seperator{ width: 1px; height: 300px; border-radius: 20px;  background-color: rgb(235, 235, 235); }
-.swiper-button-prev, .swiper-button-next { display: none !important; }
+/* .swiper-button-prev, .swiper-button-next { display: none !important; } */
 .custom-navigation {
   display: flex;
   gap: 10px;

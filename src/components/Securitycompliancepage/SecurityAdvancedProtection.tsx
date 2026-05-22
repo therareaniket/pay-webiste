@@ -75,7 +75,7 @@ const SecurityAdvancedProtection = ({ complianceIntroTitle, complianceIntroSubti
                                     481: { slidesPerView: 1.5 },
                                     768: { slidesPerView: 2 },
                                 }}
-                                // autoplay={{ delay: 3000, disableOnInteraction: false }}
+                                autoplay={{ delay: 3000, disableOnInteraction: false }}
                                 pagination={{ clickable: true }}
                                 loop={true}
                                 className="adv-protection-swiper">

@@ -38,7 +38,7 @@ export default function AboutLifeCycle( { introTitle, introSubtitle, lifecycleTi
 
     const mobilePointsAnimation = (index: number): Variants => ({
         initialPoint: { x: '-20px', opacity: 0 },
-        animatedPoint: { x: "calc(0px - 0px)", opacity: 1, transition: { duration: 1, ease: "easeOut", delay: index * 1 } }
+        animatedPoint: { x: "calc(0px - 0px)", opacity: 1, transition: { duration: 0.6, ease: "easeOut", delay: index * 1 } }
     });
 
 
@@ -133,7 +133,7 @@ export default function AboutLifeCycle( { introTitle, introSubtitle, lifecycleTi
                                     fill="none"
                                     initial={{ pathLength: 0 }}
                                     animate={{ pathLength: isInView ? 1 : 0 }}
-                                    transition={{ duration: 7, ease: "easeOut" }}
+                                    transition={{ duration: 3, ease: "easeOut" }}
                                 />
                             </svg>
 
