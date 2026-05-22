@@ -78,7 +78,8 @@ export default function RegulatoryConfidence({ regulatoryTitle, regulatorySubtit
                                 0: { slidesPerView: 1 },
                                 576: { slidesPerView: 1.5 },
                                 700: { slidesPerView: 2 },
-                                1200: { slidesPerView: 3 }
+                                1200: { slidesPerView: 2.4 },
+                                1600: { slidesPerView: 3 }
                             }}
                             navigation={{
                                 nextEl: ".reg-next-btn",
