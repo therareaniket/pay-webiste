@@ -128,7 +128,9 @@
     .coming-soon-img{ width: 400px !important; }
 
     .comingsoon-wrapper{ gap: 220px !important; }
-    .soln-stats-cards{ width: 360px; }
+    .soln-stats-cards{ width: 360px; height: 130px; }
+    .stats-cards-5{ height: 280px; }
+    .sol-stats-card-3{ height: max-content; }
     .soln-workflow-text .h6{ margin-bottom: 0; }
     .stats-cards-5{ width: 435px; }
     .solution-stats-text h2{ width: 600px; }
@@ -171,10 +173,12 @@
     .blog-image-section-icons span{ font-size: 24px; }
     .blog-section{ padding: 40px 0; }
     .blog-section li{ margin-bottom: 10px; }
-        .footer-copyright-main{ margin-top: 50px; }
+    .footer-copyright-main{ margin-top: 50px; }
     .glass-footer-cta{ padding: 30px 80px; }
     .footer-cta-left p{ padding-top: 10px; }
     .footer-cta-btn{ padding: 10px 30px; }
+        .soln-stats-cards .h2, .stats-cards-5 .h2{ font-size: 22px; line-height: 30px; margin-bottom: 6px; }
+    .soln-stats-cards .h6, .stats-cards-5 .h6{ font-size: 14px; line-height: 22px; }
 } 
 
 @media screen and (max-width: 1439px) {
@@ -490,7 +494,7 @@
     .sec-advance-gover-head p{ margin-bottom: 0; }
     .adv-protection-cards span{ font-size: 16px; }
     .secur-card-head .h4{ font-size: 14px; line-height: 20px; }
-        .footer-cta-left{ width: 400px; }
+    .footer-cta-left{ width: 400px; }
     .footer-call-sec{ padding-bottom: 10px; }
 }
 

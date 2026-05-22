@@ -227,6 +227,7 @@
     .wf-list-item:first-child{ margin-bottom: 45px; }
     .wf-list-details p{ font-size: 14px; line-height: 22px; }
     .wf-list-item{ height: 160px; }
+
 }
 
 @media screen and (max-width: 1439px) { 
