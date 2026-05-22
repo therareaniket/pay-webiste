@@ -124,7 +124,7 @@
     .slide-item-icon{ width: 46px; height: 46px; }
     .slide-item-icon span{ font-size: 22px;}
     .pymt-box{ width: 255px; }
-    .seamless-payment img{ width: 590px;}
+    .seamless-payment img{ width: 520px; bottom: 125px; }
     .smls-pymt-box-wrapper{ gap: 30px; }
     .list-details{ width: 260px; }
     .capablty-icon{ width: 40px; height: 40px; }
@@ -146,18 +146,19 @@
     .trust-headings h2{ width: 550px; }
     .trust-headings .h6{ width: 520px; }
     .pillar-details p{ font-size: 14px; line-height: 22px;}
-    .pricing-left-pillar{ height: 640px;}
-    .plan-includes{ height: 270px; margin-top: 0; margin-bottom: 10px; }
+    .pricing-left-pillar{ height: 580px;}
+    .plan-includes{ height: 230px; margin-top: 0; margin-bottom: 10px; }
 
     .dp-work-slide-item{ height: 273px !important; }
     .capablty-lists-divider{ height: 520px }
     .list-details h5{ font-size: 20px; line-height: 28px; }
-    .list-details p{ font-size: 16px; line-height: 22px; }
+    .list-details p{ font-size: 14px; line-height: 22px; }
     .capablty-list{ height: 115px; }
     .capablty-lists-divider{ height: 370px !important; }
-    .plan-item{ height: 465px; }
+    .plan-item{ height: 420px; }
     .plans-link{ padding: 10px 0px; }  
-    .blog-full, .hm-first-blog-image-wrapper{ height: 290px; }
+    .blog-full, .hm-first-blog-image-wrapper{ height: 250px;}
+    .blog-full{ margin-bottom: 30px; }
     .abt-hero-detail-wrapper img{ transform: translate(0) !important; }
     .abt-hero-section{ height: 580px; }
     .about-hero-img{ width: 340px !important; height: 340px !important; object-fit: contain !important; }
@@ -200,7 +201,7 @@
     .blog-full .h5{ font-size: 20px; line-height: 28px; }
     .home-blog-content p{ font-size: 14px; line-height: 20px; margin-bottom: 25px; }
     .blog-writer span{ font-size: 12px; line-height: 18px; }
-    .blog-half .h5{ font-size: 20px; line-height: 28px; }
+    .blog-half .h5{ font-size: 18px; line-height: 26px; }
     .category-chip{ margin-bottom: 10px; }
     .testimonials .slide-item-details .h5{ margin-top: 35px; }
     .testimonial-slide-item{ height: 220px !important; }
@@ -227,7 +228,15 @@
     .wf-list-item:first-child{ margin-bottom: 45px; }
     .wf-list-details p{ font-size: 14px; line-height: 22px; }
     .wf-list-item{ height: 160px; }
-
+    .plan-includes li .text-18{ font-size: 14px; line-height: 20px; }
+    .pillar-details{ padding: 0; }
+    .pricing-left-pillar img{ width: 300px; margin: 0 auto; }
+    .plans-link{ font-size: 14px; line-height: 20px; }
+    .pymt-box h5{ font-size: 20px; line-height: 26px; }
+    .trust-info p{ font-size: 14px; line-height: 20px; }
+    .pymt-box .text-18{ font-size: 14px; line-height: 20px; }
+    .pymt-box{ height: 135px; }
+    .integration-tab-content img{ height: 250px; object-fit: cover; }
 }
 
 @media screen and (max-width: 1439px) { 
@@ -395,7 +404,7 @@
     .pillar-details { padding: 10px; }
     /* .pricing-wrapper, .plan-descrptn { gap: 30px; } */
     .pricing-wrapper{ gap: 30px; }
-    .plan-item { height: 475px;  }
+    .plan-item { height: 470px;  }
     .plan-includes { margin-bottom: 20px; margin-bottom:10px; }
     .plans-link { width: 90%; padding: 8px 0; }
 
@@ -487,6 +496,7 @@
     }
     .regulatory-slide-item .h5{ font-size: 18px; line-height: 22px; }
     .regulatory-slide-item{ height: 190px !important; }
+    .seamless-payment img{ bottom: 175px; }
 }   
 
 @media screen and (max-width: 1199px) {
@@ -514,6 +524,8 @@
 
     .pricing-plan-details{ width: 520px; }
     .pricing-headings{ width: 510px; }
+    .pricing-left-pillar{ height: 645px; }
+    .plan-includes{ height: 270px; }
     .plan-includes ul li .text-18{ font-size: 12px; line-height: 18px; }
 
     .trust-headings h2 { width: 440px; }
