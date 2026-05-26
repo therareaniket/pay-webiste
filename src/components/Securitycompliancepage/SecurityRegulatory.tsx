@@ -18,7 +18,7 @@ const SecurityRegulatory = ( {globalExcellenceTitle, globalExcellenceSubtitle, e
         hidden: {},
         visible: {
             transition: {
-                staggerChildren: 0.8, // delay between each child
+                staggerChildren: 0.5, // delay between each child
             }
         }
     }
@@ -26,7 +26,7 @@ const SecurityRegulatory = ( {globalExcellenceTitle, globalExcellenceSubtitle, e
     // Child variants
     const textVariants = {
         hidden: { x: -100, opacity: 0 },
-        visible: { x: 0, opacity: 1, transition: { duration: 1 } }
+        visible: { x: 0, opacity: 1, transition: { duration: 0.5 } }
     }
 
     const items = [

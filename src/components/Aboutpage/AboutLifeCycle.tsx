@@ -20,25 +20,25 @@ export default function AboutLifeCycle( { introTitle, introSubtitle, lifecycleTi
     const containerVariants: Variants  = {
         hidden: {},
         visible: {
-            transition: { staggerChildren: 1, delayChildren: 1 }
+            transition: { staggerChildren: 1, delayChildren: 0.5 }
         }
     };
 
     const pointVariants: Variants  = {
         hidden: { y: '100%', opacity: 0 },
         visible: { 
-            y: 0, opacity: 1, transition: { duration: 0.6, ease: "easeOut" }
+            y: 0, opacity: 1, transition: { duration: 0.5, ease: "easeOut" }
         }
     };
 
     const mobileLineAnimation: Variants = {
         initialLine: { height: '0%', },
-        animatedLine: { height: '100%', transition: { delay: 1, duration: 5, ease: "easeOut" } }
+        animatedLine: { height: '100%', transition: { delay: 1, duration: 0.5, ease: "easeOut" } }
     }
 
     const mobilePointsAnimation = (index: number): Variants => ({
         initialPoint: { x: '-20px', opacity: 0 },
-        animatedPoint: { x: "calc(0px - 0px)", opacity: 1, transition: { duration: 0.6, ease: "easeOut", delay: index * 1 } }
+        animatedPoint: { x: "calc(0px - 0px)", opacity: 1, transition: { duration: 0.5, ease: "easeOut", delay: index * 1 } }
     });
 
 

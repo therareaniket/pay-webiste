@@ -56,7 +56,7 @@ export default function SeamlessPayments( { seamlessTitle, seamlessSubtitle, sea
 
 	const HeroSeamlessAnimate =  { 
     	bttInitial: { y: 50, opacity: 0 },
-    	bttAnimate: { y: 0, opacity: 1, transition: { duration: 1, } },
+    	bttAnimate: { y: 0, opacity: 1, transition: { duration: 0.5, } },
 	}
 
   return (

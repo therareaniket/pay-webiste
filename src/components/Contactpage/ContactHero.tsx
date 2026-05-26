@@ -11,13 +11,13 @@ type ContactHeroProps = {
 
 const ContactHeroAnimate =  { 
     ltrInitial: { x: -100, opacity: 0 },
-    ltrAnimate: { x: 0, opacity: 1, transition: { duration: 1, delay: 2 } },
+    ltrAnimate: { x: 0, opacity: 1, transition: { duration: 0.5, delay: 1 } },
 
     ttbText: {  y: -50, opacity: 0 },
-    ttbTextAnimate: { y: 0, opacity: 1, transition: { duration: 1, } },
+    ttbTextAnimate: { y: 0, opacity: 1, transition: { duration: 0.5,  } },
     
     ttbTextDelayed: {  y: -50, opacity: 0 },
-    ttbTextAnimateDelayed: { y: 0, opacity: 1, transition: { duration: 1, delay: 1 } },
+    ttbTextAnimateDelayed: { y: 0, opacity: 1, transition: { duration: 0.5, delay: 0.5 } },
 }
 
 const ContactHero = ( {contactHeroTitle, contactHeroSubtitle}:  ContactHeroProps) => {

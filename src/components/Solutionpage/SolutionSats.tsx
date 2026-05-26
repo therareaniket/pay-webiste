@@ -12,7 +12,7 @@ type SolutionStatsProps = {
     solutionsIncludes4: string;
 }
 
-export default function SolutionStats( {solutionIntroTitle, solutionIntroSubtitle, solutionsIncludes1, solutionsIncludes2, solutionsIncludes3, solutionsIncludes4} : SolutionStatsProps ) {
+export default function SolutionStats({ solutionIntroTitle, solutionIntroSubtitle, solutionsIncludes1, solutionsIncludes2, solutionsIncludes3, solutionsIncludes4 }: SolutionStatsProps) {
 
     useEffect(() => {
 

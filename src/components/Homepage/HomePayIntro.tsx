@@ -17,7 +17,7 @@ export default function HomePayIntro( { redefiningClinicalTrialsTitle, redefinin
     const rightSpikeRef = useRef<SVGPathElement | null>(null);
 
     const target = 95; // final number
-    const duration = 2000; // animation duration in ms
+    const duration = 1000; // animation duration in ms
 
     useEffect(() => {
         let observer: IntersectionObserver | null = null;
@@ -47,7 +47,7 @@ export default function HomePayIntro( { redefiningClinicalTrialsTitle, redefinin
             path.style.strokeDashoffset = `${length}`;
             // trigger reflow to restart transition
             path.getBoundingClientRect();
-            path.style.transition = "stroke-dashoffset 2s linear";
+            path.style.transition = "stroke-dashoffset 1.2s linear";
             path.style.strokeDashoffset = "0";
         };
 

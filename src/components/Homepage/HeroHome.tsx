@@ -107,7 +107,7 @@ useEffect(() => {
                         <div className="home-hero-details">
 
                             {/* H1 with animation class */}
-                            <h1 className="text-md hero-title animate-on-scroll">
+                            <h1 className="text-sb hero-title animate-on-scroll">
                                 {heroTitle}
                             </h1>
 

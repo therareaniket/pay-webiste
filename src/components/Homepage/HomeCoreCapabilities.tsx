@@ -27,7 +27,7 @@ export default function CoreCapabilities( { coreCapabilitiesTitle, coreCapabilit
         const textBlocks = document.querySelectorAll<HTMLElement>(".capablty-list");
 
         // ----------------------- HEIGHT ANIMATION -----------------------
-        const animateHeight = (el: HTMLElement, toHeight: number, duration = 2200) => {
+        const animateHeight = (el: HTMLElement, toHeight: number, duration = 1000) => {
             let start: number | null = null;
 
             const animate = (timestamp: number) => {
@@ -41,7 +41,7 @@ export default function CoreCapabilities( { coreCapabilitiesTitle, coreCapabilit
         };
 
         // ----------------------- WIDTH ANIMATION ------------------------
-        const animateWidth = (el: HTMLElement, toWidth: number, duration = 2200) => {
+        const animateWidth = (el: HTMLElement, toWidth: number, duration = 1000) => {
             let start: number | null = null;
 
             const animate = (timestamp: number) => {
@@ -86,7 +86,7 @@ export default function CoreCapabilities( { coreCapabilitiesTitle, coreCapabilit
                             const block = textBlocks[blockIndex];
                             if (!block) return;
                             block.classList.add("capability-animate");
-                            block.style.animationDelay = `${i * 1}s`;
+                            block.style.animationDelay = `${i * 0.5}s`;
                         });
                         observer.unobserve(entry.target);
                     }
@@ -101,22 +101,22 @@ export default function CoreCapabilities( { coreCapabilitiesTitle, coreCapabilit
 
     const homeCoreCapabilities = (typeof window !== "undefined" && window.innerWidth <= 767) ? {
         initialLTR1: { x: -40, opacity: 0 },
-        animateLTR1: { x: 0, opacity: 1, transition: { duration: 1, delay: 0.5 } },
+        animateLTR1: { x: 0, opacity: 1, transition: { duration: 0.5, delay: 0 } },
         initialLTR2: { x: -40, opacity: 0 },
-        animateLTR2: { x: 0, opacity: 1, transition: { duration: 1, delay: 1 } },
+        animateLTR2: { x: 0, opacity: 1, transition: { duration: 0.5, delay: 0.5 } },
         initialLTR3: { x: -40, opacity: 0 },
-        animateLTR3: { x: 0, opacity: 1, transition: { duration: 1, delay: 1.5 } },
+        animateLTR3: { x: 0, opacity: 1, transition: { duration: 0.5, delay: 1 } },
         initialLTR4: { x: -40, opacity: 0 },
-        animateLTR4: { x: 0, opacity: 1, transition: { duration: 1, delay: 2 } },
+        animateLTR4: { x: 0, opacity: 1, transition: { duration: 0.5, delay: 1.5 } },
     } : {
         initialLTR1: { x: -100, opacity: 0 },
-        animateLTR1: { x: 0, opacity: 1, transition: { duration: 1, delay: 1 } },
+        animateLTR1: { x: 0, opacity: 1, transition: { duration: 0.5, delay: 0 } },
         initialLTR2: { x: -100, opacity: 0 },
-        animateLTR2: { x: 0, opacity: 1, transition: { duration: 1, delay: 3 } },
+        animateLTR2: { x: 0, opacity: 1, transition: { duration: 0.5, delay: 1 } },
         initialLTR3: { x: 100, opacity: 0 },
-        animateLTR3: { x: 0, opacity: 1, transition: { duration: 1, delay: 2 } },
+        animateLTR3: { x: 0, opacity: 1, transition: { duration: 0.5, delay: 0.5 } },
         initialLTR4: { x: 100, opacity: 0 },
-        animateLTR4: { x: 0, opacity: 1, transition: { duration: 1, delay: 4 } },
+        animateLTR4: { x: 0, opacity: 1, transition: { duration: 0.5, delay: 1.5 } },
     }
 
     return (

@@ -29,7 +29,7 @@ type FutureOfPaymentsProps = {
 
 const AboutPaymentAnimate =  { 
     ltrInitial: { x: '-20px', opacity: 0 },
-    ltrAnimate: { x: 0, opacity: 1, transition: { duration: 1 } },
+    ltrAnimate: { x: 0, opacity: 1, transition: { duration: 0.5 } },
 }
 
 export default function FutureOfPayments( {clinicalTrialsPaymentsTitle, clinicalTrialsPaymentsSubtitle, trialsPaymentsList}: FutureOfPaymentsProps) {
@@ -82,7 +82,7 @@ const startSVG = (svg: Element) => {
                 .detailed-text {
                     opacity: 0;
                     transform: translateX(-80px);
-                    transition: all 0.7s ease-out;
+                    transition: all 0.1s ease-out;
                 }
                 .detailed-text.animate-in {
                     opacity: 1;

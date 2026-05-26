@@ -48,7 +48,7 @@ export default function HomeTestimonials({testimonialsTitle, testimonialList}: T
                         modules={[Autoplay, Pagination]}
                         spaceBetween={10}
                         slidesPerView={1}
-                        autoplay={{ delay: 3000, disableOnInteraction: false }}
+                        // autoplay={{ delay: 3000, disableOnInteraction: false }}
                         pagination={{ clickable: true }}
                         loop={true}
                         className="testimonial-slider">

@@ -32,17 +32,17 @@ export default function DhatuPayWorksSlider( { howDhatupayWorksTitle, howDhatupa
         },
         {
             icon: "icon-hm-config-contract",
-            title: dhatupayWorksSlider.homeWorksCard1Title,
+            title: dhatupayWorksSlider.homeWorksCard2Title,
             desc: dhatupayWorksSlider.homeWorksCard2Subtitle,
         },
         {
             icon: "icon-pay-via",
-            title: dhatupayWorksSlider.homeWorksCard1Title,
+            title: dhatupayWorksSlider.homeWorksCard3Title,
             desc: dhatupayWorksSlider.homeWorksCard3Subtitle,
         },
         {
             icon: "icon-disburse",
-            title: dhatupayWorksSlider.homeWorksCard1Title,
+            title: dhatupayWorksSlider.homeWorksCard4Title,
             desc: dhatupayWorksSlider.homeWorksCard4Subtitle,
         }
     ];
@@ -57,19 +57,19 @@ export default function DhatuPayWorksSlider( { howDhatupayWorksTitle, howDhatupa
 
                 <Swiper
                     modules={[Autoplay, Pagination]}
-                    spaceBetween={10}
+                    spaceBetween={20}
                     slidesPerView={1}
                     breakpoints={{
-                        600: { slidesPerView: 1 },
-                        800: { slidesPerView: 2 },
-                        1200: { slidesPerView: 3 }
+                        0: { slidesPerView: 1 },
+                        768: { slidesPerView: 2 },
+                        1440: { slidesPerView: 3 }
                     }}
-                    autoplay={{ delay: 3000, disableOnInteraction: false }}
+                    // autoplay={{ delay: 3000, disableOnInteraction: false }}
                     pagination={{ clickable: true }}
                     loop={true}
                     // navigation
                     // onSlideChange={(swiper) => setActiveSlide(swiper.realIndex)}
-                    onSlideChange={(swiper) => { const real = swiper.realIndex; const middleIndex = (real + 1) % slides.length;  setActiveSlide(middleIndex); }}
+                    onSlideChange={(swiper) => { const real = swiper.realIndex; const middleIndex = (real) % slides.length;  setActiveSlide(middleIndex); }}
                     className="dp-work-slider">
                     {slides.map((slide, index) => (
                         <SwiperSlide key={index} className={`dp-work-slide-item ${activeSlide === index ? "active-slide" : ""}`}>
@@ -82,7 +82,7 @@ export default function DhatuPayWorksSlider( { howDhatupayWorksTitle, howDhatupa
                                 <p className="text-18">{slide.desc}</p>
                             </div>
 
-                            <span className="slider-bottom-line"></span>
+                            {/* <span className="slider-bottom-line"></span> */}
                         </SwiperSlide>
                     ))}
                 </Swiper>

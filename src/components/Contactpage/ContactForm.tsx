@@ -31,13 +31,13 @@ const ContactForm = ( {contactFormTitle, contactFormSubtitle, contactEmail, cont
                             // Add class with staggered delay
                             setTimeout(() => {
                                 card.classList.add('slide-from-top')
-                            }, index * 200) // 200ms between cards
+                            }, index * 500) // 200ms between cards
                         })
                         observer.unobserve(wrapper)
                     }
                 })
             },
-            { threshold: 0.3 } // trigger when 30% visible
+            { threshold: 0.5 } // trigger when 30% visible
         )
 
         observer.observe(wrapper)

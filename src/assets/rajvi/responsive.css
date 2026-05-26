@@ -86,6 +86,13 @@
     .footer-copyright-main{ padding-top: 0; }
     .adv-protection-cards h4{ padding-bottom: 0; }
     .sec-advance-gover-head .h6{ margin-bottom: 0; }
+
+    .home-hero-main-wrapper{ height: 700px; }
+    .hero-hand-left{ width: 600px; }
+    .home-hero-text-wrapper{ width: 575px; }
+    .home-stripe-wrapper h6{ font-size: 14px; line-height: 20px; }
+    .home-stripe-wrapper{ padding: 10px 0; }
+    .home-left-arrow-wrapper{ width: 70px; height: 70px; bottom: 160px; left: 55px; }
 }
 
 @media screen and (max-width: 1599px) {
@@ -185,6 +192,11 @@
     .secur-card-head .text-18{ font-size: 14px; line-height: 20px; }
     .sec-regulatory-text-wrap .h5{ font-size: 18px; line-height: 26px; }
     .sec-regulatory-text-wrap .text-18{ font-size: 14px; line-height: 20px; }
+
+    .home-hero-text-wrapper{ width: 570px; right: 145px; }
+    .home-hero-button-wrapper a{ font-size: 14px; line-height: 20px; }
+    .home-hero-main-wrapper{ height: 620px; }
+    .home-hero-text-wrapper p{ margin-bottom: 30px; }
 } 
 
 @media screen and (max-width: 1439px) {
@@ -256,6 +268,13 @@
     .contact-info-wrapper span{ padding-top: 2; }
     /* .secur-card-head .h4{ font-size: 20px; line-height: 28px; } */
     .contact-left img{ width: 310px; }
+
+    .home-hero-text-wrapper{ width: 500px; }
+    .hero-hand-left{ width: 550px; }
+    .home-hero-main-wrapper{ height: 580px; }
+    .home-stripe-wrapper{ bottom: 105px; gap: 12px; }
+    .home-stripe-1{ gap: 12px; }
+    .home-left-arrow-wrapper{ width: 60px; height: 60px; bottom: 145px; }
 }
 
 @media screen and (max-width: 1359px) {
@@ -346,6 +365,12 @@
     .contact-form button{ margin-bottom: 0; }
     .contact-info-wrapper{ padding-top: 50px; }
     .contact-form input, .contact-form textarea{ padding: 15px; }
+
+    .home-hero-text-wrapper{ width: 410px; }
+    .home-hero-main-wrapper{ height: 560px; }
+    .hero-hand-left{ width: 505px; }
+    .home-stripe-wrapper{ bottom: 98px; }
+    .home-left-arrow-wrapper{ bottom: 135px; left: 50px; }
 }   
 
 @media screen and (max-width: 1199px) {
@@ -434,6 +459,18 @@
     .blog-section{ padding: 30px 0; }
     .advance-security-pro-text{ gap: 15px; }
     .secur-card-head .h4{ font-size: 16px; line-height: 20px; margin-bottom: 8px; }
+
+    .home-hero-text-wrapper{ width: 460px; }
+    .hero-hand-left{ width: 410px; }
+    .home-hero-main-wrapper{ height: 500px; }
+    .home-stripe-wrapper h6{ font-size: 12px; line-height: 16px; }
+    .home-stripe-wrapper{ bottom: 80px; }
+    .home-hero-text-wrapper p{ margin-bottom: 25px; }
+    .home-hero-left-box{ width: 380px; }
+
+    .home-left-arrow-wrapper{ width: 50px; height: 50px; bottom: 120px; left: 45px; }
+    .hero-circle-arrow-backgorund{ width: 25px; height: 25px; }
+    .hero-circle-arrow-backgorund img{ width: 8px; }
 }
 
 @media screen and (max-width: 1023px) {
@@ -508,6 +545,11 @@
     .sol-hero-text{ padding-top: 0; }
     .sec-regulatory-text-wrap .h5{ font-size: 16px; line-height: 22px; }
     .adv-protection-cards .h5{ font-size: 16px; line-height: 22px; }
+
+    .home-hero-main-wrapper{ height: 465px; }
+    .home-hero-text-wrapper{ width: 395px; }
+    .hero-hand-left{ width: 385px; }
+    .home-left-arrow-wrapper{ bottom: 105px; left: 35px; }
 }
 
 @media screen and (max-width: 991px) {
@@ -644,6 +686,13 @@
         border-radius: 5px;
         width: 20px;
     }
+    .home-hero-text-wrapper{ width: 415px; padding-top: 45px; }
+    .home-hero-main-wrapper{ height: 420px; }
+    .hero-hand-left{ width: 335px; }
+    .home-hero-left-box{ width: 320px; }
+    .hero-background-circle{ width: 400px; height: 400px; }
+    .home-hero-button-wrapper a{ font-size: 12px; line-height: 20px; }
+    .home-left-arrow-wrapper{ bottom: 90px; left: 30px; width: 45px; height: 45px; }
 } 
 
 @media screen and (max-width: 839px) { 
@@ -689,6 +738,13 @@
     .SecurityRegulatoryImage{ width: 100%; height: 300px; }
     .sec-regulatory-left{ gap: 20px; }
     /* .capablty-lists:first-child, .capablty-lists:last-child{ gap: 40px; } */
+
+    .home-hero-text-wrapper{ width: 370px; padding-top: 30px; }
+    .home-hero-left-box{ width: 290px; }
+    .home-stripe-wrapper h6{ font-size: 10px; line-height: 10px; }
+    .home-stripe-wrapper{ bottom: 70px; }
+    .hero-hand-left{ width: 310px; }
+    .home-hero-main-wrapper{ height: 420px; }
 }
 
 @media screen and (max-width: 767px) {
@@ -724,9 +780,8 @@
     .sol-stats-list-desc{ width: 100%; }
     .soln-stats-img{ width: 100%; }
     /* .soln-stats-cards{ width: 210px; } */
-    .stats-cards-5{ width: 100%; padding: 20px; }
     .sol-stats-card-1, .sol-stats-card-2, .stats-cards-5{ flex-direction: row; }
-    .stats-cards-5{ width: 100%; height: 150px;}
+    .stats-cards-5{ width: 100%; height: 130px; padding: 20px;}
     .stats-cards-5 .h6{ width: 50%; text-align: left; padding-left: 20px; }
     .soln-stats-cards{ width: 250px; height: 90px; }
     .sol-stats-cards{ flex-direction: column; }
@@ -818,6 +873,14 @@
     .contact-left img{ width: 260px; }
     .sec-regulatory-left{ gap: 15px; }
     .sec-advance-gover-head{ padding-bottom: 25px; }
+
+    .hero-hand-left{ display: none;}
+    /* .home-hero-left-box{ display: none; } */
+    .home-hero-detail-text{ justify-content: start; }
+    .home-hero-text-wrapper{ left: 90px; width: 460px; }
+    .home-hero-main-wrapper{ height: 400px; }
+    .home-hero-button-wrapper a:nth-last-child(2){ margin-right: 10px; }
+    .home-left-arrow-wrapper{ left: 80% !important; bottom: 80px; }
 }
 
 @media screen and (max-width: 639px) {
@@ -864,6 +927,8 @@
     .sec-regulatory-wrapper{ padding-top: 20px; }
     .adv-protection-swiper .swiper-slide{ height: 160px !important; }
     .adv-protection-swiper{ height: 200px; }
+
+    .home-hero-text-wrapper{ width: 490px; left: 28px; }
 }
 
 @media screen and (max-width: 575px) {
@@ -897,6 +962,9 @@
     .row-2{ flex-direction: column; }
     .adv-protection-swiper .swiper-slide{ height: 180px !important; }
     .adv-protection-swiper{ height: 220px; }
+    .home-hero-text-wrapper{ width: 420px; }
+    .home-hero-left-box{ width: 200px; }
+    .hero-background-circle{ right: -68px; }
 }
 
 @media screen and (max-width: 480px) {
@@ -955,6 +1023,9 @@
     .stats-cards-5{ flex-direction: column; padding: 20px; }
     .stats-cards-5 .h6{ width: 100%; padding-left: 0; }
     .abt-hero-detail{ padding-top: 0px !important; }
+    .home-hero-text-wrapper{ width: 350px; }
+    .home-hero-main-wrapper{ height: 370px; }
+    .home-left-arrow-wrapper{ bottom: 60px; }
 }
 
 @media screen and (max-width: 400px) {
@@ -976,11 +1047,16 @@
     .comingsoon{ height: 600px !important; }
     .comingsoon-wrapper{ height: 500px !important; }
     .comingsoon-content img { width: 200px !important; } 
+    .secur-gover-card img{ height: 170px; }
+    .home-hero-text-wrapper{ width: 325px; }
+    .home-hero-left-box{ width: 140px; }
+    .home-hero-text-wrapper{ left: 18px; }
 }
 
 @media screen and (max-width: 374px) {
-    .adv-protection-swiper .swiper-slide{ height: 180px !important; }
+    .adv-protection-swiper .swiper-slide{ height: 170px !important; }
     .adv-protection-swiper{ height: 220px; }
+    .home-hero-text-wrapper{ width: 310px; }
 }
 
 @media screen and (max-width: 359px) {

@@ -55,21 +55,22 @@ const Header = () => {
           </Link>
 
           {/* Desktop Nav */}
-          <div className="header-nav-links">
-            <ul>
-              <li className="text-16 text-rg"><Link href="/About" className={`${isActive("/About") ? "active-link-header" : ""}`}>About</Link></li>
-              <li className="text-16 text-rg"><Link href="/Solutions" className={`${isActive("/Solutions") ? "active-link-header" : ""}`}>Solutions</Link></li>
-              <li className="text-16 text-rg"><Link href="/SecurityCompliance" className={`${isActive("/SecurityCompliance") ? "active-link-header" : ""}`}>Security & Compliance</Link></li>
-              <li className="text-16 text-rg"><Link href="/BlogListing" className={`${isActive("/BlogListing") ? "active-link-header" : ""}`}>Resources</Link></li>
-              {/* Contact */}
-              <div className="contact-link site-radius-50">
-                <Link href="/Contact" className={`header-contact-link text-white text-16 text-rg site-radius-50 link-padding ${isActive("/Contact") ? "contact-active-header" : ""}`}>
-                  Contact
-                </Link>
-              </div>
-            </ul>
+          <div className="desktop-header-nav-links">
+            <div className="header-nav-links">
+              <ul>
+                <li className="text-16 text-rg"><Link href="/About" className={`${isActive("/About") ? "active-link-header" : ""}`}>About</Link></li>
+                <li className="text-16 text-rg"><Link href="/Solutions" className={`${isActive("/Solutions") ? "active-link-header" : ""}`}>Solutions</Link></li>
+                <li className="text-16 text-rg"><Link href="/SecurityCompliance" className={`${isActive("/SecurityCompliance") ? "active-link-header" : ""}`}>Security & Compliance</Link></li>
+                <li className="text-16 text-rg"><Link href="/BlogListing" className={`${isActive("/BlogListing") ? "active-link-header" : ""}`}>Resources</Link></li>
+                {/* Contact */}
+              </ul>
+            </div>
+            <div className="contact-link site-radius-50">
+              <Link href="/Contact" className={`header-contact-link text-black text-16 text-rg site-radius-50 link-padding ${isActive("/Contact") ? "contact-active-header" : ""}`}>
+                Contact
+              </Link>
+            </div>
           </div>
-
 
           {/* Hamburger */}
           <div

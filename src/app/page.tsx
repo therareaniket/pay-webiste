@@ -3,6 +3,7 @@ import HomeBlogHighlight from "@/components/Homepage/HomeBlogHighlight";
 import CoreCapabilities from "@/components/Homepage/HomeCoreCapabilities";
 import HomeDhatuPayWorks from "@/components/Homepage/HomeDhatuPayWorks";
 import HomeFAQs from "@/components/Homepage/HomeFAQs";
+import HomeHeroRestructure from "@/components/Homepage/HomeHeroRestructure";
 import HomePayIntro from "@/components/Homepage/HomePayIntro";
 import Pricing from "@/components/Homepage/HomePricing";
 import SeamlessPayments from "@/components/Homepage/HomeSeamlessPayments";
@@ -242,7 +243,8 @@ export default async function HomePage() {
 	return (
 		<>
 			<main>
-				<HeroHome heroTitle={HomeFetch.heroTitle} heroSubtitle={HomeFetch.heroSubtitle} heroCta1={HomeFetch.heroCta1} heroCta2={HomeFetch.heroCta2} />
+				<HomeHeroRestructure />
+				{/* <HeroHome heroTitle={HomeFetch.heroTitle} heroSubtitle={HomeFetch.heroSubtitle} heroCta1={HomeFetch.heroCta1} heroCta2={HomeFetch.heroCta2} /> */}
 
 				<HomePayIntro redefiningClinicalTrialsTitle={HomeFetch.redefiningClinicalTrialsTitle} redefiningClinicalTrialsPara1={HomeFetch.redefiningClinicalTrialsPara1} redefiningClinicalTrialsPara2={HomeFetch.redefiningClinicalTrialsPara2} />
 
