@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import { useEffect, useRef, useState } from "react";
 
@@ -81,13 +81,13 @@ export default function HomePayIntro( { redefiningClinicalTrialsTitle, redefinin
     const fasterStyle = {
         transform: animateBoxes ? "translateX(0)" : "translateX(-200px)",
         opacity: animateBoxes ? 1 : 0,
-        transition: "transform 1.5s ease-out, opacity 1s ease-out",
+        transition: "transform 1s ease-out, opacity 1s ease-out",
     };
 
     const payoutStyle = {
         transform: animateBoxes ? "translateX(0)" : "translateX(200px)",
         opacity: animateBoxes ? 1 : 0,
-        transition: "transform 1.5s ease-out, opacity 1s ease-out",
+        transition: "transform 1s ease-out, opacity 1s ease-out",
     };
 
     return (

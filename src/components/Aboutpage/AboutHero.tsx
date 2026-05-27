@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import Image from "next/image";
 import { motion } from 'framer-motion';
@@ -35,7 +35,6 @@ export default function AboutHero ( { aboutHeroTitle, aboutHeroSubtitle}: AboutH
 
                         <div className="subpage-hero-details abt-hero-detail">
                             <motion.h1 className="text-md" variants={AboutHeroAnimate} initial="ttbText" animate="ttbTextAnimate" viewport={{ once: true }}>{aboutHeroTitle}</motion.h1>
-                            {/* <h1 className="text-sb">Simplifying Global Clinical Trial Payments</h1> */}
 
                             <motion.p className="h6 text-rg" variants={AboutHeroAnimate} initial="ttbTextDelayed" animate="ttbTextAnimateDelayed" viewport={{ once: true }}>{aboutHeroSubtitle}</motion.p>
                         </div>

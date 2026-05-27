@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import Image from "next/image";
 import React from "react";
@@ -35,7 +35,6 @@ const ContactHero = ( {contactHeroTitle, contactHeroSubtitle}:  ContactHeroProps
 
                     <div className="subpage-hero-details abt-hero-detail">
                         <motion.h1 className="text-md" variants={ContactHeroAnimate} initial="ttbText" animate="ttbTextAnimate" viewport={{ once: true }}>{contactHeroTitle}</motion.h1>
-                        {/* <h1 className="text-sb">Simplifying Global Clinical Trial Payments</h1> */}
 
                         <motion.p className="h6 text-rg" variants={ContactHeroAnimate} initial="ttbTextDelayed" animate="ttbTextAnimateDelayed" viewport={{ once: true }}>{contactHeroSubtitle}</motion.p>
                     </div>

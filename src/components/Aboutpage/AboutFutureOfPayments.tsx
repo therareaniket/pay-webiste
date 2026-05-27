@@ -1,9 +1,8 @@
-"use client";
+'use client'
 
 import Image from "next/image";
 import { useEffect } from "react";
 import { motion } from 'framer-motion';
-import { once } from "events";
 
 type FutureOfPaymentsProps = {
     clinicalTrialsPaymentsTitle: string;
@@ -27,24 +26,24 @@ type FutureOfPaymentsProps = {
     };
 }
 
-const AboutPaymentAnimate =  { 
+const AboutPaymentAnimate = {
     ltrInitial: { x: '-20px', opacity: 0 },
     ltrAnimate: { x: 0, opacity: 1, transition: { duration: 0.5 } },
 }
 
-export default function FutureOfPayments( {clinicalTrialsPaymentsTitle, clinicalTrialsPaymentsSubtitle, trialsPaymentsList}: FutureOfPaymentsProps) {
+export default function FutureOfPayments({ clinicalTrialsPaymentsTitle, clinicalTrialsPaymentsSubtitle, trialsPaymentsList }: FutureOfPaymentsProps) {
 
     useEffect(() => {
         const svgs = document.querySelectorAll(".animate-svg");
         const texts = document.querySelectorAll(".detailed-text");
 
-const startSVG = (svg: Element) => {
-    const animations = svg.querySelectorAll("animate");
+        const startSVG = (svg: Element) => {
+            const animations = svg.querySelectorAll("animate");
 
-    animations.forEach((a) => {
-        (a as SVGAnimateElement).beginElement();
-    });
-};
+            animations.forEach((a) => {
+                (a as SVGAnimateElement).beginElement();
+            });
+        };
 
         const observer = new IntersectionObserver(
             (entries) => {
@@ -106,7 +105,6 @@ const startSVG = (svg: Element) => {
                         {/* -------------------------------------- */}
                         <div className="payment-list-item payment-purple-section glass-bg">
                             <div className="item-details">
-
                                 <svg className="animate-svg" width="40" height="296" viewBox="0 0 40 296" fill="none">
                                     <line x1="20" y1="296" x2="20" y2="296" stroke="white" strokeWidth="2">
                                         <animate attributeName="y2" from="296" to="42" dur="1s" begin="indefinite" fill="freeze" />
@@ -129,7 +127,7 @@ const startSVG = (svg: Element) => {
 
                                 <div className="detailed-text">
                                     <h3 className="h5 text-md">The Challenge</h3>
-                                    <motion.ul variants={AboutPaymentAnimate} initial="ltrInitial" whileInView="ltrAnimate" viewport={{once: true, amount: 1 }}>
+                                    <motion.ul variants={AboutPaymentAnimate} initial="ltrInitial" whileInView="ltrAnimate" viewport={{ once: true, amount: 1 }}>
                                         <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="tick" />{trialsPaymentsList.challengePoint1}</li>
                                         <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="tick" />{trialsPaymentsList.challengePoint2}</li>
                                         <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="tick" />{trialsPaymentsList.challengePoint3}</li>
@@ -141,13 +139,11 @@ const startSVG = (svg: Element) => {
                             <Image src="/images/aboutpage/future-pymnt-challenge-webp.webp" alt="" width={562} height={339} className="site-radius-20" />
                         </div>
 
-
                         {/* -------------------------------------- */}
                         {/* GREEN SECTION */}
                         {/* -------------------------------------- */}
                         <div className="payment-list-item payment-green-section glass-bg">
                             <div className="item-details">
-
                                 <svg className="animate-svg" width="40" height="296" viewBox="0 0 40 296" fill="none">
                                     <line x1="20" y1="296" x2="20" y2="296" stroke="white" strokeWidth="2">
                                         <animate attributeName="y2" from="296" to="42" dur="1s" begin="indefinite" fill="freeze" />
@@ -170,7 +166,7 @@ const startSVG = (svg: Element) => {
 
                                 <div className="detailed-text">
                                     <h3 className="h5 text-md">The Solution</h3>
-                                    <motion.ul variants={AboutPaymentAnimate} initial="ltrInitial" whileInView="ltrAnimate" viewport={{once: true, amount: 1 }}>
+                                    <motion.ul variants={AboutPaymentAnimate} initial="ltrInitial" whileInView="ltrAnimate" viewport={{ once: true, amount: 1 }}>
                                         <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />{trialsPaymentsList.theSolutionPoint1}</li>
                                         <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />{trialsPaymentsList.theSolutionPoint2}</li>
                                         <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />{trialsPaymentsList.theSolutionPoint3}</li>
@@ -182,13 +178,11 @@ const startSVG = (svg: Element) => {
                             <Image src="/images/aboutpage/future-pymnt-solutions-webp.webp" alt="" width={562} height={339} className="site-radius-20" />
                         </div>
 
-
                         {/* -------------------------------------- */}
                         {/* BLUE SECTION */}
                         {/* -------------------------------------- */}
                         <div className="payment-list-item payment-blue-section glass-bg">
                             <div className="item-details">
-
                                 <svg className="animate-svg" width="40" height="296" viewBox="0 0 40 296" fill="none">
                                     <line x1="20" y1="296" x2="20" y2="296" stroke="white" strokeWidth="2">
                                         <animate attributeName="y2" from="296" to="42" dur="1s" begin="indefinite" fill="freeze" />
@@ -211,7 +205,7 @@ const startSVG = (svg: Element) => {
 
                                 <div className="detailed-text">
                                     <h3 className="h5 text-md">The Difference</h3>
-                                    <motion.ul variants={AboutPaymentAnimate} initial="ltrInitial" whileInView="ltrAnimate" viewport={{once: true, amount: 1 }}>
+                                    <motion.ul variants={AboutPaymentAnimate} initial="ltrInitial" whileInView="ltrAnimate" viewport={{ once: true, amount: 1 }}>
                                         <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />{trialsPaymentsList.theDifferencePoint1}</li>
                                         <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />{trialsPaymentsList.theDifferencePoint2}</li>
                                         <li className="text-18"><Image src="/images/homepage/pricing-includes-check-white.svg" width={15} height={11} alt="" />{trialsPaymentsList.theDifferencePoint3}</li>
@@ -222,7 +216,6 @@ const startSVG = (svg: Element) => {
 
                             <Image src="/images/aboutpage/future-pymnt-diffrence.webp" alt="" width={562} height={339} className="site-radius-20" />
                         </div>
-
                     </div>
                 </div>
             </section>

@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import Image from "next/image";
 import { useEffect, useRef } from "react";
@@ -13,7 +13,7 @@ type FinancialWorkflowProps = {
 };
 
 
-export default function FinancialWorkflow( {coreWorkflowsTitle, coreWorkflowsSubtitle, reconciliationDetails, analyticsDetails, queueHealthDetails, riskMonitoringDetails}: FinancialWorkflowProps ) {
+export default function FinancialWorkflow({ coreWorkflowsTitle, coreWorkflowsSubtitle, reconciliationDetails, analyticsDetails, queueHealthDetails, riskMonitoringDetails }: FinancialWorkflowProps) {
     const sectionRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {

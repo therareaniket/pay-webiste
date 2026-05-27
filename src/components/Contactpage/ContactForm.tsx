@@ -13,7 +13,7 @@ type ContactFormProps = {
     contactLocation: string;
 }
 
-const ContactForm = ( {contactFormTitle, contactFormSubtitle, contactEmail, contactPhone, contactLocation}: ContactFormProps ) => {
+const ContactForm = ({ contactFormTitle, contactFormSubtitle, contactEmail, contactPhone, contactLocation }: ContactFormProps) => {
     const infoWrapperRef = useRef<HTMLDivElement>(null)
 
     useEffect(() => {
@@ -22,22 +22,20 @@ const ContactForm = ( {contactFormTitle, contactFormSubtitle, contactEmail, cont
 
         const cards = wrapper.querySelectorAll<HTMLDivElement>('.info-card')
 
-        // Add IntersectionObserver
         const observer = new IntersectionObserver(
             (entries, observer) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         cards.forEach((card, index) => {
-                            // Add class with staggered delay
                             setTimeout(() => {
                                 card.classList.add('slide-from-top')
-                            }, index * 500) // 200ms between cards
+                            }, index * 500)
                         })
                         observer.unobserve(wrapper)
                     }
                 })
             },
-            { threshold: 0.5 } // trigger when 30% visible
+            { threshold: 0.5 }
         )
 
         observer.observe(wrapper)
@@ -56,23 +54,9 @@ const ContactForm = ( {contactFormTitle, contactFormSubtitle, contactEmail, cont
                         <Image src="/images/contactpage/ContactFormGif.png" alt='ContactForm' width={559} height={367} priority={false} />
                     </div>
 
-                    {/* <div className="contact-right">
-                        <form className="contact-form">
-                            <div className="row-2">
-                                <input className='site-radius-10 text-rg h6 text-grey' type="text" placeholder="Full Name" />
-                                <input className='site-radius-10 text-rg h6 text-grey' type="email" placeholder="Email Address" />
-                            </div>
-
-                            <input className='site-radius-10 text-rg h6 text-grey form-organization' type="text" placeholder="Organization Name" />
-                            <textarea className='site-radius-10 text-rg h6 text-grey form-message' placeholder="Your Message"></textarea>
-                            <button className='btn-padding text-rg h6 text-grey site-radius-100' type="submit">Send message</button>
-                        </form>
-                    </div> */}
-
                     <FormSubmission />
                 </div>
 
-                {/* Animated Info Cards */}
                 <div className="contact-info-wrapper" ref={infoWrapperRef}>
                     <div className="info-card info-card-mail site-radius-20">
                         <span className="icon-contact-mail"></span>

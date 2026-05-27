@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import { useEffect } from "react";
 import Image from "next/image";
@@ -26,7 +26,6 @@ export default function CoreCapabilities( { coreCapabilitiesTitle, coreCapabilit
         const horizontalLines = document.querySelectorAll<HTMLElement>(".capablty-divider");
         const textBlocks = document.querySelectorAll<HTMLElement>(".capablty-list");
 
-        // ----------------------- HEIGHT ANIMATION -----------------------
         const animateHeight = (el: HTMLElement, toHeight: number, duration = 1000) => {
             let start: number | null = null;
 
@@ -40,7 +39,6 @@ export default function CoreCapabilities( { coreCapabilitiesTitle, coreCapabilit
             requestAnimationFrame(animate);
         };
 
-        // ----------------------- WIDTH ANIMATION ------------------------
         const animateWidth = (el: HTMLElement, toWidth: number, duration = 1000) => {
             let start: number | null = null;
 
@@ -54,12 +52,10 @@ export default function CoreCapabilities( { coreCapabilitiesTitle, coreCapabilit
             requestAnimationFrame(animate);
         };
 
-        // ----------------------- OBSERVER -------------------------------
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        // Animate VERTICAL LINES
                         verticalLines.forEach((line) => {
                             const parent = line.parentElement as HTMLElement | null;
                             if (!parent) return;
@@ -67,7 +63,6 @@ export default function CoreCapabilities( { coreCapabilitiesTitle, coreCapabilit
                             animateHeight(line, targetHeight);
                         });
 
-                        // Animate HORIZONTAL LINES
                         horizontalLines.forEach((line) => {
                             const parent = line.parentElement as HTMLElement | null;
                             if (!parent) return;
@@ -76,10 +71,10 @@ export default function CoreCapabilities( { coreCapabilitiesTitle, coreCapabilit
                         });
 
                         const animationOrder = [
-                            0, // Left #1 (Global Coverage)
-                            2, // Right #1 (Automated Payments)
-                            1, // Left #2 (AI Automation)
-                            3  // Right #2 (Compliance Built-In)
+                            0, 
+                            2, 
+                            1, 
+                            3  
                         ];
 
                         animationOrder.forEach((blockIndex, i) => {
@@ -183,56 +178,6 @@ export default function CoreCapabilities( { coreCapabilitiesTitle, coreCapabilit
                             </motion.div>
                         </div>
                     </div>
-
-
-                    {/* <div className="capablty-responsive-lists-wrapper">
-                                                <div className="capablty-lists capablty-left-lists">
-                            <div className="capablty-list capablty-left-list">
-                                <div className="capablty-icon site-radius-10">
-                                    <Image src="/images/homepage/icon-globe-coverage.svg" width={32} height={32} alt="" />
-                                </div>
-                                <div className="list-details">
-                                    <h5>Global Coverage</h5>
-                                    <p>Manage multi-currency transactions, FX conversions, and regional tax regulations seamlessly.</p>
-                                </div>
-                            </div>
-
-
-                            <div className="capablty-list capablty-left-list">
-                                <div className="capablty-icon site-radius-10">
-                                    <Image src="/images/homepage/icon-ai-automation.svg" width={32} height={32} alt="" />
-                                </div>
-                                <div className="list-details">
-                                    <h5>AI-Powered Automation</h5>
-                                    <p>Intelligent algorithms predict, optimize, and execute payment workflows efficiently.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                                                <div className="capablty-lists capablty-right-lists">
-                            <div className="capablty-list capablty-right-list">
-                                <div className="capablty-icon site-radius-10">
-                                    <Image src="/images/homepage/icon-auto-payments.svg" width={32} height={32} alt="" />
-                                </div>
-                                <div className="list-details">
-                                    <h5>Automated Payments</h5>
-                                    <p>Streamline disbursements and approvals with smart, hands-free workflows.</p>
-                                </div>
-                            </div>
-
-
-
-                            <div className="capablty-list capablty-right-list">
-                                <div className="capablty-icon site-radius-10">
-                                    <Image src="/images/homepage/icon-in-built-compliance.svg" width={32} height={32} alt="" />
-                                </div>
-                                <div className="list-details">
-                                    <h5>Compliance Built-In</h5>
-                                    <p>Achieve 21 CFR Part 11 readiness with KYC/AML checks and automated tax enforcement.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
                 </div>
             </div>
         </section>

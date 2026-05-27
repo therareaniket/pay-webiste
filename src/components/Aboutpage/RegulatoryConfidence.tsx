@@ -1,4 +1,5 @@
-"use client"
+'use client'
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
@@ -45,13 +46,6 @@ export default function RegulatoryConfidence({ regulatoryTitle, regulatorySubtit
             bgColor: "bg-[#FEE4D2]",
             iconBgColor: "bg-[#FBB98A]",
         }
-        // {
-        //     icon: "icon-vendor-regualatory-payments",
-        //     title: "Data Residency",
-        //     desc: regulatorySlide4Details,
-        //     bgColor: "bg-[#FEE4D2]",
-        //     iconBgColor: "bg-[#FBB98A]",
-        // }
     ];
 
     return (
@@ -63,11 +57,6 @@ export default function RegulatoryConfidence({ regulatoryTitle, regulatorySubtit
 
                         <p className="h6 text-rg">{regulatorySubtitle}</p>
                     </div>
-
-                    {/* <div className="regulatory-nav flex gap-4 mb-6">
-                        <button className="reg-prev-btn"><span>{"<"}</span></button>
-                        <button className="reg-next-btn"><span>{">"}</span></button>
-                    </div> */}
 
                     <div className="regulatory-slider">
                         <Swiper
@@ -85,7 +74,7 @@ export default function RegulatoryConfidence({ regulatoryTitle, regulatorySubtit
                                 nextEl: ".reg-next-btn",
                                 prevEl: ".reg-prev-btn",
                             }}
-                            // autoplay={{ delay: 3000, disableOnInteraction: false }}
+                            autoplay={{ delay: 3000, disableOnInteraction: false }}
                             pagination={{ clickable: true }}
                             loop={true}
                             className="regulatory-swiper-slider">

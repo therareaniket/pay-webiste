@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import Image from "next/image";
 import Link from "next/link";
@@ -36,7 +36,7 @@ export default function HomeBlogHighlight() {
                             </div>
                         </Link>
 
-                        <div className="blog-half-group ">
+                        <div className="blog-half-group">
                             <Link href="/DigitalPayments-101" className="blog-half site-radius-20 popout-card">
                                 <Image src="/images/bloglisting/digital-payments.webp" alt="" width={780} height={390}></Image>
 

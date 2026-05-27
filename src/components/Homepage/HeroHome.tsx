@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import { useEffect } from "react";
 import Image from "next/image";
@@ -11,43 +11,42 @@ type HeroHomeProps = {
     heroCta2?: { url: string; title: string } | null;
 }
 
-export default function HeroHome( { heroTitle, heroSubtitle, heroCta1, heroCta2 }:HeroHomeProps ) {
+export default function HeroHome({ heroTitle, heroSubtitle, heroCta1, heroCta2 }: HeroHomeProps) {
 
-useEffect(() => {
-    // --- HAND ANIMATION ON PAGE LOAD --- //
-    const hand = document.querySelector(".home-hero-hand");
+    useEffect(() => {
+        // --- HAND ANIMATION ON PAGE LOAD --- //
+        const hand = document.querySelector(".home-hero-hand");
 
-    if (hand) {
-        requestAnimationFrame(() => {
-            hand.classList.add("hero-hand-active");
-        });
-    }
-
-    // --- TEXT & BUTTON ANIMATIONS (your existing code) --- //
-    const elements = document.querySelectorAll(".animate-on-scroll");
-
-    const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("animate-active");
-                }
+        if (hand) {
+            requestAnimationFrame(() => {
+                hand.classList.add("hero-hand-active");
             });
-        },
-        { threshold: 0.3 }
-    );
+        }
 
-    elements.forEach((el) => observer.observe(el));
+        // --- TEXT & BUTTON ANIMATIONS (your existing code) --- //
+        const elements = document.querySelectorAll(".animate-on-scroll");
 
-    return () => observer.disconnect();
-}, []);
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animate-active");
+                    }
+                });
+            },
+            { threshold: 0.3 }
+        );
+
+        elements.forEach((el) => observer.observe(el));
+
+        return () => observer.disconnect();
+    }, []);
 
 
     return (
         <>
             <section className="section hero-home site-hero">
                 <span className="light-orange-box"></span>
-
                 <Image src="/images/homepage/site-hero-blob.svg" alt="site-hero-blob" width={600} height={600} draggable={false} priority={true} className="site-hero-blob"></Image>
 
                 <div className="home-stripe">
@@ -68,9 +67,7 @@ useEffect(() => {
                         <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h6 text-sb"></Image>
                         <span className="h6 text-sb">Pay Smarter, Faster</span>
                         <Image src="/images/homepage/home-stripe-star.svg" alt="stripe-star" width={20} height={20} className="h6 text-sb"></Image>
-
                         {/* </div> */}
-
 
                         {/* <div className="stripe-slogan"> */}
                         <span className="h6 text-sb">Pay Smarter, Faster</span>
@@ -101,11 +98,10 @@ useEffect(() => {
                         <Image src="/images/homepage/hero-circle-arrow.svg" alt="badge-arrow" width={16} height={16}></Image>
                     </Link>
                 </div>
-                
+
                 <div className="container">
                     <div className="hero-details-wrapper">
                         <div className="home-hero-details">
-
                             {/* H1 with animation class */}
                             <h1 className="text-sb hero-title animate-on-scroll">
                                 {heroTitle}
@@ -115,9 +111,6 @@ useEffect(() => {
                             <p className="h6 text-rg hero-desc animate-on-scroll">
                                 {heroSubtitle}
                             </p>
-                            {/* <p className="h6 text-rg hero-desc animate-on-scroll">
-                                Secure, compliant, and fast payouts for Sponsors, CROs, Sites, and participants , streamlining every step of clinical trial payments with transparency and efficiency.
-                            </p> */}
 
                             <div className="home-hero-cta">
                                 {/* Button 1 */}

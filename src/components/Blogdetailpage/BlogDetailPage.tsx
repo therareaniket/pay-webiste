@@ -1,5 +1,6 @@
-import Image from "next/image";
+'use client'
 
+import Image from "next/image";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage, } from "@/components/ui/breadcrumb"
 
 export default function BlogDetailPage() {

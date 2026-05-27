@@ -1,14 +1,4 @@
-// export default function FormSubmission() {
-//     return (
-//         <>
-//             <div className="contact-right">
-
-//             </div>
-//         </>
-//     );
-// }
-
-'use client';
+'use client'
 
 import { useState } from 'react';
 

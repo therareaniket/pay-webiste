@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import Image from "next/image";
 import { useEffect, useRef } from "react";
@@ -22,37 +22,7 @@ type SeamlessPaymentsProps = {
 };
 
 export default function SeamlessPayments( { seamlessTitle, seamlessSubtitle, seamlessPaymentsAdvantages }: SeamlessPaymentsProps) {
-  // type the ref as an HTMLSectionElement (or HTMLElement)
   const sectionRef = useRef<HTMLElement | null>(null);
-
-  // useEffect(() => {
-  //   const sectionEl = sectionRef.current;
-  //   if (!sectionEl) return;
-
-  //   // type the NodeList as NodeListOf<HTMLElement>
-  //   const boxes = sectionEl.querySelectorAll(".pymt-box") as NodeListOf<HTMLElement>;
-
-  //   const observer = new IntersectionObserver(
-  //     ([entry]) => {
-  //       if (entry.isIntersecting) {
-  //         // add a staggered animationDelay and a class to trigger CSS animation
-  //         boxes.forEach((box, index) => {
-  //           // ensure we set a unit for the delay
-  //           box.style.animationDelay = `${index * 1.5}s`;
-  //           box.classList.add("pymt-stagger");
-  //         });
-
-  //         observer.disconnect();
-  //       }
-  //     },
-  //     { threshold: 0.3 }
-  //   );
-
-  //   observer.observe(sectionEl);
-
-  //   return () => observer.disconnect();
-  // }, []);
-
 
 	const HeroSeamlessAnimate =  { 
     	bttInitial: { y: 50, opacity: 0 },

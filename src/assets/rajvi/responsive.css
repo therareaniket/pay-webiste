@@ -15,7 +15,6 @@
 
 
 @media screen and (max-width: 1799px) {
-    /* .container { max-width: calc(1400px + 36px); } */
     h1, .h1{ font-size: 46px; line-height: 55px; }
     h2, .h2{ font-size: 38px; line-height: 46px; }
     h3, .h3{ font-size: 34px; line-height: 44px; }
@@ -28,7 +27,6 @@
     .footer-logo{ width: 110px !important; height: auto; }
 
     /* footer */
-    /* .footer-logo{ width: 150px; height: auto; } */
     .footer-lets-connect{ font-size: 194px; line-height: 194px; }
     .footer-links-section{ gap: 50px; }
     .footer-copyright-main{ margin-top: 70px; }
@@ -37,19 +35,14 @@
     .footer-social-icons span, .footer-social-icons span.icon-facebook{ font-size: 18px; }
     .footer-call-sec span, .footer-mail-sec span{  font-size: 18px; }
 
-
     /* soln page */
     .sol-hero-detail{ width: 750px; }
-
     .solution-stats-text p{ width: 620px; }
     .soln-stats-img{ width: 615px; }
-    /* .sol-stats-list{ padding-top: 50px; } */
     .sol-stats-list-desc{ width: 620px; }
     .sol-tick-desc{ align-items: flex-start; }
     .sol-tick-desc img{ padding-top: 10px; }
     .soln-stats-cards{ width: 400px; height: 150px; }
-    /* .soln-workflow-card-1 img{ width: 1000px; } */
-    /* .stakeholders-cards{ width: 454px; } */
     .stats-cards-5{ padding: 40px 30px; width: 460px; height: 320px; }
 
     .blog-card-1 img{ object-fit: cover; border-radius: 20px 20px 0 0; }
@@ -93,6 +86,8 @@
     .home-stripe-wrapper h6{ font-size: 14px; line-height: 20px; }
     .home-stripe-wrapper{ padding: 10px 0; }
     .home-left-arrow-wrapper{ width: 70px; height: 70px; bottom: 160px; left: 55px; }
+
+    .abt-hero-detail{ padding-top: 50px; }
 }
 
 @media screen and (max-width: 1599px) {
@@ -113,18 +108,15 @@
     .footer-logo{ width: 105px !important; height: auto; }
 
     /* footer */
-    /* .footer-logo{ width: 130px; height: auto; } */
     .footer-lets-connect{ font-size: 179px; line-height: 170px; }
     .footer-cta-left{ width: 750px; }
     .footer-social-icons span, .footer-social-icons span.icon-facebook, .footer-call-sec span, .footer-mail-sec span{ font-size: 16px; }
     .footer-logo-section{ width: 260px; }
     .footer-cta-left p{ margin-bottom: 0px; }
 
-    /* header */
-    /* .headerLogo{ width: 150px; } */
-
     /* soln */
     .sol-hero-detail{ width: 670px; }
+    
     /* blog */
     .container-sm{ max-width: 1100px; } 
     .blog-detail-heading{ width: 100%; }
@@ -166,7 +158,6 @@
     .blog-listing-card-detail > span{ font-size: 12px; line-height: 18px; margin-bottom: 0; }
     .blog-listing-title{ padding-bottom: 15px; }
     .blog-listing-card-wrapper{ justify-content: space-between; }
-    /* .contact-form input, .contact-form textarea */
     .contact-left{ width: 430px; }
     .contact-right{ width: 600px; }
     .contact-info-wrapper span{ font-size: 18px; }
@@ -197,17 +188,15 @@
     .home-hero-button-wrapper a{ font-size: 14px; line-height: 20px; }
     .home-hero-main-wrapper{ height: 620px; }
     .home-hero-text-wrapper p{ margin-bottom: 30px; }
+    .abt-hero-detail{ padding-top: 30px; }
 } 
 
 @media screen and (max-width: 1439px) {
-    /* .container { max-width: calc(1364px + 36px); } */
-
     /* font-size */
     h1, .h1{ font-size: 36px; line-height: 42px; }
     h3, .h3{ font-size: 26px; line-height: 38px; }
     h4, .h4{ font-size: 22px; line-height: 30px; }
     h5, .h5{ font-size: 22px; line-height: 30px; }
-    /* .text-18{ font-size: 16px; line-height: 26px; } */
 
     /* footer */
     .footer-lets-connect{ font-size: 158px; line-height: 148px; }
@@ -215,7 +204,6 @@
     .footer-logo-section{ width: 375px; } 
     .footer-links-section{ justify-content: space-between; width: 100%; }
     .footer-cta-left{ width: 620px; }
-    /* .glass-footer-cta{ flex-direction: column; gap: 30px; align-items: flex-start; } */
     .footer-cta-left p{ padding-top: 10px; }
 
     /* soln page */
@@ -229,7 +217,6 @@
     .blog-list-cards{ width: 340px; height: 330px; }
     .blog-listing-cards-name-date > span{ font-size: 12px; line-height: 18px; margin-bottom: 0; }
     .blog-listing-card-detail > span{ padding: 6px 14px; }
-    /* .contact-form-top{ gap: 170px; } */
 
     .advance-security-pro-text-desc{ width: 590px; }
     .adv-protextion-txt-head h2{ padding-bottom: 0; }
@@ -266,7 +253,6 @@
     .contact-left{ width: 380px; }
     .contact-form-top{ gap: 120px; }
     .contact-info-wrapper span{ padding-top: 2; }
-    /* .secur-card-head .h4{ font-size: 20px; line-height: 28px; } */
     .contact-left img{ width: 310px; }
 
     .home-hero-text-wrapper{ width: 500px; }
@@ -278,19 +264,15 @@
 }
 
 @media screen and (max-width: 1359px) {
-    /* .container { max-width: calc(1150px  + 36px); } */
-
     /* font-size */
     h1, .h1{ font-size: 34px; line-height: 38px; }
     h2, .h2{ font-size: 30px; line-height: 38px; }
     h4, .h4{ font-size: 20px; line-height: 28px; }
     h5, .h5{ font-size: 20px; line-height: 28px; }
-    /* h6, .h6{ font-size: 18px; line-height: 28px; } */
     .text-14{ font-size: 12px; line-height: 20px; }
     .text-18{ font-size: 14px ; line-height: 20px; }
 
     /* footer */
-    /* .footer-logo{ width: 120px; height: auto; } */
     .footer-lets-connect{ font-size: 143px; line-height: 140px; }
     .footer-cta-left{ width: 585px; }
     .footer-logo-section{ width: 400px; }
@@ -374,8 +356,6 @@
 }   
 
 @media screen and (max-width: 1199px) {
-    /* .container { max-width: calc(980px  + 36px); } */
-
     /* font-size */
     h1, .h1{ font-size: 30px; line-height: 34px; }
     h2, .h2{ font-size: 28px; line-height: 34px; }
@@ -387,12 +367,9 @@
     .section-bottom { padding-bottom: 70px; }
 
     /* header */
-    /* .headerLogo img{ width: 105px !important; height: auto !important; } */
     .header-nav-links ul{ gap: 30px; }
 
-
     /* footer */
-    /* .footer-logo{ width: 105px; height: auto; } */
     .footer-lets-connect{ font-size: 119px; line-height: 120px; }
     .news-letter-button input{ width: 300px; }
     .footer-social-icons span, .footer-social-icons span.icon-facebook, .footer-call-sec span, .footer-mail-sec span{ font-size: 14px; }
@@ -403,10 +380,6 @@
     /* soln page */
     .sol-hero-text img{ width: 300px; }
     .sol-hero-detail{ width: 550px; }
-    /* .sol-stats-cards{ gap: 20px; }
-    .soln-stats-cards{ width: 275px; height: 200px; }
-    .stats-cards-5{ height: 423px; }
-    .soln-stats-img{ width: 535px; } */
     .sol-stats-list-desc{ width: 385px; }
     .stakeholders-cards{ width: 253px; height: 200px; }
     .stakeholders-cards .h5{ margin-top: 6px; }
@@ -414,13 +387,11 @@
     .soln-worflow-card{ flex-direction: row; }
     .soln-workflow-card-1 img{ width: 70%; height: 300px; object-fit: cover; border-radius: 20px; }
     .site-cro-card, .parti-payments-card{ width: 385px; height: 160px; }
-    /* .sol-stats-card-1, .sol-stats-card-2{ gap: 20px; } */
     .soln-stats-img{ width: 370px; }
     .soln-stats-cards{ width: 240px; height: 110px; }
     .stats-cards-5{ width: 280px; height: 240px; }
     .soln-stats-cards .h2, .stats-cards-5 .h2{ font-size: 18px; line-height: 24px; margin-bottom: 10px; }
     .solution-stats-text h2, .solution-stats-text p{ width: 100%; }
-
 
     /* blog */
     .blog-listing-card-detail{ padding: 20px 15px 30px; }
@@ -475,10 +446,8 @@
 
 @media screen and (max-width: 1023px) {
     .header-nav-links ul { gap: 15px; }
-    /* .container { max-width: calc(991px + 36px); } */
 
     /* font-size */
-    /* h1, .h1{ font-size: 52px; line-height: 62px; } */
     h3, .h3{ font-size: 20px; line-height: 26px; }
     h4, .h4{ font-size: 18px; line-height: 24px; }
     h5, .h5{ font-size: 16px; line-height: 24px; }
@@ -489,9 +458,7 @@
     .footer-logo{ width: 80px !important; height: auto; }
     .header-nav-links ul{ gap: 20px; }
 
-
     /* footer */
-    /* .footer-logo{ width: 85px; height: auto; } */
     .footer-lets-connect{ font-size: 104px; line-height: 103px; }
     .glass-footer-cta{ padding: 35px 60px; }
     .footer-links-section{ gap: 30px; }
@@ -508,8 +475,6 @@
     /* blog */
     .blog-list-cards{ width: 340px; height: 320px; }
     .blog-list-card-rw-2{ margin: 40px 0; padding: 0; }
-
-    /* .container-sm{ max-width: 880px; }  */
 
     .contact-form-top { gap: 100px; } 
     .contact-info-wrapper{ padding-top: 65px; }
@@ -529,14 +494,13 @@
 
     .stakeholders-cards{ width: 220px; height: 220px; }
     .soln-workflow-card-1 img{ height: 250px; }
-    .site-cro-card, .parti-payments-card{ width: 340px; height: 185px; }
+    .site-cro-card, .parti-payments-card{ width: 340px; height: 180px; }
     .adv-protection-cards .h5{ font-size: 18px; line-height: 26px; padding-bottom: 8px; }
     .adv-protection-cards{ width: 320px; }
     .adv-protextion-txt-head{ width: 340px; }
     .sec-regulatory-heading h2, .sec-regulatory-heading p{ width: 100%; }
     .sec-advance-gover-head p{ margin-bottom: 0; }
     .adv-protection-cards span{ font-size: 16px; }
-    /* .secur-card-head .h4{ font-size: 14px; line-height: 20px; } */
     .footer-cta-left{ width: 400px; }
     .footer-call-sec{ padding-bottom: 10px; }
     .sec-gover-cards-wrapper{ flex-direction: column; gap: 10px; }
@@ -553,15 +517,9 @@
 }
 
 @media screen and (max-width: 991px) {
-    /* .container { max-width: calc(800px + 36px); } */
-
     /* font-size */
-    /* h1, .h1{ font-size: 48px; line-height: 58px; } */
     h2, .h2{ font-size: 26px; line-height: 34px; }
     h3, .h3{ font-size: 18px; line-height: 26px; }
-    /* h5, .h5{ font-size: 22px; line-height: 32px; } */
-    /* h6, .h6{ font-size: 16px; line-height: 24px; } */
-    /* .text-18{ font-size: 14px; line-height: 24px; } */
 
     /* footer */
     .footer-links-section, .footer-bottom{ gap: 40px; }
@@ -571,21 +529,7 @@
     .hamburger { display: flex; }
     .header-nav-links, .contact-link { display: none !important; }
 
-    .mobile-menu {
-        position: fixed; /* full screen */
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-        background: rgb(240, 240, 240);
-        transition: height 1s ease;
-        z-index: 10000; /* lower than header */
-        display: flex;
-        flex-direction: column;
-        /* padding-left: 90px; */
-    }
-
+    .mobile-menu { position: fixed; top: 0; left: 0; width: 100%; height: 0; overflow: hidden; background: rgb(240, 240, 240); transition: height 1s ease; z-index: 10000;  display: flex; flex-direction: column; }
     .mobile-menu.open { height: max-content; padding-bottom: 30px; }
     .mobile-menu ul { display: flex; flex-direction: column; gap: 15px; text-align: left; font-size: 24px;padding-top: 100px; padding-left: 22px; }
     .mobile-menu ul li a { font-size:16px; line-height: 22px; color: var(--black); text-decoration: none; font-weight: 500; }
@@ -602,12 +546,9 @@
     .solution-stats-text h2, .solution-stats-text p{ width: 100%; }
     .stats-cards-5{ width: 280px; }
     .soln-stats-cards{ width: 190px; }
-    /* .stakeholders-cards{ width: 254px; }
-    .site-cro-card, .parti-payments-card{ width: 390px; } */
     .soln-stats-img{ width: 330px; }
     .sol-stats-list-desc{ width: 340px; }
     .sol-stats-list{ margin-top: 20px; }
-
 
     /* blog-page */
     .blog-list-cards{ width: 340px; height: 320px;  }
@@ -622,15 +563,6 @@
 
     .contact-form-top{ gap: 50px; }
     .contact-info-wrapper{ gap: 20px; }
-    /* .info-card{ height: 130px; } */
-    /* .contact-form-top { flex-direction: column; gap: 80px; }  
-    .contact-head-main{ width: 500px; }
-    .contact-left{ display: flex; gap: 50px; width: 100%; align-items: flex-start;}
-    .contact-left img{ padding-top: 0; width: 400px; }
-    .contact-right{ width: 600px; } */
-
-
-
     .adv-protection-wrapper { display: block; }
     .adv-protextion-txt-head { width: 100%; position: static; margin-bottom: 25px; }
     .adv-protection-cards-main { display: none;}
@@ -665,9 +597,6 @@
     .solution-hero .hero-details-wrapper img{ transform: none !important; }
     .security-hero .hero-details-wrapper img{ transform: none !important; }
     .coming-soon-hero-wrapper{ gap: 200px !important; flex-direction: column !important; }    
-    /* .capablty-lists:first-child{ width: 300px; } */
-    /* .capablty-lists-divider{ display: block; width: 2px; height: 100%; } */
-    /* .capablty-lists-wrapper{ gap: 90px !important; } */
     .privacy-policy-hero{ padding-top: 50px; }
 
     .comingsoon-wrapper{ gap: 120px !important; }
@@ -696,19 +625,13 @@
 } 
 
 @media screen and (max-width: 839px) { 
-    /* .container { max-width: calc(750px + 36px); } */
- 
     /* font-size */
     h1, .h1{ font-size: 28px; line-height: 36px; }
     h4, .h4{ font-size: 16px; line-height: 24px; }
 
-    /* header */
-    /* .mobile-menu{ padding-left: 50px; } */
-
     /* footer */
     .news-letter-button input{ width: 232px; }
     .news-letter-tab-btn .btn-padding{ padding: 8px 20px; }
-    /* .footer-lets-connect{ font-size: 108px; line-height: 118px; } */
     .footer-cta-left{ width: 85%; text-align: center; }
     .glass-footer-cta{ flex-direction: column; gap: 30px; }
     .glass-footer-cta{ gap: 20px; }
@@ -718,8 +641,6 @@
     /* soln page */
     .sol-hero-text{ padding-top: 120px; }
     .site-cro-card, .parti-payments-card{ width: 350px; }
-
-
 
     /* blog */
     .blog-list-cards{ width: 340px; height: 320px; }
@@ -731,13 +652,11 @@
     /* .info-card .h5{ font-size: 18px; line-height: 28px; margin-bottom: 10px; } */
     .contact-form-top{ align-items: end; }
     .sec-advance-gover-head{ padding-bottom: 40px; }
-    /* .contact-form-top{ flex-direction: column; } */
     .advance-security-pro-text{ width: 100%; }
     .adv-card{ width: 350px; }
     .sec-regulatory-heading h2, .sec-regulatory-heading p, .sec-regulatory-left { width: 100%; }
     .SecurityRegulatoryImage{ width: 100%; height: 300px; }
     .sec-regulatory-left{ gap: 20px; }
-    /* .capablty-lists:first-child, .capablty-lists:last-child{ gap: 40px; } */
 
     .home-hero-text-wrapper{ width: 370px; padding-top: 30px; }
     .home-hero-left-box{ width: 290px; }
@@ -748,15 +667,8 @@
 }
 
 @media screen and (max-width: 767px) {
-    /* .container { max-width: calc(600px + 36px);} */
-
     /* font-size */
     h2, .h2{ font-size: 24px; line-height: 32px; }
-    /* h5, .h5{ font-size: 18px; line-height: 22px; } */
-
-    /* header */
-    /* .mobile-menu{ padding-left: 90px; } */
-    /* .mobile-menu ul li a{ font-size: 28px; line-height: 28px; } */
 
     /* footer */
     .footer-lets-connect{ font-size: 74px; line-height: 73px; }
@@ -779,7 +691,6 @@
     .sol-stats-list{ flex-direction: column; gap: 20px; }
     .sol-stats-list-desc{ width: 100%; }
     .soln-stats-img{ width: 100%; }
-    /* .soln-stats-cards{ width: 210px; } */
     .sol-stats-card-1, .sol-stats-card-2, .stats-cards-5{ flex-direction: row; }
     .stats-cards-5{ width: 100%; height: 130px; padding: 20px;}
     .stats-cards-5 .h6{ width: 50%; text-align: left; padding-left: 20px; }
@@ -795,7 +706,6 @@
     .blog-detail-breadcrumb{ display: none; }
 
     /* contact */
-
     .contact-form-top{ flex-direction: column; }
     .contact-left{ width: 100%;  gap: 50px; }
     .contact-left img{ margin: 0 auto; padding-top: 30px; }
@@ -818,14 +728,7 @@
     .plan-descrptn-tabs { display: flex; flex-direction: column; align-items: center;    justify-content: center; width: 100%; }
     .plan-item { margin: 0 auto; }
     .plan-tabs-list { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0; gap: 30px; }
-    .plan-tab-trigger {
-        background: transparent !important;
-        border: none !important;
-        box-shadow: none !important;
-        color: #555;
-        position: relative;
-        padding: 8px 0;
-    }
+    .plan-tab-trigger { background: transparent !important; border: none !important; box-shadow: none !important; color: #555; position: relative; padding: 8px 0; }
 
     .plan-tab-trigger::after {
         content: "";
@@ -850,20 +753,14 @@
 
     .capablty-list{ width: 100% !important; }
     .capablty-lists:first-child{ width: 100%; }
-    /* .capablty-lists:last-child{ gap: 40px; } */
     .capablty-lists-wrapper{ gap: 40px !important; }
     .terms-condition-main{ gap: 20px; }
     .cookienoticemain p, .privacypolicymain p, .termsmain p{ padding-top: 0; padding-bottom: 10px; }
 
-    /* .capablty-lists{ align-items: flex-start; position: sticky; top: 0; } */  
-
     .comingsoon-wrapper{ flex-direction: column-reverse; }
     .comingsoon{ height: 820px!important; padding-top: 100px !important; }
-    /* .comingsoon-wrapper{ padding-bottom: 500px !important; } */
     .comingsoon-wrapper{ gap: 50px !important; }
 
-    /* .secur-gover-card{ flex-direction: column; } */
-    /* .secur-gover-card img{ width: 100%; } */
     .adv-card span{ padding-bottom: 10px; }
     .sec-regulatory-wrapper{ flex-direction: column-reverse; gap: 20px; }
     .sec-regulatory-right{ width: 100%; height: 200px; }
@@ -875,7 +772,6 @@
     .sec-advance-gover-head{ padding-bottom: 25px; }
 
     .hero-hand-left{ display: none;}
-    /* .home-hero-left-box{ display: none; } */
     .home-hero-detail-text{ justify-content: start; }
     .home-hero-text-wrapper{ left: 90px; width: 460px; }
     .home-hero-main-wrapper{ height: 400px; }
@@ -884,19 +780,12 @@
 }
 
 @media screen and (max-width: 639px) {
-    /* .container { max-width: calc(500px + 36px); } */
-
     /* font-size */
     h1, .h1{ font-size: 26px; line-height: 32px; }
     h2, .h2{ font-size: 22px; line-height: 30px; }
-    /* h5, .h5{ font-size: 20px; line-height: 28px; } */
     h6, .h6{ font-size: 12px; line-height: 20px; }
 
-    /* header */
-    /* .mobile-menu{ padding-left: 20px; } */
-
     /* footer */
-
     .glass-footer-cta{ padding: 35px 50px; }
     .copy-right-wrapper{ flex-wrap: wrap; }
     .footer-lets-connect{ font-size: 80px; line-height: 79px; }
@@ -914,8 +803,6 @@
 
     .info-card{ width: 260px; }
     .info-card .h5{ font-size: 14px; line-height: 20px; }
-    /* .info-card-location{ width: 100%; } */
-    /* .secur-gover-card{ flex-direction: column; } */
 
     .comingsoon-wrapper img{ width: 300px; }
     .comingsoon-content img{ width: 150px !important; }
@@ -932,12 +819,7 @@
 }
 
 @media screen and (max-width: 575px) {
-    /* font-size */
-    /* h1, .h1{ font-size: 34px; line-height: 44px; } */
     .text-14{ font-size: 10px; line-height: 18px; }
-
-    /* header */
-    /* .mobile-menu ul li a{ font-size: 24px; line-height: 24px; } */
 
     /* footer */
     .footer-lets-connect{ font-size: 65px; line-height: 75px; }
@@ -970,21 +852,16 @@
 @media screen and (max-width: 480px) {
     /* font-size */
     h1, .h1{ font-size: 24px; line-height: 32px; }
-    /* h2, .h2{ font-size: 30px; line-height: 40px; } */
 
     /* footer */
     .footer-lets-connect{ font-size: 62px; line-height: 70px; -webkit-text-stroke: 1px var(--secondary-orange); }
     .glass-footer-cta{ padding: 30px; }
     .footer-bottom{ gap: 30px; }
 
-    /* header */
-    /* .mobile-menu ul li a{ font-size: 22px; line-height: 22px; } */
-    /* .headerLogo{ width: 120px; } */
     .hamburger{ width: 20px; } 
     .bar{ width: 20px; }
 
     /* soln page */
-
     .soln-stats-cards{ width: 200px; }
     .soln-stats-cards h4, .soln-stats-cards p{ margin-bottom: 0; }
     .stats-cards-5{ padding: 33px 20px; }
@@ -1040,7 +917,6 @@
     .adv-card{ width: 300px; }
     .news-letter-button input{ width: 250px ; }
 
-    /* .mobile-menu ul li a{ font-size: 20px; line-height: 30px; } */
     .mobile-menu ul{ gap: 20px; }
     .mobile-menu ul { padding-top: 80px; }
     .coming-soon-image{ display: none; }

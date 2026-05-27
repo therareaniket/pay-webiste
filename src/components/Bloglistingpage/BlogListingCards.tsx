@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
@@ -67,22 +67,20 @@ const categories = [
 export default function BlogListingCards() {
 	const [activeTab, setActiveTab] = useState("digitalSignatures");
 	const tabsListRef = useRef<HTMLDivElement>(null);
-	  useEffect(() => {
-    // Only apply on screens less than 575px
-    if (window.innerWidth < 575 && tabsListRef.current) {
-      const activeTabElement = tabsListRef.current.querySelector(`[data-state="active"]`);
-      
-      if (activeTabElement) {
-        activeTabElement.scrollIntoView({
-          behavior: 'smooth',
-          block: 'nearest',
-          inline: 'center'
-        });
-      }
-    }
-  }, [activeTab]);
+	useEffect(() => {
+		if (window.innerWidth < 575 && tabsListRef.current) {
+			const activeTabElement = tabsListRef.current.querySelector(`[data-state="active"]`);
 
-	// Get current category data based on active tab
+			if (activeTabElement) {
+				activeTabElement.scrollIntoView({
+					behavior: 'smooth',
+					block: 'nearest',
+					inline: 'center'
+				});
+			}
+		}
+	}, [activeTab]);
+
 	const currentCategoryData = categories.find(cat => cat.value === activeTab)?.data || [];
 
 	return (
@@ -92,11 +90,11 @@ export default function BlogListingCards() {
 					<Tabs value={activeTab} onValueChange={setActiveTab}>
 						<TabsList className="trust-tabs-list" ref={tabsListRef}>
 							{categories.map((category) => (
-                                <TabsTrigger key={category.value} value={category.value}  className="trust-tab-trigger text-20 text-md">
+								<TabsTrigger key={category.value} value={category.value} className="trust-tab-trigger text-20 text-md">
 									{category.label}
 								</TabsTrigger>
 							))}
-                        </TabsList>
+						</TabsList>
 					</Tabs>
 				</div>
 

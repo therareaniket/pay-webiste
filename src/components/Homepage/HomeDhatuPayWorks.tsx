@@ -1,4 +1,5 @@
-"use client"
+'use client'
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -64,7 +65,7 @@ export default function DhatuPayWorksSlider( { howDhatupayWorksTitle, howDhatupa
                         768: { slidesPerView: 2 },
                         1440: { slidesPerView: 3 }
                     }}
-                    // autoplay={{ delay: 3000, disableOnInteraction: false }}
+                    autoplay={{ delay: 3000, disableOnInteraction: false }}
                     pagination={{ clickable: true }}
                     loop={true}
                     // navigation
