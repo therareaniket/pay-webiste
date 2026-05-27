@@ -602,8 +602,8 @@
     .comingsoon-wrapper{ gap: 120px !important; }
     .adv-protection-wrapper { max-height: max-content; }
 
-    .animate-active.hero-btn-1 { animation: heroSlideLeft 0.9s ease-out forwards; animation-delay: 2s;}
-    .animate-active.hero-btn-2 { animation: heroSlideLeft 0.9s ease-out forwards; animation-delay: 3s; }
+    .animate-active.hero-btn-1 { animation: heroSlideLeft 0.5s ease-out forwards; animation-delay: 1s;}
+    .animate-active.hero-btn-2 { animation: heroSlideLeft 0.5s ease-out forwards; animation-delay: 1.5s; }
 
     .adv-protection-swiper{ display: flex !important; }
     .adv-protection-swiper .swiper-slide{ height: 160px !important; }
@@ -847,6 +847,11 @@
     .home-hero-text-wrapper{ width: 420px; }
     .home-hero-left-box{ width: 200px; }
     .hero-background-circle{ right: -68px; }
+
+    .wf-list-item { opacity: 0; transform: translateX(0); transition: transform 0.5s ease-out, opacity 0.8s ease-out; }
+    .wf-list-left .wf-list-item { transform: translateX(-100px); }
+    .wf-list-right .wf-list-item { transform: translateX(-100px); }
+    .wf-list-item.slide-in { transform: translateX(0); opacity: 1;}
 }
 
 @media screen and (max-width: 480px) {

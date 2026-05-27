@@ -96,13 +96,13 @@ export default function CoreCapabilities( { coreCapabilitiesTitle, coreCapabilit
 
     const homeCoreCapabilities = (typeof window !== "undefined" && window.innerWidth <= 767) ? {
         initialLTR1: { x: -40, opacity: 0 },
-        animateLTR1: { x: 0, opacity: 1, transition: { duration: 0.5, delay: 0 } },
+        animateLTR1: { x: 0, opacity: 1, transition: { duration: 0.4, delay: 0 } },
         initialLTR2: { x: -40, opacity: 0 },
-        animateLTR2: { x: 0, opacity: 1, transition: { duration: 0.5, delay: 0.5 } },
+        animateLTR2: { x: 0, opacity: 1, transition: { duration: 0.4, delay: 0.5 } },
         initialLTR3: { x: -40, opacity: 0 },
-        animateLTR3: { x: 0, opacity: 1, transition: { duration: 0.5, delay: 1 } },
+        animateLTR3: { x: 0, opacity: 1, transition: { duration: 0.4, delay: 1 } },
         initialLTR4: { x: -40, opacity: 0 },
-        animateLTR4: { x: 0, opacity: 1, transition: { duration: 0.5, delay: 1.5 } },
+        animateLTR4: { x: 0, opacity: 1, transition: { duration: 0.4, delay: 1.5 } },
     } : {
         initialLTR1: { x: -100, opacity: 0 },
         animateLTR1: { x: 0, opacity: 1, transition: { duration: 0.5, delay: 0 } },

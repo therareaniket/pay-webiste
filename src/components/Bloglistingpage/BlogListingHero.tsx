@@ -46,7 +46,7 @@ export default function BlogListingHero() {
 						modules={[Autoplay, Pagination, Navigation]}
 						spaceBetween={10}
 						slidesPerView={1}
-						autoplay={{ delay: 3000, disableOnInteraction: false }}
+						// autoplay={{ delay: 3000, disableOnInteraction: false }}
 						loop={true}
 						pagination={{ clickable: true }}
 						className="blog-swiper-slider">
